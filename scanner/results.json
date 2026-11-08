@@ -1,0 +1,19 @@
+{
+  "generated_utc": "2026-11-08T19:31:01.713457+00:00",
+  "universe_count": 501,
+  "analyzed_count": 499,
+  "failed_count": 2,
+  "provider": "Yahoo Finance via yfinance (unofficial; delayed)",
+  "disclaimer": "Technical screening only. Not investment advice or live prices.",
+  "candidates": [],
+  "errors_sample": [
+    {
+      "symbol": "BAGMANE",
+      "reason": "Insufficient price history"
+    },
+    {
+      "symbol": "DUMMYHEG",
+      "reason": "Insufficient price history"
+    }
+  ]
+}
