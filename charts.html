@@ -4,217 +4,248 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>NSE India | Candlestick Charts</title>
-<style>
-* { box-sizing: border-box; }
-body {
-  margin: 0;
-  background: #0b1220;
-  color: #e5edf7;
-  font-family: Arial, sans-serif;
-}
-header {
-  padding: 18px;
-  background: #111d30;
-  border-bottom: 1px solid #26364d;
-}
-h1 { font-size: 21px; margin: 0 0 8px; }
-p { color: #a8b8cb; line-height: 1.5; }
-main { padding: 12px; max-width: 1200px; margin: auto; }
-.panel {
-  background: #111d30;
-  border: 1px solid #26364d;
-  border-radius: 12px;
-  padding: 12px;
-  margin-bottom: 14px;
-}
-select, button {
-  padding: 12px;
-  border-radius: 8px;
-  font-size: 16px;
-}
-select {
-  background: #0b1220;
-  color: white;
-  border: 1px solid #40536e;
-  width: 100%;
-  margin-bottom: 10px;
-}
-button {
-  background: #21b6a8;
-  color: #07141e;
-  border: 0;
-  font-weight: bold;
-}
-.chart { height: 430px; width: 100%; }
-.small-chart { height: 160px; width: 100%; }
-a { color: #50d8ca; }
-.note { font-size: 13px; }
-#status { color: #a8b8cb; }
-</style>
+<title>NSE India | Advanced Charts</title>
 <script src="https://unpkg.com/lightweight-charts@4.2.3/dist/lightweight-charts.standalone.production.js"></script>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#0b1220;color:#e5edf7;font-family:Arial,sans-serif}
+header{padding:18px;background:#111d30;border-bottom:1px solid #26364d}
+h1{font-size:22px;margin:0 0 8px}
+p{color:#a8b8cb;line-height:1.5}
+a{color:#50d8ca}
+main{max-width:1200px;margin:auto;padding:12px}
+.panel{background:#111d30;border:1px solid #26364d;border-radius:12px;padding:14px;margin-bottom:14px}
+h3{margin:8px 0 16px;font-size:17px}
+select,button{font-size:16px;padding:12px;border-radius:8px}
+select{width:100%;background:#0b1220;color:white;border:1px solid #40536e;margin-bottom:10px}
+button{background:#21b6a8;color:#07141e;border:0;font-weight:bold;cursor:pointer}
+.chart{height:400px;width:100%}
+.small{height:175px;width:100%}
+#status{font-size:14px}
+.note{font-size:13px}
+.legend{font-size:12px;color:#a8b8cb;line-height:1.8}
+</style>
 </head>
 <body>
 <header>
-  <h1>NSE India – Candlestick Charts</h1>
-  <p>Nifty 500 Swing Trading Research</p>
-  <a href="index.html">Back to Dashboard</a>
+<h1>NSE India – Advanced Technical Charts</h1>
+<p>Nifty 500 Swing Trading | Paper Trading</p>
+<a href="index.html">Back to Dashboard</a>
 </header>
 <main>
-  <section class="panel">
-    <label for="symbol">Select NSE Stock</label>
-    <select id="symbol">
-      <option value="RELIANCE">RELIANCE</option>
-      <option value="TCS">TCS</option>
-      <option value="INFY">INFY</option>
-      <option value="HDFCBANK">HDFCBANK</option>
-      <option value="ICICIBANK">ICICIBANK</option>
-    </select>
-    <button onclick="loadStock()">Load Chart</button>
-    <p id="status">Loading...</p>
-  </section>
+<section class="panel">
+<label for="symbol">Select NSE Stock</label>
+<select id="symbol">
+<option>RELIANCE</option>
+<option>TCS</option>
+<option>INFY</option>
+<option>HDFCBANK</option>
+<option>ICICIBANK</option>
+</select>
+<button id="load">Load Chart</button>
+<p id="status">Loading...</p>
+</section>
 
-  <section class="panel">
-    <h3 id="heading">Daily Candlestick Chart</h3>
-    <div id="priceChart" class="chart"></div>
-  </section>
+<section class="panel">
+<h3 id="heading">Daily Candlestick Chart</h3>
+<div class="legend">EMA20: Yellow | EMA50: Blue | EMA200: Purple | Supertrend: Green/Red</div>
+<div id="price" class="chart"></div>
+</section>
 
-  <section class="panel">
-    <h3>RSI (14)</h3>
-    <div id="rsiChart" class="small-chart"></div>
-  </section>
+<section class="panel">
+<h3>Trading Volume</h3>
+<div id="volume" class="small"></div>
+</section>
 
-  <section class="panel">
-    <h3>MACD (12, 26, 9)</h3>
-    <div id="macdChart" class="small-chart"></div>
-  </section>
+<section class="panel">
+<h3>RSI (14)</h3>
+<div class="legend">Purple: RSI | Reference levels: 30 and 70</div>
+<div id="rsi" class="small"></div>
+</section>
 
-  <section class="panel">
-    <p class="note">
-      Data: Yahoo Finance via yfinance.
-      Daily historical adjusted prices.
-      Delayed/unofficial data.
-      Research and paper trading only.
-    </p>
-  </section>
+<section class="panel">
+<h3>MACD (12, 26, 9)</h3>
+<div class="legend">Blue: MACD | Orange: Signal | Green/Red: Histogram</div>
+<div id="macd" class="small"></div>
+</section>
+
+<section class="panel">
+<h3>ADX (14) and Directional Indicators</h3>
+<div class="legend">Yellow: ADX | Green: +DI | Red: -DI | Reference: 25</div>
+<div id="adx" class="small"></div>
+</section>
+
+<section class="panel">
+<h3>On-Balance Volume (OBV)</h3>
+<div id="obv" class="small"></div>
+</section>
+
+<section class="panel">
+<p class="note">
+Source: Yahoo Finance via yfinance. Historical daily adjusted prices.
+Unofficial and potentially delayed data. Indicators are research aids,
+not guaranteed trading signals. Paper trading only.
+</p>
+</section>
 </main>
-
 <script>
-const charts = [];
-const colors = {
-  background: "#111d30",
-  text: "#a8b8cb",
-  grid: "#26364d"
+const active=[];
+const L=window.LightweightCharts;
+const layout={
+  background:{color:"#111d30"},
+  textColor:"#a8b8cb"
 };
-
-function makeChart(id) {
-  const element = document.getElementById(id);
-  const chart = LightweightCharts.createChart(element, {
-    width: element.clientWidth,
-    height: element.clientHeight,
-    layout: {
-      background: { color: colors.background },
-      textColor: colors.text
+function create(id){
+  const el=document.getElementById(id);
+  const chart=L.createChart(el,{
+    width:el.clientWidth,
+    height:el.clientHeight,
+    layout,
+    grid:{
+      vertLines:{color:"#26364d"},
+      horzLines:{color:"#26364d"}
     },
-    grid: {
-      vertLines: { color: colors.grid },
-      horzLines: { color: colors.grid }
-    },
-    timeScale: { timeVisible: false },
-    rightPriceScale: { borderVisible: false }
+    timeScale:{borderVisible:false},
+    rightPriceScale:{borderVisible:false}
   });
-  charts.push({ chart, element });
+  active.push({chart,el});
   return chart;
 }
-
-function line(chart, data, key, color) {
-  const series = chart.addLineSeries({
-    color, lineWidth: 2,
-    priceLineVisible: false,
-    lastValueVisible: true
+function points(data,key){
+  return data.filter(x=>
+    typeof x[key]==="number" &&
+    Number.isFinite(x[key])
+  ).map(x=>({time:x.time,value:x[key]}));
+}
+function addLine(chart,data,key,color,width=2){
+  const s=chart.addLineSeries({
+    color,lineWidth:width,
+    priceLineVisible:false,
+    lastValueVisible:true
   });
-  series.setData(
-    data.filter(x => x[key] !== null &&
-      Number.isFinite(x[key]))
-      .map(x => ({ time: x.time, value: x[key] }))
-  );
-  return series;
+  s.setData(points(data,key));
+  return s;
 }
-
-function clearCharts() {
-  charts.forEach(item => item.chart.remove());
-  charts.length = 0;
+function reference(series,value,color){
+  series.createPriceLine({
+    price:value,color,lineWidth:1,
+    lineStyle:L.LineStyle.Dashed,
+    axisLabelVisible:true,
+    title:String(value)
+  });
 }
-
-async function loadStock() {
-  const symbol = document.getElementById("symbol").value;
-  const status = document.getElementById("status");
-  status.textContent = "Loading " + symbol + "...";
-
-  try {
-    const response = await fetch(
-      "charts/data/" + symbol + ".json?t=" + Date.now()
+function clearAll(){
+  active.forEach(x=>x.chart.remove());
+  active.length=0;
+}
+async function loadStock(){
+  const symbol=document.getElementById("symbol").value;
+  const status=document.getElementById("status");
+  status.textContent="Loading "+symbol+"...";
+  try{
+    if(!L)throw Error("Chart library unavailable");
+    const res=await fetch(
+      "charts/data/"+symbol+".json?v="+Date.now()
     );
-    if (!response.ok) {
-      throw new Error("Data file unavailable: " + response.status);
-    }
-    const result = await response.json();
-    const data = result.candles || [];
-    if (!data.length) throw new Error("No candle data");
+    if(!res.ok)throw Error("JSON file not found");
+    const json=await res.json();
+    const data=json.candles||[];
+    if(!data.length)throw Error("No candle data");
 
-    clearCharts();
+    clearAll();
 
-    const price = makeChart("priceChart");
-    const candles = price.addCandlestickSeries({
-      upColor: "#26a69a",
-      downColor: "#ef5350",
-      borderVisible: false,
-      wickUpColor: "#26a69a",
-      wickDownColor: "#ef5350"
+    const price=create("price");
+    const candles=price.addCandlestickSeries({
+      upColor:"#26a69a",
+      downColor:"#ef5350",
+      borderVisible:false,
+      wickUpColor:"#26a69a",
+      wickDownColor:"#ef5350"
     });
-    candles.setData(data.map(x => ({
-      time: x.time,
-      open: x.open,
-      high: x.high,
-      low: x.low,
-      close: x.close
+    candles.setData(data.filter(x=>
+      ["open","high","low","close"].every(k=>
+        typeof x[k]==="number"
+      )
+    ).map(x=>({
+      time:x.time,
+      open:x.open,
+      high:x.high,
+      low:x.low,
+      close:x.close
     })));
 
-    line(price, data, "ema20", "#f5c542");
-    line(price, data, "ema50", "#42a5f5");
-    line(price, data, "ema200", "#b388ff");
+    addLine(price,data,"ema20","#f5c542");
+    addLine(price,data,"ema50","#42a5f5");
+    addLine(price,data,"ema200","#b388ff");
 
-    const rsi = makeChart("rsiChart");
-    line(rsi, data, "rsi14", "#c084fc");
+    const bull=data.map(x=>({
+      ...x,
+      bull:x.supertrend_direction===1
+        ?x.supertrend:null,
+      bear:x.supertrend_direction===-1
+        ?x.supertrend:null
+    }));
+    addLine(price,bull,"bull","#26a69a");
+    addLine(price,bull,"bear","#ef5350");
 
-    const macd = makeChart("macdChart");
-    line(macd, data, "macd", "#42a5f5");
-    line(macd, data, "macd_signal", "#ffb74d");
+    const vol=create("volume");
+    const vs=vol.addHistogramSeries({
+      priceFormat:{type:"volume"},
+      priceLineVisible:false
+    });
+    vs.setData(data.map((x,i)=>({
+      time:x.time,
+      value:x.volume||0,
+      color:i===0||x.close>=data[i-1].close
+        ?"#26a69a":"#ef5350"
+    })));
 
-    price.timeScale().fitContent();
-    rsi.timeScale().fitContent();
-    macd.timeScale().fitContent();
+    const rsi=create("rsi");
+    const rs=addLine(rsi,data,"rsi14","#c084fc");
+    reference(rs,30,"#7c8799");
+    reference(rs,70,"#7c8799");
 
-    document.getElementById("heading").textContent =
-      symbol + " – Daily Candlestick Chart";
+    const macd=create("macd");
+    addLine(macd,data,"macd","#42a5f5");
+    addLine(macd,data,"macd_signal","#ffb74d");
+    const hist=macd.addHistogramSeries({
+      priceLineVisible:false
+    });
+    hist.setData(data.filter(x=>
+      typeof x.macd_hist==="number"
+    ).map(x=>({
+      time:x.time,
+      value:x.macd_hist,
+      color:x.macd_hist>=0?"#26a69a":"#ef5350"
+    })));
 
-    status.textContent =
-      "Loaded " + data.length + " daily candles | " +
-      "Last candle: " + data[data.length - 1].time;
+    const adx=create("adx");
+    const adxLine=addLine(adx,data,"adx14","#f5c542");
+    addLine(adx,data,"plus_di","#26a69a");
+    addLine(adx,data,"minus_di","#ef5350");
+    reference(adxLine,25,"#7c8799");
 
-  } catch (error) {
-    status.textContent = "Error: " + error.message;
+    const obv=create("obv");
+    addLine(obv,data,"obv","#50d8ca");
+
+    active.forEach(x=>x.chart.timeScale().fitContent());
+    document.getElementById("heading").textContent=
+      symbol+" – Daily Candlestick Chart";
+    status.textContent=
+      "Loaded "+data.length+" candles | Last candle: "+
+      data[data.length-1].time+
+      " | Historical data";
+  }catch(err){
+    status.textContent="Error: "+err.message;
   }
 }
-
-window.addEventListener("resize", () => {
-  charts.forEach(item => {
-    item.chart.applyOptions({
-      width: item.element.clientWidth
-    });
-  });
+document.getElementById("load").addEventListener("click",loadStock);
+document.getElementById("symbol").addEventListener("change",loadStock);
+window.addEventListener("resize",()=>{
+  active.forEach(x=>x.chart.applyOptions({
+    width:x.el.clientWidth
+  }));
 });
-
 loadStock();
 </script>
 </body>
