@@ -1,9 +1,9 @@
 {
-  "generated_utc": "2026-11-09T10:15:38.881730+00:00",
-  "source_generated_utc": "2026-11-09T09:07:57.225534+00:00",
+  "generated_utc": "2026-11-09T17:35:44.529159+00:00",
+  "source_generated_utc": "2026-11-09T13:44:04.513832+00:00",
   "company_count": 5,
-  "methodology": "Annual financial statement comparison",
-  "disclaimer": "Experimental financial analysis. Verify against official NSE/BSE filings and audited statements. No profit guarantee or investment recommendation.",
+  "methodology": "Annual financial statement comparison; provisional sector-aware scoring",
+  "disclaimer": "Experimental analysis. Verify official NSE/BSE filings and audited statements. No profit guarantee or investment recommendation.",
   "companies": [
     {
       "symbol": "RELIANCE",
@@ -33,9 +33,15 @@
         "Free cash flow is positive"
       ],
       "negative_indicators": [],
-      "cautions": [],
+      "cautions": [
+        "Sector-specific scoring not yet validated"
+      ],
       "assessment": "Research required",
-      "note": "Descriptive financial indicators only. Not a buy/sell signal. Ratios may require sector-specific interpretation."
+      "fundamental_score": null,
+      "fundamental_score_coverage_pct": 0,
+      "sector_classification": "diversified",
+      "score_note": "Sector-specific scoring not yet validated",
+      "note": "Experimental financial indicators. Verify audited NSE/BSE filings. Not a buy/sell signal."
     },
     {
       "symbol": "TCS",
@@ -67,7 +73,11 @@
       "negative_indicators": [],
       "cautions": [],
       "assessment": "Research required",
-      "note": "Descriptive financial indicators only. Not a buy/sell signal. Ratios may require sector-specific interpretation."
+      "fundamental_score": 100,
+      "fundamental_score_coverage_pct": 100,
+      "sector_classification": "non_financial",
+      "score_note": "Provisional non-financial checklist; unvalidated",
+      "note": "Experimental financial indicators. Verify audited NSE/BSE filings. Not a buy/sell signal."
     },
     {
       "symbol": "INFY",
@@ -99,7 +109,11 @@
       "negative_indicators": [],
       "cautions": [],
       "assessment": "Research required",
-      "note": "Descriptive financial indicators only. Not a buy/sell signal. Ratios may require sector-specific interpretation."
+      "fundamental_score": 100,
+      "fundamental_score_coverage_pct": 100,
+      "sector_classification": "non_financial",
+      "score_note": "Provisional non-financial checklist; unvalidated",
+      "note": "Experimental financial indicators. Verify audited NSE/BSE filings. Not a buy/sell signal."
     },
     {
       "symbol": "HDFCBANK",
@@ -129,9 +143,15 @@
         "Free cash flow is positive"
       ],
       "negative_indicators": [],
-      "cautions": [],
+      "cautions": [
+        "Sector-specific scoring not yet validated"
+      ],
       "assessment": "Research required",
-      "note": "Descriptive financial indicators only. Not a buy/sell signal. Ratios may require sector-specific interpretation."
+      "fundamental_score": null,
+      "fundamental_score_coverage_pct": 0,
+      "sector_classification": "bank",
+      "score_note": "Sector-specific scoring not yet validated",
+      "note": "Experimental financial indicators. Verify audited NSE/BSE filings. Not a buy/sell signal."
     },
     {
       "symbol": "ICICIBANK",
@@ -161,9 +181,15 @@
         "Free cash flow is positive"
       ],
       "negative_indicators": [],
-      "cautions": [],
+      "cautions": [
+        "Sector-specific scoring not yet validated"
+      ],
       "assessment": "Research required",
-      "note": "Descriptive financial indicators only. Not a buy/sell signal. Ratios may require sector-specific interpretation."
+      "fundamental_score": null,
+      "fundamental_score_coverage_pct": 0,
+      "sector_classification": "bank",
+      "score_note": "Sector-specific scoring not yet validated",
+      "note": "Experimental financial indicators. Verify audited NSE/BSE filings. Not a buy/sell signal."
     }
   ]
 }
