@@ -2,9 +2,19 @@
   "symbol": "HDFCBANK",
   "exchange": "NSE",
   "interval": "1d",
-  "generated_utc": "2026-11-09T04:19:42.547419+00:00",
+  "generated_utc": "2026-11-09T05:36:11.969611+00:00",
   "provider": "Yahoo Finance via yfinance",
   "adjusted": true,
+  "data_quality": {
+    "downloaded_rows": 494,
+    "duplicate_dates_removed": 0,
+    "current_or_future_rows_removed": 1,
+    "invalid_price_rows_removed": 0,
+    "valid_completed_candles": 493,
+    "latest_completed_candle": "2026-11-06",
+    "policy": "Exclude current IST calendar day; validate daily OHLC and volume"
+  },
+  "disclaimer": "Historical adjusted data, not live prices. For research and paper trading only.",
   "candles": [
     {
       "time": "2024-11-11",
@@ -21,11 +31,11 @@
       "macd_signal": 0.0,
       "macd_hist": 0.0,
       "adx14": null,
-      "plus_di": 0.0,
-      "minus_di": 0.0,
+      "plus_di": null,
+      "minus_di": null,
       "supertrend": null,
-      "supertrend_direction": 1,
-      "obv": 0.0
+      "obv": 0.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2024-11-12",
@@ -37,16 +47,16 @@
       "ema20": 854.971,
       "ema50": 856.2788,
       "ema200": 856.9619,
-      "rsi14": 0.0,
+      "rsi14": null,
       "macd": -1.8621,
       "macd_signal": -0.3724,
       "macd_hist": -1.4897,
-      "adx14": 100.0,
-      "plus_di": 0.0,
-      "minus_di": 8.9175,
-      "supertrend": 811.5268,
-      "supertrend_direction": 1,
-      "obv": -31395406.0
+      "adx14": null,
+      "plus_di": null,
+      "minus_di": null,
+      "supertrend": null,
+      "obv": -31395406.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2024-11-13",
@@ -58,16 +68,16 @@
       "ema20": 851.2564,
       "ema50": 854.698,
       "ema200": 856.554,
-      "rsi14": 0.0,
+      "rsi14": null,
       "macd": -4.7265,
       "macd_signal": -1.2432,
       "macd_hist": -3.4832,
-      "adx14": 100.0,
-      "plus_di": 0.0,
-      "minus_di": 15.0481,
-      "supertrend": 811.5268,
-      "supertrend_direction": 1,
-      "obv": -67123906.0
+      "adx14": null,
+      "plus_di": null,
+      "minus_di": null,
+      "supertrend": null,
+      "obv": -67123906.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2024-11-14",
@@ -79,16 +89,16 @@
       "ema20": 848.4225,
       "ema50": 853.3961,
       "ema200": 856.2052,
-      "rsi14": 1.8204,
+      "rsi14": null,
       "macd": -6.4754,
       "macd_signal": -2.2897,
       "macd_hist": -4.1857,
-      "adx14": 100.0,
-      "plus_di": 0.0,
-      "minus_di": 14.2369,
-      "supertrend": 811.5268,
-      "supertrend_direction": 1,
-      "obv": -39977436.0
+      "adx14": null,
+      "plus_di": null,
+      "minus_di": null,
+      "supertrend": null,
+      "obv": -39977436.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2024-11-18",
@@ -100,16 +110,16 @@
       "ema20": 846.4292,
       "ema50": 852.3803,
       "ema200": 855.9196,
-      "rsi14": 3.8621,
+      "rsi14": null,
       "macd": -7.2937,
       "macd_signal": -3.2905,
       "macd_hist": -4.0032,
-      "adx14": 97.4814,
-      "plus_di": 2.8837,
-      "minus_di": 13.4728,
-      "supertrend": 811.5268,
-      "supertrend_direction": 1,
-      "obv": -12895468.0
+      "adx14": null,
+      "plus_di": null,
+      "minus_di": null,
+      "supertrend": null,
+      "obv": -12895468.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2024-11-19",
@@ -121,16 +131,16 @@
       "ema20": 846.3429,
       "ema50": 852.1114,
       "ema200": 855.8161,
-      "rsi14": 9.9299,
+      "rsi14": null,
       "macd": -6.4135,
       "macd_signal": -3.9151,
       "macd_hist": -2.4984,
-      "adx14": 91.3753,
-      "plus_di": 9.5132,
-      "minus_di": 12.1067,
-      "supertrend": 811.5268,
-      "supertrend_direction": 1,
-      "obv": 38085804.0
+      "adx14": null,
+      "plus_di": null,
+      "minus_di": null,
+      "supertrend": null,
+      "obv": 38085804.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2024-11-21",
@@ -142,16 +152,16 @@
       "ema20": 846.2162,
       "ema50": 851.833,
       "ema200": 855.7086,
-      "rsi14": 9.9108,
+      "rsi14": null,
       "macd": -5.6915,
       "macd_signal": -4.2704,
       "macd_hist": -1.4211,
-      "adx14": 85.3103,
-      "plus_di": 10.1004,
-      "minus_di": 11.4968,
-      "supertrend": 811.5268,
-      "supertrend_direction": 1,
-      "obv": 2369292.0
+      "adx14": null,
+      "plus_di": null,
+      "minus_di": null,
+      "supertrend": null,
+      "obv": 2369292.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2024-11-22",
@@ -163,37 +173,37 @@
       "ema20": 846.305,
       "ema50": 851.6493,
       "ema200": 855.6234,
-      "rsi14": 10.6837,
+      "rsi14": null,
       "macd": -4.8906,
       "macd_signal": -4.3944,
       "macd_hist": -0.4962,
-      "adx14": 79.9791,
-      "plus_di": 9.5816,
-      "minus_di": 11.8712,
-      "supertrend": 811.5268,
-      "supertrend_direction": 1,
-      "obv": 27142904.0
+      "adx14": null,
+      "plus_di": null,
+      "minus_di": null,
+      "supertrend": null,
+      "obv": 27142904.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2024-11-25",
-      "open": 866.2936,
-      "high": 875.2717,
-      "low": 856.5147,
+      "open": 866.2937,
+      "high": 875.2718,
+      "low": 856.5148,
       "close": 866.5605,
       "volume": 427737274.0,
       "ema20": 848.2341,
       "ema50": 852.234,
       "ema200": 855.7323,
-      "rsi14": 17.6039,
+      "rsi14": null,
       "macd": -2.6588,
       "macd_signal": -4.0473,
       "macd_hist": 1.3885,
-      "adx14": 76.1844,
-      "plus_di": 18.2273,
-      "minus_di": 10.5101,
-      "supertrend": 811.7681,
-      "supertrend_direction": 1,
-      "obv": 454880178.0
+      "adx14": null,
+      "plus_di": null,
+      "minus_di": null,
+      "supertrend": null,
+      "obv": 454880178.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2024-11-26",
@@ -205,16 +215,16 @@
       "ema20": 849.9772,
       "ema50": 852.7949,
       "ema200": 855.8398,
-      "rsi14": 17.6021,
+      "rsi14": null,
       "macd": -0.8819,
       "macd_signal": -3.4142,
       "macd_hist": 2.5323,
-      "adx14": 72.8993,
-      "plus_di": 18.0551,
-      "minus_di": 9.6809,
-      "supertrend": 814.082,
-      "supertrend_direction": 1,
-      "obv": 423944612.0
+      "adx14": null,
+      "plus_di": null,
+      "minus_di": null,
+      "supertrend": null,
+      "obv": 423944612.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2024-11-27",
@@ -226,16 +236,16 @@
       "ema20": 852.7906,
       "ema50": 853.8429,
       "ema200": 856.0754,
-      "rsi14": 22.2725,
+      "rsi14": null,
       "macd": 1.5559,
       "macd_signal": -2.4202,
       "macd_hist": 3.9761,
-      "adx14": 70.1133,
-      "plus_di": 18.3591,
-      "minus_di": 9.064,
-      "supertrend": 820.3587,
-      "supertrend_direction": 1,
-      "obv": 456659588.0
+      "adx14": null,
+      "plus_di": null,
+      "minus_di": null,
+      "supertrend": 820.3586,
+      "obv": 456659588.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2024-11-28",
@@ -247,16 +257,16 @@
       "ema20": 854.451,
       "ema50": 854.4853,
       "ema200": 856.2162,
-      "rsi14": 21.3399,
+      "rsi14": null,
       "macd": 2.7068,
       "macd_signal": -1.3948,
       "macd_hist": 4.1016,
-      "adx14": 68.1268,
-      "plus_di": 20.2765,
-      "minus_di": 8.2213,
+      "adx14": null,
+      "plus_di": null,
+      "minus_di": null,
       "supertrend": 823.9767,
-      "supertrend_direction": 1,
-      "obv": 420937196.0
+      "obv": 420937196.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2024-11-29",
@@ -268,16 +278,16 @@
       "ema20": 856.0873,
       "ema50": 855.1577,
       "ema200": 856.3695,
-      "rsi14": 21.8734,
+      "rsi14": null,
       "macd": 3.6899,
       "macd_signal": -0.3779,
       "macd_hist": 4.0677,
-      "adx14": 65.9171,
-      "plus_di": 19.4001,
-      "minus_di": 8.8817,
+      "adx14": null,
+      "plus_di": null,
+      "minus_di": null,
       "supertrend": 823.9767,
-      "supertrend_direction": 1,
-      "obv": 448606732.0
+      "obv": 448606732.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2024-12-02",
@@ -289,16 +299,16 @@
       "ema20": 857.9675,
       "ema50": 855.9684,
       "ema200": 856.5632,
-      "rsi14": 23.5391,
+      "rsi14": null,
       "macd": 4.7529,
       "macd_signal": 0.6483,
       "macd_hist": 4.1046,
-      "adx14": 63.3113,
+      "adx14": null,
       "plus_di": 18.1123,
       "minus_di": 9.8741,
       "supertrend": 823.9767,
-      "supertrend_direction": 1,
-      "obv": 463717608.0
+      "obv": 463717608.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2024-12-03",
@@ -314,33 +324,33 @@
       "macd": 6.3679,
       "macd_signal": 1.7922,
       "macd_hist": 4.5757,
-      "adx14": 61.8188,
+      "adx14": null,
       "plus_di": 22.8115,
       "minus_di": 9.2237,
       "supertrend": 834.4659,
-      "supertrend_direction": 1,
-      "obv": 507127850.0
+      "obv": 507127850.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2024-12-04",
       "open": 891.9905,
-      "high": 905.0937,
-      "low": 888.6661,
-      "close": 902.7157,
+      "high": 905.0938,
+      "low": 888.6662,
+      "close": 902.7158,
       "volume": 44669084.0,
       "ema20": 864.6717,
       "ema50": 858.9449,
       "ema200": 857.3155,
-      "rsi14": 33.74,
+      "rsi14": 33.7401,
       "macd": 8.8691,
       "macd_signal": 3.2076,
       "macd_hist": 5.6615,
-      "adx14": 61.0805,
+      "adx14": null,
       "plus_di": 26.5686,
       "minus_di": 8.5092,
-      "supertrend": 844.3871,
-      "supertrend_direction": 1,
-      "obv": 551796934.0
+      "supertrend": 844.3872,
+      "obv": 551796934.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2024-12-05",
@@ -356,12 +366,12 @@
       "macd": 10.9464,
       "macd_signal": 4.7554,
       "macd_hist": 6.191,
-      "adx14": 60.6866,
+      "adx14": null,
       "plus_di": 27.1703,
       "minus_di": 7.7607,
       "supertrend": 847.7316,
-      "supertrend_direction": 1,
-      "obv": 591479648.0
+      "obv": 591479648.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2024-12-06",
@@ -377,12 +387,12 @@
       "macd": 12.0659,
       "macd_signal": 6.2175,
       "macd_hist": 5.8484,
-      "adx14": 60.3208,
+      "adx14": null,
       "plus_di": 25.9743,
       "minus_di": 7.4191,
       "supertrend": 848.2544,
-      "supertrend_direction": 1,
-      "obv": 573696492.0
+      "obv": 573696492.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2024-12-09",
@@ -398,12 +408,12 @@
       "macd": 13.3533,
       "macd_signal": 7.6446,
       "macd_hist": 5.7087,
-      "adx14": 60.2779,
+      "adx14": null,
       "plus_di": 27.5561,
       "minus_di": 6.9495,
       "supertrend": 853.9432,
-      "supertrend_direction": 1,
-      "obv": 600644404.0
+      "obv": 600644404.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2024-12-10",
@@ -419,12 +429,12 @@
       "macd": 14.1362,
       "macd_signal": 8.9429,
       "macd_hist": 5.1933,
-      "adx14": 60.238,
+      "adx14": null,
       "plus_di": 26.4428,
       "minus_di": 6.6688,
       "supertrend": 858.0052,
-      "supertrend_direction": 1,
-      "obv": 587318924.0
+      "obv": 587318924.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2024-12-11",
@@ -440,19 +450,19 @@
       "macd": 14.395,
       "macd_signal": 10.0333,
       "macd_hist": 4.3616,
-      "adx14": 60.0617,
-      "plus_di": 25.5629,
+      "adx14": null,
+      "plus_di": 25.5628,
       "minus_di": 6.8422,
-      "supertrend": 858.8159,
-      "supertrend_direction": 1,
-      "obv": 573273498.0
+      "supertrend": 858.8158,
+      "obv": 573273498.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2024-12-12",
       "open": 898.2995,
-      "high": 906.8651,
-      "low": 897.1832,
-      "close": 902.3032,
+      "high": 906.8652,
+      "low": 897.1833,
+      "close": 902.3033,
       "volume": 17293790.0,
       "ema20": 882.6016,
       "ema50": 868.6509,
@@ -461,12 +471,12 @@
       "macd": 14.2846,
       "macd_signal": 10.8836,
       "macd_hist": 3.401,
-      "adx14": 59.2726,
+      "adx14": null,
       "plus_di": 24.4109,
-      "minus_di": 8.3523,
-      "supertrend": 858.8159,
-      "supertrend_direction": 1,
-      "obv": 555979708.0
+      "minus_di": 8.3522,
+      "supertrend": 858.8158,
+      "obv": 555979708.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2024-12-13",
@@ -482,12 +492,12 @@
       "macd": 14.5192,
       "macd_signal": 11.6107,
       "macd_hist": 2.9085,
-      "adx14": 57.1968,
+      "adx14": null,
       "plus_di": 21.9663,
       "minus_di": 11.7733,
-      "supertrend": 858.8159,
-      "supertrend_direction": 1,
-      "obv": 574988710.0
+      "supertrend": 858.8158,
+      "obv": 574988710.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2024-12-16",
@@ -503,12 +513,12 @@
       "macd": 14.284,
       "macd_signal": 12.1454,
       "macd_hist": 2.1386,
-      "adx14": 55.2692,
+      "adx14": null,
       "plus_di": 21.1439,
       "minus_di": 11.3325,
       "supertrend": 859.6815,
-      "supertrend_direction": 1,
-      "obv": 561881628.0
+      "obv": 561881628.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2024-12-17",
@@ -524,12 +534,12 @@
       "macd": 12.7001,
       "macd_signal": 12.2563,
       "macd_hist": 0.4438,
-      "adx14": 51.8251,
+      "adx14": null,
       "plus_di": 19.3171,
       "minus_di": 16.7719,
       "supertrend": 859.6815,
-      "supertrend_direction": 1,
-      "obv": 540802096.0
+      "obv": 540802096.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2024-12-18",
@@ -545,12 +555,12 @@
       "macd": 10.4414,
       "macd_signal": 11.8933,
       "macd_hist": -1.452,
-      "adx14": 48.4927,
+      "adx14": null,
       "plus_di": 18.0641,
       "minus_di": 20.0344,
       "supertrend": 859.6815,
-      "supertrend_direction": 1,
-      "obv": 517379784.0
+      "obv": 517379784.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2024-12-19",
@@ -566,61 +576,61 @@
       "macd": 7.8868,
       "macd_signal": 11.092,
       "macd_hist": -3.2052,
-      "adx14": 46.4263,
+      "adx14": 33.4998,
       "plus_di": 16.7765,
       "minus_di": 24.9363,
       "supertrend": 859.6815,
-      "supertrend_direction": 1,
-      "obv": 491999014.0
+      "obv": 491999014.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2024-12-20",
       "open": 864.9105,
-      "high": 872.3599,
-      "low": 857.5581,
-      "close": 859.7177,
+      "high": 872.36,
+      "low": 857.5582,
+      "close": 859.7178,
       "volume": 25692348.0,
-      "ema20": 882.4985,
+      "ema20": 882.4986,
       "ema50": 871.9594,
       "ema200": 861.5155,
       "rsi14": 26.2436,
       "macd": 4.9439,
       "macd_signal": 9.8624,
       "macd_hist": -4.9185,
-      "adx14": 44.8801,
+      "adx14": 32.877,
       "plus_di": 15.6226,
       "minus_di": 25.916,
       "supertrend": 859.6815,
-      "supertrend_direction": 1,
-      "obv": 466306666.0
+      "obv": 466306666.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2024-12-23",
-      "open": 864.8135,
+      "open": 864.8134,
       "high": 876.4608,
       "low": 864.4738,
-      "close": 874.0343,
+      "close": 874.0342,
       "volume": 11044592.0,
       "ema20": 881.6924,
       "ema50": 872.0408,
       "ema200": 861.6401,
-      "rsi14": 33.6792,
+      "rsi14": 33.6791,
       "macd": 3.7238,
       "macd_signal": 8.6347,
       "macd_hist": -4.9109,
-      "adx14": 43.0248,
+      "adx14": 31.8791,
       "plus_di": 16.3083,
       "minus_di": 23.9125,
       "supertrend": 859.6815,
-      "supertrend_direction": 1,
-      "obv": 477351258.0
+      "obv": 477351258.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2024-12-24",
-      "open": 874.5438,
+      "open": 874.5439,
       "high": 877.7711,
-      "low": 868.4775,
-      "close": 872.6268,
+      "low": 868.4776,
+      "close": 872.6269,
       "volume": 14485834.0,
       "ema20": 880.829,
       "ema50": 872.0638,
@@ -629,12 +639,12 @@
       "macd": 2.6132,
       "macd_signal": 7.4304,
       "macd_hist": -4.8171,
-      "adx14": 41.1667,
+      "adx14": 30.8171,
       "plus_di": 16.2107,
       "minus_di": 22.8563,
       "supertrend": 859.6815,
-      "supertrend_direction": 1,
-      "obv": 462865424.0
+      "obv": 462865424.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2024-12-26",
@@ -646,37 +656,37 @@
       "ema20": 879.7082,
       "ema50": 871.946,
       "ema200": 861.8221,
-      "rsi14": 32.39,
+      "rsi14": 32.3899,
       "macd": 1.4288,
       "macd_signal": 6.2301,
       "macd_hist": -4.8013,
-      "adx14": 39.7553,
+      "adx14": 30.145,
       "plus_di": 15.043,
       "minus_di": 23.2383,
       "supertrend": 859.6815,
-      "supertrend_direction": 1,
-      "obv": 452383746.0
+      "obv": 452383746.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2024-12-27",
       "open": 871.0254,
       "high": 876.4365,
-      "low": 868.2591,
-      "close": 872.6996,
+      "low": 868.2592,
+      "close": 872.6997,
       "volume": 7259330.0,
       "ema20": 879.0407,
-      "ema50": 871.9755,
+      "ema50": 871.9756,
       "ema200": 861.9304,
       "rsi14": 34.4092,
       "macd": 0.7749,
       "macd_signal": 5.139,
       "macd_hist": -4.3641,
-      "adx14": 38.4448,
+      "adx14": 29.5209,
       "plus_di": 14.4391,
       "minus_di": 22.3053,
       "supertrend": 859.6815,
-      "supertrend_direction": 1,
-      "obv": 459643076.0
+      "obv": 459643076.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2024-12-30",
@@ -692,12 +702,12 @@
       "macd": -0.5341,
       "macd_signal": 4.0044,
       "macd_hist": -4.5385,
-      "adx14": 37.8579,
+      "adx14": 29.5714,
       "plus_di": 12.9742,
-      "minus_di": 24.2157,
+      "minus_di": 24.2158,
       "supertrend": 859.6815,
-      "supertrend_direction": 1,
-      "obv": 437420858.0
+      "obv": 437420858.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2024-12-31",
@@ -713,33 +723,33 @@
       "macd": -1.749,
       "macd_signal": 2.8537,
       "macd_hist": -4.6028,
-      "adx14": 37.4863,
+      "adx14": 29.7917,
       "plus_di": 12.4725,
       "minus_di": 24.5683,
       "supertrend": 859.6815,
-      "supertrend_direction": 1,
-      "obv": 423303622.0
+      "obv": 423303622.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-01-01",
-      "open": 860.6641,
-      "high": 870.6371,
-      "low": 854.6706,
+      "open": 860.664,
+      "high": 870.637,
+      "low": 854.6705,
       "close": 865.1774,
       "volume": 7313806.0,
       "ema20": 874.8475,
       "ema50": 870.9405,
-      "ema200": 861.956,
-      "rsi14": 33.9128,
+      "ema200": 861.9561,
+      "rsi14": 33.9127,
       "macd": -2.2977,
       "macd_signal": 1.8234,
       "macd_hist": -4.1212,
-      "adx14": 36.4016,
+      "adx14": 29.2566,
       "plus_di": 14.3915,
       "minus_di": 22.6525,
       "supertrend": 859.6815,
-      "supertrend_direction": 1,
-      "obv": 430617428.0
+      "obv": 430617428.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-01-02",
@@ -755,18 +765,18 @@
       "macd": -2.2756,
       "macd_signal": 1.0036,
       "macd_hist": -3.2792,
-      "adx14": 34.8603,
+      "adx14": 28.2257,
       "plus_di": 15.5918,
-      "minus_di": 21.0188,
+      "minus_di": 21.0189,
       "supertrend": 859.6815,
-      "supertrend_direction": 1,
-      "obv": 449176004.0
+      "obv": 449176004.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-01-03",
       "open": 869.1812,
-      "high": 871.2438,
-      "low": 847.4881,
+      "high": 871.2437,
+      "low": 847.488,
       "close": 848.8954,
       "volume": 24426194.0,
       "ema20": 872.0026,
@@ -776,19 +786,19 @@
       "macd": -3.957,
       "macd_signal": 0.0115,
       "macd_hist": -3.9685,
-      "adx14": 34.3833,
+      "adx14": 28.2226,
       "plus_di": 13.8612,
       "minus_di": 24.7401,
       "supertrend": 902.995,
-      "supertrend_direction": -1,
-      "obv": 424749810.0
+      "obv": 424749810.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-01-06",
       "open": 844.4792,
       "high": 852.7779,
-      "low": 827.8332,
-      "close": 830.1141,
+      "low": 827.8333,
+      "close": 830.1142,
       "volume": 18816348.0,
       "ema20": 868.0133,
       "ema50": 868.4935,
@@ -797,17 +807,17 @@
       "macd": -6.7275,
       "macd_signal": -1.3363,
       "macd_hist": -5.3912,
-      "adx14": 34.9866,
+      "adx14": 29.266,
       "plus_di": 12.3154,
       "minus_di": 30.768,
       "supertrend": 888.9795,
-      "supertrend_direction": -1,
-      "obv": 405933462.0
+      "obv": 405933462.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-01-07",
       "open": 832.298,
-      "high": 835.2099,
+      "high": 835.2098,
       "low": 825.0184,
       "close": 831.5215,
       "volume": 13527906.0,
@@ -818,12 +828,12 @@
       "macd": -8.7092,
       "macd_signal": -2.8109,
       "macd_hist": -5.8983,
-      "adx14": 35.6714,
+      "adx14": 30.3594,
       "plus_di": 11.7394,
       "minus_di": 30.6208,
-      "supertrend": 876.9781,
-      "supertrend_direction": -1,
-      "obv": 419461368.0
+      "supertrend": 876.978,
+      "obv": 419461368.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-01-08",
@@ -838,20 +848,20 @@
       "rsi14": 25.1797,
       "macd": -10.9019,
       "macd_signal": -4.4291,
-      "macd_hist": -6.4728,
-      "adx14": 36.6484,
+      "macd_hist": -6.4729,
+      "adx14": 31.7158,
       "plus_di": 10.9502,
       "minus_di": 32.2872,
       "supertrend": 870.3578,
-      "supertrend_direction": -1,
-      "obv": 399723178.0
+      "obv": 399723178.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-01-09",
-      "open": 817.3263,
-      "high": 819.68,
-      "low": 804.6841,
-      "close": 809.3916,
+      "open": 817.3264,
+      "high": 819.6801,
+      "low": 804.6842,
+      "close": 809.3917,
       "volume": 40420222.0,
       "ema20": 855.6422,
       "ema50": 863.0951,
@@ -860,12 +870,12 @@
       "macd": -13.5216,
       "macd_signal": -6.2476,
       "macd_hist": -7.274,
-      "adx14": 38.0018,
+      "adx14": 33.4215,
       "plus_di": 10.0717,
       "minus_di": 35.2927,
-      "supertrend": 859.3498,
-      "supertrend_direction": -1,
-      "obv": 359302956.0
+      "supertrend": 859.3499,
+      "obv": 359302956.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-01-10",
@@ -881,12 +891,12 @@
       "macd": -15.8477,
       "macd_signal": -8.1676,
       "macd_hist": -7.6801,
-      "adx14": 39.3255,
+      "adx14": 35.0724,
       "plus_di": 9.5932,
-      "minus_di": 34.5479,
+      "minus_di": 34.548,
       "supertrend": 853.2597,
-      "supertrend_direction": -1,
-      "obv": 341849676.0
+      "obv": 341849676.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-01-13",
@@ -898,16 +908,16 @@
       "ema20": 845.0822,
       "ema50": 858.0604,
       "ema200": 859.1526,
-      "rsi14": 19.6184,
+      "rsi14": 19.6183,
       "macd": -18.4923,
       "macd_signal": -10.2326,
       "macd_hist": -8.2597,
-      "adx14": 40.9938,
+      "adx14": 37.0445,
       "plus_di": 8.8872,
-      "minus_di": 38.741,
-      "supertrend": 839.3974,
-      "supertrend_direction": -1,
-      "obv": 320180610.0
+      "minus_di": 38.7411,
+      "supertrend": 839.3973,
+      "obv": 320180610.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-01-14",
@@ -923,12 +933,12 @@
       "macd": -19.7438,
       "macd_signal": -12.1348,
       "macd_hist": -7.609,
-      "adx14": 42.0058,
+      "adx14": 38.3386,
       "plus_di": 10.5425,
-      "minus_di": 36.4823,
-      "supertrend": 839.3974,
-      "supertrend_direction": -1,
-      "obv": 346842042.0
+      "minus_di": 36.4824,
+      "supertrend": 839.3973,
+      "obv": 346842042.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-01-15",
@@ -940,16 +950,16 @@
       "ema20": 836.5772,
       "ema50": 853.4594,
       "ema200": 857.9464,
-      "rsi14": 24.068,
+      "rsi14": 24.0679,
       "macd": -20.6367,
       "macd_signal": -13.8352,
       "macd_hist": -6.8015,
-      "adx14": 42.5786,
+      "adx14": 39.1734,
       "plus_di": 11.4065,
       "minus_di": 34.2432,
-      "supertrend": 839.3974,
-      "supertrend_direction": -1,
-      "obv": 332819150.0
+      "supertrend": 839.3973,
+      "obv": 332819150.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-01-16",
@@ -961,16 +971,16 @@
       "ema20": 833.2602,
       "ema50": 851.4315,
       "ema200": 857.3872,
-      "rsi14": 26.9179,
+      "rsi14": 26.9178,
       "macd": -20.7527,
       "macd_signal": -15.2187,
       "macd_hist": -5.534,
-      "adx14": 43.1106,
+      "adx14": 39.9486,
       "plus_di": 10.9225,
       "minus_di": 32.7901,
-      "supertrend": 839.3974,
-      "supertrend_direction": -1,
-      "obv": 354031604.0
+      "supertrend": 839.3973,
+      "obv": 354031604.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-01-17",
@@ -986,12 +996,12 @@
       "macd": -21.1994,
       "macd_signal": -16.4148,
       "macd_hist": -4.7846,
-      "adx14": 43.8834,
+      "adx14": 40.9473,
       "plus_di": 10.2965,
-      "minus_di": 34.4032,
+      "minus_di": 34.4033,
       "supertrend": 837.1727,
-      "supertrend_direction": -1,
-      "obv": 330919528.0
+      "obv": 330919528.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-01-20",
@@ -1003,16 +1013,16 @@
       "ema20": 826.8669,
       "ema50": 847.3162,
       "ema200": 856.2084,
-      "rsi14": 29.7941,
+      "rsi14": 29.794,
       "macd": -20.7464,
       "macd_signal": -17.2811,
       "macd_hist": -3.4653,
-      "adx14": 43.9663,
+      "adx14": 41.2398,
       "plus_di": 11.9415,
-      "minus_di": 31.5161,
+      "minus_di": 31.5162,
       "supertrend": 837.1727,
-      "supertrend_direction": -1,
-      "obv": 348477146.0
+      "obv": 348477146.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-01-21",
@@ -1024,16 +1034,16 @@
       "ema20": 824.0286,
       "ema50": 845.3455,
       "ema200": 855.6199,
-      "rsi14": 28.6351,
+      "rsi14": 28.635,
       "macd": -20.4977,
       "macd_signal": -17.9244,
       "macd_hist": -2.5733,
-      "adx14": 44.037,
+      "adx14": 41.5053,
       "plus_di": 11.1594,
       "minus_di": 29.3883,
       "supertrend": 837.1727,
-      "supertrend_direction": -1,
-      "obv": 317319002.0
+      "obv": 317319002.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-01-22",
@@ -1049,12 +1059,12 @@
       "macd": -19.1537,
       "macd_signal": -18.1703,
       "macd_hist": -0.9834,
-      "adx14": 43.43,
+      "adx14": 41.0791,
       "plus_di": 12.4725,
       "minus_di": 26.2251,
       "supertrend": 837.1727,
-      "supertrend_direction": -1,
-      "obv": 347938308.0
+      "obv": 347938308.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-01-23",
@@ -1070,12 +1080,12 @@
       "macd": -17.9269,
       "macd_signal": -18.1216,
       "macd_hist": 0.1947,
-      "adx14": 42.0073,
+      "adx14": 39.8243,
       "plus_di": 14.9105,
       "minus_di": 24.0771,
       "supertrend": 837.1727,
-      "supertrend_direction": -1,
-      "obv": 313029150.0
+      "obv": 313029150.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-01-24",
@@ -1091,19 +1101,19 @@
       "macd": -17.3461,
       "macd_signal": -17.9665,
       "macd_hist": 0.6204,
-      "adx14": 40.91,
+      "adx14": 38.8829,
       "plus_di": 14.0181,
-      "minus_di": 24.2019,
+      "minus_di": 24.202,
       "supertrend": 837.1727,
-      "supertrend_direction": -1,
-      "obv": 288792950.0
+      "obv": 288792950.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-01-27",
-      "open": 796.4339,
+      "open": 796.434,
       "high": 797.6472,
-      "low": 789.1058,
-      "close": 790.95,
+      "low": 789.1059,
+      "close": 790.9501,
       "volume": 22804166.0,
       "ema20": 816.5211,
       "ema50": 838.8961,
@@ -1112,18 +1122,18 @@
       "macd": -17.4676,
       "macd_signal": -17.8667,
       "macd_hist": 0.3991,
-      "adx14": 40.4563,
+      "adx14": 38.574,
       "plus_di": 13.2314,
       "minus_di": 27.2059,
       "supertrend": 837.1104,
-      "supertrend_direction": -1,
-      "obv": 265988784.0
+      "obv": 265988784.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-01-28",
-      "open": 799.2973,
-      "high": 817.3992,
-      "low": 799.2973,
+      "open": 799.2972,
+      "high": 817.3991,
+      "low": 799.2972,
       "close": 810.6534,
       "volume": 30179312.0,
       "ema20": 815.9623,
@@ -1133,12 +1143,12 @@
       "macd": -15.7919,
       "macd_signal": -17.4518,
       "macd_hist": 1.6598,
-      "adx14": 38.0786,
-      "plus_di": 20.7015,
+      "adx14": 36.3308,
+      "plus_di": 20.7014,
       "minus_di": 23.8986,
       "supertrend": 837.1104,
-      "supertrend_direction": -1,
-      "obv": 296168096.0
+      "obv": 296168096.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-01-29",
@@ -1154,19 +1164,19 @@
       "macd": -14.032,
       "macd_signal": -16.7678,
       "macd_hist": 2.7358,
-      "adx14": 35.8707,
+      "adx14": 34.2478,
       "plus_di": 20.1073,
       "minus_di": 23.2127,
       "supertrend": 837.1104,
-      "supertrend_direction": -1,
-      "obv": 308787986.0
+      "obv": 308787986.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-01-30",
-      "open": 815.7976,
+      "open": 815.7977,
       "high": 823.9993,
-      "low": 811.6968,
-      "close": 820.8933,
+      "low": 811.6969,
+      "close": 820.8934,
       "volume": 25744846.0,
       "ema20": 816.263,
       "ema50": 836.2297,
@@ -1175,12 +1185,12 @@
       "macd": -11.9435,
       "macd_signal": -15.803,
       "macd_hist": 3.8594,
-      "adx14": 33.4743,
+      "adx14": 31.9673,
       "plus_di": 22.86,
       "minus_di": 21.8227,
       "supertrend": 837.1104,
-      "supertrend_direction": -1,
-      "obv": 334532832.0
+      "obv": 334532832.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-01-31",
@@ -1196,19 +1206,19 @@
       "macd": -9.8905,
       "macd_signal": -14.6205,
       "macd_hist": 4.73,
-      "adx14": 31.5092,
-      "plus_di": 23.357,
+      "adx14": 30.1098,
+      "plus_di": 23.3569,
       "minus_di": 20.7285,
       "supertrend": 837.1104,
-      "supertrend_direction": -1,
-      "obv": 350354518.0
+      "obv": 350354518.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-02-01",
-      "open": 823.8051,
-      "high": 831.3273,
-      "low": 813.3953,
-      "close": 820.6263,
+      "open": 823.8052,
+      "high": 831.3274,
+      "low": 813.3954,
+      "close": 820.6264,
       "volume": 5587528.0,
       "ema20": 817.3807,
       "ema50": 835.1726,
@@ -1217,33 +1227,33 @@
       "macd": -8.4712,
       "macd_signal": -13.3906,
       "macd_hist": 4.9194,
-      "adx14": 29.9981,
+      "adx14": 28.6987,
       "plus_di": 23.2785,
       "minus_di": 18.9102,
       "supertrend": 837.1104,
-      "supertrend_direction": -1,
-      "obv": 344766990.0
+      "obv": 344766990.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-02-03",
-      "open": 810.4594,
-      "high": 818.6125,
-      "low": 807.2806,
-      "close": 814.3418,
+      "open": 810.4593,
+      "high": 818.6124,
+      "low": 807.2805,
+      "close": 814.3417,
       "volume": 20276540.0,
       "ema20": 817.0913,
       "ema50": 834.3557,
       "ema200": 851.4197,
-      "rsi14": 43.913,
+      "rsi14": 43.9129,
       "macd": -7.764,
       "macd_signal": -12.2653,
       "macd_hist": 4.5013,
-      "adx14": 28.0358,
+      "adx14": 26.8292,
       "plus_di": 21.7494,
-      "minus_di": 20.6777,
+      "minus_di": 20.6778,
       "supertrend": 837.1104,
-      "supertrend_direction": -1,
-      "obv": 324490450.0
+      "obv": 324490450.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-02-04",
@@ -1259,33 +1269,33 @@
       "macd": -5.4607,
       "macd_signal": -10.9044,
       "macd_hist": 5.4437,
-      "adx14": 27.5452,
+      "adx14": 26.4248,
       "plus_di": 28.3018,
-      "minus_di": 18.4135,
+      "minus_di": 18.4136,
       "supertrend": 837.1104,
-      "supertrend_direction": -1,
-      "obv": 353106952.0
+      "obv": 353106952.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-02-05",
       "open": 841.0335,
       "high": 846.4689,
-      "low": 834.1907,
+      "low": 834.1908,
       "close": 843.363,
       "volume": 23675506.0,
       "ema20": 821.1504,
-      "ema50": 834.7392,
+      "ema50": 834.7393,
       "ema200": 851.1794,
       "rsi14": 57.1037,
       "macd": -2.9396,
       "macd_signal": -9.3114,
       "macd_hist": 6.3718,
-      "adx14": 27.5883,
-      "plus_di": 30.9116,
+      "adx14": 26.5479,
+      "plus_di": 30.9117,
       "minus_di": 17.3318,
-      "supertrend": 795.4839,
-      "supertrend_direction": 1,
-      "obv": 376782458.0
+      "supertrend": 795.484,
+      "obv": 376782458.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-02-06",
@@ -1301,12 +1311,12 @@
       "macd": -0.6966,
       "macd_signal": -7.5885,
       "macd_hist": 6.8918,
-      "adx14": 27.7529,
+      "adx14": 26.7868,
       "plus_di": 30.2226,
-      "minus_di": 16.312,
+      "minus_di": 16.3121,
       "supertrend": 798.731,
-      "supertrend_direction": 1,
-      "obv": 403543174.0
+      "obv": 403543174.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-02-07",
@@ -1322,33 +1332,33 @@
       "macd": 0.6389,
       "macd_signal": -5.943,
       "macd_hist": 6.5819,
-      "adx14": 28.3529,
+      "adx14": 27.4558,
       "plus_di": 31.4381,
       "minus_di": 14.7427,
-      "supertrend": 801.6267,
-      "supertrend_direction": 1,
-      "obv": 380033574.0
+      "supertrend": 801.6266,
+      "obv": 380033574.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-02-10",
-      "open": 833.4143,
-      "high": 836.3989,
-      "low": 829.1436,
+      "open": 833.4142,
+      "high": 836.3988,
+      "low": 829.1435,
       "close": 832.662,
       "volume": 17195950.0,
       "ema20": 825.9102,
       "ema50": 835.3088,
       "ema200": 850.8464,
-      "rsi14": 51.1856,
+      "rsi14": 51.1855,
       "macd": 1.0198,
       "macd_signal": -4.5504,
       "macd_hist": 5.5702,
-      "adx14": 28.1222,
+      "adx14": 27.2892,
       "plus_di": 29.6636,
-      "minus_di": 17.7511,
-      "supertrend": 801.6267,
-      "supertrend_direction": 1,
-      "obv": 362837624.0
+      "minus_di": 17.7512,
+      "supertrend": 801.6266,
+      "obv": 362837624.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-02-11",
@@ -1364,19 +1374,19 @@
       "macd": 0.7511,
       "macd_signal": -3.4901,
       "macd_hist": 4.2412,
-      "adx14": 27.0612,
+      "adx14": 26.2876,
       "plus_di": 27.7799,
       "minus_di": 21.2721,
-      "supertrend": 801.6267,
-      "supertrend_direction": 1,
-      "obv": 340112920.0
+      "supertrend": 801.6266,
+      "obv": 340112920.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-02-12",
-      "open": 821.6214,
-      "high": 830.8422,
+      "open": 821.6213,
+      "high": 830.8421,
       "low": 815.8947,
-      "close": 828.3186,
+      "close": 828.3185,
       "volume": 22809570.0,
       "ema20": 826.1213,
       "ema50": 834.6726,
@@ -1385,33 +1395,33 @@
       "macd": 0.741,
       "macd_signal": -2.6439,
       "macd_hist": 3.3849,
-      "adx14": 25.7748,
-      "plus_di": 25.773,
-      "minus_di": 21.4944,
-      "supertrend": 801.6267,
-      "supertrend_direction": 1,
-      "obv": 362922490.0
+      "adx14": 25.0565,
+      "plus_di": 25.7731,
+      "minus_di": 21.4945,
+      "supertrend": 801.6266,
+      "obv": 362922490.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-02-13",
-      "open": 824.5332,
-      "high": 831.9341,
+      "open": 824.5331,
+      "high": 831.934,
       "low": 821.8883,
-      "close": 823.9023,
+      "close": 823.9022,
       "volume": 12602434.0,
       "ema20": 825.91,
       "ema50": 834.2502,
       "ema200": 850.1111,
-      "rsi14": 47.0618,
+      "rsi14": 47.0617,
       "macd": 0.3724,
       "macd_signal": -2.0406,
       "macd_hist": 2.4131,
-      "adx14": 24.6575,
+      "adx14": 23.9905,
       "plus_di": 25.0325,
-      "minus_di": 20.4264,
-      "supertrend": 801.6267,
-      "supertrend_direction": 1,
-      "obv": 350320056.0
+      "minus_di": 20.4265,
+      "supertrend": 801.6266,
+      "obv": 350320056.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-02-14",
@@ -1424,15 +1434,15 @@
       "ema50": 833.7902,
       "ema200": 849.8365,
       "rsi14": 46.3747,
-      "macd": -0.0309,
+      "macd": -0.031,
       "macd_signal": -1.6387,
-      "macd_hist": 1.6078,
-      "adx14": 23.0572,
+      "macd_hist": 1.6077,
+      "adx14": 22.4378,
       "plus_di": 23.6913,
       "minus_di": 22.6471,
-      "supertrend": 801.6267,
-      "supertrend_direction": 1,
-      "obv": 330360164.0
+      "supertrend": 801.6266,
+      "obv": 330360164.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-02-17",
@@ -1448,12 +1458,12 @@
       "macd": 0.5244,
       "macd_signal": -1.2061,
       "macd_hist": 1.7305,
-      "adx14": 22.2227,
+      "adx14": 21.6476,
       "plus_di": 25.8237,
       "minus_di": 20.5491,
-      "supertrend": 801.6267,
-      "supertrend_direction": 1,
-      "obv": 343299110.0
+      "supertrend": 801.6266,
+      "obv": 343299110.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-02-18",
@@ -1469,19 +1479,19 @@
       "macd": 1.1742,
       "macd_signal": -0.73,
       "macd_hist": 1.9043,
-      "adx14": 21.8293,
+      "adx14": 21.2952,
       "plus_di": 27.0297,
       "minus_di": 19.2878,
-      "supertrend": 801.6267,
-      "supertrend_direction": 1,
-      "obv": 359650020.0
+      "supertrend": 801.6266,
+      "obv": 359650020.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-02-19",
-      "open": 833.2686,
+      "open": 833.2687,
       "high": 843.4115,
-      "low": 831.0604,
-      "close": 838.2187,
+      "low": 831.0605,
+      "close": 838.2188,
       "volume": 11884112.0,
       "ema20": 828.3171,
       "ema50": 834.0421,
@@ -1490,33 +1500,33 @@
       "macd": 1.8306,
       "macd_signal": -0.2179,
       "macd_hist": 2.0485,
-      "adx14": 21.6689,
+      "adx14": 21.173,
       "plus_di": 26.9006,
       "minus_di": 18.0897,
-      "supertrend": 801.6267,
-      "supertrend_direction": 1,
-      "obv": 371534132.0
+      "supertrend": 801.6266,
+      "obv": 371534132.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-02-20",
-      "open": 830.3569,
-      "high": 832.1525,
+      "open": 830.3568,
+      "high": 832.1524,
       "low": 817.8845,
-      "close": 818.7581,
+      "close": 818.758,
       "volume": 26390510.0,
       "ema20": 827.4067,
       "ema50": 833.4427,
       "ema200": 849.1215,
-      "rsi14": 44.378,
+      "rsi14": 44.3779,
       "macd": 0.7716,
       "macd_signal": -0.02,
       "macd_hist": 0.7916,
-      "adx14": 20.3506,
+      "adx14": 19.8901,
       "plus_di": 24.2318,
-      "minus_di": 22.7234,
-      "supertrend": 801.6267,
-      "supertrend_direction": 1,
-      "obv": 345143622.0
+      "minus_di": 22.7235,
+      "supertrend": 801.6266,
+      "obv": 345143622.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-02-21",
@@ -1530,21 +1540,21 @@
       "ema200": 848.8455,
       "rsi14": 45.8628,
       "macd": 0.1422,
-      "macd_signal": 0.0125,
+      "macd_signal": 0.0124,
       "macd_hist": 0.1297,
-      "adx14": 18.9763,
+      "adx14": 18.5487,
       "plus_di": 23.1854,
       "minus_di": 23.7062,
-      "supertrend": 801.6267,
-      "supertrend_direction": 1,
-      "obv": 360824562.0
+      "supertrend": 801.6266,
+      "obv": 360824562.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-02-24",
-      "open": 815.8461,
+      "open": 815.8462,
       "high": 817.3506,
-      "low": 806.14,
-      "close": 813.9049,
+      "low": 806.1401,
+      "close": 813.905,
       "volume": 20693646.0,
       "ema20": 825.6014,
       "ema50": 832.222,
@@ -1553,17 +1563,17 @@
       "macd": -0.9488,
       "macd_signal": -0.1798,
       "macd_hist": -0.769,
-      "adx14": 18.2863,
-      "plus_di": 21.4183,
+      "adx14": 17.8893,
+      "plus_di": 21.4184,
       "minus_di": 25.8194,
-      "supertrend": 801.6267,
-      "supertrend_direction": 1,
-      "obv": 340130916.0
+      "supertrend": 801.6266,
+      "obv": 340130916.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-02-25",
       "open": 810.9931,
-      "high": 819.1947,
+      "high": 819.1948,
       "low": 810.9931,
       "close": 816.4528,
       "volume": 24138708.0,
@@ -1573,20 +1583,20 @@
       "rsi14": 43.9469,
       "macd": -1.5895,
       "macd_signal": -0.4617,
-      "macd_hist": -1.1278,
-      "adx14": 17.4848,
+      "macd_hist": -1.1277,
+      "adx14": 17.1162,
       "plus_di": 21.4635,
       "minus_di": 24.7271,
-      "supertrend": 801.6267,
-      "supertrend_direction": 1,
-      "obv": 364269624.0
+      "supertrend": 801.6266,
+      "obv": 364269624.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-02-27",
       "open": 816.5499,
-      "high": 830.2354,
+      "high": 830.2355,
       "low": 816.5499,
-      "close": 825.3581,
+      "close": 825.3582,
       "volume": 35786800.0,
       "ema20": 824.7899,
       "ema50": 831.3587,
@@ -1595,12 +1605,12 @@
       "macd": -1.3629,
       "macd_signal": -0.642,
       "macd_hist": -0.721,
-      "adx14": 16.6276,
+      "adx14": 16.2853,
       "plus_di": 25.634,
       "minus_di": 22.9685,
-      "supertrend": 801.6267,
-      "supertrend_direction": 1,
-      "obv": 400056424.0
+      "supertrend": 801.6266,
+      "obv": 400056424.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-02-28",
@@ -1616,12 +1626,12 @@
       "macd": 0.0573,
       "macd_signal": -0.5021,
       "macd_hist": 0.5594,
-      "adx14": 16.6971,
+      "adx14": 16.3792,
       "plus_di": 28.732,
       "minus_di": 20.1318,
-      "supertrend": 801.6267,
-      "supertrend_direction": 1,
-      "obv": 454573152.0
+      "supertrend": 801.6266,
+      "obv": 454573152.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-03-03",
@@ -1637,33 +1647,33 @@
       "macd": -0.0249,
       "macd_signal": -0.4067,
       "macd_hist": 0.3818,
-      "adx14": 16.9343,
+      "adx14": 16.6391,
       "plus_di": 26.8614,
       "minus_di": 17.9012,
-      "supertrend": 801.6267,
-      "supertrend_direction": 1,
-      "obv": 433367788.0
+      "supertrend": 801.6266,
+      "obv": 433367788.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-03-04",
-      "open": 824.0478,
-      "high": 831.9583,
-      "low": 821.7426,
+      "open": 824.0479,
+      "high": 831.9584,
+      "low": 821.7427,
       "close": 829.8715,
       "volume": 19920958.0,
-      "ema20": 826.602,
+      "ema20": 826.6021,
       "ema50": 831.4295,
       "ema200": 847.4832,
       "rsi14": 50.9785,
       "macd": 0.2381,
       "macd_signal": -0.2777,
       "macd_hist": 0.5158,
-      "adx14": 17.1149,
+      "adx14": 16.8408,
       "plus_di": 25.5503,
-      "minus_di": 17.2247,
-      "supertrend": 801.6267,
-      "supertrend_direction": 1,
-      "obv": 453288746.0
+      "minus_di": 17.2246,
+      "supertrend": 801.6266,
+      "obv": 453288746.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-03-05",
@@ -1679,16 +1689,16 @@
       "macd": -0.3329,
       "macd_signal": -0.2888,
       "macd_hist": -0.0441,
-      "adx14": 17.0407,
-      "plus_di": 24.1884,
+      "adx14": 16.7862,
+      "plus_di": 24.1883,
       "minus_di": 17.4884,
-      "supertrend": 801.6267,
-      "supertrend_direction": 1,
-      "obv": 431704874.0
+      "supertrend": 801.6266,
+      "obv": 431704874.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-03-06",
-      "open": 818.7094,
+      "open": 818.7095,
       "high": 824.9699,
       "low": 811.5512,
       "close": 820.7477,
@@ -1700,33 +1710,33 @@
       "macd": -0.73,
       "macd_signal": -0.377,
       "macd_hist": -0.353,
-      "adx14": 16.2336,
+      "adx14": 15.9973,
       "plus_di": 22.5977,
       "minus_di": 20.1437,
-      "supertrend": 801.6267,
-      "supertrend_direction": 1,
-      "obv": 464670962.0
+      "supertrend": 801.6266,
+      "obv": 464670962.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-03-07",
-      "open": 816.283,
-      "high": 825.5766,
+      "open": 816.2829,
+      "high": 825.5765,
       "low": 814.1476,
-      "close": 819.8015,
+      "close": 819.8014,
       "volume": 13372914.0,
       "ema20": 824.9481,
       "ema50": 830.1633,
       "ema200": 846.6779,
       "rsi14": 46.3386,
       "macd": -1.1082,
-      "macd_signal": -0.5233,
+      "macd_signal": -0.5232,
       "macd_hist": -0.585,
-      "adx14": 15.5343,
-      "plus_di": 21.6142,
+      "adx14": 15.3148,
+      "plus_di": 21.6141,
       "minus_di": 18.9978,
-      "supertrend": 801.6267,
-      "supertrend_direction": 1,
-      "obv": 451298048.0
+      "supertrend": 801.6266,
+      "obv": 451298048.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-03-10",
@@ -1742,19 +1752,19 @@
       "macd": -1.4597,
       "macd_signal": -0.7105,
       "macd_hist": -0.7492,
-      "adx14": 14.8849,
-      "plus_di": 20.7066,
+      "adx14": 14.6811,
+      "plus_di": 20.7065,
       "minus_di": 18.2,
-      "supertrend": 801.6267,
-      "supertrend_direction": 1,
-      "obv": 435693998.0
+      "supertrend": 801.6266,
+      "obv": 435693998.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-03-11",
       "open": 816.4771,
-      "high": 822.1066,
+      "high": 822.1067,
       "low": 810.4836,
-      "close": 817.9815,
+      "close": 817.9816,
       "volume": 19898430.0,
       "ema20": 823.768,
       "ema50": 829.2631,
@@ -1763,12 +1773,12 @@
       "macd": -1.7959,
       "macd_signal": -0.9276,
       "macd_hist": -0.8683,
-      "adx14": 13.9872,
-      "plus_di": 19.456,
+      "adx14": 13.7979,
+      "plus_di": 19.4559,
       "minus_di": 20.3791,
-      "supertrend": 801.6267,
-      "supertrend_direction": 1,
-      "obv": 415795568.0
+      "supertrend": 801.6266,
+      "obv": 415795568.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-03-12",
@@ -1782,14 +1792,14 @@
       "ema200": 845.9631,
       "rsi14": 52.815,
       "macd": -1.0458,
-      "macd_signal": -0.9513,
+      "macd_signal": -0.9512,
       "macd_hist": -0.0945,
-      "adx14": 13.8686,
-      "plus_di": 23.9621,
-      "minus_di": 18.703,
-      "supertrend": 801.6267,
-      "supertrend_direction": 1,
-      "obv": 434579674.0
+      "adx14": 13.6928,
+      "plus_di": 23.962,
+      "minus_di": 18.7029,
+      "supertrend": 801.6266,
+      "obv": 434579674.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-03-13",
@@ -1805,19 +1815,19 @@
       "macd": -0.6224,
       "macd_signal": -0.8855,
       "macd_hist": 0.2631,
-      "adx14": 13.8477,
-      "plus_di": 23.2827,
-      "minus_di": 17.7163,
-      "supertrend": 801.6267,
-      "supertrend_direction": 1,
-      "obv": 418843410.0
+      "adx14": 13.6846,
+      "plus_di": 23.2826,
+      "minus_di": 17.7162,
+      "supertrend": 801.6266,
+      "obv": 418843410.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-03-17",
       "open": 827.445,
-      "high": 836.6657,
+      "high": 836.6658,
       "low": 827.445,
-      "close": 830.0656,
+      "close": 830.0657,
       "volume": 18950652.0,
       "ema20": 825.2708,
       "ema50": 829.2976,
@@ -1826,19 +1836,19 @@
       "macd": -0.1364,
       "macd_signal": -0.7357,
       "macd_hist": 0.5993,
-      "adx14": 13.9576,
-      "plus_di": 22.9642,
-      "minus_di": 16.8402,
-      "supertrend": 801.6267,
-      "supertrend_direction": 1,
-      "obv": 437794062.0
+      "adx14": 13.806,
+      "plus_di": 22.9641,
+      "minus_di": 16.8401,
+      "supertrend": 801.6266,
+      "obv": 437794062.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-03-18",
-      "open": 830.0656,
-      "high": 830.0656,
-      "low": 830.0656,
-      "close": 830.0656,
+      "open": 830.0657,
+      "high": 830.0657,
+      "low": 830.0657,
+      "close": 830.0657,
       "volume": 0.0,
       "ema20": 825.7275,
       "ema50": 829.3277,
@@ -1847,12 +1857,12 @@
       "macd": 0.2459,
       "macd_signal": -0.5393,
       "macd_hist": 0.7853,
-      "adx14": 14.0595,
-      "plus_di": 22.9642,
-      "minus_di": 16.8402,
-      "supertrend": 801.6267,
-      "supertrend_direction": 1,
-      "obv": 437794062.0
+      "adx14": 13.9188,
+      "plus_di": 22.9641,
+      "minus_di": 16.8401,
+      "supertrend": 801.6266,
+      "obv": 437794062.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-03-19",
@@ -1861,40 +1871,40 @@
       "low": 840.6453,
       "close": 846.4204,
       "volume": 15221406.0,
-      "ema20": 827.6982,
+      "ema20": 827.6983,
       "ema50": 829.998,
       "ema200": 845.4847,
-      "rsi14": 61.4048,
+      "rsi14": 61.4047,
       "macd": 1.8473,
       "macd_signal": -0.062,
       "macd_hist": 1.9093,
-      "adx14": 15.577,
-      "plus_di": 31.3743,
+      "adx14": 15.4463,
+      "plus_di": 31.3742,
       "minus_di": 15.0017,
       "supertrend": 807.8839,
-      "supertrend_direction": 1,
-      "obv": 453015468.0
+      "obv": 453015468.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-03-20",
       "open": 851.2249,
       "high": 860.931,
       "low": 848.944,
-      "close": 858.3832,
+      "close": 858.3831,
       "volume": 17833978.0,
       "ema20": 830.6206,
-      "ema50": 831.1111,
+      "ema50": 831.1112,
       "ema200": 845.613,
       "rsi14": 66.3479,
       "macd": 4.0352,
       "macd_signal": 0.7574,
       "macd_hist": 3.2777,
-      "adx14": 17.5664,
-      "plus_di": 35.0038,
+      "adx14": 17.4451,
+      "plus_di": 35.0037,
       "minus_di": 13.8063,
       "supertrend": 816.9934,
-      "supertrend_direction": 1,
-      "obv": 470849446.0
+      "obv": 470849446.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-03-21",
@@ -1910,33 +1920,33 @@
       "macd": 5.7653,
       "macd_signal": 1.759,
       "macd_hist": 4.0063,
-      "adx14": 19.416,
-      "plus_di": 33.2617,
+      "adx14": 19.3034,
+      "plus_di": 33.2616,
       "minus_di": 13.1084,
-      "supertrend": 819.6279,
-      "supertrend_direction": 1,
-      "obv": 504357710.0
+      "supertrend": 819.628,
+      "obv": 504357710.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-03-24",
-      "open": 863.3576,
-      "high": 875.6844,
+      "open": 863.3575,
+      "high": 875.6843,
       "low": 860.7612,
       "close": 873.549,
       "volume": 17393736.0,
       "ema20": 837.1682,
       "ema50": 833.8322,
-      "ema200": 846.0244,
-      "rsi14": 71.6644,
+      "ema200": 846.0245,
+      "rsi14": 71.6643,
       "macd": 8.2029,
       "macd_signal": 3.0478,
       "macd_hist": 5.1552,
-      "adx14": 21.7834,
+      "adx14": 21.6788,
       "plus_di": 38.324,
       "minus_di": 11.9176,
       "supertrend": 830.1,
-      "supertrend_direction": 1,
-      "obv": 521751446.0
+      "obv": 521751446.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-03-25",
@@ -1952,12 +1962,12 @@
       "macd": 10.8497,
       "macd_signal": 4.6082,
       "macd_hist": 6.2415,
-      "adx14": 24.6035,
-      "plus_di": 44.081,
-      "minus_di": 10.5882,
+      "adx14": 24.5064,
+      "plus_di": 44.0809,
+      "minus_di": 10.5881,
       "supertrend": 843.844,
-      "supertrend_direction": 1,
-      "obv": 560852862.0
+      "obv": 560852862.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-03-26",
@@ -1973,12 +1983,12 @@
       "macd": 12.2229,
       "macd_signal": 6.1311,
       "macd_hist": 6.0918,
-      "adx14": 27.2221,
+      "adx14": 27.1319,
       "plus_di": 41.1933,
       "minus_di": 9.8945,
       "supertrend": 843.844,
-      "supertrend_direction": 1,
-      "obv": 536374420.0
+      "obv": 536374420.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-03-27",
@@ -1994,19 +2004,19 @@
       "macd": 13.8873,
       "macd_signal": 7.6824,
       "macd_hist": 6.205,
-      "adx14": 29.8422,
+      "adx14": 29.7585,
       "plus_di": 40.1615,
       "minus_di": 8.8448,
       "supertrend": 843.844,
-      "supertrend_direction": 1,
-      "obv": 578032520.0
+      "obv": 578032520.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-03-28",
       "open": 887.6228,
-      "high": 891.02,
-      "low": 876.388,
-      "close": 887.2346,
+      "high": 891.0199,
+      "low": 876.3879,
+      "close": 887.2345,
       "volume": 28773648.0,
       "ema20": 852.5159,
       "ema50": 841.1826,
@@ -2015,12 +2025,12 @@
       "macd": 15.1434,
       "macd_signal": 9.1746,
       "macd_hist": 5.9688,
-      "adx14": 32.2752,
+      "adx14": 32.1974,
       "plus_di": 37.1763,
-      "minus_di": 8.1874,
+      "minus_di": 8.1873,
       "supertrend": 843.844,
-      "supertrend_direction": 1,
-      "obv": 606806168.0
+      "obv": 606806168.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-04-01",
@@ -2036,12 +2046,12 @@
       "macd": 13.6186,
       "macd_signal": 10.0634,
       "macd_hist": 3.5552,
-      "adx14": 32.291,
+      "adx14": 32.2188,
       "plus_di": 31.86,
       "minus_di": 16.2315,
       "supertrend": 843.844,
-      "supertrend_direction": 1,
-      "obv": 578295162.0
+      "obv": 578295162.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-04-02",
@@ -2054,15 +2064,15 @@
       "ema50": 843.0245,
       "ema200": 847.8399,
       "rsi14": 59.613,
-      "macd": 13.3934,
+      "macd": 13.3933,
       "macd_signal": 10.7294,
       "macd_hist": 2.664,
-      "adx14": 32.3058,
+      "adx14": 32.2387,
       "plus_di": 29.5872,
       "minus_di": 15.0736,
       "supertrend": 843.844,
-      "supertrend_direction": 1,
-      "obv": 589868726.0
+      "obv": 589868726.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-04-03",
@@ -2078,18 +2088,18 @@
       "macd": 12.9849,
       "macd_signal": 11.1805,
       "macd_hist": 1.8044,
-      "adx14": 32.4432,
+      "adx14": 32.381,
       "plus_di": 28.8543,
-      "minus_di": 14.1382,
+      "minus_di": 14.1381,
       "supertrend": 843.844,
-      "supertrend_direction": 1,
-      "obv": 578618688.0
+      "obv": 578618688.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-04-04",
-      "open": 879.8579,
+      "open": 879.858,
       "high": 893.9075,
-      "low": 878.9358,
+      "low": 878.9359,
       "close": 881.9448,
       "volume": 33540454.0,
       "ema20": 858.8212,
@@ -2099,12 +2109,12 @@
       "macd": 13.386,
       "macd_signal": 11.6216,
       "macd_hist": 1.7644,
-      "adx14": 33.4132,
+      "adx14": 33.3554,
       "plus_di": 34.2545,
       "minus_di": 12.6619,
       "supertrend": 843.844,
-      "supertrend_direction": 1,
-      "obv": 612159142.0
+      "obv": 612159142.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-04-07",
@@ -2120,12 +2130,12 @@
       "macd": 11.2404,
       "macd_signal": 11.5453,
       "macd_hist": -0.3049,
-      "adx14": 31.4917,
+      "adx14": 31.438,
       "plus_di": 28.8133,
       "minus_di": 25.2901,
       "supertrend": 843.844,
-      "supertrend_direction": 1,
-      "obv": 574163692.0
+      "obv": 574163692.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-04-08",
@@ -2141,12 +2151,12 @@
       "macd": 9.8746,
       "macd_signal": 11.2112,
       "macd_hist": -1.3366,
-      "adx14": 29.7643,
+      "adx14": 29.7145,
       "plus_di": 27.3999,
       "minus_di": 23.6676,
       "supertrend": 843.844,
-      "supertrend_direction": 1,
-      "obv": 609727564.0
+      "obv": 609727564.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-04-09",
@@ -2162,12 +2172,12 @@
       "macd": 8.5312,
       "macd_signal": 10.6752,
       "macd_hist": -2.144,
-      "adx14": 28.1604,
+      "adx14": 28.1141,
       "plus_di": 26.1734,
       "minus_di": 22.6081,
       "supertrend": 843.844,
-      "supertrend_direction": 1,
-      "obv": 587272956.0
+      "obv": 587272956.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-04-11",
@@ -2183,12 +2193,12 @@
       "macd": 8.9979,
       "macd_signal": 10.3397,
       "macd_hist": -1.3419,
-      "adx14": 27.7931,
+      "adx14": 27.7501,
       "plus_di": 32.2009,
       "minus_di": 20.1503,
       "supertrend": 843.844,
-      "supertrend_direction": 1,
-      "obv": 620048722.0
+      "obv": 620048722.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-04-15",
@@ -2204,19 +2214,19 @@
       "macd": 11.5121,
       "macd_signal": 10.5742,
       "macd_hist": 0.9379,
-      "adx14": 28.5019,
+      "adx14": 28.462,
       "plus_di": 38.7172,
       "minus_di": 17.5105,
       "supertrend": 845.9569,
-      "supertrend_direction": 1,
-      "obv": 669347066.0
+      "obv": 669347066.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-04-16",
-      "open": 914.2175,
-      "high": 914.2175,
+      "open": 914.2176,
+      "high": 914.2176,
       "low": 902.9099,
-      "close": 911.4027,
+      "close": 911.4028,
       "volume": 19136820.0,
       "ema20": 868.7058,
       "ema50": 852.6091,
@@ -2225,12 +2235,12 @@
       "macd": 13.858,
       "macd_signal": 11.231,
       "macd_hist": 2.627,
-      "adx14": 29.2688,
+      "adx14": 29.2318,
       "plus_di": 38.3284,
       "minus_di": 16.7256,
       "supertrend": 851.5551,
-      "supertrend_direction": 1,
-      "obv": 688483886.0
+      "obv": 688483886.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-04-17",
@@ -2242,16 +2252,16 @@
       "ema20": 874.0987,
       "ema50": 855.461,
       "ema200": 850.8381,
-      "rsi14": 70.1339,
+      "rsi14": 70.1338,
       "macd": 16.649,
       "macd_signal": 12.3146,
       "macd_hist": 4.3344,
-      "adx14": 30.4975,
+      "adx14": 30.4631,
       "plus_di": 42.0224,
       "minus_di": 15.3575,
       "supertrend": 863.6377,
-      "supertrend_direction": 1,
-      "obv": 724186970.0
+      "obv": 724186970.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-04-21",
@@ -2267,12 +2277,12 @@
       "macd": 19.4358,
       "macd_signal": 13.7388,
       "macd_hist": 5.6969,
-      "adx14": 32.0195,
+      "adx14": 31.9875,
       "plus_di": 44.3733,
       "minus_di": 14.0877,
-      "supertrend": 878.5911,
-      "supertrend_direction": 1,
-      "obv": 758434268.0
+      "supertrend": 878.591,
+      "obv": 758434268.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-04-22",
@@ -2288,12 +2298,12 @@
       "macd": 22.7371,
       "macd_signal": 15.5385,
       "macd_hist": 7.1986,
-      "adx14": 33.6546,
+      "adx14": 33.6249,
       "plus_di": 44.4845,
       "minus_di": 12.9478,
       "supertrend": 888.9747,
-      "supertrend_direction": 1,
-      "obv": 804396018.0
+      "obv": 804396018.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-04-23",
@@ -2309,33 +2319,33 @@
       "macd": 23.6012,
       "macd_signal": 17.151,
       "macd_hist": 6.4501,
-      "adx14": 34.6403,
+      "adx14": 34.6127,
       "plus_di": 39.8256,
       "minus_di": 14.1921,
       "supertrend": 888.9747,
-      "supertrend_direction": 1,
-      "obv": 773825376.0
+      "obv": 773825376.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-04-24",
-      "open": 926.9324,
-      "high": 933.6782,
-      "low": 924.5544,
-      "close": 930.2325,
+      "open": 926.9325,
+      "high": 933.6783,
+      "low": 924.5545,
+      "close": 930.2326,
       "volume": 25931754.0,
       "ema20": 894.9657,
       "ema50": 867.6103,
       "ema200": 854.246,
-      "rsi14": 65.2768,
+      "rsi14": 65.2769,
       "macd": 23.7343,
       "macd_signal": 18.4677,
       "macd_hist": 5.2666,
-      "adx14": 35.0059,
+      "adx14": 34.9803,
       "plus_di": 38.4303,
-      "minus_di": 16.5649,
+      "minus_di": 16.5648,
       "supertrend": 888.9747,
-      "supertrend_direction": 1,
-      "obv": 747893622.0
+      "obv": 747893622.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-04-25",
@@ -2344,19 +2354,19 @@
       "low": 918.1,
       "close": 927.5148,
       "volume": 18500878.0,
-      "ema20": 898.0656,
+      "ema20": 898.0657,
       "ema50": 869.9595,
       "ema200": 854.975,
       "rsi14": 64.0893,
       "macd": 23.3513,
       "macd_signal": 19.4444,
       "macd_hist": 3.9069,
-      "adx14": 34.8833,
+      "adx14": 34.8595,
       "plus_di": 35.4953,
       "minus_di": 17.7651,
       "supertrend": 888.9747,
-      "supertrend_direction": 1,
-      "obv": 729392744.0
+      "obv": 729392744.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-04-28",
@@ -2372,12 +2382,12 @@
       "macd": 23.1336,
       "macd_signal": 20.1822,
       "macd_hist": 2.9513,
-      "adx14": 34.7694,
+      "adx14": 34.7474,
       "plus_di": 34.0476,
       "minus_di": 17.0406,
       "supertrend": 888.9747,
-      "supertrend_direction": 1,
-      "obv": 743313236.0
+      "obv": 743313236.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-04-29",
@@ -2393,12 +2403,12 @@
       "macd": 22.258,
       "macd_signal": 20.5974,
       "macd_hist": 1.6606,
-      "adx14": 34.3587,
+      "adx14": 34.3382,
       "plus_di": 32.1514,
       "minus_di": 17.6883,
       "supertrend": 888.9747,
-      "supertrend_direction": 1,
-      "obv": 724394928.0
+      "obv": 724394928.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-04-30",
@@ -2414,12 +2424,12 @@
       "macd": 21.9455,
       "macd_signal": 20.867,
       "macd_hist": 1.0785,
-      "adx14": 34.1444,
+      "adx14": 34.1254,
       "plus_di": 31.9663,
       "minus_di": 16.704,
       "supertrend": 888.9747,
-      "supertrend_direction": 1,
-      "obv": 756331798.0
+      "obv": 756331798.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-05-02",
@@ -2431,16 +2441,16 @@
       "ema20": 909.07,
       "ema50": 879.0362,
       "ema200": 857.9678,
-      "rsi14": 63.977,
+      "rsi14": 63.9769,
       "macd": 21.3306,
       "macd_signal": 20.9597,
       "macd_hist": 0.3709,
-      "adx14": 34.0505,
+      "adx14": 34.0329,
       "plus_di": 31.5587,
       "minus_di": 15.9586,
       "supertrend": 888.9747,
-      "supertrend_direction": 1,
-      "obv": 738491394.0
+      "obv": 738491394.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-05-05",
@@ -2449,24 +2459,24 @@
       "low": 937.7548,
       "close": 939.9387,
       "volume": 15068024.0,
-      "ema20": 912.0098,
+      "ema20": 912.0099,
       "ema50": 881.4245,
-      "ema200": 858.7834,
+      "ema200": 858.7835,
       "rsi14": 66.0407,
       "macd": 21.1826,
       "macd_signal": 21.0043,
       "macd_hist": 0.1783,
-      "adx14": 34.1772,
+      "adx14": 34.1608,
       "plus_di": 31.6823,
       "minus_di": 14.9699,
       "supertrend": 892.555,
-      "supertrend_direction": 1,
-      "obv": 753559418.0
+      "obv": 753559418.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-05-06",
       "open": 936.6386,
-      "high": 941.5402,
+      "high": 941.5401,
       "low": 933.8724,
       "close": 937.4636,
       "volume": 17490156.0,
@@ -2477,12 +2487,12 @@
       "macd": 20.6278,
       "macd_signal": 20.929,
       "macd_hist": -0.3012,
-      "adx14": 33.9395,
+      "adx14": 33.9243,
       "plus_di": 30.6102,
-      "minus_di": 16.1766,
+      "minus_di": 16.1767,
       "supertrend": 892.555,
-      "supertrend_direction": 1,
-      "obv": 736069262.0
+      "obv": 736069262.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-05-07",
@@ -2498,12 +2508,12 @@
       "macd": 20.4962,
       "macd_signal": 20.8424,
       "macd_hist": -0.3463,
-      "adx14": 33.9197,
-      "plus_di": 30.7297,
+      "adx14": 33.9056,
+      "plus_di": 30.7298,
       "minus_di": 15.2515,
       "supertrend": 892.9489,
-      "supertrend_direction": 1,
-      "obv": 757490040.0
+      "obv": 757490040.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-05-08",
@@ -2519,61 +2529,61 @@
       "macd": 19.4975,
       "macd_signal": 20.5734,
       "macd_hist": -1.076,
-      "adx14": 34.0441,
+      "adx14": 34.0309,
       "plus_di": 29.6772,
       "minus_di": 14.0748,
       "supertrend": 893.069,
-      "supertrend_direction": 1,
-      "obv": 722686610.0
+      "obv": 722686610.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-05-09",
       "open": 926.981,
-      "high": 931.3003,
-      "low": 915.6735,
-      "close": 917.0808,
+      "high": 931.3002,
+      "low": 915.6734,
+      "close": 917.0807,
       "volume": 17188796.0,
       "ema20": 918.858,
       "ema50": 889.0976,
       "ema200": 861.7162,
-      "rsi14": 52.8881,
+      "rsi14": 52.888,
       "macd": 16.9907,
       "macd_signal": 19.8569,
       "macd_hist": -2.8662,
-      "adx14": 32.7388,
+      "adx14": 32.7266,
       "plus_di": 27.0518,
       "minus_di": 19.682,
       "supertrend": 893.069,
-      "supertrend_direction": 1,
-      "obv": 705497814.0
+      "obv": 705497814.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-05-12",
-      "open": 930.6208,
-      "high": 951.1492,
-      "low": 928.0487,
+      "open": 930.6209,
+      "high": 951.1493,
+      "low": 928.0488,
       "close": 949.8389,
       "volume": 18618972.0,
       "ema20": 921.8086,
       "ema50": 891.4796,
       "ema200": 862.5931,
-      "rsi14": 63.0565,
+      "rsi14": 63.0564,
       "macd": 17.4463,
       "macd_signal": 19.3748,
       "macd_hist": -1.9285,
-      "adx14": 32.5292,
-      "plus_di": 31.3655,
-      "minus_di": 16.9616,
+      "adx14": 32.5179,
+      "plus_di": 31.3656,
+      "minus_di": 16.9617,
       "supertrend": 893.069,
-      "supertrend_direction": 1,
-      "obv": 724116786.0
+      "obv": 724116786.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-05-13",
       "open": 946.3447,
-      "high": 952.0228,
-      "low": 931.7856,
-      "close": 933.0474,
+      "high": 952.0227,
+      "low": 931.7855,
+      "close": 933.0473,
       "volume": 24242102.0,
       "ema20": 922.8789,
       "ema50": 893.1097,
@@ -2582,12 +2592,12 @@
       "macd": 16.2649,
       "macd_signal": 18.7528,
       "macd_hist": -2.4879,
-      "adx14": 32.3739,
+      "adx14": 32.3634,
       "plus_di": 29.1682,
       "minus_di": 15.5838,
       "supertrend": 893.069,
-      "supertrend_direction": 1,
-      "obv": 699874684.0
+      "obv": 699874684.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-05-14",
@@ -2603,12 +2613,12 @@
       "macd": 14.6894,
       "macd_signal": 17.9401,
       "macd_hist": -3.2507,
-      "adx14": 31.5424,
+      "adx14": 31.5326,
       "plus_di": 27.5936,
       "minus_di": 18.1165,
       "supertrend": 893.069,
-      "supertrend_direction": 1,
-      "obv": 684429376.0
+      "obv": 684429376.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-05-15",
@@ -2622,21 +2632,21 @@
       "ema200": 864.6721,
       "rsi14": 57.5673,
       "macd": 14.1858,
-      "macd_signal": 17.1893,
+      "macd_signal": 17.1892,
       "macd_hist": -3.0035,
-      "adx14": 31.1321,
+      "adx14": 31.1231,
       "plus_di": 27.8671,
       "minus_di": 16.4372,
       "supertrend": 893.069,
-      "supertrend_direction": 1,
-      "obv": 716670834.0
+      "obv": 716670834.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-05-16",
       "open": 938.4828,
-      "high": 943.3358,
-      "low": 935.8621,
-      "close": 938.9195,
+      "high": 943.3359,
+      "low": 935.8622,
+      "close": 938.9196,
       "volume": 15868010.0,
       "ema20": 926.0899,
       "ema50": 897.8507,
@@ -2645,12 +2655,12 @@
       "macd": 13.6644,
       "macd_signal": 16.4843,
       "macd_hist": -2.8199,
-      "adx14": 30.7512,
+      "adx14": 30.7428,
       "plus_di": 26.9988,
       "minus_di": 15.925,
       "supertrend": 893.069,
-      "supertrend_direction": 1,
-      "obv": 732538844.0
+      "obv": 732538844.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-05-19",
@@ -2666,18 +2676,18 @@
       "macd": 13.255,
       "macd_signal": 15.8384,
       "macd_hist": -2.5834,
-      "adx14": 30.4295,
-      "plus_di": 26.4533,
+      "adx14": 30.4217,
+      "plus_di": 26.4532,
       "minus_di": 15.4536,
       "supertrend": 893.069,
-      "supertrend_direction": 1,
-      "obv": 742741808.0
+      "obv": 742741808.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-05-20",
       "open": 935.7165,
       "high": 938.871,
-      "low": 928.3885,
+      "low": 928.3884,
       "close": 929.3105,
       "volume": 23879090.0,
       "ema20": 927.6694,
@@ -2687,19 +2697,19 @@
       "macd": 11.8619,
       "macd_signal": 15.0431,
       "macd_hist": -3.1812,
-      "adx14": 29.3274,
-      "plus_di": 24.9908,
+      "adx14": 29.3202,
+      "plus_di": 24.9907,
       "minus_di": 18.4714,
       "supertrend": 893.069,
-      "supertrend_direction": 1,
-      "obv": 718862718.0
+      "obv": 718862718.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-05-21",
       "open": 935.1827,
       "high": 944.8403,
       "low": 932.3194,
-      "close": 935.0857,
+      "close": 935.0856,
       "volume": 15132040.0,
       "ema20": 928.3757,
       "ema50": 902.0532,
@@ -2708,12 +2718,12 @@
       "macd": 11.0959,
       "macd_signal": 14.2537,
       "macd_hist": -3.1578,
-      "adx14": 28.6776,
+      "adx14": 28.6709,
       "plus_di": 25.9188,
       "minus_di": 17.1965,
       "supertrend": 893.069,
-      "supertrend_direction": 1,
-      "obv": 733994758.0
+      "obv": 733994758.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-05-22",
@@ -2729,12 +2739,12 @@
       "macd": 10.1022,
       "macd_signal": 13.4234,
       "macd_hist": -3.3212,
-      "adx14": 27.3967,
+      "adx14": 27.3904,
       "plus_di": 24.6806,
       "minus_di": 19.8917,
       "supertrend": 893.069,
-      "supertrend_direction": 1,
-      "obv": 712688088.0
+      "obv": 712688088.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-05-23",
@@ -2750,12 +2760,12 @@
       "macd": 9.7389,
       "macd_signal": 12.6865,
       "macd_hist": -2.9476,
-      "adx14": 26.6154,
+      "adx14": 26.6095,
       "plus_di": 26.3189,
-      "minus_di": 18.8799,
+      "minus_di": 18.8798,
       "supertrend": 893.069,
-      "supertrend_direction": 1,
-      "obv": 722254160.0
+      "obv": 722254160.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-05-26",
@@ -2771,12 +2781,12 @@
       "macd": 9.5988,
       "macd_signal": 12.0689,
       "macd_hist": -2.4702,
-      "adx14": 26.2776,
+      "adx14": 26.2722,
       "plus_di": 27.8974,
       "minus_di": 17.8787,
       "supertrend": 897.5124,
-      "supertrend_direction": 1,
-      "obv": 733057020.0
+      "obv": 733057020.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-05-27",
@@ -2792,17 +2802,17 @@
       "macd": 8.8415,
       "macd_signal": 11.4234,
       "macd_hist": -2.582,
-      "adx14": 25.4906,
+      "adx14": 25.4855,
       "plus_di": 25.8619,
       "minus_di": 19.014,
       "supertrend": 897.5124,
-      "supertrend_direction": 1,
-      "obv": 706894872.0
+      "obv": 706894872.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-05-28",
-      "open": 931.8826,
-      "high": 938.8225,
+      "open": 931.8825,
+      "high": 938.8224,
       "low": 930.6693,
       "close": 933.4841,
       "volume": 18157594.0,
@@ -2813,33 +2823,33 @@
       "macd": 8.039,
       "macd_signal": 10.7466,
       "macd_hist": -2.7075,
-      "adx14": 24.7598,
-      "plus_di": 24.828,
+      "adx14": 24.7551,
+      "plus_di": 24.8279,
       "minus_di": 18.2538,
       "supertrend": 897.5124,
-      "supertrend_direction": 1,
-      "obv": 688737278.0
+      "obv": 688737278.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-05-29",
-      "open": 935.668,
+      "open": 935.6679,
       "high": 941.8799,
       "low": 925.6222,
-      "close": 935.4254,
+      "close": 935.4253,
       "volume": 28917794.0,
       "ema20": 931.7564,
       "ema50": 909.2754,
       "ema200": 871.4551,
-      "rsi14": 54.443,
+      "rsi14": 54.4429,
       "macd": 7.4735,
-      "macd_signal": 10.092,
+      "macd_signal": 10.0919,
       "macd_hist": -2.6184,
-      "adx14": 23.6016,
+      "adx14": 23.5972,
       "plus_di": 22.865,
       "minus_di": 19.2651,
       "supertrend": 897.5124,
-      "supertrend_direction": 1,
-      "obv": 717655072.0
+      "obv": 717655072.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-05-30",
@@ -2851,37 +2861,37 @@
       "ema20": 932.91,
       "ema50": 910.632,
       "ema200": 872.1756,
-      "rsi14": 58.1234,
+      "rsi14": 58.1233,
       "macd": 7.619,
       "macd_signal": 9.5974,
       "macd_hist": -1.9784,
-      "adx14": 22.8268,
+      "adx14": 22.8228,
       "plus_di": 23.5006,
-      "minus_di": 18.1837,
+      "minus_di": 18.1836,
       "supertrend": 898.5968,
-      "supertrend_direction": 1,
-      "obv": 746403150.0
+      "obv": 746403150.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-06-02",
-      "open": 936.6871,
+      "open": 936.687,
       "high": 939.5504,
-      "low": 925.9619,
+      "low": 925.9618,
       "close": 937.6577,
       "volume": 14668822.0,
       "ema20": 933.3622,
       "ema50": 911.6918,
       "ema200": 872.8272,
-      "rsi14": 54.6272,
+      "rsi14": 54.6271,
       "macd": 7.1505,
       "macd_signal": 9.108,
       "macd_hist": -1.9575,
-      "adx14": 21.3234,
+      "adx14": 21.3197,
       "plus_di": 21.4552,
       "minus_di": 20.7051,
       "supertrend": 898.5968,
-      "supertrend_direction": 1,
-      "obv": 731734328.0
+      "obv": 731734328.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-06-03",
@@ -2897,12 +2907,12 @@
       "macd": 6.4117,
       "macd_signal": 8.5687,
       "macd_hist": -2.157,
-      "adx14": 20.5443,
-      "plus_di": 23.601,
+      "adx14": 20.5408,
+      "plus_di": 23.6011,
       "minus_di": 19.1487,
       "supertrend": 898.5968,
-      "supertrend_direction": 1,
-      "obv": 707356744.0
+      "obv": 707356744.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-06-04",
@@ -2918,12 +2928,12 @@
       "macd": 6.4024,
       "macd_signal": 8.1355,
       "macd_hist": -1.7331,
-      "adx14": 19.8207,
+      "adx14": 19.8175,
       "plus_di": 22.3353,
       "minus_di": 18.1217,
       "supertrend": 898.5968,
-      "supertrend_direction": 1,
-      "obv": 720318286.0
+      "obv": 720318286.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-06-05",
@@ -2939,33 +2949,33 @@
       "macd": 6.6474,
       "macd_signal": 7.8378,
       "macd_hist": -1.1905,
-      "adx14": 19.7275,
-      "plus_di": 25.1451,
+      "adx14": 19.7245,
+      "plus_di": 25.1452,
       "minus_di": 17.2882,
       "supertrend": 905.5585,
-      "supertrend_direction": 1,
-      "obv": 742573704.0
+      "obv": 742573704.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-06-06",
-      "open": 943.4329,
-      "high": 968.8144,
-      "low": 942.802,
+      "open": 943.4328,
+      "high": 968.8143,
+      "low": 942.8019,
       "close": 960.2729,
       "volume": 30127008.0,
       "ema20": 937.7525,
-      "ema50": 916.7717,
+      "ema50": 916.7716,
       "ema200": 875.6859,
-      "rsi14": 63.891,
+      "rsi14": 63.8909,
       "macd": 7.8901,
       "macd_signal": 7.8483,
       "macd_hist": 0.0418,
-      "adx14": 20.7427,
+      "adx14": 20.7399,
       "plus_di": 30.6942,
       "minus_di": 15.1387,
-      "supertrend": 911.4935,
-      "supertrend_direction": 1,
-      "obv": 772700712.0
+      "supertrend": 911.4934,
+      "obv": 772700712.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-06-09",
@@ -2979,14 +2989,14 @@
       "ema200": 876.5285,
       "rsi14": 63.927,
       "macd": 8.7816,
-      "macd_signal": 8.035,
+      "macd_signal": 8.0349,
       "macd_hist": 0.7466,
-      "adx14": 21.6853,
+      "adx14": 21.6827,
       "plus_di": 29.2964,
       "minus_di": 14.4493,
-      "supertrend": 920.8848,
-      "supertrend_direction": 1,
-      "obv": 785903300.0
+      "supertrend": 920.8847,
+      "obv": 785903300.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-06-10",
@@ -2995,26 +3005,26 @@
       "low": 951.7316,
       "close": 953.7699,
       "volume": 15533126.0,
-      "ema20": 941.2269,
+      "ema20": 941.2268,
       "ema50": 919.8653,
       "ema200": 877.2971,
       "rsi14": 59.5699,
       "macd": 8.8535,
-      "macd_signal": 8.1987,
+      "macd_signal": 8.1986,
       "macd_hist": 0.6548,
-      "adx14": 21.7959,
+      "adx14": 21.7935,
       "plus_di": 27.7502,
       "minus_di": 17.2863,
-      "supertrend": 920.8848,
-      "supertrend_direction": 1,
-      "obv": 770370174.0
+      "supertrend": 920.8847,
+      "obv": 770370174.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-06-11",
-      "open": 954.8861,
-      "high": 954.8861,
+      "open": 954.886,
+      "high": 954.886,
       "low": 944.8888,
-      "close": 946.5389,
+      "close": 946.5388,
       "volume": 11096394.0,
       "ema20": 941.7328,
       "ema50": 920.9113,
@@ -3023,12 +3033,12 @@
       "macd": 8.232,
       "macd_signal": 8.2053,
       "macd_hist": 0.0267,
-      "adx14": 21.2316,
+      "adx14": 21.2293,
       "plus_di": 26.3295,
-      "minus_di": 19.9054,
-      "supertrend": 920.8848,
-      "supertrend_direction": 1,
-      "obv": 759273780.0
+      "minus_di": 19.9055,
+      "supertrend": 920.8847,
+      "obv": 759273780.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-06-12",
@@ -3037,25 +3047,25 @@
       "low": 939.2107,
       "close": 943.1417,
       "volume": 16349130.0,
-      "ema20": 941.867,
+      "ema20": 941.8669,
       "ema50": 921.7831,
       "ema200": 878.6343,
       "rsi14": 53.135,
       "macd": 7.3804,
       "macd_signal": 8.0403,
       "macd_hist": -0.66,
-      "adx14": 20.1914,
+      "adx14": 20.1894,
       "plus_di": 24.6351,
       "minus_di": 21.5542,
-      "supertrend": 920.8848,
-      "supertrend_direction": 1,
-      "obv": 742924650.0
+      "supertrend": 920.8847,
+      "obv": 742924650.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-06-13",
-      "open": 931.7856,
-      "high": 938.0946,
-      "low": 928.3885,
+      "open": 931.7855,
+      "high": 938.0945,
+      "low": 928.3884,
       "close": 930.6208,
       "volume": 12117762.0,
       "ema20": 940.7959,
@@ -3065,12 +3075,12 @@
       "macd": 5.6302,
       "macd_signal": 7.5583,
       "macd_hist": -1.9281,
-      "adx14": 19.1505,
+      "adx14": 19.1486,
       "plus_di": 22.7685,
       "minus_di": 25.4791,
-      "supertrend": 920.8848,
-      "supertrend_direction": 1,
-      "obv": 730806888.0
+      "supertrend": 920.8847,
+      "obv": 730806888.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-06-16",
@@ -3086,12 +3096,12 @@
       "macd": 4.8839,
       "macd_signal": 7.0234,
       "macd_hist": -2.1395,
-      "adx14": 17.9441,
-      "plus_di": 23.0351,
+      "adx14": 17.9424,
+      "plus_di": 23.0352,
       "minus_di": 24.1012,
-      "supertrend": 920.8848,
-      "supertrend_direction": 1,
-      "obv": 747320634.0
+      "supertrend": 920.8847,
+      "obv": 747320634.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-06-17",
@@ -3100,19 +3110,19 @@
       "low": 931.3488,
       "close": 936.4445,
       "volume": 16978736.0,
-      "ema20": 940.2491,
+      "ema20": 940.249,
       "ema50": 923.3364,
       "ema200": 880.3138,
-      "rsi14": 49.5391,
+      "rsi14": 49.5392,
       "macd": 4.019,
       "macd_signal": 6.4225,
       "macd_hist": -2.4035,
-      "adx14": 16.7113,
+      "adx14": 16.7097,
       "plus_di": 22.3956,
       "minus_di": 22.7044,
-      "supertrend": 920.8848,
-      "supertrend_direction": 1,
-      "obv": 730341898.0
+      "supertrend": 920.8847,
+      "obv": 730341898.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-06-18",
@@ -3121,40 +3131,40 @@
       "low": 930.3296,
       "close": 938.5313,
       "volume": 18433816.0,
-      "ema20": 940.0855,
+      "ema20": 940.0854,
       "ema50": 923.9323,
       "ema200": 880.8931,
       "rsi14": 50.6867,
       "macd": 3.462,
       "macd_signal": 5.8304,
       "macd_hist": -2.3684,
-      "adx14": 15.657,
-      "plus_di": 21.2575,
+      "adx14": 15.6555,
+      "plus_di": 21.2576,
       "minus_di": 22.1036,
-      "supertrend": 920.8848,
-      "supertrend_direction": 1,
-      "obv": 748775714.0
+      "supertrend": 920.8847,
+      "obv": 748775714.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-06-19",
       "open": 938.5313,
-      "high": 944.7917,
-      "low": 934.5032,
-      "close": 939.2107,
+      "high": 944.7918,
+      "low": 934.5033,
+      "close": 939.2108,
       "volume": 16876220.0,
-      "ema20": 940.0022,
+      "ema20": 940.0021,
       "ema50": 924.5314,
       "ema200": 881.4734,
       "rsi14": 51.0767,
       "macd": 3.0404,
       "macd_signal": 5.2724,
       "macd_hist": -2.232,
-      "adx14": 14.8672,
+      "adx14": 14.8658,
       "plus_di": 22.8606,
       "minus_di": 20.8502,
-      "supertrend": 920.8848,
-      "supertrend_direction": 1,
-      "obv": 765651934.0
+      "supertrend": 920.8847,
+      "obv": 765651934.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-06-20",
@@ -3170,12 +3180,12 @@
       "macd": 3.8136,
       "macd_signal": 4.9807,
       "macd_hist": -1.167,
-      "adx14": 15.034,
+      "adx14": 15.0327,
       "plus_di": 26.5819,
       "minus_di": 18.7785,
-      "supertrend": 920.8848,
-      "supertrend_direction": 1,
-      "obv": 798552342.0
+      "supertrend": 920.8847,
+      "obv": 798552342.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-06-23",
@@ -3191,12 +3201,12 @@
       "macd": 3.7449,
       "macd_signal": 4.7335,
       "macd_hist": -0.9886,
-      "adx14": 15.189,
+      "adx14": 15.1877,
       "plus_di": 24.9835,
       "minus_di": 17.6493,
-      "supertrend": 920.8848,
-      "supertrend_direction": 1,
-      "obv": 786812824.0
+      "supertrend": 920.8847,
+      "obv": 786812824.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-06-24",
@@ -3212,12 +3222,12 @@
       "macd": 4.1323,
       "macd_signal": 4.6133,
       "macd_hist": -0.4809,
-      "adx14": 16.0589,
+      "adx14": 16.0578,
       "plus_di": 28.4853,
-      "minus_di": 16.2437,
-      "supertrend": 920.8848,
-      "supertrend_direction": 1,
-      "obv": 809438146.0
+      "minus_di": 16.2438,
+      "supertrend": 920.8847,
+      "obv": 809438146.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-06-25",
@@ -3233,12 +3243,12 @@
       "macd": 5.136,
       "macd_signal": 4.7178,
       "macd_hist": 0.4181,
-      "adx14": 16.9625,
+      "adx14": 16.9614,
       "plus_di": 27.6887,
-      "minus_di": 15.3367,
-      "supertrend": 920.8848,
-      "supertrend_direction": 1,
-      "obv": 827844078.0
+      "minus_di": 15.3368,
+      "supertrend": 920.8847,
+      "obv": 827844078.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-06-26",
@@ -3248,39 +3258,39 @@
       "close": 981.1896,
       "volume": 50084830.0,
       "ema20": 947.8937,
-      "ema50": 930.8076,
+      "ema50": 930.8075,
       "ema200": 885.2406,
       "rsi14": 67.9728,
       "macd": 7.4742,
       "macd_signal": 5.2691,
       "macd_hist": 2.2051,
-      "adx14": 18.9728,
+      "adx14": 18.9718,
       "plus_di": 35.7437,
       "minus_di": 13.5217,
       "supertrend": 931.0979,
-      "supertrend_direction": 1,
-      "obv": 877928908.0
+      "obv": 877928908.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-06-27",
-      "open": 987.6661,
-      "high": 991.0025,
-      "low": 978.0495,
+      "open": 987.666,
+      "high": 991.0024,
+      "low": 978.0494,
       "close": 988.5983,
       "volume": 28213384.0,
       "ema20": 951.7703,
-      "ema50": 933.0739,
-      "ema200": 886.2691,
+      "ema50": 933.0738,
+      "ema200": 886.269,
       "rsi14": 70.1322,
       "macd": 9.812,
       "macd_signal": 6.1777,
       "macd_hist": 3.6344,
-      "adx14": 21.1365,
+      "adx14": 21.1355,
       "plus_di": 37.1014,
-      "minus_di": 12.6109,
-      "supertrend": 943.5287,
-      "supertrend_direction": 1,
-      "obv": 906142292.0
+      "minus_di": 12.611,
+      "supertrend": 943.5286,
+      "obv": 906142292.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-06-30",
@@ -3296,12 +3306,12 @@
       "macd": 11.0074,
       "macd_signal": 7.1436,
       "macd_hist": 3.8637,
-      "adx14": 23.1456,
-      "plus_di": 35.2239,
-      "minus_di": 11.9727,
+      "adx14": 23.1447,
+      "plus_di": 35.2238,
+      "minus_di": 11.9728,
       "supertrend": 943.8161,
-      "supertrend_direction": 1,
-      "obv": 892493272.0
+      "obv": 892493272.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-07-01",
@@ -3317,12 +3327,12 @@
       "macd": 12.2333,
       "macd_signal": 8.1616,
       "macd_hist": 4.0718,
-      "adx14": 25.0581,
+      "adx14": 25.0572,
       "plus_di": 34.439,
       "minus_di": 11.5041,
-      "supertrend": 948.282,
-      "supertrend_direction": 1,
-      "obv": 906882658.0
+      "supertrend": 948.2821,
+      "obv": 906882658.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-07-02",
@@ -3338,12 +3348,12 @@
       "macd": 12.0329,
       "macd_signal": 8.9358,
       "macd_hist": 3.097,
-      "adx14": 25.3162,
+      "adx14": 25.3154,
       "plus_di": 30.6918,
       "minus_di": 17.014,
-      "supertrend": 948.282,
-      "supertrend_direction": 1,
-      "obv": 888004408.0
+      "supertrend": 948.2821,
+      "obv": 888004408.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-07-03",
@@ -3356,15 +3366,15 @@
       "ema50": 939.9369,
       "ema200": 889.9292,
       "rsi14": 59.9941,
-      "macd": 11.7817,
+      "macd": 11.7818,
       "macd_signal": 9.505,
       "macd_hist": 2.2767,
-      "adx14": 25.5558,
+      "adx14": 25.5551,
       "plus_di": 28.7883,
       "minus_di": 15.9588,
-      "supertrend": 948.282,
-      "supertrend_direction": 1,
-      "obv": 904864914.0
+      "supertrend": 948.2821,
+      "obv": 904864914.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-07-04",
@@ -3380,12 +3390,12 @@
       "macd": 11.5368,
       "macd_signal": 9.9114,
       "macd_hist": 1.6255,
-      "adx14": 25.536,
+      "adx14": 25.5353,
       "plus_di": 27.0001,
       "minus_di": 16.1041,
-      "supertrend": 948.282,
-      "supertrend_direction": 1,
-      "obv": 912728858.0
+      "supertrend": 948.2821,
+      "obv": 912728858.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-07-07",
@@ -3401,12 +3411,12 @@
       "macd": 11.1391,
       "macd_signal": 10.1569,
       "macd_hist": 0.9822,
-      "adx14": 25.5176,
+      "adx14": 25.517,
       "plus_di": 25.9228,
       "minus_di": 15.4615,
-      "supertrend": 948.282,
-      "supertrend_direction": 1,
-      "obv": 901379432.0
+      "supertrend": 948.2821,
+      "obv": 901379432.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-07-08",
@@ -3422,33 +3432,33 @@
       "macd": 11.2485,
       "macd_signal": 10.3753,
       "macd_hist": 0.8733,
-      "adx14": 25.0877,
+      "adx14": 25.0871,
       "plus_di": 23.9492,
-      "minus_di": 16.1333,
-      "supertrend": 948.282,
-      "supertrend_direction": 1,
-      "obv": 916603748.0
+      "minus_di": 16.1334,
+      "supertrend": 948.2821,
+      "obv": 916603748.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-07-09",
       "open": 984.7222,
       "high": 988.0586,
-      "low": 980.3555,
-      "close": 986.7829,
+      "low": 980.3554,
+      "close": 986.7828,
       "volume": 13861428.0,
       "ema20": 967.3082,
-      "ema50": 945.8867,
+      "ema50": 945.8866,
       "ema200": 893.4619,
       "rsi14": 64.8107,
       "macd": 11.5896,
       "macd_signal": 10.6181,
       "macd_hist": 0.9715,
-      "adx14": 25.0359,
-      "plus_di": 25.3602,
-      "minus_di": 15.4242,
-      "supertrend": 948.282,
-      "supertrend_direction": 1,
-      "obv": 930465176.0
+      "adx14": 25.0353,
+      "plus_di": 25.3601,
+      "minus_di": 15.4243,
+      "supertrend": 948.2821,
+      "obv": 930465176.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-07-10",
@@ -3464,18 +3474,18 @@
       "macd": 11.5291,
       "macd_signal": 10.8003,
       "macd_hist": 0.7288,
-      "adx14": 25.1126,
+      "adx14": 25.1121,
       "plus_di": 25.0415,
-      "minus_di": 14.6722,
+      "minus_di": 14.6723,
       "supertrend": 950.223,
-      "supertrend_direction": 1,
-      "obv": 913434866.0
+      "obv": 913434866.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-07-11",
-      "open": 980.3064,
-      "high": 983.6428,
-      "low": 971.9164,
+      "open": 980.3065,
+      "high": 983.6429,
+      "low": 971.9165,
       "close": 973.2902,
       "volume": 12516922.0,
       "ema20": 969.3446,
@@ -3485,12 +3495,12 @@
       "macd": 10.4697,
       "macd_signal": 10.7342,
       "macd_hist": -0.2645,
-      "adx14": 24.0189,
+      "adx14": 24.0184,
       "plus_di": 23.2266,
       "minus_di": 19.0803,
       "supertrend": 950.223,
-      "supertrend_direction": 1,
-      "obv": 900917944.0
+      "obv": 900917944.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-07-14",
@@ -3506,12 +3516,12 @@
       "macd": 9.4929,
       "macd_signal": 10.4859,
       "macd_hist": -0.993,
-      "adx14": 22.4554,
+      "adx14": 22.4549,
       "plus_di": 21.9983,
-      "minus_di": 21.0807,
+      "minus_di": 21.0808,
       "supertrend": 950.223,
-      "supertrend_direction": 1,
-      "obv": 887829094.0
+      "obv": 887829094.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-07-15",
@@ -3527,75 +3537,75 @@
       "macd": 9.1087,
       "macd_signal": 10.2105,
       "macd_hist": -1.1018,
-      "adx14": 21.6897,
+      "adx14": 21.6893,
       "plus_di": 24.3428,
-      "minus_di": 19.2292,
+      "minus_di": 19.2293,
       "supertrend": 950.223,
-      "supertrend_direction": 1,
-      "obv": 902327262.0
+      "obv": 902327262.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-07-16",
-      "open": 990.1193,
-      "high": 992.4253,
+      "open": 990.1192,
+      "high": 992.4252,
       "low": 977.6569,
-      "close": 979.4724,
+      "close": 979.4723,
       "volume": 17994612.0,
-      "ema20": 971.4289,
+      "ema20": 971.4288,
       "ema50": 951.6717,
       "ema200": 897.5759,
       "rsi14": 58.5504,
       "macd": 8.7352,
       "macd_signal": 9.9154,
       "macd_hist": -1.1802,
-      "adx14": 21.731,
-      "plus_di": 27.6721,
-      "minus_di": 17.5924,
+      "adx14": 21.7306,
+      "plus_di": 27.672,
+      "minus_di": 17.5925,
       "supertrend": 950.223,
-      "supertrend_direction": 1,
-      "obv": 920321874.0
+      "obv": 920321874.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-07-17",
-      "open": 983.2503,
+      "open": 983.2502,
       "high": 983.6428,
-      "low": 972.7996,
-      "close": 974.8603,
+      "low": 972.7995,
+      "close": 974.8602,
       "volume": 22529158.0,
-      "ema20": 971.7557,
+      "ema20": 971.7556,
       "ema50": 952.5811,
       "ema200": 898.3449,
       "rsi14": 55.0966,
       "macd": 7.9751,
       "macd_signal": 9.5274,
       "macd_hist": -1.5523,
-      "adx14": 21.224,
+      "adx14": 21.2236,
       "plus_di": 25.927,
       "minus_di": 19.3079,
       "supertrend": 950.223,
-      "supertrend_direction": 1,
-      "obv": 897792716.0
+      "obv": 897792716.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-07-18",
-      "open": 974.8603,
-      "high": 979.8158,
+      "open": 974.8602,
+      "high": 979.8157,
       "low": 958.2274,
-      "close": 960.3863,
+      "close": 960.3862,
       "volume": 16129446.0,
-      "ema20": 970.6729,
+      "ema20": 970.6728,
       "ema50": 952.8872,
-      "ema200": 898.9623,
+      "ema200": 898.9622,
       "rsi14": 45.9383,
       "macd": 6.1341,
       "macd_signal": 8.8487,
       "macd_hist": -2.7146,
-      "adx14": 20.0375,
+      "adx14": 20.0371,
       "plus_di": 22.839,
       "minus_di": 25.0478,
       "supertrend": 950.223,
-      "supertrend_direction": 1,
-      "obv": 881663270.0
+      "obv": 881663270.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-07-21",
@@ -3604,19 +3614,19 @@
       "low": 969.7576,
       "close": 981.533,
       "volume": 22309078.0,
-      "ema20": 971.7072,
+      "ema20": 971.7071,
       "ema50": 954.0105,
-      "ema200": 899.7839,
+      "ema200": 899.7838,
       "rsi14": 57.1461,
       "macd": 6.3087,
       "macd_signal": 8.3407,
       "macd_hist": -2.032,
-      "adx14": 18.715,
+      "adx14": 18.7146,
       "plus_di": 21.5011,
       "minus_di": 22.1659,
       "supertrend": 950.223,
-      "supertrend_direction": 1,
-      "obv": 903972348.0
+      "obv": 903972348.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-07-22",
@@ -3625,19 +3635,19 @@
       "low": 982.7596,
       "close": 984.7712,
       "volume": 14836814.0,
-      "ema20": 972.9514,
+      "ema20": 972.9513,
       "ema50": 955.2168,
       "ema200": 900.6295,
       "rsi14": 58.5628,
       "macd": 6.6319,
       "macd_signal": 7.9989,
       "macd_hist": -1.367,
-      "adx14": 17.9394,
+      "adx14": 17.9391,
       "plus_di": 24.7432,
       "minus_di": 21.1382,
       "supertrend": 950.223,
-      "supertrend_direction": 1,
-      "obv": 918809162.0
+      "obv": 918809162.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-07-23",
@@ -3653,12 +3663,12 @@
       "macd": 7.4828,
       "macd_signal": 7.8957,
       "macd_hist": -0.4129,
-      "adx14": 17.6692,
+      "adx14": 17.6689,
       "plus_di": 26.1132,
       "minus_di": 19.6367,
       "supertrend": 950.223,
-      "supertrend_direction": 1,
-      "obv": 932444078.0
+      "obv": 932444078.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-07-24",
@@ -3668,18 +3678,18 @@
       "close": 988.2548,
       "volume": 19107176.0,
       "ema20": 976.1545,
-      "ema50": 957.944,
+      "ema50": 957.9439,
       "ema200": 902.4134,
       "rsi14": 58.9176,
       "macd": 7.6689,
       "macd_signal": 7.8503,
       "macd_hist": -0.1815,
-      "adx14": 17.7063,
+      "adx14": 17.7061,
       "plus_di": 26.1788,
       "minus_di": 18.1212,
       "supertrend": 952.3075,
-      "supertrend_direction": 1,
-      "obv": 913336902.0
+      "obv": 913336902.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-07-25",
@@ -3695,12 +3705,12 @@
       "macd": 7.5467,
       "macd_signal": 7.7896,
       "macd_hist": -0.2429,
-      "adx14": 17.5081,
+      "adx14": 17.5079,
       "plus_di": 25.0395,
-      "minus_di": 18.5332,
+      "minus_di": 18.5333,
       "supertrend": 952.3075,
-      "supertrend_direction": 1,
-      "obv": 904030304.0
+      "obv": 904030304.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-07-28",
@@ -3716,12 +3726,12 @@
       "macd": 7.5181,
       "macd_signal": 7.7353,
       "macd_hist": -0.2172,
-      "adx14": 17.5748,
+      "adx14": 17.5745,
       "plus_di": 25.3615,
       "minus_di": 17.4641,
       "supertrend": 952.3075,
-      "supertrend_direction": 1,
-      "obv": 916089884.0
+      "obv": 916089884.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-07-29",
@@ -3737,12 +3747,12 @@
       "macd": 7.924,
       "macd_signal": 7.773,
       "macd_hist": 0.1509,
-      "adx14": 17.8358,
+      "adx14": 17.8356,
       "plus_di": 24.6634,
       "minus_di": 16.0255,
       "supertrend": 952.3075,
-      "supertrend_direction": 1,
-      "obv": 935985580.0
+      "obv": 935985580.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-07-30",
@@ -3758,12 +3768,12 @@
       "macd": 8.3165,
       "macd_signal": 7.8817,
       "macd_hist": 0.4347,
-      "adx14": 18.3155,
+      "adx14": 18.3153,
       "plus_di": 25.2961,
       "minus_di": 15.3233,
       "supertrend": 958.9622,
-      "supertrend_direction": 1,
-      "obv": 951139616.0
+      "obv": 951139616.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-07-31",
@@ -3779,12 +3789,12 @@
       "macd": 8.231,
       "macd_signal": 7.9516,
       "macd_hist": 0.2794,
-      "adx14": 18.2022,
+      "adx14": 18.202,
       "plus_di": 23.624,
       "minus_di": 16.8528,
       "supertrend": 958.9622,
-      "supertrend_direction": 1,
-      "obv": 928956584.0
+      "obv": 928956584.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-08-01",
@@ -3800,12 +3810,12 @@
       "macd": 7.8348,
       "macd_signal": 7.9282,
       "macd_hist": -0.0934,
-      "adx14": 18.0969,
+      "adx14": 18.0967,
       "plus_di": 22.3331,
       "minus_di": 15.9319,
       "supertrend": 958.9622,
-      "supertrend_direction": 1,
-      "obv": 917639326.0
+      "obv": 917639326.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-08-04",
@@ -3821,12 +3831,12 @@
       "macd": 6.6425,
       "macd_signal": 7.6711,
       "macd_hist": -1.0286,
-      "adx14": 16.8306,
+      "adx14": 16.8304,
       "plus_di": 20.4112,
       "minus_di": 20.562,
       "supertrend": 958.9622,
-      "supertrend_direction": 1,
-      "obv": 903705380.0
+      "obv": 903705380.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-08-05",
@@ -3842,12 +3852,12 @@
       "macd": 5.0677,
       "macd_signal": 7.1504,
       "macd_hist": -2.0827,
-      "adx14": 16.679,
+      "adx14": 16.6789,
       "plus_di": 18.7586,
       "minus_di": 25.2288,
       "supertrend": 958.9622,
-      "supertrend_direction": 1,
-      "obv": 879727322.0
+      "obv": 879727322.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-08-06",
@@ -3863,12 +3873,12 @@
       "macd": 4.0782,
       "macd_signal": 6.536,
       "macd_hist": -2.4577,
-      "adx14": 16.5383,
+      "adx14": 16.5382,
       "plus_di": 17.7924,
       "minus_di": 23.9292,
       "supertrend": 958.9622,
-      "supertrend_direction": 1,
-      "obv": 893807526.0
+      "obv": 893807526.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-08-07",
@@ -3884,12 +3894,12 @@
       "macd": 3.6528,
       "macd_signal": 5.9593,
       "macd_hist": -2.3065,
-      "adx14": 15.6597,
+      "adx14": 15.6596,
       "plus_di": 20.4227,
       "minus_di": 22.2302,
       "supertrend": 958.9622,
-      "supertrend_direction": 1,
-      "obv": 906888712.0
+      "obv": 906888712.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-08-08",
@@ -3905,12 +3915,12 @@
       "macd": 2.4343,
       "macd_signal": 5.2543,
       "macd_hist": -2.82,
-      "adx14": 15.1643,
+      "adx14": 15.1642,
       "plus_di": 18.9395,
       "minus_di": 22.56,
       "supertrend": 958.9622,
-      "supertrend_direction": 1,
-      "obv": 892993448.0
+      "obv": 892993448.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-08-11",
@@ -3926,12 +3936,12 @@
       "macd": 2.3033,
       "macd_signal": 4.6641,
       "macd_hist": -2.3608,
-      "adx14": 14.4372,
+      "adx14": 14.4371,
       "plus_di": 18.9852,
       "minus_di": 20.9774,
       "supertrend": 958.9622,
-      "supertrend_direction": 1,
-      "obv": 902099302.0
+      "obv": 902099302.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-08-12",
@@ -3947,12 +3957,12 @@
       "macd": 1.1661,
       "macd_signal": 3.9645,
       "macd_hist": -2.7985,
-      "adx14": 14.0432,
+      "adx14": 14.0431,
       "plus_di": 17.4516,
       "minus_di": 20.8701,
       "supertrend": 958.9622,
-      "supertrend_direction": 1,
-      "obv": 889161500.0
+      "obv": 889161500.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-08-13",
@@ -3968,12 +3978,12 @@
       "macd": 0.6698,
       "macd_signal": 3.3056,
       "macd_hist": -2.6358,
-      "adx14": 13.6773,
-      "plus_di": 16.2189,
+      "adx14": 13.6772,
+      "plus_di": 16.2188,
       "minus_di": 19.3959,
       "supertrend": 958.9622,
-      "supertrend_direction": 1,
-      "obv": 902738896.0
+      "obv": 902738896.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-08-14",
@@ -3985,16 +3995,16 @@
       "ema20": 978.8795,
       "ema50": 968.394,
       "ema200": 913.4838,
-      "rsi14": 51.0172,
+      "rsi14": 51.0173,
       "macd": 0.6972,
       "macd_signal": 2.7839,
       "macd_hist": -2.0867,
-      "adx14": 13.2063,
+      "adx14": 13.2062,
       "plus_di": 15.6446,
       "minus_di": 18.0299,
       "supertrend": 958.9622,
-      "supertrend_direction": 1,
-      "obv": 920250612.0
+      "obv": 920250612.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-08-18",
@@ -4014,8 +4024,8 @@
       "plus_di": 22.5543,
       "minus_di": 16.2641,
       "supertrend": 958.9622,
-      "supertrend_direction": 1,
-      "obv": 939535408.0
+      "obv": 939535408.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-08-19",
@@ -4026,17 +4036,17 @@
       "volume": 12352438.0,
       "ema20": 979.495,
       "ema50": 969.4682,
-      "ema200": 914.8487,
+      "ema200": 914.8486,
       "rsi14": 50.6488,
       "macd": 1.0918,
       "macd_signal": 2.1922,
       "macd_hist": -1.1005,
-      "adx14": 13.09,
+      "adx14": 13.0899,
       "plus_di": 21.3252,
       "minus_di": 17.8778,
       "supertrend": 958.9622,
-      "supertrend_direction": 1,
-      "obv": 927182970.0
+      "obv": 927182970.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-08-20",
@@ -4056,8 +4066,8 @@
       "plus_di": 20.5183,
       "minus_di": 19.4426,
       "supertrend": 958.9622,
-      "supertrend_direction": 1,
-      "obv": 917232742.0
+      "obv": 917232742.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-08-21",
@@ -4068,7 +4078,7 @@
       "volume": 12439850.0,
       "ema20": 979.3509,
       "ema50": 970.1764,
-      "ema200": 916.1124,
+      "ema200": 916.1123,
       "rsi14": 50.7184,
       "macd": 0.8216,
       "macd_signal": 1.7081,
@@ -4077,8 +4087,8 @@
       "plus_di": 21.2881,
       "minus_di": 18.6085,
       "supertrend": 958.9622,
-      "supertrend_direction": 1,
-      "obv": 929672592.0
+      "obv": 929672592.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-08-22",
@@ -4094,12 +4104,12 @@
       "macd": -0.2772,
       "macd_signal": 1.3111,
       "macd_hist": -1.5883,
-      "adx14": 11.9421,
+      "adx14": 11.942,
       "plus_di": 18.9112,
       "minus_di": 24.022,
       "supertrend": 958.9622,
-      "supertrend_direction": 1,
-      "obv": 909839090.0
+      "obv": 909839090.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-08-25",
@@ -4109,18 +4119,18 @@
       "close": 966.0717,
       "volume": 17518044.0,
       "ema20": 976.9631,
-      "ema50": 969.8701,
+      "ema50": 969.87,
       "ema200": 917.104,
       "rsi14": 43.1853,
       "macd": -1.1545,
       "macd_signal": 0.8179,
       "macd_hist": -1.9725,
-      "adx14": 11.9439,
+      "adx14": 11.9438,
       "plus_di": 17.7895,
       "minus_di": 22.6262,
       "supertrend": 958.9622,
-      "supertrend_direction": 1,
-      "obv": 892321046.0
+      "obv": 892321046.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-08-26",
@@ -4136,12 +4146,12 @@
       "macd": -2.5075,
       "macd_signal": 0.1528,
       "macd_hist": -2.6604,
-      "adx14": 12.8255,
+      "adx14": 12.8254,
       "plus_di": 16.0143,
       "minus_di": 26.288,
       "supertrend": 998.4592,
-      "supertrend_direction": -1,
-      "obv": 875403315.0
+      "obv": 875403315.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-08-28",
@@ -4161,8 +4171,8 @@
       "plus_di": 14.4051,
       "minus_di": 30.746,
       "supertrend": 987.1047,
-      "supertrend_direction": -1,
-      "obv": 849965060.0
+      "obv": 849965060.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-08-29",
@@ -4178,12 +4188,12 @@
       "macd": -6.9627,
       "macd_signal": -2.0568,
       "macd_hist": -4.9059,
-      "adx14": 16.3178,
+      "adx14": 16.3177,
       "plus_di": 13.3673,
       "minus_di": 31.2053,
       "supertrend": 980.2942,
-      "supertrend_direction": -1,
-      "obv": 835141247.0
+      "obv": 835141247.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-09-01",
@@ -4203,8 +4213,8 @@
       "plus_di": 12.5487,
       "minus_di": 31.3632,
       "supertrend": 974.9321,
-      "supertrend_direction": -1,
-      "obv": 814962903.0
+      "obv": 814962903.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-09-02",
@@ -4220,12 +4230,12 @@
       "macd": -10.4143,
       "macd_signal": -4.7888,
       "macd_hist": -5.6254,
-      "adx14": 20.098,
+      "adx14": 20.0979,
       "plus_di": 11.7919,
       "minus_di": 30.784,
       "supertrend": 971.8081,
-      "supertrend_direction": -1,
-      "obv": 800766583.0
+      "obv": 800766583.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-09-03",
@@ -4245,8 +4255,8 @@
       "plus_di": 10.7393,
       "minus_di": 30.2267,
       "supertrend": 971.6034,
-      "supertrend_direction": -1,
-      "obv": 816850064.0
+      "obv": 816850064.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-09-04",
@@ -4266,8 +4276,8 @@
       "plus_di": 15.27,
       "minus_di": 28.346,
       "supertrend": 971.6034,
-      "supertrend_direction": -1,
-      "obv": 834447721.0
+      "obv": 834447721.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-09-05",
@@ -4283,12 +4293,12 @@
       "macd": -10.0439,
       "macd_signal": -7.543,
       "macd_hist": -2.5009,
-      "adx14": 23.2971,
+      "adx14": 23.297,
       "plus_di": 14.1374,
       "minus_di": 27.4567,
       "supertrend": 971.6034,
-      "supertrend_direction": -1,
-      "obv": 846049832.0
+      "obv": 846049832.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-09-08",
@@ -4297,19 +4307,19 @@
       "low": 944.8231,
       "close": 950.2828,
       "volume": 11711307.0,
-      "ema20": 956.7015,
+      "ema20": 956.7014,
       "ema50": 961.6251,
       "ema200": 919.2929,
       "rsi14": 43.6789,
       "macd": -9.3142,
       "macd_signal": -7.8972,
       "macd_hist": -1.417,
-      "adx14": 23.2164,
+      "adx14": 23.2163,
       "plus_di": 16.2659,
       "minus_di": 25.5312,
       "supertrend": 971.6034,
-      "supertrend_direction": -1,
-      "obv": 857761139.0
+      "obv": 857761139.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-09-09",
@@ -4329,8 +4339,8 @@
       "plus_di": 15.9028,
       "minus_di": 23.8703,
       "supertrend": 971.6034,
-      "supertrend_direction": -1,
-      "obv": 843775600.0
+      "obv": 843775600.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-09-10",
@@ -4350,8 +4360,8 @@
       "plus_di": 14.8202,
       "minus_di": 22.8033,
       "supertrend": 971.6034,
-      "supertrend_direction": -1,
-      "obv": 861866700.0
+      "obv": 861866700.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-09-11",
@@ -4371,8 +4381,8 @@
       "plus_di": 14.0318,
       "minus_di": 22.6144,
       "supertrend": 971.6034,
-      "supertrend_direction": -1,
-      "obv": 876980333.0
+      "obv": 876980333.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-09-12",
@@ -4392,8 +4402,8 @@
       "plus_di": 14.2108,
       "minus_di": 21.4949,
       "supertrend": 971.6034,
-      "supertrend_direction": -1,
-      "obv": 862616814.0
+      "obv": 862616814.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-09-15",
@@ -4409,12 +4419,12 @@
       "macd": -6.1566,
       "macd_signal": -7.3681,
       "macd_hist": 1.2115,
-      "adx14": 22.3226,
+      "adx14": 22.3225,
       "plus_di": 14.5438,
       "minus_di": 20.5477,
       "supertrend": 971.6034,
-      "supertrend_direction": -1,
-      "obv": 848130437.0
+      "obv": 848130437.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-09-16",
@@ -4424,7 +4434,7 @@
       "close": 951.119,
       "volume": 18661794.0,
       "ema20": 954.1424,
-      "ema50": 959.3542,
+      "ema50": 959.3541,
       "ema200": 921.1369,
       "rsi14": 44.6029,
       "macd": -5.6746,
@@ -4434,8 +4444,8 @@
       "plus_di": 13.8168,
       "minus_di": 21.8513,
       "supertrend": 971.6034,
-      "supertrend_direction": -1,
-      "obv": 829468643.0
+      "obv": 829468643.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-09-17",
@@ -4451,12 +4461,12 @@
       "macd": -5.2598,
       "macd_signal": -6.6755,
       "macd_hist": 1.4157,
-      "adx14": 21.6021,
+      "adx14": 21.602,
       "plus_di": 16.0849,
       "minus_di": 20.491,
       "supertrend": 971.6034,
-      "supertrend_direction": -1,
-      "obv": 812107167.0
+      "obv": 812107167.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-09-18",
@@ -4467,7 +4477,7 @@
       "volume": 17791598.0,
       "ema20": 954.5058,
       "ema50": 959.0957,
-      "ema200": 921.8256,
+      "ema200": 921.8255,
       "rsi14": 53.8281,
       "macd": -4.0587,
       "macd_signal": -6.1521,
@@ -4476,8 +4486,8 @@
       "plus_di": 18.0075,
       "minus_di": 18.8384,
       "supertrend": 971.6034,
-      "supertrend_direction": -1,
-      "obv": 829898765.0
+      "obv": 829898765.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-09-19",
@@ -4497,8 +4507,8 @@
       "plus_di": 16.404,
       "minus_di": 21.4628,
       "supertrend": 971.6034,
-      "supertrend_direction": -1,
-      "obv": 798655498.0
+      "obv": 798655498.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-09-22",
@@ -4509,7 +4519,7 @@
       "volume": 10854415.0,
       "ema20": 953.6474,
       "ema50": 958.3819,
-      "ema200": 922.3802,
+      "ema200": 922.3801,
       "rsi14": 43.8223,
       "macd": -3.8655,
       "macd_signal": -5.3275,
@@ -4518,8 +4528,8 @@
       "plus_di": 15.4764,
       "minus_di": 20.3409,
       "supertrend": 971.6034,
-      "supertrend_direction": -1,
-      "obv": 787801083.0
+      "obv": 787801083.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-09-23",
@@ -4530,7 +4540,7 @@
       "volume": 21022298.0,
       "ema20": 952.5025,
       "ema50": 957.7248,
-      "ema200": 922.5717,
+      "ema200": 922.5716,
       "rsi14": 39.2352,
       "macd": -4.378,
       "macd_signal": -5.1376,
@@ -4539,8 +4549,8 @@
       "plus_di": 14.2823,
       "minus_di": 22.69,
       "supertrend": 971.6034,
-      "supertrend_direction": -1,
-      "obv": 766778785.0
+      "obv": 766778785.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-09-24",
@@ -4560,8 +4570,8 @@
       "plus_di": 13.0681,
       "minus_di": 28.2443,
       "supertrend": 969.1651,
-      "supertrend_direction": -1,
-      "obv": 751661565.0
+      "obv": 751661565.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-09-25",
@@ -4581,8 +4591,8 @@
       "plus_di": 13.1675,
       "minus_di": 26.4376,
       "supertrend": 969.1651,
-      "supertrend_direction": -1,
-      "obv": 720248286.0
+      "obv": 720248286.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-09-26",
@@ -4602,8 +4612,8 @@
       "plus_di": 12.3527,
       "minus_di": 28.5206,
       "supertrend": 965.0509,
-      "supertrend_direction": -1,
-      "obv": 705373630.0
+      "obv": 705373630.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-09-29",
@@ -4623,8 +4633,8 @@
       "plus_di": 14.2135,
       "minus_di": 25.5513,
       "supertrend": 965.0509,
-      "supertrend_direction": -1,
-      "obv": 737771809.0
+      "obv": 737771809.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-09-30",
@@ -4644,8 +4654,8 @@
       "plus_di": 14.9437,
       "minus_di": 23.5109,
       "supertrend": 965.0509,
-      "supertrend_direction": -1,
-      "obv": 766068496.0
+      "obv": 766068496.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-10-01",
@@ -4665,8 +4675,8 @@
       "plus_di": 18.2641,
       "minus_di": 20.4774,
       "supertrend": 965.0509,
-      "supertrend_direction": -1,
-      "obv": 791419328.0
+      "obv": 791419328.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-10-03",
@@ -4686,8 +4696,8 @@
       "plus_di": 16.8047,
       "minus_di": 18.8411,
       "supertrend": 965.0509,
-      "supertrend_direction": -1,
-      "obv": 764761032.0
+      "obv": 764761032.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-10-06",
@@ -4707,8 +4717,8 @@
       "plus_di": 21.1204,
       "minus_di": 17.2879,
       "supertrend": 965.0509,
-      "supertrend_direction": -1,
-      "obv": 783303715.0
+      "obv": 783303715.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2025-10-07",
@@ -4724,12 +4734,12 @@
       "macd": -1.3498,
       "macd_signal": -4.4732,
       "macd_hist": 3.1234,
-      "adx14": 20.3686,
+      "adx14": 20.3685,
       "plus_di": 25.524,
       "minus_di": 15.5934,
       "supertrend": 925.1657,
-      "supertrend_direction": 1,
-      "obv": 808839451.0
+      "obv": 808839451.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-10-08",
@@ -4749,8 +4759,8 @@
       "plus_di": 23.9987,
       "minus_di": 14.6616,
       "supertrend": 925.1657,
-      "supertrend_direction": 1,
-      "obv": 792899741.0
+      "obv": 792899741.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-10-09",
@@ -4770,8 +4780,8 @@
       "plus_di": 22.8519,
       "minus_di": 16.3367,
       "supertrend": 925.1657,
-      "supertrend_direction": 1,
-      "obv": 777528791.0
+      "obv": 777528791.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-10-10",
@@ -4791,8 +4801,8 @@
       "plus_di": 25.6796,
       "minus_di": 15.5157,
       "supertrend": 927.7283,
-      "supertrend_direction": 1,
-      "obv": 791285871.0
+      "obv": 791285871.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-10-13",
@@ -4812,8 +4822,8 @@
       "plus_di": 24.375,
       "minus_di": 18.1708,
       "supertrend": 927.7283,
-      "supertrend_direction": 1,
-      "obv": 772651617.0
+      "obv": 772651617.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-10-14",
@@ -4833,8 +4843,8 @@
       "plus_di": 22.5326,
       "minus_di": 19.6072,
       "supertrend": 927.7283,
-      "supertrend_direction": 1,
-      "obv": 795585999.0
+      "obv": 795585999.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-10-15",
@@ -4854,8 +4864,8 @@
       "plus_di": 23.5777,
       "minus_di": 18.3262,
       "supertrend": 927.7283,
-      "supertrend_direction": 1,
-      "obv": 818896446.0
+      "obv": 818896446.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-10-16",
@@ -4875,8 +4885,8 @@
       "plus_di": 27.6177,
       "minus_di": 16.4836,
       "supertrend": 934.1015,
-      "supertrend_direction": 1,
-      "obv": 841833012.0
+      "obv": 841833012.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-10-17",
@@ -4896,8 +4906,8 @@
       "plus_di": 30.76,
       "minus_di": 14.5139,
       "supertrend": 939.512,
-      "supertrend_direction": 1,
-      "obv": 867043523.0
+      "obv": 867043523.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-10-20",
@@ -4917,8 +4927,8 @@
       "plus_di": 32.7058,
       "minus_di": 12.859,
       "supertrend": 947.7211,
-      "supertrend_direction": 1,
-      "obv": 889238725.0
+      "obv": 889238725.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-10-21",
@@ -4938,8 +4948,8 @@
       "plus_di": 31.5195,
       "minus_di": 12.3926,
       "supertrend": 948.6019,
-      "supertrend_direction": 1,
-      "obv": 892710325.0
+      "obv": 892710325.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-10-23",
@@ -4959,8 +4969,8 @@
       "plus_di": 34.5607,
       "minus_di": 11.471,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 936236851.0
+      "obv": 936236851.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-10-24",
@@ -4980,8 +4990,8 @@
       "plus_di": 31.0224,
       "minus_di": 17.5846,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 918529083.0
+      "obv": 918529083.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-10-27",
@@ -5001,8 +5011,8 @@
       "plus_di": 28.8219,
       "minus_di": 16.3372,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 934229879.0
+      "obv": 934229879.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-10-28",
@@ -5022,8 +5032,8 @@
       "plus_di": 26.9503,
       "minus_di": 15.8758,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 968134168.0
+      "obv": 968134168.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-10-29",
@@ -5043,8 +5053,8 @@
       "plus_di": 27.5205,
       "minus_di": 14.8755,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 985903613.0
+      "obv": 985903613.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-10-30",
@@ -5064,8 +5074,8 @@
       "plus_di": 25.7849,
       "minus_di": 15.4123,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 965940696.0
+      "obv": 965940696.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-10-31",
@@ -5085,8 +5095,8 @@
       "plus_di": 22.8668,
       "minus_di": 21.4152,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 942719366.0
+      "obv": 942719366.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-11-03",
@@ -5106,8 +5116,8 @@
       "plus_di": 21.596,
       "minus_di": 20.2251,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 959326546.0
+      "obv": 959326546.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-11-04",
@@ -5127,8 +5137,8 @@
       "plus_di": 21.3862,
       "minus_di": 18.8886,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 939302002.0
+      "obv": 939302002.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-11-06",
@@ -5148,8 +5158,8 @@
       "plus_di": 19.5982,
       "minus_di": 22.0657,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 917022486.0
+      "obv": 917022486.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-11-07",
@@ -5169,8 +5179,8 @@
       "plus_di": 18.6012,
       "minus_di": 20.9432,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 902017918.0
+      "obv": 902017918.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-11-10",
@@ -5190,8 +5200,8 @@
       "plus_di": 20.6675,
       "minus_di": 19.7947,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 918006180.0
+      "obv": 918006180.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-11-11",
@@ -5211,8 +5221,8 @@
       "plus_di": 20.3367,
       "minus_di": 18.2413,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 928206710.0
+      "obv": 928206710.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-11-12",
@@ -5232,8 +5242,8 @@
       "plus_di": 21.9812,
       "minus_di": 17.1827,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 915069447.0
+      "obv": 915069447.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-11-13",
@@ -5253,8 +5263,8 @@
       "plus_di": 21.1057,
       "minus_di": 19.2067,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 900944608.0
+      "obv": 900944608.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-11-14",
@@ -5274,8 +5284,8 @@
       "plus_di": 19.3769,
       "minus_di": 21.0727,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 922331573.0
+      "obv": 922331573.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-11-17",
@@ -5295,8 +5305,8 @@
       "plus_di": 21.4419,
       "minus_di": 19.6971,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 940727981.0
+      "obv": 940727981.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-11-18",
@@ -5316,8 +5326,8 @@
       "plus_di": 20.9655,
       "minus_di": 18.7373,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 920725341.0
+      "obv": 920725341.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-11-19",
@@ -5337,8 +5347,8 @@
       "plus_di": 19.5359,
       "minus_di": 20.7197,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 940539188.0
+      "obv": 940539188.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-11-20",
@@ -5358,8 +5368,8 @@
       "plus_di": 25.4864,
       "minus_di": 18.6319,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 960390053.0
+      "obv": 960390053.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-11-21",
@@ -5379,8 +5389,8 @@
       "plus_di": 23.8258,
       "minus_di": 17.4179,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 942890156.0
+      "obv": 942890156.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-11-24",
@@ -5400,8 +5410,8 @@
       "plus_di": 23.2547,
       "minus_di": 15.8081,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 975094209.0
+      "obv": 975094209.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-11-25",
@@ -5421,8 +5431,8 @@
       "plus_di": 21.1658,
       "minus_di": 17.0271,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 950104826.0
+      "obv": 950104826.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-11-26",
@@ -5442,8 +5452,8 @@
       "plus_di": 18.5634,
       "minus_di": 18.3369,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 969599182.0
+      "obv": 969599182.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-11-27",
@@ -5463,8 +5473,8 @@
       "plus_di": 21.8648,
       "minus_di": 16.9541,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 995136030.0
+      "obv": 995136030.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-11-28",
@@ -5484,8 +5494,8 @@
       "plus_di": 21.0168,
       "minus_di": 16.2966,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 979147223.0
+      "obv": 979147223.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-12-01",
@@ -5505,8 +5515,8 @@
       "plus_di": 21.8051,
       "minus_di": 14.8578,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 962400657.0
+      "obv": 962400657.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-12-02",
@@ -5526,8 +5536,8 @@
       "plus_di": 20.0169,
       "minus_di": 20.4972,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 935083995.0
+      "obv": 935083995.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-12-03",
@@ -5547,8 +5557,8 @@
       "plus_di": 22.2259,
       "minus_di": 18.9057,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 950532772.0
+      "obv": 950532772.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-12-04",
@@ -5568,8 +5578,8 @@
       "plus_di": 22.1289,
       "minus_di": 17.8352,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 936004603.0
+      "obv": 936004603.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-12-05",
@@ -5589,8 +5599,8 @@
       "plus_di": 21.8241,
       "minus_di": 16.3211,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 948847969.0
+      "obv": 948847969.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-12-08",
@@ -5610,8 +5620,8 @@
       "plus_di": 20.8599,
       "minus_di": 15.5999,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 935946947.0
+      "obv": 935946947.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-12-09",
@@ -5631,8 +5641,8 @@
       "plus_di": 19.9024,
       "minus_di": 16.6493,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 920652625.0
+      "obv": 920652625.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-12-10",
@@ -5652,8 +5662,8 @@
       "plus_di": 18.5707,
       "minus_di": 19.9452,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 905329795.0
+      "obv": 905329795.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-12-11",
@@ -5673,8 +5683,8 @@
       "plus_di": 19.3625,
       "minus_di": 18.5104,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 917174604.0
+      "obv": 917174604.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-12-12",
@@ -5694,8 +5704,8 @@
       "plus_di": 19.7532,
       "minus_di": 17.8765,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 929163222.0
+      "obv": 929163222.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-12-15",
@@ -5715,8 +5725,8 @@
       "plus_di": 18.7126,
       "minus_di": 20.2675,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 919373162.0
+      "obv": 919373162.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-12-16",
@@ -5736,8 +5746,8 @@
       "plus_di": 17.8252,
       "minus_di": 20.354,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 899324074.0
+      "obv": 899324074.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-12-17",
@@ -5757,8 +5767,8 @@
       "plus_di": 16.3495,
       "minus_di": 23.7344,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 880243152.0
+      "obv": 880243152.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-12-18",
@@ -5778,8 +5788,8 @@
       "plus_di": 15.1005,
       "minus_di": 25.9846,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 865330748.0
+      "obv": 865330748.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-12-19",
@@ -5799,8 +5809,8 @@
       "plus_di": 14.6554,
       "minus_di": 24.6472,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 891283132.0
+      "obv": 891283132.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-12-22",
@@ -5820,8 +5830,8 @@
       "plus_di": 16.681,
       "minus_di": 23.3925,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 904823543.0
+      "obv": 904823543.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-12-23",
@@ -5841,8 +5851,8 @@
       "plus_di": 19.0371,
       "minus_di": 21.8985,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 922751392.0
+      "obv": 922751392.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-12-24",
@@ -5862,8 +5872,8 @@
       "plus_di": 18.6126,
       "minus_di": 21.0703,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 936451388.0
+      "obv": 936451388.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-12-26",
@@ -5883,8 +5893,8 @@
       "plus_di": 17.5516,
       "minus_di": 23.0495,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 927090535.0
+      "obv": 927090535.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-12-29",
@@ -5904,8 +5914,8 @@
       "plus_di": 16.4662,
       "minus_di": 21.9273,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 913544786.0
+      "obv": 913544786.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-12-30",
@@ -5925,8 +5935,8 @@
       "plus_di": 15.1962,
       "minus_di": 23.2489,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 880388937.0
+      "obv": 880388937.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2025-12-31",
@@ -5946,8 +5956,8 @@
       "plus_di": 15.8545,
       "minus_di": 21.8322,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 891352391.0
+      "obv": 891352391.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2026-01-01",
@@ -5967,8 +5977,8 @@
       "plus_di": 15.059,
       "minus_di": 20.7367,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 884220317.0
+      "obv": 884220317.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2026-01-02",
@@ -5988,8 +5998,8 @@
       "plus_di": 17.19,
       "minus_di": 18.909,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 895971776.0
+      "obv": 895971776.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2026-01-05",
@@ -6009,8 +6019,8 @@
       "plus_di": 14.344,
       "minus_di": 22.6538,
       "supertrend": 954.6724,
-      "supertrend_direction": 1,
-      "obv": 868324397.0
+      "obv": 868324397.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2026-01-06",
@@ -6030,8 +6040,8 @@
       "plus_di": 12.7236,
       "minus_di": 30.7609,
       "supertrend": 986.9513,
-      "supertrend_direction": -1,
-      "obv": 836335614.0
+      "obv": 836335614.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-01-07",
@@ -6051,8 +6061,8 @@
       "plus_di": 11.6552,
       "minus_di": 33.3612,
       "supertrend": 977.6477,
-      "supertrend_direction": -1,
-      "obv": 783450902.0
+      "obv": 783450902.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-01-08",
@@ -6072,8 +6082,8 @@
       "plus_di": 10.9464,
       "minus_di": 33.744,
       "supertrend": 972.9216,
-      "supertrend_direction": -1,
-      "obv": 761522053.0
+      "obv": 761522053.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-01-09",
@@ -6093,8 +6103,8 @@
       "plus_di": 9.9724,
       "minus_di": 34.9076,
       "supertrend": 968.7493,
-      "supertrend_direction": -1,
-      "obv": 723338214.0
+      "obv": 723338214.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-01-12",
@@ -6114,8 +6124,8 @@
       "plus_di": 9.3314,
       "minus_di": 34.5818,
       "supertrend": 962.1463,
-      "supertrend_direction": -1,
-      "obv": 702266548.0
+      "obv": 702266548.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-01-13",
@@ -6135,8 +6145,8 @@
       "plus_di": 11.5404,
       "minus_di": 31.8937,
       "supertrend": 962.1463,
-      "supertrend_direction": -1,
-      "obv": 734309375.0
+      "obv": 734309375.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-01-14",
@@ -6156,8 +6166,8 @@
       "plus_di": 10.3963,
       "minus_di": 34.9247,
       "supertrend": 958.5337,
-      "supertrend_direction": -1,
-      "obv": 697621127.0
+      "obv": 697621127.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-01-15",
@@ -6177,8 +6187,8 @@
       "plus_di": 10.3963,
       "minus_di": 34.9247,
       "supertrend": 949.5806,
-      "supertrend_direction": -1,
-      "obv": 697621127.0
+      "obv": 697621127.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-01-16",
@@ -6198,8 +6208,8 @@
       "plus_di": 15.0209,
       "minus_di": 31.836,
       "supertrend": 949.5806,
-      "supertrend_direction": -1,
-      "obv": 735401362.0
+      "obv": 735401362.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-01-19",
@@ -6219,8 +6229,8 @@
       "plus_di": 13.8257,
       "minus_di": 29.0827,
       "supertrend": 949.5806,
-      "supertrend_direction": -1,
-      "obv": 697209420.0
+      "obv": 697209420.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-01-20",
@@ -6240,8 +6250,8 @@
       "plus_di": 12.762,
       "minus_di": 26.8451,
       "supertrend": 949.5806,
-      "supertrend_direction": -1,
-      "obv": 733232147.0
+      "obv": 733232147.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-01-21",
@@ -6261,8 +6271,8 @@
       "plus_di": 11.6805,
       "minus_di": 26.657,
       "supertrend": 949.5806,
-      "supertrend_direction": -1,
-      "obv": 700465293.0
+      "obv": 700465293.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-01-22",
@@ -6282,8 +6292,8 @@
       "plus_di": 10.7877,
       "minus_di": 25.7836,
       "supertrend": 948.175,
-      "supertrend_direction": -1,
-      "obv": 656020538.0
+      "obv": 656020538.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-01-23",
@@ -6303,8 +6313,8 @@
       "plus_di": 9.8801,
       "minus_di": 25.5867,
       "supertrend": 945.8822,
-      "supertrend_direction": -1,
-      "obv": 625035291.0
+      "obv": 625035291.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-01-27",
@@ -6324,8 +6334,8 @@
       "plus_di": 11.0638,
       "minus_di": 22.4272,
       "supertrend": 945.8822,
-      "supertrend_direction": -1,
-      "obv": 669788384.0
+      "obv": 669788384.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-01-28",
@@ -6345,8 +6355,8 @@
       "plus_di": 15.1118,
       "minus_di": 20.8357,
       "supertrend": 945.8822,
-      "supertrend_direction": -1,
-      "obv": 705135522.0
+      "obv": 705135522.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-01-29",
@@ -6366,8 +6376,8 @@
       "plus_di": 14.0455,
       "minus_di": 21.277,
       "supertrend": 945.8822,
-      "supertrend_direction": -1,
-      "obv": 742311150.0
+      "obv": 742311150.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-01-30",
@@ -6387,8 +6397,8 @@
       "plus_di": 13.2922,
       "minus_di": 20.1359,
       "supertrend": 945.8822,
-      "supertrend_direction": -1,
-      "obv": 712619917.0
+      "obv": 712619917.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-02-02",
@@ -6408,8 +6418,8 @@
       "plus_di": 12.0162,
       "minus_di": 26.8428,
       "supertrend": 945.8822,
-      "supertrend_direction": -1,
-      "obv": 684587811.0
+      "obv": 684587811.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-02-03",
@@ -6429,8 +6439,8 @@
       "plus_di": 33.3195,
       "minus_di": 20.1471,
       "supertrend": 945.8822,
-      "supertrend_direction": -1,
-      "obv": 734924779.0
+      "obv": 734924779.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-02-04",
@@ -6450,8 +6460,8 @@
       "plus_di": 32.1088,
       "minus_di": 19.415,
       "supertrend": 945.8822,
-      "supertrend_direction": -1,
-      "obv": 759291549.0
+      "obv": 759291549.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-02-05",
@@ -6471,8 +6481,8 @@
       "plus_di": 30.8871,
       "minus_di": 19.185,
       "supertrend": 945.8822,
-      "supertrend_direction": -1,
-      "obv": 731188380.0
+      "obv": 731188380.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-02-06",
@@ -6492,8 +6502,8 @@
       "plus_di": 29.3317,
       "minus_di": 22.0061,
       "supertrend": 945.8822,
-      "supertrend_direction": -1,
-      "obv": 713068108.0
+      "obv": 713068108.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-02-09",
@@ -6513,8 +6523,8 @@
       "plus_di": 27.5245,
       "minus_di": 21.5965,
       "supertrend": 945.8822,
-      "supertrend_direction": -1,
-      "obv": 689120279.0
+      "obv": 689120279.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-02-10",
@@ -6534,8 +6544,8 @@
       "plus_di": 26.2239,
       "minus_di": 22.9062,
       "supertrend": 945.8822,
-      "supertrend_direction": -1,
-      "obv": 657594894.0
+      "obv": 657594894.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-02-11",
@@ -6555,8 +6565,8 @@
       "plus_di": 24.9817,
       "minus_di": 23.8798,
       "supertrend": 945.8822,
-      "supertrend_direction": -1,
-      "obv": 632725090.0
+      "obv": 632725090.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-02-12",
@@ -6576,8 +6586,8 @@
       "plus_di": 23.834,
       "minus_di": 25.8757,
       "supertrend": 945.8822,
-      "supertrend_direction": -1,
-      "obv": 598852887.0
+      "obv": 598852887.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-02-13",
@@ -6597,8 +6607,8 @@
       "plus_di": 21.0318,
       "minus_di": 30.3979,
       "supertrend": 945.8822,
-      "supertrend_direction": -1,
-      "obv": 548664528.0
+      "obv": 548664528.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-02-16",
@@ -6618,8 +6628,8 @@
       "plus_di": 19.1894,
       "minus_di": 26.9593,
       "supertrend": 945.8822,
-      "supertrend_direction": -1,
-      "obv": 567471517.0
+      "obv": 567471517.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-02-17",
@@ -6639,8 +6649,8 @@
       "plus_di": 18.4117,
       "minus_di": 25.8667,
       "supertrend": 945.8822,
-      "supertrend_direction": -1,
-      "obv": 544871888.0
+      "obv": 544871888.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-02-18",
@@ -6660,8 +6670,8 @@
       "plus_di": 17.9058,
       "minus_di": 25.156,
       "supertrend": 945.8822,
-      "supertrend_direction": -1,
-      "obv": 532133186.0
+      "obv": 532133186.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-02-19",
@@ -6681,8 +6691,8 @@
       "plus_di": 16.5704,
       "minus_di": 26.4412,
       "supertrend": 945.8822,
-      "supertrend_direction": -1,
-      "obv": 510923952.0
+      "obv": 510923952.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-02-20",
@@ -6702,8 +6712,8 @@
       "plus_di": 15.8521,
       "minus_di": 27.1528,
       "supertrend": 943.659,
-      "supertrend_direction": -1,
-      "obv": 488269045.0
+      "obv": 488269045.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-02-23",
@@ -6723,8 +6733,8 @@
       "plus_di": 18.4477,
       "minus_di": 25.4198,
       "supertrend": 943.659,
-      "supertrend_direction": -1,
-      "obv": 511539167.0
+      "obv": 511539167.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-02-24",
@@ -6744,8 +6754,8 @@
       "plus_di": 16.8683,
       "minus_di": 26.0215,
       "supertrend": 943.659,
-      "supertrend_direction": -1,
-      "obv": 480225182.0
+      "obv": 480225182.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-02-25",
@@ -6765,8 +6775,8 @@
       "plus_di": 15.8646,
       "minus_di": 27.2638,
       "supertrend": 939.9405,
-      "supertrend_direction": -1,
-      "obv": 452340879.0
+      "obv": 452340879.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-02-26",
@@ -6786,8 +6796,8 @@
       "plus_di": 14.6292,
       "minus_di": 28.851,
       "supertrend": 934.4871,
-      "supertrend_direction": -1,
-      "obv": 411174942.0
+      "obv": 411174942.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-02-27",
@@ -6807,8 +6817,8 @@
       "plus_di": 13.6873,
       "minus_di": 31.6088,
       "supertrend": 922.6978,
-      "supertrend_direction": -1,
-      "obv": 376554187.0
+      "obv": 376554187.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-03-02",
@@ -6828,8 +6838,8 @@
       "plus_di": 12.6673,
       "minus_di": 35.4404,
       "supertrend": 910.8307,
-      "supertrend_direction": -1,
-      "obv": 338175263.0
+      "obv": 338175263.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-03-04",
@@ -6849,8 +6859,8 @@
       "plus_di": 10.9621,
       "minus_di": 40.7656,
       "supertrend": 899.8085,
-      "supertrend_direction": -1,
-      "obv": 298312941.0
+      "obv": 298312941.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-03-05",
@@ -6870,8 +6880,8 @@
       "plus_di": 11.0209,
       "minus_di": 37.6538,
       "supertrend": 899.8085,
-      "supertrend_direction": -1,
-      "obv": 329637523.0
+      "obv": 329637523.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-03-06",
@@ -6891,8 +6901,8 @@
       "plus_di": 9.9825,
       "minus_di": 37.6003,
       "supertrend": 899.8085,
-      "supertrend_direction": -1,
-      "obv": 295197876.0
+      "obv": 295197876.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-03-09",
@@ -6912,8 +6922,8 @@
       "plus_di": 8.6112,
       "minus_di": 45.419,
       "supertrend": 875.8283,
-      "supertrend_direction": -1,
-      "obv": 259605263.0
+      "obv": 259605263.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-03-10",
@@ -6933,8 +6943,8 @@
       "plus_di": 13.6619,
       "minus_di": 42.5504,
       "supertrend": 875.8283,
-      "supertrend_direction": -1,
-      "obv": 312471287.0
+      "obv": 312471287.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-03-11",
@@ -6954,8 +6964,8 @@
       "plus_di": 12.5139,
       "minus_di": 43.9744,
       "supertrend": 875.8283,
-      "supertrend_direction": -1,
-      "obv": 270210211.0
+      "obv": 270210211.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-03-12",
@@ -6975,8 +6985,8 @@
       "plus_di": 11.7225,
       "minus_di": 44.1032,
       "supertrend": 871.0977,
-      "supertrend_direction": -1,
-      "obv": 224102650.0
+      "obv": 224102650.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-03-13",
@@ -6996,8 +7006,8 @@
       "plus_di": 10.7873,
       "minus_di": 43.699,
       "supertrend": 861.4075,
-      "supertrend_direction": -1,
-      "obv": 182402186.0
+      "obv": 182402186.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-03-16",
@@ -7017,8 +7027,8 @@
       "plus_di": 17.2926,
       "minus_di": 39.0359,
       "supertrend": 861.4075,
-      "supertrend_direction": -1,
-      "obv": 234584791.0
+      "obv": 234584791.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-03-17",
@@ -7038,8 +7048,8 @@
       "plus_di": 18.0529,
       "minus_di": 37.0019,
       "supertrend": 861.4075,
-      "supertrend_direction": -1,
-      "obv": 273411770.0
+      "obv": 273411770.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-03-18",
@@ -7059,8 +7069,8 @@
       "plus_di": 17.0021,
       "minus_di": 36.1884,
       "supertrend": 861.4075,
-      "supertrend_direction": -1,
-      "obv": 249904707.0
+      "obv": 249904707.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-03-19",
@@ -7080,8 +7090,8 @@
       "plus_di": 13.0658,
       "minus_di": 47.3329,
       "supertrend": 852.3031,
-      "supertrend_direction": -1,
-      "obv": 78267314.0
+      "obv": 78267314.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-03-20",
@@ -7101,8 +7111,8 @@
       "plus_di": 12.2309,
       "minus_di": 44.3084,
       "supertrend": 844.2292,
-      "supertrend_direction": -1,
-      "obv": -24862155.0
+      "obv": -24862155.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-03-23",
@@ -7122,8 +7132,8 @@
       "plus_di": 10.7708,
       "minus_di": 50.2752,
       "supertrend": 818.1587,
-      "supertrend_direction": -1,
-      "obv": -97203893.0
+      "obv": -97203893.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-03-24",
@@ -7143,8 +7153,8 @@
       "plus_di": 11.0601,
       "minus_di": 45.9838,
       "supertrend": 818.1587,
-      "supertrend_direction": -1,
-      "obv": -35933907.0
+      "obv": -35933907.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-03-25",
@@ -7164,8 +7174,8 @@
       "plus_di": 16.5562,
       "minus_di": 41.9522,
       "supertrend": 818.1587,
-      "supertrend_direction": -1,
-      "obv": 23296733.0
+      "obv": 23296733.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-03-27",
@@ -7185,8 +7195,8 @@
       "plus_di": 15.2222,
       "minus_di": 42.5353,
       "supertrend": 818.1587,
-      "supertrend_direction": -1,
-      "obv": -42188466.0
+      "obv": -42188466.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-03-30",
@@ -7206,8 +7216,8 @@
       "plus_di": 13.9347,
       "minus_di": 46.9234,
       "supertrend": 805.7746,
-      "supertrend_direction": -1,
-      "obv": -145688601.0
+      "obv": -145688601.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-04-01",
@@ -7227,8 +7237,8 @@
       "plus_di": 14.3668,
       "minus_di": 43.6473,
       "supertrend": 805.7746,
-      "supertrend_direction": -1,
-      "obv": -66825840.0
+      "obv": -66825840.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-04-02",
@@ -7248,8 +7258,8 @@
       "plus_di": 13.2104,
       "minus_di": 43.6689,
       "supertrend": 805.7746,
-      "supertrend_direction": -1,
-      "obv": -17515540.0
+      "obv": -17515540.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-04-06",
@@ -7269,8 +7279,8 @@
       "plus_di": 17.18,
       "minus_di": 40.2533,
       "supertrend": 805.7746,
-      "supertrend_direction": -1,
-      "obv": 25461119.0
+      "obv": 25461119.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-04-07",
@@ -7290,8 +7300,8 @@
       "plus_di": 16.8928,
       "minus_di": 38.7253,
       "supertrend": 805.7746,
-      "supertrend_direction": -1,
-      "obv": 76770912.0
+      "obv": 76770912.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-04-08",
@@ -7311,8 +7321,8 @@
       "plus_di": 26.806,
       "minus_di": 33.8499,
       "supertrend": 805.7746,
-      "supertrend_direction": -1,
-      "obv": 147040424.0
+      "obv": 147040424.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-04-09",
@@ -7332,8 +7342,8 @@
       "plus_di": 24.8971,
       "minus_di": 32.2367,
       "supertrend": 805.7746,
-      "supertrend_direction": -1,
-      "obv": 98161032.0
+      "obv": 98161032.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-04-10",
@@ -7353,8 +7363,8 @@
       "plus_di": 23.8688,
       "minus_di": 30.9053,
       "supertrend": 805.7746,
-      "supertrend_direction": -1,
-      "obv": 136317058.0
+      "obv": 136317058.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-04-13",
@@ -7374,8 +7384,8 @@
       "plus_di": 22.3039,
       "minus_di": 32.7784,
       "supertrend": 805.7746,
-      "supertrend_direction": -1,
-      "obv": 88767730.0
+      "obv": 88767730.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-04-15",
@@ -7395,8 +7405,8 @@
       "plus_di": 25.7275,
       "minus_di": 30.8696,
       "supertrend": 805.7746,
-      "supertrend_direction": -1,
-      "obv": 128537245.0
+      "obv": 128537245.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-04-16",
@@ -7416,8 +7426,8 @@
       "plus_di": 23.6707,
       "minus_di": 31.789,
       "supertrend": 805.7746,
-      "supertrend_direction": -1,
-      "obv": 65675952.0
+      "obv": 65675952.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-04-17",
@@ -7437,8 +7447,8 @@
       "plus_di": 22.5717,
       "minus_di": 31.4922,
       "supertrend": 805.7746,
-      "supertrend_direction": -1,
-      "obv": 102958496.0
+      "obv": 102958496.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-04-20",
@@ -7458,8 +7468,8 @@
       "plus_di": 23.0186,
       "minus_di": 29.6165,
       "supertrend": 805.7746,
-      "supertrend_direction": -1,
-      "obv": 50810452.0
+      "obv": 50810452.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-04-21",
@@ -7479,8 +7489,8 @@
       "plus_di": 23.1442,
       "minus_di": 27.8523,
       "supertrend": 805.7746,
-      "supertrend_direction": -1,
-      "obv": 99946204.0
+      "obv": 99946204.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-04-22",
@@ -7500,8 +7510,8 @@
       "plus_di": 22.0629,
       "minus_di": 26.5511,
       "supertrend": 805.7746,
-      "supertrend_direction": -1,
-      "obv": 76069792.0
+      "obv": 76069792.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-04-23",
@@ -7521,8 +7531,8 @@
       "plus_di": 20.8501,
       "minus_di": 29.9884,
       "supertrend": 805.7746,
-      "supertrend_direction": -1,
-      "obv": 38392176.0
+      "obv": 38392176.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-04-24",
@@ -7542,8 +7552,8 @@
       "plus_di": 20.1244,
       "minus_di": 30.7506,
       "supertrend": 805.7746,
-      "supertrend_direction": -1,
-      "obv": 66112534.0
+      "obv": 66112534.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-04-27",
@@ -7563,8 +7573,8 @@
       "plus_di": 21.4168,
       "minus_di": 29.8892,
       "supertrend": 805.7746,
-      "supertrend_direction": -1,
-      "obv": 84227909.0
+      "obv": 84227909.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-04-28",
@@ -7584,8 +7594,8 @@
       "plus_di": 20.2051,
       "minus_di": 30.538,
       "supertrend": 805.7746,
-      "supertrend_direction": -1,
-      "obv": 48861106.0
+      "obv": 48861106.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-04-29",
@@ -7605,8 +7615,8 @@
       "plus_di": 19.2875,
       "minus_di": 29.4922,
       "supertrend": 805.7746,
-      "supertrend_direction": -1,
-      "obv": 23061143.0
+      "obv": 23061143.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-04-30",
@@ -7626,8 +7636,8 @@
       "plus_di": 18.1144,
       "minus_di": 33.1814,
       "supertrend": 805.7746,
-      "supertrend_direction": -1,
-      "obv": -24937612.0
+      "obv": -24937612.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-05-04",
@@ -7647,8 +7657,8 @@
       "plus_di": 19.9993,
       "minus_di": 31.3545,
       "supertrend": 805.7746,
-      "supertrend_direction": -1,
-      "obv": 4090448.0
+      "obv": 4090448.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-05-05",
@@ -7668,8 +7678,8 @@
       "plus_di": 18.8233,
       "minus_di": 32.8442,
       "supertrend": 805.7746,
-      "supertrend_direction": -1,
-      "obv": -34797209.0
+      "obv": -34797209.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-05-06",
@@ -7689,8 +7699,8 @@
       "plus_di": 25.0269,
       "minus_di": 29.6563,
       "supertrend": 805.7746,
-      "supertrend_direction": -1,
-      "obv": 733622.0
+      "obv": 733622.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-05-07",
@@ -7710,8 +7720,8 @@
       "plus_di": 24.7831,
       "minus_di": 28.2176,
       "supertrend": 805.7746,
-      "supertrend_direction": -1,
-      "obv": -45403931.0
+      "obv": -45403931.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-05-08",
@@ -7731,8 +7741,8 @@
       "plus_di": 23.0378,
       "minus_di": 30.4707,
       "supertrend": 805.7746,
-      "supertrend_direction": -1,
-      "obv": -83420772.0
+      "obv": -83420772.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-05-11",
@@ -7752,8 +7762,8 @@
       "plus_di": 21.4058,
       "minus_di": 34.0318,
       "supertrend": 805.7746,
-      "supertrend_direction": -1,
-      "obv": -124544194.0
+      "obv": -124544194.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-05-12",
@@ -7773,8 +7783,8 @@
       "plus_di": 20.1218,
       "minus_di": 37.3264,
       "supertrend": 794.8755,
-      "supertrend_direction": -1,
-      "obv": -168481326.0
+      "obv": -168481326.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-05-13",
@@ -7794,8 +7804,8 @@
       "plus_di": 19.139,
       "minus_di": 35.6777,
       "supertrend": 793.1568,
-      "supertrend_direction": -1,
-      "obv": -197442245.0
+      "obv": -197442245.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-05-14",
@@ -7815,8 +7825,8 @@
       "plus_di": 23.7023,
       "minus_di": 31.5546,
       "supertrend": 793.1568,
-      "supertrend_direction": -1,
-      "obv": -146449887.0
+      "obv": -146449887.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-05-15",
@@ -7836,8 +7846,8 @@
       "plus_di": 23.5863,
       "minus_di": 29.6119,
       "supertrend": 793.1568,
-      "supertrend_direction": -1,
-      "obv": -170797760.0
+      "obv": -170797760.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-05-18",
@@ -7857,8 +7867,8 @@
       "plus_di": 21.6107,
       "minus_di": 32.3045,
       "supertrend": 793.1568,
-      "supertrend_direction": -1,
-      "obv": -140985681.0
+      "obv": -140985681.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-05-19",
@@ -7878,8 +7888,8 @@
       "plus_di": 20.743,
       "minus_di": 31.0075,
       "supertrend": 793.1568,
-      "supertrend_direction": -1,
-      "obv": -181293511.0
+      "obv": -181293511.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-05-20",
@@ -7899,8 +7909,8 @@
       "plus_di": 20.1404,
       "minus_di": 32.1362,
       "supertrend": 793.1568,
-      "supertrend_direction": -1,
-      "obv": -205306962.0
+      "obv": -205306962.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-05-21",
@@ -7920,8 +7930,8 @@
       "plus_di": 21.5045,
       "minus_di": 30.4279,
       "supertrend": 793.1568,
-      "supertrend_direction": -1,
-      "obv": -239971687.0
+      "obv": -239971687.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-05-22",
@@ -7941,8 +7951,8 @@
       "plus_di": 22.8701,
       "minus_di": 28.4569,
       "supertrend": 793.1568,
-      "supertrend_direction": -1,
-      "obv": -214367616.0
+      "obv": -214367616.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-05-25",
@@ -7962,8 +7972,8 @@
       "plus_di": 26.107,
       "minus_di": 26.044,
       "supertrend": 793.1568,
-      "supertrend_direction": -1,
-      "obv": -188323664.0
+      "obv": -188323664.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-05-26",
@@ -7983,8 +7993,8 @@
       "plus_di": 25.8286,
       "minus_di": 24.5428,
       "supertrend": 793.1568,
-      "supertrend_direction": -1,
-      "obv": -219851726.0
+      "obv": -219851726.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-05-27",
@@ -8004,8 +8014,8 @@
       "plus_di": 23.5479,
       "minus_di": 30.3428,
       "supertrend": 793.1568,
-      "supertrend_direction": -1,
-      "obv": -283531879.0
+      "obv": -283531879.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-05-29",
@@ -8025,8 +8035,8 @@
       "plus_di": 21.4397,
       "minus_di": 35.1624,
       "supertrend": 789.6221,
-      "supertrend_direction": -1,
-      "obv": -384831310.0
+      "obv": -384831310.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-06-01",
@@ -8046,8 +8056,8 @@
       "plus_di": 20.3079,
       "minus_di": 33.3062,
       "supertrend": 784.9389,
-      "supertrend_direction": -1,
-      "obv": -432827751.0
+      "obv": -432827751.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-06-02",
@@ -8067,8 +8077,8 @@
       "plus_di": 18.6583,
       "minus_di": 33.0039,
       "supertrend": 783.4833,
-      "supertrend_direction": -1,
-      "obv": -385513304.0
+      "obv": -385513304.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-06-03",
@@ -8088,8 +8098,8 @@
       "plus_di": 18.913,
       "minus_di": 31.1015,
       "supertrend": 783.4833,
-      "supertrend_direction": -1,
-      "obv": -349403824.0
+      "obv": -349403824.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-06-04",
@@ -8109,8 +8119,8 @@
       "plus_di": 18.1192,
       "minus_di": 29.525,
       "supertrend": 783.4833,
-      "supertrend_direction": -1,
-      "obv": -306730286.0
+      "obv": -306730286.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-06-05",
@@ -8130,8 +8140,8 @@
       "plus_di": 17.6406,
       "minus_di": 27.792,
       "supertrend": 783.4833,
-      "supertrend_direction": -1,
-      "obv": -328846854.0
+      "obv": -328846854.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-06-08",
@@ -8151,8 +8161,8 @@
       "plus_di": 16.6978,
       "minus_di": 30.629,
       "supertrend": 773.6954,
-      "supertrend_direction": -1,
-      "obv": -350397554.0
+      "obv": -350397554.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-06-09",
@@ -8172,8 +8182,8 @@
       "plus_di": 16.9175,
       "minus_di": 29.0756,
       "supertrend": 772.4862,
-      "supertrend_direction": -1,
-      "obv": -388937117.0
+      "obv": -388937117.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-06-10",
@@ -8193,8 +8203,8 @@
       "plus_di": 20.6507,
       "minus_di": 26.6344,
       "supertrend": 772.4862,
-      "supertrend_direction": -1,
-      "obv": -344478958.0
+      "obv": -344478958.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-06-11",
@@ -8214,8 +8224,8 @@
       "plus_di": 19.2577,
       "minus_di": 24.8099,
       "supertrend": 772.4862,
-      "supertrend_direction": -1,
-      "obv": -377110965.0
+      "obv": -377110965.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-06-12",
@@ -8235,8 +8245,8 @@
       "plus_di": 24.4338,
       "minus_di": 21.7919,
       "supertrend": 772.4862,
-      "supertrend_direction": -1,
-      "obv": -341022806.0
+      "obv": -341022806.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-06-15",
@@ -8256,8 +8266,8 @@
       "plus_di": 30.0209,
       "minus_di": 19.949,
       "supertrend": 772.4862,
-      "supertrend_direction": -1,
-      "obv": -301032472.0
+      "obv": -301032472.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-06-16",
@@ -8277,8 +8287,8 @@
       "plus_di": 28.7342,
       "minus_di": 19.0939,
       "supertrend": 772.4862,
-      "supertrend_direction": -1,
-      "obv": -273211502.0
+      "obv": -273211502.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-06-17",
@@ -8298,8 +8308,8 @@
       "plus_di": 30.1706,
       "minus_di": 18.1856,
       "supertrend": 727.2304,
-      "supertrend_direction": 1,
-      "obv": -240805898.0
+      "obv": -240805898.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2026-06-18",
@@ -8319,8 +8329,8 @@
       "plus_di": 31.6986,
       "minus_di": 16.8914,
       "supertrend": 732.9303,
-      "supertrend_direction": 1,
-      "obv": -199313827.0
+      "obv": -199313827.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2026-06-19",
@@ -8340,8 +8350,8 @@
       "plus_di": 29.9109,
       "minus_di": 15.9387,
       "supertrend": 734.925,
-      "supertrend_direction": 1,
-      "obv": -233112588.0
+      "obv": -233112588.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2026-06-22",
@@ -8361,8 +8371,8 @@
       "plus_di": 28.9315,
       "minus_di": 15.2125,
       "supertrend": 740.54,
-      "supertrend_direction": 1,
-      "obv": -207917823.0
+      "obv": -207917823.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2026-06-23",
@@ -8382,8 +8392,8 @@
       "plus_di": 26.5635,
       "minus_di": 18.6732,
       "supertrend": 740.54,
-      "supertrend_direction": 1,
-      "obv": -236206885.0
+      "obv": -236206885.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2026-06-24",
@@ -8403,8 +8413,8 @@
       "plus_di": 25.7344,
       "minus_di": 16.8701,
       "supertrend": 740.54,
-      "supertrend_direction": 1,
-      "obv": -201505593.0
+      "obv": -201505593.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2026-06-25",
@@ -8424,8 +8434,8 @@
       "plus_di": 28.6893,
       "minus_di": 16.0274,
       "supertrend": 752.2536,
-      "supertrend_direction": 1,
-      "obv": -154797627.0
+      "obv": -154797627.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2026-06-29",
@@ -8445,8 +8455,8 @@
       "plus_di": 27.059,
       "minus_di": 15.1166,
       "supertrend": 753.2082,
-      "supertrend_direction": 1,
-      "obv": -108101650.0
+      "obv": -108101650.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2026-06-30",
@@ -8466,8 +8476,8 @@
       "plus_di": 25.4113,
       "minus_di": 14.447,
       "supertrend": 753.6674,
-      "supertrend_direction": 1,
-      "obv": -153880006.0
+      "obv": -153880006.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2026-07-01",
@@ -8487,8 +8497,8 @@
       "plus_di": 24.3641,
       "minus_di": 13.8517,
       "supertrend": 754.0682,
-      "supertrend_direction": 1,
-      "obv": -179974384.0
+      "obv": -179974384.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2026-07-02",
@@ -8508,8 +8518,8 @@
       "plus_di": 24.5608,
       "minus_di": 13.0914,
       "supertrend": 756.8639,
-      "supertrend_direction": 1,
-      "obv": -214118207.0
+      "obv": -214118207.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2026-07-03",
@@ -8529,8 +8539,8 @@
       "plus_di": 23.9865,
       "minus_di": 12.3819,
       "supertrend": 760.87,
-      "supertrend_direction": 1,
-      "obv": -188246249.0
+      "obv": -188246249.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2026-07-06",
@@ -8550,8 +8560,8 @@
       "plus_di": 31.7805,
       "minus_di": 10.6731,
       "supertrend": 771.4005,
-      "supertrend_direction": 1,
-      "obv": -125042922.0
+      "obv": -125042922.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2026-07-07",
@@ -8571,8 +8581,8 @@
       "plus_di": 34.5441,
       "minus_di": 9.8597,
       "supertrend": 787.3154,
-      "supertrend_direction": 1,
-      "obv": -182654651.0
+      "obv": -182654651.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2026-07-08",
@@ -8592,8 +8602,8 @@
       "plus_di": 30.4877,
       "minus_di": 16.9091,
       "supertrend": 787.3154,
-      "supertrend_direction": 1,
-      "obv": -221409283.0
+      "obv": -221409283.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2026-07-09",
@@ -8613,8 +8623,8 @@
       "plus_di": 28.8184,
       "minus_di": 15.9833,
       "supertrend": 787.3154,
-      "supertrend_direction": 1,
-      "obv": -181517485.0
+      "obv": -181517485.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2026-07-10",
@@ -8634,8 +8644,8 @@
       "plus_di": 29.6816,
       "minus_di": 15.2557,
       "supertrend": 787.3154,
-      "supertrend_direction": 1,
-      "obv": -157921700.0
+      "obv": -157921700.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2026-07-13",
@@ -8655,8 +8665,8 @@
       "plus_di": 27.8082,
       "minus_di": 18.5007,
       "supertrend": 787.3154,
-      "supertrend_direction": 1,
-      "obv": -179663436.0
+      "obv": -179663436.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2026-07-14",
@@ -8676,8 +8686,8 @@
       "plus_di": 26.3448,
       "minus_di": 19.3736,
       "supertrend": 787.3154,
-      "supertrend_direction": 1,
-      "obv": -205268831.0
+      "obv": -205268831.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2026-07-15",
@@ -8697,8 +8707,8 @@
       "plus_di": 25.6763,
       "minus_di": 18.4299,
       "supertrend": 787.3154,
-      "supertrend_direction": 1,
-      "obv": -183780092.0
+      "obv": -183780092.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2026-07-16",
@@ -8718,8 +8728,8 @@
       "plus_di": 24.2557,
       "minus_di": 18.9498,
       "supertrend": 787.3154,
-      "supertrend_direction": 1,
-      "obv": -202478278.0
+      "obv": -202478278.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2026-07-17",
@@ -8739,8 +8749,8 @@
       "plus_di": 25.1984,
       "minus_di": 17.5495,
       "supertrend": 787.3154,
-      "supertrend_direction": 1,
-      "obv": -185062956.0
+      "obv": -185062956.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2026-07-20",
@@ -8760,8 +8770,8 @@
       "plus_di": 20.4401,
       "minus_di": 28.4662,
       "supertrend": 834.9673,
-      "supertrend_direction": -1,
-      "obv": -241124745.0
+      "obv": -241124745.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-07-21",
@@ -8781,8 +8791,8 @@
       "plus_di": 18.9436,
       "minus_di": 32.4274,
       "supertrend": 818.973,
-      "supertrend_direction": -1,
-      "obv": -283370754.0
+      "obv": -283370754.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-07-22",
@@ -8802,8 +8812,8 @@
       "plus_di": 18.0414,
       "minus_di": 35.0665,
       "supertrend": 806.5857,
-      "supertrend_direction": -1,
-      "obv": -306756200.0
+      "obv": -306756200.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-07-23",
@@ -8823,8 +8833,8 @@
       "plus_di": 17.2521,
       "minus_di": 36.6698,
       "supertrend": 795.7572,
-      "supertrend_direction": -1,
-      "obv": -339288290.0
+      "obv": -339288290.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-07-24",
@@ -8844,8 +8854,8 @@
       "plus_di": 16.394,
       "minus_di": 37.559,
       "supertrend": 789.819,
-      "supertrend_direction": -1,
-      "obv": -363126149.0
+      "obv": -363126149.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-07-27",
@@ -8865,8 +8875,8 @@
       "plus_di": 15.6436,
       "minus_di": 35.8398,
       "supertrend": 788.3421,
-      "supertrend_direction": -1,
-      "obv": -392804901.0
+      "obv": -392804901.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-07-28",
@@ -8886,8 +8896,8 @@
       "plus_di": 15.0233,
       "minus_di": 37.3504,
       "supertrend": 779.3854,
-      "supertrend_direction": -1,
-      "obv": -426690938.0
+      "obv": -426690938.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-07-29",
@@ -8907,8 +8917,8 @@
       "plus_di": 19.1459,
       "minus_di": 34.5187,
       "supertrend": 779.3854,
-      "supertrend_direction": -1,
-      "obv": -406230279.0
+      "obv": -406230279.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-07-30",
@@ -8928,8 +8938,8 @@
       "plus_di": 21.2163,
       "minus_di": 32.4462,
       "supertrend": 779.3854,
-      "supertrend_direction": -1,
-      "obv": -370385887.0
+      "obv": -370385887.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-07-31",
@@ -8949,8 +8959,8 @@
       "plus_di": 20.1299,
       "minus_di": 30.7848,
       "supertrend": 779.3854,
-      "supertrend_direction": -1,
-      "obv": -395908370.0
+      "obv": -395908370.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-08-03",
@@ -8970,8 +8980,8 @@
       "plus_di": 19.2382,
       "minus_di": 29.4211,
       "supertrend": 779.3854,
-      "supertrend_direction": -1,
-      "obv": -381080529.0
+      "obv": -381080529.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-08-04",
@@ -8991,8 +9001,8 @@
       "plus_di": 17.758,
       "minus_di": 33.2568,
       "supertrend": 779.3854,
-      "supertrend_direction": -1,
-      "obv": -412640331.0
+      "obv": -412640331.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-08-05",
@@ -9012,8 +9022,8 @@
       "plus_di": 16.8924,
       "minus_di": 34.4359,
       "supertrend": 776.8154,
-      "supertrend_direction": -1,
-      "obv": -472690869.0
+      "obv": -472690869.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-08-06",
@@ -9033,8 +9043,8 @@
       "plus_di": 16.2613,
       "minus_di": 33.1494,
       "supertrend": 774.6964,
-      "supertrend_direction": -1,
-      "obv": -517462991.0
+      "obv": -517462991.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-08-07",
@@ -9054,8 +9064,8 @@
       "plus_di": 15.5588,
       "minus_di": 34.6805,
       "supertrend": 768.3443,
-      "supertrend_direction": -1,
-      "obv": -536845033.0
+      "obv": -536845033.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-08-10",
@@ -9075,8 +9085,8 @@
       "plus_di": 15.6391,
       "minus_di": 32.9042,
       "supertrend": 768.3443,
-      "supertrend_direction": -1,
-      "obv": -536845033.0
+      "obv": -536845033.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-08-11",
@@ -9096,8 +9106,8 @@
       "plus_di": 15.2261,
       "minus_di": 33.1925,
       "supertrend": 761.8363,
-      "supertrend_direction": -1,
-      "obv": -565999398.0
+      "obv": -565999398.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-08-12",
@@ -9108,7 +9118,7 @@
       "volume": 26993177.0,
       "ema20": 749.7865,
       "ema50": 765.291,
-      "ema200": 826.0093,
+      "ema200": 826.0092,
       "rsi14": 34.053,
       "macd": -14.3909,
       "macd_signal": -12.4628,
@@ -9117,8 +9127,8 @@
       "plus_di": 14.4286,
       "minus_di": 34.2091,
       "supertrend": 758.7427,
-      "supertrend_direction": -1,
-      "obv": -565999398.0
+      "obv": -565999398.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-08-13",
@@ -9138,8 +9148,8 @@
       "plus_di": 14.0172,
       "minus_di": 33.2338,
       "supertrend": 757.276,
-      "supertrend_direction": -1,
-      "obv": -588129291.0
+      "obv": -588129291.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-08-14",
@@ -9159,8 +9169,8 @@
       "plus_di": 13.4571,
       "minus_di": 32.5609,
       "supertrend": 755.8533,
-      "supertrend_direction": -1,
-      "obv": -567765160.0
+      "obv": -567765160.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-08-17",
@@ -9180,8 +9190,8 @@
       "plus_di": 14.4462,
       "minus_di": 30.9041,
       "supertrend": 755.8533,
-      "supertrend_direction": -1,
-      "obv": -552941438.0
+      "obv": -552941438.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-08-18",
@@ -9201,8 +9211,8 @@
       "plus_di": 13.8471,
       "minus_di": 30.6593,
       "supertrend": 753.5877,
-      "supertrend_direction": -1,
-      "obv": -570857945.0
+      "obv": -570857945.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-08-19",
@@ -9222,8 +9232,8 @@
       "plus_di": 12.8612,
       "minus_di": 33.9375,
       "supertrend": 748.169,
-      "supertrend_direction": -1,
-      "obv": -592200596.0
+      "obv": -592200596.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-08-20",
@@ -9243,8 +9253,8 @@
       "plus_di": 14.146,
       "minus_di": 31.9625,
       "supertrend": 748.169,
-      "supertrend_direction": -1,
-      "obv": -574596791.0
+      "obv": -574596791.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-08-21",
@@ -9264,8 +9274,8 @@
       "plus_di": 16.574,
       "minus_di": 30.1955,
       "supertrend": 748.169,
-      "supertrend_direction": -1,
-      "obv": -548566980.0
+      "obv": -548566980.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-08-24",
@@ -9285,8 +9295,8 @@
       "plus_di": 15.3587,
       "minus_di": 29.7611,
       "supertrend": 748.169,
-      "supertrend_direction": -1,
-      "obv": -537158635.0
+      "obv": -537158635.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-08-25",
@@ -9306,8 +9316,8 @@
       "plus_di": 14.5765,
       "minus_di": 29.7733,
       "supertrend": 748.169,
-      "supertrend_direction": -1,
-      "obv": -554670509.0
+      "obv": -554670509.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-08-26",
@@ -9327,8 +9337,8 @@
       "plus_di": 15.5443,
       "minus_di": 28.2566,
       "supertrend": 748.169,
-      "supertrend_direction": -1,
-      "obv": -575826972.0
+      "obv": -575826972.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-08-27",
@@ -9348,8 +9358,8 @@
       "plus_di": 13.5716,
       "minus_di": 34.5646,
       "supertrend": 748.1562,
-      "supertrend_direction": -1,
-      "obv": -622341992.0
+      "obv": -622341992.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-08-28",
@@ -9369,8 +9379,8 @@
       "plus_di": 12.3362,
       "minus_di": 33.4715,
       "supertrend": 743.813,
-      "supertrend_direction": -1,
-      "obv": -605847691.0
+      "obv": -605847691.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-08-31",
@@ -9390,8 +9400,8 @@
       "plus_di": 21.1285,
       "minus_di": 26.5139,
       "supertrend": 743.813,
-      "supertrend_direction": -1,
-      "obv": -684004758.0
+      "obv": -684004758.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-09-01",
@@ -9411,8 +9421,8 @@
       "plus_di": 19.0935,
       "minus_di": 27.1708,
       "supertrend": 743.813,
-      "supertrend_direction": -1,
-      "obv": -639587666.0
+      "obv": -639587666.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-09-02",
@@ -9432,8 +9442,8 @@
       "plus_di": 17.7975,
       "minus_di": 25.3265,
       "supertrend": 741.6112,
-      "supertrend_direction": -1,
-      "obv": -676538004.0
+      "obv": -676538004.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-09-03",
@@ -9453,8 +9463,8 @@
       "plus_di": 20.5753,
       "minus_di": 23.6147,
       "supertrend": 741.6112,
-      "supertrend_direction": -1,
-      "obv": -648767363.0
+      "obv": -648767363.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-09-04",
@@ -9474,8 +9484,8 @@
       "plus_di": 21.6647,
       "minus_di": 22.2621,
       "supertrend": 741.6112,
-      "supertrend_direction": -1,
-      "obv": -634279339.0
+      "obv": -634279339.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-09-07",
@@ -9495,8 +9505,8 @@
       "plus_di": 20.8864,
       "minus_di": 22.2473,
       "supertrend": 741.6112,
-      "supertrend_direction": -1,
-      "obv": -646459729.0
+      "obv": -646459729.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-09-08",
@@ -9516,8 +9526,8 @@
       "plus_di": 19.9153,
       "minus_di": 23.7236,
       "supertrend": 740.2283,
-      "supertrend_direction": -1,
-      "obv": -666343244.0
+      "obv": -666343244.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-09-09",
@@ -9537,8 +9547,8 @@
       "plus_di": 18.0041,
       "minus_di": 31.0436,
       "supertrend": 729.1705,
-      "supertrend_direction": -1,
-      "obv": -705517234.0
+      "obv": -705517234.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-09-10",
@@ -9558,8 +9568,8 @@
       "plus_di": 17.0825,
       "minus_di": 30.0096,
       "supertrend": 724.8984,
-      "supertrend_direction": -1,
-      "obv": -678409181.0
+      "obv": -678409181.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-09-11",
@@ -9579,8 +9589,8 @@
       "plus_di": 22.6382,
       "minus_di": 25.4321,
       "supertrend": 724.8984,
-      "supertrend_direction": -1,
-      "obv": -646997247.0
+      "obv": -646997247.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-09-15",
@@ -9600,8 +9610,8 @@
       "plus_di": 31.5228,
       "minus_di": 22.3799,
       "supertrend": 724.8984,
-      "supertrend_direction": -1,
-      "obv": -596609615.0
+      "obv": -596609615.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-09-16",
@@ -9621,8 +9631,8 @@
       "plus_di": 29.0913,
       "minus_di": 22.8802,
       "supertrend": 724.8984,
-      "supertrend_direction": -1,
-      "obv": -569132672.0
+      "obv": -569132672.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-09-17",
@@ -9642,8 +9652,8 @@
       "plus_di": 27.745,
       "minus_di": 21.8213,
       "supertrend": 724.8984,
-      "supertrend_direction": -1,
-      "obv": -590675975.0
+      "obv": -590675975.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-09-18",
@@ -9663,8 +9673,8 @@
       "plus_di": 32.2547,
       "minus_di": 19.4492,
       "supertrend": 684.1233,
-      "supertrend_direction": 1,
-      "obv": -551275265.0
+      "obv": -551275265.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2026-09-21",
@@ -9684,8 +9694,8 @@
       "plus_di": 34.5882,
       "minus_di": 18.0663,
       "supertrend": 693.3166,
-      "supertrend_direction": 1,
-      "obv": -515792582.0
+      "obv": -515792582.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2026-09-22",
@@ -9705,8 +9715,8 @@
       "plus_di": 36.1542,
       "minus_di": 17.0398,
       "supertrend": 702.4599,
-      "supertrend_direction": 1,
-      "obv": -551276251.0
+      "obv": -551276251.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2026-09-23",
@@ -9726,8 +9736,8 @@
       "plus_di": 34.4219,
       "minus_di": 18.7279,
       "supertrend": 702.4599,
-      "supertrend_direction": 1,
-      "obv": -574473482.0
+      "obv": -574473482.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2026-09-24",
@@ -9747,8 +9757,8 @@
       "plus_di": 31.716,
       "minus_di": 23.3608,
       "supertrend": 702.4599,
-      "supertrend_direction": 1,
-      "obv": -604048676.0
+      "obv": -604048676.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2026-09-25",
@@ -9768,8 +9778,8 @@
       "plus_di": 31.4611,
       "minus_di": 21.2976,
       "supertrend": 702.4599,
-      "supertrend_direction": 1,
-      "obv": -584195642.0
+      "obv": -584195642.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2026-09-28",
@@ -9789,8 +9799,8 @@
       "plus_di": 28.6018,
       "minus_di": 21.9067,
       "supertrend": 702.4599,
-      "supertrend_direction": 1,
-      "obv": -605871221.0
+      "obv": -605871221.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2026-09-29",
@@ -9810,8 +9820,8 @@
       "plus_di": 26.1921,
       "minus_di": 26.1301,
       "supertrend": 702.4599,
-      "supertrend_direction": 1,
-      "obv": -563115320.0
+      "obv": -563115320.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2026-09-30",
@@ -9831,8 +9841,8 @@
       "plus_di": 24.3146,
       "minus_di": 24.2571,
       "supertrend": 702.4599,
-      "supertrend_direction": 1,
-      "obv": -602480816.0
+      "obv": -602480816.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2026-10-01",
@@ -9852,8 +9862,8 @@
       "plus_di": 22.549,
       "minus_di": 23.3139,
       "supertrend": 702.4599,
-      "supertrend_direction": 1,
-      "obv": -565090959.0
+      "obv": -565090959.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2026-10-05",
@@ -9873,8 +9883,8 @@
       "plus_di": 25.0987,
       "minus_di": 19.7332,
       "supertrend": 702.4599,
-      "supertrend_direction": 1,
-      "obv": -631147649.0
+      "obv": -631147649.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2026-10-06",
@@ -9894,8 +9904,8 @@
       "plus_di": 23.4837,
       "minus_di": 18.5808,
       "supertrend": 702.4599,
-      "supertrend_direction": 1,
-      "obv": -604579379.0
+      "obv": -604579379.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2026-10-07",
@@ -9915,8 +9925,8 @@
       "plus_di": 22.38,
       "minus_di": 17.7076,
       "supertrend": 702.4599,
-      "supertrend_direction": 1,
-      "obv": -634523387.0
+      "obv": -634523387.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2026-10-08",
@@ -9936,8 +9946,8 @@
       "plus_di": 20.7333,
       "minus_di": 21.7909,
       "supertrend": 744.0983,
-      "supertrend_direction": -1,
-      "obv": -661332152.0
+      "obv": -661332152.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-10-09",
@@ -9957,8 +9967,8 @@
       "plus_di": 21.0361,
       "minus_di": 19.9422,
       "supertrend": 744.0983,
-      "supertrend_direction": -1,
-      "obv": -642934180.0
+      "obv": -642934180.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-10-12",
@@ -9978,8 +9988,8 @@
       "plus_di": 20.6893,
       "minus_di": 18.8365,
       "supertrend": 744.0983,
-      "supertrend_direction": -1,
-      "obv": -661132059.0
+      "obv": -661132059.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-10-13",
@@ -9999,8 +10009,8 @@
       "plus_di": 21.7912,
       "minus_di": 17.7664,
       "supertrend": 744.0983,
-      "supertrend_direction": -1,
-      "obv": -642293420.0
+      "obv": -642293420.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-10-14",
@@ -10020,8 +10030,8 @@
       "plus_di": 21.6614,
       "minus_di": 16.8258,
       "supertrend": 744.0983,
-      "supertrend_direction": -1,
-      "obv": -666238793.0
+      "obv": -666238793.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-10-15",
@@ -10041,8 +10051,8 @@
       "plus_di": 24.4677,
       "minus_di": 15.3934,
       "supertrend": 744.0983,
-      "supertrend_direction": -1,
-      "obv": -628873616.0
+      "obv": -628873616.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-10-16",
@@ -10062,8 +10072,8 @@
       "plus_di": 26.6285,
       "minus_di": 14.5746,
       "supertrend": 744.0983,
-      "supertrend_direction": -1,
-      "obv": -599936714.0
+      "obv": -599936714.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-10-19",
@@ -10083,8 +10093,8 @@
       "plus_di": 23.3206,
       "minus_di": 20.8801,
       "supertrend": 744.0983,
-      "supertrend_direction": -1,
-      "obv": -633460847.0
+      "obv": -633460847.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-10-21",
@@ -10104,8 +10114,8 @@
       "plus_di": 21.4461,
       "minus_di": 23.373,
       "supertrend": 744.0983,
-      "supertrend_direction": -1,
-      "obv": -660034550.0
+      "obv": -660034550.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-10-22",
@@ -10125,8 +10135,8 @@
       "plus_di": 19.6736,
       "minus_di": 25.6779,
       "supertrend": 743.8029,
-      "supertrend_direction": -1,
-      "obv": -720315126.0
+      "obv": -720315126.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-10-23",
@@ -10146,8 +10156,8 @@
       "plus_di": 18.7437,
       "minus_di": 25.533,
       "supertrend": 737.6301,
-      "supertrend_direction": -1,
-      "obv": -739304148.0
+      "obv": -739304148.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-10-26",
@@ -10167,8 +10177,8 @@
       "plus_di": 17.8488,
       "minus_di": 25.7024,
       "supertrend": 733.0646,
-      "supertrend_direction": -1,
-      "obv": -762793903.0
+      "obv": -762793903.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-10-27",
@@ -10188,8 +10198,8 @@
       "plus_di": 16.8249,
       "minus_di": 26.8737,
       "supertrend": 727.6781,
-      "supertrend_direction": -1,
-      "obv": -803408833.0
+      "obv": -803408833.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-10-28",
@@ -10209,8 +10219,8 @@
       "plus_di": 15.3605,
       "minus_di": 29.1297,
       "supertrend": 722.4253,
-      "supertrend_direction": -1,
-      "obv": -774874627.0
+      "obv": -774874627.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-10-29",
@@ -10230,8 +10240,8 @@
       "plus_di": 14.6912,
       "minus_di": 27.8605,
       "supertrend": 722.4253,
-      "supertrend_direction": -1,
-      "obv": -806297417.0
+      "obv": -806297417.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-10-30",
@@ -10251,8 +10261,8 @@
       "plus_di": 17.9641,
       "minus_di": 25.8203,
       "supertrend": 722.4253,
-      "supertrend_direction": -1,
-      "obv": -785000515.0
+      "obv": -785000515.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-11-02",
@@ -10272,8 +10282,8 @@
       "plus_di": 19.5139,
       "minus_di": 24.2352,
       "supertrend": 722.4253,
-      "supertrend_direction": -1,
-      "obv": -763519928.0
+      "obv": -763519928.0,
+      "supertrend_direction": -1
     },
     {
       "time": "2026-11-03",
@@ -10293,8 +10303,8 @@
       "plus_di": 29.0641,
       "minus_di": 21.2518,
       "supertrend": 670.3928,
-      "supertrend_direction": 1,
-      "obv": -720773284.0
+      "obv": -720773284.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2026-11-04",
@@ -10314,8 +10324,8 @@
       "plus_di": 33.2603,
       "minus_di": 19.0889,
       "supertrend": 682.681,
-      "supertrend_direction": 1,
-      "obv": -670095589.0
+      "obv": -670095589.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2026-11-05",
@@ -10335,8 +10345,8 @@
       "plus_di": 38.8735,
       "minus_di": 16.9043,
       "supertrend": 705.2654,
-      "supertrend_direction": 1,
-      "obv": -604693684.0
+      "obv": -604693684.0,
+      "supertrend_direction": 1
     },
     {
       "time": "2026-11-06",
@@ -10356,29 +10366,8 @@
       "plus_di": 43.8724,
       "minus_di": 14.5461,
       "supertrend": 715.3189,
-      "supertrend_direction": 1,
-      "obv": -531210806.0
-    },
-    {
-      "time": "2026-11-09",
-      "open": 797.0,
-      "high": 799.0,
-      "low": 789.5,
-      "close": 792.45,
-      "volume": 20011446.0,
-      "ema20": 725.9592,
-      "ema50": 722.7367,
-      "ema200": 776.7958,
-      "rsi14": 74.6541,
-      "macd": 13.2939,
-      "macd_signal": 1.7323,
-      "macd_hist": 11.5615,
-      "adx14": 23.5179,
-      "plus_di": 46.4034,
-      "minus_di": 13.8902,
-      "supertrend": 740.777,
-      "supertrend_direction": 1,
-      "obv": -511199360.0
+      "obv": -531210806.0,
+      "supertrend_direction": 1
     }
   ]
 }
