@@ -47,6 +47,33 @@ summary{cursor:pointer;color:#aabbd0}
 .grid{grid-template-columns:repeat(4,1fr)}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 }
+
+/* Dashboard v4.1 - Mobile Optimization */
+@media (max-width: 699px) {
+  .wrap {
+    padding: 10px;
+  }
+
+  .card {
+    padding: 13px;
+  }
+
+  .metric {
+    font-size: 1.25rem;
+  }
+
+  .actions {
+    flex-wrap: wrap;
+  }
+
+  button, input, select {
+    min-height: 44px;
+  }
+
+  .scroll {
+    -webkit-overflow-scrolling: touch;
+  }
+}
 </style>
 </head>
 <body>
