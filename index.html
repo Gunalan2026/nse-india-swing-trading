@@ -1,19 +1,70 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#0b1220"><title>NSE India | Nifty 500 Swing Trading</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b1220">
+<title>NSE India | Nifty 500 Swing Trading</title>
 <style>
-:root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#e7eefb;background:#0b1220}*{box-sizing:border-box}body{margin:0}header{padding:22px 16px;border-bottom:1px solid #263449;background:#111d30}.wrap{max-width:1100px;margin:auto;padding:18px 14px}h1{font-size:1.5rem;margin:6px 0}h2{font-size:1.08rem;margin:0 0 12px}h3{font-size:.95rem;margin:15px 0 8px}p{color:#aabbd0;line-height:1.5}.muted{color:#aabbd0;font-size:.87rem}.pill{display:inline-block;padding:5px 9px;border-radius:20px;background:#3a2d18;color:#ffcf7d;font-size:.75rem}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.card{background:#142137;border:1px solid #2b3c55;border-radius:14px;padding:16px;margin-bottom:14px;min-width:0}.metric{font-size:1.5rem;font-weight:750;margin:8px 0}.green,.ok{color:#4ce0b3}.red,.error{color:#ff8992}label{display:block;color:#b6c7da;font-size:.85rem;margin:12px 0 5px}input,button,select{padding:12px;border-radius:9px;font:inherit}input,select{width:100%;color:#e7eefb;background:#0c1728;border:1px solid #40536b}button{background:#29b998;color:#061c18;border:0;font-weight:750;cursor:pointer}button.wide{width:100%;margin-top:14px}button.secondary{background:#293a52;color:#e7eefb}button.small{font-size:.75rem;padding:7px 9px;white-space:nowrap}a{color:#5fe5d1}.result{background:#0c1728;border-radius:9px;padding:12px;margin-top:14px;line-height:1.9}table{border-collapse:collapse;width:100%;font-size:.83rem}th,td{padding:10px 8px;text-align:left;border-bottom:1px solid #33445a;vertical-align:middle}th{color:#aabbd0}th.num,td.num{text-align:right;white-space:nowrap}.scroll{overflow:auto}.note{font-size:.8rem;color:#aabbd0}.status{font-weight:700}.tag{border-radius:6px;padding:3px 6px;font-size:.73rem;background:#263449}.tag.setup{color:#4ce0b3}.tag.watch{color:#ffcf7d}.actions{display:flex;gap:7px;align-items:center;flex-wrap:wrap}.toolbar{display:flex;gap:9px;align-items:center;flex-wrap:wrap;margin:12px 0}.toolbar select{max-width:210px}.toolbar button{padding:11px}footer{padding:20px;text-align:center;color:#8295ac;font-size:.8rem}details{margin-top:12px}summary{cursor:pointer}#ranked-table{min-width:770px}@media(min-width:700px){.grid{grid-template-columns:repeat(4,1fr)}.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}}
+:root{font-family:system-ui,Arial,sans-serif;color:#e7eefb;background:#0b1220}
+*{box-sizing:border-box}
+body{margin:0}
+header{padding:22px 16px;background:#111d30;border-bottom:1px solid #263449}
+.wrap{max-width:1100px;margin:auto;padding:16px}
+h1{font-size:1.5rem;margin:8px 0}
+h2{font-size:1.12rem;margin:0 0 12px}
+h3{font-size:1rem}
+p{color:#aabbd0;line-height:1.5}
+.card{background:#142137;border:1px solid #2b3c55;border-radius:15px;padding:16px;margin-bottom:14px;min-width:0}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.metric{font-size:1.5rem;font-weight:750;margin:8px 0}
+.muted,.note{color:#aabbd0;font-size:.85rem}
+.green{color:#4ce0b3}
+.red{color:#ff8992}
+.pill{display:inline-block;background:#3a2d18;color:#ffcf7d;border-radius:20px;padding:6px 10px;font-size:.75rem}
+label{display:block;color:#b6c7da;font-size:.85rem;margin:12px 0 5px}
+input,select,button{padding:12px;border-radius:9px;font:inherit}
+input,select{width:100%;background:#0c1728;color:#e7eefb;border:1px solid #40536b}
+button{background:#29b998;color:#061c18;border:0;font-weight:750;cursor:pointer}
+button.secondary{background:#293a52;color:#e7eefb}
+button.wide{width:100%;margin-top:14px}
+button.small{padding:7px 10px;font-size:.8rem}
+a{color:#5fe5d1}
+.scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:.84rem}
+th,td{padding:11px 9px;text-align:left;border-bottom:1px solid #33445a}
+th{color:#aabbd0}
+.num{text-align:right;white-space:nowrap}
+#ranked-table{min-width:920px}
+.result,.detail{background:#0c1728;border-radius:10px;padding:14px;margin-top:14px;line-height:1.8}
+.actions{display:flex;gap:9px;align-items:center}
+.toolbar{margin:15px 0}
+footer{text-align:center;padding:22px;color:#8295ac;font-size:.8rem}
+details{margin-top:14px}
+summary{cursor:pointer;color:#aabbd0}
+@media(min-width:700px){
+.grid{grid-template-columns:repeat(4,1fr)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+}
 </style>
 </head>
 <body>
-<header><div style="max-width:1100px;margin:auto"><span class="pill">PAPER TRADING • DELAYED DATA</span><h1>NSE India <span class="green">Swing Trading</span></h1><div class="muted">Nifty 500 • Automated technical opportunity research</div></div></header>
+
+<header>
+<div style="max-width:1100px;margin:auto">
+<span class="pill">PAPER TRADING • DELAYED DATA</span>
+<h1>NSE India <span class="green">Swing Trading</span></h1>
+<div class="muted">Nifty 500 • Technical and Fundamental Research</div>
+</div>
+</header>
+
 <main class="wrap">
+
 <section class="card">
 <h2>Latest Nifty 500 Scanner</h2>
-<div id="scan-status" class="status" role="status" aria-live="polite">Loading scanner results…</div>
-<p class="muted" id="scan-time">Scan time: —</p>
+<div id="scan-status">Loading scanner results...</div>
+<p id="scan-time" class="muted">Scan time: —</p>
 <div class="grid">
 <div><div class="muted">Universe</div><div class="metric" id="universe">—</div></div>
 <div><div class="muted">Analyzed</div><div class="metric" id="analyzed">—</div></div>
@@ -23,170 +74,825 @@
 <p class="note" id="provider">Source: —</p>
 <button class="secondary wide" id="refresh">Refresh scanner results</button>
 </section>
+
 <section class="card">
 <h2>Top Nifty 500 Opportunities</h2>
-<p class="note">Ranked by technical rules, not expected profit. SETUP means further research required, not a buy instruction. Entry/stop/target are illustrative based on historical closes.</p>
+<p class="note">Technical rankings are experimental, not expected profits or buy recommendations. Entry, stop and target are illustrative historical levels.</p>
 <div class="grid">
 <div><div class="muted">SETUP</div><div class="metric green" id="setup-count">—</div></div>
 <div><div class="muted">WATCH</div><div class="metric" id="watch-count">—</div></div>
 <div><div class="muted">NO TRADE</div><div class="metric" id="no-trade-count">—</div></div>
 <div><div class="muted">Latest price date</div><div class="metric" id="price-date" style="font-size:1rem">—</div></div>
 </div>
-<div class="toolbar"><label for="view" style="margin:0">Show</label><select id="view"><option value="setups">Top SETUP stocks</option><option value="watchlist">Top WATCH stocks</option><option value="ranked">Top ranked (all statuses)</option></select></div>
-<div class="scroll"><table id="ranked-table"><thead><tr><th>Stock / Status</th><th class="num">Score</th><th class="num">Entry ₹</th><th class="num">Stop ₹</th><th class="num">Target ₹</th><th class="num">R:R</th><th>Actions</th></tr></thead><tbody id="opportunities"><tr><td colspan="7">Loading…</td></tr></tbody></table></div>
-<p class="note" id="list-note">—</p>
-<details><summary class="muted">Technical reasoning for listed stocks</summary><div id="reasons" class="note"></div></details>
-<details><summary class="muted">Data errors</summary><div id="errors" class="note">—</div></details>
-<p class="note" id="scan-disclaimer">Research and paper trading only. No verified company news or backtesting yet.</p>
-</section>
-<div class="grid">
-<div class="card"><div class="muted">Starting capital</div><div class="metric">₹1,00,000</div></div>
-<div class="card"><div class="muted">Allocation / trade</div><div class="metric">₹30,000</div></div>
-<div class="card"><div class="muted">Trading slots</div><div class="metric">3</div></div>
-<div class="card"><div class="muted">Reserved cash</div><div class="metric">₹10,000</div></div>
+<div class="toolbar">
+<label for="view">Show opportunities</label>
+<select id="view">
+<option value="setups">Top SETUP stocks</option>
+<option value="watchlist">Top WATCH stocks</option>
+<option value="ranked">Top ranked stocks</option>
+</select>
 </div>
-<div class="two">
-<section class="card" id="calculator"><h2>Trade Planning Calculator</h2><p class="note">Use your own verified prices or load illustrative levels from a screened stock. No orders are placed.</p>
-<label for="symbol">NSE stock symbol</label><input id="symbol" placeholder="e.g. RELIANCE" maxlength="24">
-<label for="entry">Planned entry price (₹)</label><input id="entry" type="number" min="0.01" step="0.01" placeholder="e.g. 1000">
-<label for="stop">Stop-loss price (₹)</label><input id="stop" type="number" min="0.01" step="0.01" placeholder="e.g. 970">
-<label for="target">Target price (₹)</label><input id="target" type="number" min="0.01" step="0.01" placeholder="e.g. 1060">
-<label for="budget">Trade allocation (₹)</label><input id="budget" type="number" min="1" step="1" value="30000">
-<button class="wide" id="calculate">Calculate trade plan</button><div id="result" class="result" aria-live="polite">Enter values to calculate quantity, risk, potential profit and risk/reward.</div>
-<button class="secondary wide" id="save">Save paper trade plan</button>
+<div class="scroll">
+<table id="ranked-table">
+<thead><tr>
+<th>Stock / Status</th>
+<th>Technical</th>
+<th>Fundamental</th>
+<th>Entry ₹</th>
+<th>Stop ₹</th>
+<th>Target ₹</th>
+<th>R:R</th>
+<th>Actions</th>
+</tr></thead>
+<tbody id="opportunities"><tr><td colspan="8">Loading...</td></tr></tbody>
+</table>
+</div>
+<p id="list-note" class="note"></p>
+<details>
+<summary>Technical reasoning</summary>
+<div id="reasons" class="note"></div>
+</details>
+<details>
+<summary>Data errors</summary>
+<div id="errors" class="note"></div>
+</details>
+<p id="scan-disclaimer" class="note">Research only. Verified company news and live monitoring are not connected yet.</p>
 </section>
-<section class="card"><h2>My Paper Trade Plans</h2><p class="note">Saved only in this browser on this device. These are plans, not executed orders or live positions.</p>
-<div class="scroll"><table><thead><tr><th>Symbol</th><th>Qty</th><th>Entry</th><th>Risk</th><th></th></tr></thead><tbody id="trades"></tbody></table></div>
-<button class="secondary wide" id="clear">Clear saved plans</button>
-<hr style="border:0;border-top:1px solid #33445a;margin:20px 0"><h2>Nifty 500 Research Watchlist</h2>
-<p>Technical ranking is connected. Verified company news, live market quotes, and independent price verification are <strong>not connected yet</strong>.</p><p class="note">The five-stock advanced chart viewer is available below. Other Nifty 500 stocks currently link to external Yahoo Finance charts.</p>
-<a href="charts.html">Open Advanced Charts (5 stocks)</a>
-</section></div>
-<section class="card"><h2>Risk Controls</h2><p class="note">The calculator checks long-trade levels and estimates loss at the stop, excluding fees, taxes and slippage. Stops are not guaranteed execution prices. The 100-point score is a heuristic, not a probability. Paper trading only.</p><span class="pill">Research tool • Not financial advice</span></section>
-</main><footer>NSE India Project • Dashboard v3 • No brokerage connection</footer>
+
+<section class="card" id="financial-section">
+<h2>Fundamental Analysis</h2>
+<p class="note">Annual financial data. Currently covers five companies only. Scores are experimental and sector-specific; unavailable scores are not zero.</p>
+<p id="financial-time" class="muted">Loading financial data...</p>
+<div class="scroll">
+<table>
+<thead><tr>
+<th>Stock</th>
+<th>Revenue Growth</th>
+<th>Profit Growth</th>
+<th>ROE</th>
+<th>Score</th>
+<th>Details</th>
+</tr></thead>
+<tbody id="financial-table">
+<tr><td colspan="6">Loading...</td></tr>
+</tbody>
+</table>
+</div>
+<div id="financial-detail" class="detail">
+Select Details to review financial indicators.
+</div>
+<p class="note">
+A financial score of 100 does not mean a 100% probability of profit.
+Bank and diversified-company scoring requires separate validation.
+</p>
+</section>
+
+<div class="grid">
+<div class="card">
+<div class="muted">Starting capital</div>
+<div class="metric">₹1,00,000</div>
+</div>
+<div class="card">
+<div class="muted">Allocation / trade</div>
+<div class="metric">₹30,000</div>
+</div>
+<div class="card">
+<div class="muted">Trading slots</div>
+<div class="metric">3</div>
+</div>
+<div class="card">
+<div class="muted">Reserved cash</div>
+<div class="metric">₹10,000</div>
+</div>
+</div>
+
+<div class="two">
+<section class="card" id="calculator">
+<h2>Trade Planning Calculator</h2>
+<p class="note">
+Illustrative paper-trading calculations.
+No orders are placed.
+</p>
+
+<label for="symbol">NSE stock symbol</label>
+<input id="symbol" placeholder="RELIANCE" maxlength="24">
+
+<label for="entry">Planned entry price (₹)</label>
+<input id="entry" type="number" min="0.01" step="0.01">
+
+<label for="stop">Stop-loss price (₹)</label>
+<input id="stop" type="number" min="0.01" step="0.01">
+
+<label for="target">Target price (₹)</label>
+<input id="target" type="number" min="0.01" step="0.01">
+
+<label for="budget">Trade allocation (₹)</label>
+<input id="budget" type="number" min="1" value="30000">
+
+<button class="wide" id="calculate">
+Calculate trade plan
+</button>
+
+<div id="result" class="result">
+Enter prices to calculate your paper trade.
+</div>
+
+<button class="secondary wide" id="save">
+Save paper trade plan
+</button>
+</section>
+
+<section class="card">
+<h2>My Paper Trade Plans</h2>
+<p class="note">
+Saved in this browser only. Not executed trades.
+</p>
+
+<div class="scroll">
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Qty</th>
+<th>Entry</th>
+<th>Risk</th>
+<th></th>
+</tr>
+</thead>
+<tbody id="trades"></tbody>
+</table>
+</div>
+
+<button class="secondary wide" id="clear">
+Clear saved plans
+</button>
+
+<hr style="border:0;border-top:1px solid #33445a;margin:20px 0">
+
+<h2>Nifty 500 Research Watchlist</h2>
+<p class="note">
+Technical ranking is connected.
+Verified company news, live market quotes
+and independent price verification are not yet connected.
+</p>
+
+<a href="charts.html">
+Open Advanced Charts (5 stocks)
+</a>
+</section>
+</div>
+
+<section class="card">
+<h2>Risk Controls</h2>
+<p class="note">
+Stop-loss execution is not guaranteed.
+Estimates exclude taxes, fees and slippage.
+Technical and fundamental scores are unvalidated
+heuristics, not probabilities.
+Paper trading only.
+</p>
+<span class="pill">Research tool • Not financial advice</span>
+</section>
+
+</main>
+
+<footer>
+NSE India Project • Dashboard v4 • No brokerage connection
+</footer>
+
 <script>
 'use strict';
-const $=id=>document.getElementById(id);
-const fmt=n=>new Intl.NumberFormat('en-IN',{maximumFractionDigits:2}).format(n);
-const key='nse500-paper-plans-v1'; // Preserve existing browser plans.
-const chartStocks=new Set(['RELIANCE','TCS','INFY','HDFCBANK','ICICIBANK']);
-let last=null, scan=null;
-function compute(){
- const symbol=$('symbol').value.trim().toUpperCase(),entry=+$('entry').value,stop=+$('stop').value,target=+$('target').value,budget=+$('budget').value;
- const r=$('result');last=null;
- if(!/^[A-Z0-9&._-]{1,24}$/.test(symbol)||![entry,stop,target,budget].every(x=>Number.isFinite(x)&&x>0)){r.textContent='Please enter a valid NSE symbol and positive prices/allocation.';return}
- if(!(stop<entry&&target>entry)){r.textContent='For a long trade, stop-loss must be below entry and target must be above entry.';return}
- const qty=Math.floor(budget/entry);if(qty<1){r.textContent='Allocation is too small to buy one share.';return}
- const risk=qty*(entry-stop),profit=qty*(target-entry),ratio=(target-entry)/(entry-stop);
- last={symbol,qty,entry,stop,target,risk,profit};
- r.innerHTML=`Quantity: <strong>${qty}</strong><br>Estimated cost: ₹${fmt(qty*entry)}<br>Risk at stop: <span class="red">₹${fmt(risk)}</span><br>Potential profit at target: <span class="green">₹${fmt(profit)}</span><br>Reward / risk: <strong>${fmt(ratio)} : 1</strong><br><small>Excludes fees, taxes and slippage. Paper trading only.</small>`;
-}
-function getPlans(){try{const v=JSON.parse(localStorage.getItem(key)||'[]');return Array.isArray(v)?v:[]}catch{return []}}
-function render(){const t=$('trades');t.replaceChildren();const plans=getPlans();if(!plans.length){const tr=document.createElement('tr'),td=document.createElement('td');td.colSpan=5;td.textContent='No plans saved yet.';tr.append(td);t.append(tr);return}
- plans.forEach((p,i)=>{const tr=document.createElement('tr');[p.symbol,p.qty,'₹'+fmt(p.entry),'₹'+fmt(p.risk)].forEach(v=>{const td=document.createElement('td');td.textContent=v;tr.append(td)});const td=document.createElement('td'),b=document.createElement('button');b.textContent='×';b.className='secondary small';b.setAttribute('aria-label','Delete '+p.symbol);b.onclick=()=>{const a=getPlans();a.splice(i,1);localStorage.setItem(key,JSON.stringify(a));render()};td.append(b);tr.append(td);t.append(tr)})}
-function addCell(tr,text,className){const td=document.createElement('td');td.textContent=text;if(className)td.className=className;tr.append(td);return td}
-function planFrom(stock){
- const entry=Number(stock.illustrative_entry??stock.close),stop=Number(stock.illustrative_stop),target=Number(stock.illustrative_target);
- if(![entry,stop,target].every(Number.isFinite)||!(entry>stop&&target>entry)){alert('Valid illustrative levels unavailable for this stock.');return}
- $('symbol').value=String(stock.symbol||'').toUpperCase();$('entry').value=entry;$('stop').value=stop;$('target').value=target;$('budget').value=30000;
- compute();$('calculator').scrollIntoView({behavior:'smooth',block:'start'});
-}
-function drawOpportunities(){
- const body=$('opportunities');body.replaceChildren();$('reasons').replaceChildren();if(!scan)return;
- const view=$('view').value;
- const list=view==='watchlist'?scan.watchlist:view==='ranked'?scan.top_ranked:scan.candidates;
- const stocks=Array.isArray(list)?list.slice(0,10):[];
- $('list-note').textContent=`Showing ${stocks.length} ${view==='setups'?'SETUP':view==='watchlist'?'WATCH':'ranked'} stocks. Technical scores are unvalidated heuristic rankings; price levels are historical, not live.`;
- if(!stocks.length){const tr=document.createElement('tr');addCell(tr,'No qualifying stocks in this category. NO TRADE is a valid outcome.').colSpan=7;body.append(tr);return}
- stocks.forEach(c=>{
-  const symbol=String(c.symbol||'').toUpperCase();const tr=document.createElement('tr');const name=addCell(tr,symbol+' · '+String(c.status||'—'));name.style.fontWeight='700';
-  addCell(tr,Number.isFinite(Number(c.score))?String(c.score)+'/100':'—','num');
-  for(const k of ['illustrative_entry','illustrative_stop','illustrative_target']){const n=Number(c[k]);addCell(tr,c[k]!=null&&Number.isFinite(n)?fmt(n):'—','num')}
-  addCell(tr,c.risk_reward!=null?fmt(Number(c.risk_reward))+':1':'—','num');
-  const td=addCell(tr,'');const actions=document.createElement('div');actions.className='actions';
-  const btn=document.createElement('button');btn.className='small';btn.textContent='Plan';btn.onclick=()=>planFrom(c);actions.append(btn);
-  const a=document.createElement('a');a.textContent='Chart';a.target='_blank';a.rel='noopener noreferrer';
-  a.href=chartStocks.has(symbol)?'charts.html':'https://finance.yahoo.com/quote/'+encodeURIComponent(symbol+'.NS')+'/chart/';
-  if(!chartStocks.has(symbol))a.title='External Yahoo Finance chart (not our five-stock chart viewer)';actions.append(a);td.append(actions);body.append(tr);
-  const p=document.createElement('p');const reasons=Array.isArray(c.reasons)?c.reasons.join('; '):'Reasons unavailable';p.textContent=symbol+': '+reasons;$('reasons').append(p);
- });
-}
-async function loadScan(){
- const status=$('scan-status');status.textContent='Loading scanner results…';status.className='status';
- try{
-  const response=await fetch('./scanner/results.json?cache='+Date.now(),{cache:'no-store'});if(!response.ok)throw Error('HTTP '+response.status);
-  const data=await response.json();if(!data||!Array.isArray(data.candidates)||!Number.isFinite(Number(data.analyzed_count)))throw Error('Unexpected JSON format');
-  scan=data;$('universe').textContent=fmt(data.universe_count??0);$('analyzed').textContent=fmt(data.analyzed_count);$('failed').textContent=fmt(data.failed_count??0);
-  const counts=data.status_counts||{};$('candidate-count').textContent=fmt(counts.SETUP??data.candidates.length);
-  $('setup-count').textContent=fmt(counts.SETUP??data.candidates.length);$('watch-count').textContent=counts.WATCH!=null?fmt(counts.WATCH):'—';$('no-trade-count').textContent=counts['NO TRADE']!=null?fmt(counts['NO TRADE']):'—';
-  const date=new Date(data.generated_utc);$('scan-time').textContent='Scan time: '+(Number.isNaN(date.getTime())?'Unknown':date.toLocaleString('en-IN',{timeZone:'Asia/Kolkata',dateStyle:'medium',timeStyle:'short'})+' IST');
-  $('provider').textContent='Source: '+String(data.provider||'Unspecified');$('scan-disclaimer').textContent=String(data.disclaimer||'Technical screening only; not a recommendation.');
-  const first=(data.top_ranked||data.candidates)[0];$('price-date').textContent=first&&first.as_of?first.as_of:'—';
-  const errs=Array.isArray(data.errors_sample)?data.errors_sample:[];$('errors').textContent=errs.length?errs.map(e=>String(e.symbol||'Unknown')+': '+String(e.reason||'Unknown error')).join(' | '):'No sample errors recorded.';
-  status.textContent='Scanner results loaded';status.className='status ok';drawOpportunities();
- }catch(e){scan=null;status.textContent='Scanner results unavailable: '+e.message;status.className='status error';$('scan-time').textContent='Verify scanner/results.json is published on GitHub Pages.';$('opportunities').replaceChildren();const tr=document.createElement('tr');addCell(tr,'Unable to load screening data.').colSpan=7;$('opportunities').append(tr)}
-}
-['entry','stop','target','budget','symbol'].forEach(id=>$(id).addEventListener('input',()=>last=null));
-$('calculate').onclick=compute;
-$('save').onclick=()=>{compute();if(!last)return;const a=getPlans();if(a.length>=3){alert('Maximum three trade plans. Delete one before adding another.');return}a.push(last);localStorage.setItem(key,JSON.stringify(a));render()};
-$('clear').onclick=()=>{if(confirm('Delete all saved paper trade plans?')){localStorage.removeItem(key);render()}};
-$('refresh').onclick=loadScan;$('view').onchange=drawOpportunities;render();loadScan();
-</script>
- <section id="financial-section" class="card">
-  <h2>Fundamental Analysis</h2>
-  <p class="note">Annual financial indicators. Research only.</p>
-  <div id="financial-content">Loading financial data...</div>
-</section>
 
-<script>
-(async function(){
-  const box = document.getElementById('financial-content');
+const $ = id => document.getElementById(id);
+const fmt = n => new Intl.NumberFormat('en-IN', {
+  maximumFractionDigits: 2
+}).format(n);
+
+const key = 'nse500-paper-plans-v1';
+
+const chartStocks = new Set([
+  'RELIANCE', 'TCS', 'INFY', 'HDFCBANK', 'ICICIBANK'
+]);
+
+let scan = null;
+let last = null;
+let financialMap = new Map();
+
+function cell(tr, value) {
+  const td = document.createElement('td');
+  td.textContent = value;
+  tr.appendChild(td);
+  return td;
+}
+
+function percent(v) {
+  return v == null || !Number.isFinite(Number(v))
+    ? 'N/A'
+    : fmt(Number(v)) + '%';
+}
+
+function fundamentalLabel(symbol) {
+  const f = financialMap.get(symbol);
+
+  if (!f) return 'Not yet analyzed';
+
+  const score = f.fundamental_score;
+
+  return score == null || !Number.isFinite(Number(score))
+    ? 'Research only (N/A)'
+    : fmt(Number(score)) + '/100*';
+}
+
+function compute() {
+  const symbol = $('symbol').value.trim().toUpperCase();
+  const entry = +$('entry').value;
+  const stop = +$('stop').value;
+  const target = +$('target').value;
+  const budget = +$('budget').value;
+  const r = $('result');
+
+  last = null;
+
+  if (
+    !/^[A-Z0-9&._-]{1,24}$/.test(symbol) ||
+    ![entry, stop, target, budget].every(
+      v => Number.isFinite(v) && v > 0
+    )
+  ) {
+    r.textContent =
+      'Enter a valid stock symbol, prices and allocation.';
+    return;
+  }
+
+  if (stop >= entry || target <= entry) {
+    r.textContent =
+      'Stop must be below entry and target above entry.';
+    return;
+  }
+
+  const qty = Math.floor(budget / entry);
+
+  if (qty < 1) {
+    r.textContent = 'Allocation is too small for one share.';
+    return;
+  }
+
+  const risk = qty * (entry - stop);
+  const profit = qty * (target - entry);
+  const ratio = (target - entry) / (entry - stop);
+
+  last = {
+    symbol, qty, entry, stop, target, risk, profit
+  };
+
+  r.innerHTML =
+    'Quantity: <strong>' + qty + '</strong><br>' +
+    'Estimated cost: ₹' + fmt(qty * entry) + '<br>' +
+    'Risk at stop: ₹' + fmt(risk) + '<br>' +
+    'Potential profit: ₹' + fmt(profit) + '<br>' +
+    'Reward/Risk: ' + fmt(ratio) + ':1<br>' +
+    '<small>Excludes fees, taxes and slippage.</small>';
+}
+
+function getPlans() {
   try {
-    const response = await fetch(
-      './scanner/financial_analysis.json?v=' + Date.now()
+    const v = JSON.parse(localStorage.getItem(key) || '[]');
+    return Array.isArray(v) ? v : [];
+  } catch {
+    return [];
+  }
+}
+
+function renderPlans() {
+  const t = $('trades');
+  t.replaceChildren();
+
+  const plans = getPlans();
+
+  if (!plans.length) {
+    const tr = document.createElement('tr');
+    cell(tr, 'No plans saved yet.').colSpan = 5;
+    t.appendChild(tr);
+    return;
+  }
+
+  plans.forEach((p, i) => {
+    const tr = document.createElement('tr');
+
+    [
+      p.symbol,
+      p.qty,
+      '₹' + fmt(p.entry),
+      '₹' + fmt(p.risk)
+    ].forEach(v => cell(tr, v));
+
+    const td = cell(tr, '');
+    const b = document.createElement('button');
+
+    b.textContent = '×';
+    b.className = 'secondary small';
+
+    b.onclick = () => {
+      const a = getPlans();
+      a.splice(i, 1);
+      localStorage.setItem(key, JSON.stringify(a));
+      renderPlans();
+    };
+
+    td.appendChild(b);
+    t.appendChild(tr);
+  });
+}
+
+function planFrom(c) {
+  const entry = Number(
+    c.illustrative_entry ?? c.close
+  );
+  const stop = Number(c.illustrative_stop);
+  const target = Number(c.illustrative_target);
+
+  if (
+    ![entry, stop, target].every(Number.isFinite) ||
+    !(stop < entry && target > entry)
+  ) {
+    alert('Valid price levels are unavailable.');
+    return;
+  }
+
+  $('symbol').value = c.symbol;
+  $('entry').value = entry;
+  $('stop').value = stop;
+  $('target').value = target;
+  $('budget').value = 30000;
+
+  compute();
+
+  $('calculator').scrollIntoView({
+    behavior: 'smooth'
+  });
+}
+
+function drawOpportunities() {
+  const t = $('opportunities');
+
+  t.replaceChildren();
+  $('reasons').replaceChildren();
+
+  if (!scan) return;
+
+  const view = $('view').value;
+
+  const list =
+    view === 'watchlist' ? scan.watchlist :
+    view === 'ranked' ? scan.top_ranked :
+    scan.candidates;
+
+  const stocks = Array.isArray(list)
+    ? list.slice(0, 10)
+    : [];
+
+  $('list-note').textContent =
+    'Showing ' + stocks.length +
+    ' stocks. Financial data currently covers ' +
+    financialMap.size +
+    ' companies. Prices are not live.';
+
+  if (!stocks.length) {
+    const tr = document.createElement('tr');
+
+    cell(
+      tr,
+      'No qualifying stocks. NO TRADE is a valid outcome.'
+    ).colSpan = 8;
+
+    t.appendChild(tr);
+    return;
+  }
+
+  stocks.forEach(c => {
+    const symbol = String(
+      c.symbol || ''
+    ).toUpperCase();
+
+    const tr = document.createElement('tr');
+
+    cell(tr, symbol + ' · ' + (c.status || '—'));
+
+    cell(
+      tr,
+      c.score == null ? '—' : c.score + '/100'
     );
-    if (!response.ok) throw new Error('Data unavailable');
 
-    const data = await response.json();
-    const companies = data.companies || [];
+    cell(tr, fundamentalLabel(symbol));
 
-    if (!companies.length) {
-      box.textContent = 'No financial data available.';
-      return;
+    [
+      'illustrative_entry',
+      'illustrative_stop',
+      'illustrative_target'
+    ].forEach(k => {
+      cell(
+        tr,
+        c[k] == null ? '—' : fmt(Number(c[k]))
+      );
+    });
+
+    cell(
+      tr,
+      c.risk_reward == null
+        ? '—'
+        : fmt(Number(c.risk_reward)) + ':1'
+    );
+
+    const td = cell(tr, '');
+    const actions = document.createElement('div');
+
+    actions.className = 'actions';
+
+    const b = document.createElement('button');
+
+    b.textContent = 'Plan';
+    b.className = 'small';
+    b.onclick = () => planFrom(c);
+
+    actions.appendChild(b);
+
+    const a = document.createElement('a');
+
+    a.textContent = 'Chart';
+    a.target = '_blank';
+    a.rel = 'noopener noreferrer';
+
+    a.href = chartStocks.has(symbol)
+      ? 'charts.html'
+      : 'https://finance.yahoo.com/quote/' +
+        encodeURIComponent(symbol + '.NS') +
+        '/chart/';
+
+    actions.appendChild(a);
+
+    if (financialMap.has(symbol)) {
+      const f = document.createElement('button');
+
+      f.textContent = 'Financials';
+      f.className = 'secondary small';
+
+      f.onclick = () => showFinancial(
+        symbol, true
+      );
+
+      actions.appendChild(f);
     }
 
-    const table = document.createElement('table');
-    table.innerHTML =
-      '<thead><tr><th>Stock</th><th>Revenue Growth</th>' +
-      '<th>Profit Growth</th><th>ROE</th></tr></thead>';
+    td.appendChild(actions);
+    t.appendChild(tr);
 
-    const tbody = document.createElement('tbody');
+    const p = document.createElement('p');
 
-    companies.forEach(c => {
+    p.textContent =
+      symbol + ': ' +
+      (
+        Array.isArray(c.reasons)
+          ? c.reasons.join('; ')
+          : 'Reasons unavailable'
+      );
+
+    $('reasons').appendChild(p);
+  });
+}
+ 
+function showFinancial(symbol, scroll) {
+  const c = financialMap.get(symbol);
+  const box = $('financial-detail');
+
+  box.replaceChildren();
+
+  if (!c) {
+    box.textContent =
+      'Financial data not yet analyzed for ' + symbol;
+    return;
+  }
+
+  const h = document.createElement('h3');
+  h.textContent = symbol + ' — Financial Research';
+  box.appendChild(h);
+
+  const m = c.metrics || {};
+  const period = c.financial_periods || {};
+
+  const p = document.createElement('p');
+
+  p.textContent =
+    'Income statement period: ' +
+    (period.income || 'Unknown') +
+    ' | Revenue growth: ' +
+    percent(m.revenue_growth_pct) +
+    ' | Profit growth: ' +
+    percent(m.profit_growth_pct) +
+    ' | ROE: ' +
+    percent(m.return_on_equity_pct) +
+    ' | Debt/equity: ' +
+    (m.debt_to_equity ?? 'N/A') +
+    ' | Score: ' +
+    fundamentalLabel(symbol);
+
+  box.appendChild(p);
+
+  [
+    ['Positive indicators', c.positive_indicators],
+    ['Negative indicators', c.negative_indicators],
+    ['Cautions', c.cautions]
+  ].forEach(([title, items]) => {
+    const heading = document.createElement('h3');
+    heading.textContent = title;
+    box.appendChild(heading);
+
+    const paragraph = document.createElement('p');
+
+    paragraph.textContent =
+      Array.isArray(items) && items.length
+        ? items.join(' • ')
+        : 'None reported by current rules.';
+
+    box.appendChild(paragraph);
+  });
+
+  const note = document.createElement('p');
+  note.className = 'note';
+
+  note.textContent =
+    c.score_note ||
+    c.note ||
+    'Verify official company filings.';
+
+  box.appendChild(note);
+
+  if (scroll) {
+    $('financial-section').scrollIntoView({
+      behavior: 'smooth'
+    });
+  }
+}
+
+async function loadFinancial() {
+  const t = $('financial-table');
+
+  try {
+    const response = await fetch(
+      './scanner/financial_analysis.json?v=' +
+      Date.now(),
+      { cache: 'no-store' }
+    );
+
+    if (!response.ok) {
+      throw Error('HTTP ' + response.status);
+    }
+
+    const data = await response.json();
+
+    if (!Array.isArray(data.companies)) {
+      throw Error('Invalid financial data');
+    }
+
+    financialMap = new Map(
+      data.companies
+        .filter(c =>
+          c &&
+          typeof c.symbol === 'string'
+        )
+        .map(c => [
+          c.symbol.toUpperCase(),
+          c
+        ])
+    );
+
+    t.replaceChildren();
+
+    for (const c of financialMap.values()) {
       const tr = document.createElement('tr');
       const m = c.metrics || {};
 
-      [c.symbol,
-       m.revenue_growth_pct,
-       m.profit_growth_pct,
-       m.return_on_equity_pct
-      ].forEach((value, i) => {
-        const td = document.createElement('td');
-        td.textContent = value == null
-          ? 'N/A'
-          : i === 0 ? value : value + '%';
-        tr.appendChild(td);
-      });
+      cell(tr, c.symbol);
+      cell(tr, percent(m.revenue_growth_pct));
+      cell(tr, percent(m.profit_growth_pct));
+      cell(tr, percent(m.return_on_equity_pct));
+      cell(tr, fundamentalLabel(c.symbol));
 
-      tbody.appendChild(tr);
-    });
+      const td = cell(tr, '');
+      const b = document.createElement('button');
 
-    table.appendChild(tbody);
-    box.replaceChildren(table);
-  } catch (error) {
-    box.textContent = 'Financial data could not be loaded.';
+      b.textContent = 'Details';
+      b.className = 'secondary small';
+
+      b.onclick = () =>
+        showFinancial(c.symbol, false);
+
+      td.appendChild(b);
+      t.appendChild(tr);
+    }
+
+    const d = new Date(data.generated_utc);
+
+    $('financial-time').textContent =
+      'Coverage: ' +
+      financialMap.size +
+      ' companies | Updated: ' +
+      (
+        Number.isNaN(d.getTime())
+          ? 'Unknown'
+          : d.toLocaleString('en-IN', {
+              timeZone: 'Asia/Kolkata'
+            }) + ' IST'
+      );
+
+    drawOpportunities();
+
+  } catch (e) {
+    financialMap = new Map();
+    t.replaceChildren();
+
+    const tr = document.createElement('tr');
+
+    cell(
+      tr,
+      'Financial data unavailable: ' + e.message
+    ).colSpan = 6;
+
+    t.appendChild(tr);
+
+    $('financial-time').textContent =
+      'Check scanner/financial_analysis.json';
+
+    drawOpportunities();
   }
-})();
+}
+
+async function loadScan() {
+  const status = $('scan-status');
+
+  status.textContent = 'Loading scanner results...';
+
+  try {
+    const response = await fetch(
+      './scanner/results.json?v=' +
+      Date.now(),
+      { cache: 'no-store' }
+    );
+
+    if (!response.ok) {
+      throw Error('HTTP ' + response.status);
+    }
+
+    const data = await response.json();
+
+    if (!Array.isArray(data.candidates)) {
+      throw Error('Invalid scanner data');
+    }
+
+    scan = data;
+
+    $('universe').textContent =
+      fmt(data.universe_count ?? 0);
+
+    $('analyzed').textContent =
+      fmt(data.analyzed_count ?? 0);
+
+    $('failed').textContent =
+      fmt(data.failed_count ?? 0);
+
+    const counts = data.status_counts || {};
+
+    $('candidate-count').textContent =
+      fmt(counts.SETUP ?? data.candidates.length);
+
+    $('setup-count').textContent =
+      fmt(counts.SETUP ?? data.candidates.length);
+
+    $('watch-count').textContent =
+      counts.WATCH ?? '—';
+
+    $('no-trade-count').textContent =
+      counts['NO TRADE'] ?? '—';
+
+    const d = new Date(data.generated_utc);
+
+    $('scan-time').textContent =
+      'Scan time: ' +
+      (
+        Number.isNaN(d.getTime())
+          ? 'Unknown'
+          : d.toLocaleString('en-IN', {
+              timeZone: 'Asia/Kolkata'
+            }) + ' IST'
+      );
+
+    $('provider').textContent =
+      'Source: ' +
+      (data.provider || 'Unspecified');
+
+    $('scan-disclaimer').textContent =
+      data.disclaimer ||
+      'Research and paper trading only.';
+
+    const first =
+      (data.top_ranked || data.candidates)[0];
+
+    $('price-date').textContent =
+      first?.as_of || '—';
+
+    const errors =
+      Array.isArray(data.errors_sample)
+        ? data.errors_sample
+        : [];
+
+    $('errors').textContent =
+      errors.length
+        ? errors.map(e =>
+            String(e.symbol || 'Unknown') +
+            ': ' +
+            String(e.reason || 'Error')
+          ).join(' | ')
+        : 'No sample errors recorded.';
+
+    status.textContent = 'Scanner results loaded';
+    status.className = 'green';
+
+    drawOpportunities();
+
+  } catch (e) {
+    scan = null;
+
+    status.textContent =
+      'Scanner unavailable: ' + e.message;
+
+    status.className = 'red';
+
+    $('opportunities').replaceChildren();
+
+    const tr = document.createElement('tr');
+
+    cell(
+      tr,
+      'Unable to load scanner results.'
+    ).colSpan = 8;
+
+    $('opportunities').appendChild(tr);
+  }
+}
+
+[
+  'entry',
+  'stop',
+  'target',
+  'budget',
+  'symbol'
+].forEach(id => {
+  $(id).addEventListener('input', () => {
+    last = null;
+  });
+});
+
+$('calculate').onclick = compute;
+
+$('save').onclick = () => {
+  compute();
+
+  if (!last) return;
+
+  const a = getPlans();
+
+  if (a.length >= 3) {
+    alert('Maximum three paper trade plans.');
+    return;
+  }
+
+  a.push(last);
+
+  localStorage.setItem(
+    key,
+    JSON.stringify(a)
+  );
+
+  renderPlans();
+};
+
+$('clear').onclick = () => {
+  if (confirm('Delete all saved paper trade plans?')) {
+    localStorage.removeItem(key);
+    renderPlans();
+  }
+};
+
+$('refresh').onclick = () => {
+  loadScan();
+  loadFinancial();
+};
+
+$('view').onchange = drawOpportunities;
+
+renderPlans();
+loadScan();
+loadFinancial();
+
 </script>
 </body>
 </html>
