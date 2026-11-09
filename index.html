@@ -132,5 +132,61 @@ $('save').onclick=()=>{compute();if(!last)return;const a=getPlans();if(a.length>
 $('clear').onclick=()=>{if(confirm('Delete all saved paper trade plans?')){localStorage.removeItem(key);render()}};
 $('refresh').onclick=loadScan;$('view').onchange=drawOpportunities;render();loadScan();
 </script>
+ <section id="financial-section" class="card">
+  <h2>Fundamental Analysis</h2>
+  <p class="note">Annual financial indicators. Research only.</p>
+  <div id="financial-content">Loading financial data...</div>
+</section>
+
+<script>
+(async function(){
+  const box = document.getElementById('financial-content');
+  try {
+    const response = await fetch(
+      './scanner/financial_analysis.json?v=' + Date.now()
+    );
+    if (!response.ok) throw new Error('Data unavailable');
+
+    const data = await response.json();
+    const companies = data.companies || [];
+
+    if (!companies.length) {
+      box.textContent = 'No financial data available.';
+      return;
+    }
+
+    const table = document.createElement('table');
+    table.innerHTML =
+      '<thead><tr><th>Stock</th><th>Revenue Growth</th>' +
+      '<th>Profit Growth</th><th>ROE</th></tr></thead>';
+
+    const tbody = document.createElement('tbody');
+
+    companies.forEach(c => {
+      const tr = document.createElement('tr');
+      const m = c.metrics || {};
+
+      [c.symbol,
+       m.revenue_growth_pct,
+       m.profit_growth_pct,
+       m.return_on_equity_pct
+      ].forEach((value, i) => {
+        const td = document.createElement('td');
+        td.textContent = value == null
+          ? 'N/A'
+          : i === 0 ? value : value + '%';
+        tr.appendChild(td);
+      });
+
+      tbody.appendChild(tr);
+    });
+
+    table.appendChild(tbody);
+    box.replaceChildren(table);
+  } catch (error) {
+    box.textContent = 'Financial data could not be loaded.';
+  }
+})();
+</script>
 </body>
 </html>
