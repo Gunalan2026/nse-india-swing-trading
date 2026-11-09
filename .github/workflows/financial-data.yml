@@ -1,0 +1,48 @@
+
+name: NSE India Financial Data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 12 * * 1-5"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: financial-data
+  cancel-in-progress: false
+
+jobs:
+  collect-financial-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r scanner/requirements.txt
+
+      - name: Collect company financial data
+        run: python scanner/financial_data.py
+
+      - name: Commit updated financial data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add scanner/financial_results.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Update company financial data"
+            git push
+          else
+            echo "No financial data changes"
+          fi
+          
