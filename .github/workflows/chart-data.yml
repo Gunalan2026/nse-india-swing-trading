@@ -1,0 +1,46 @@
+
+name: NSE India Chart Data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '30 11 * * 1-5'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nse-chart-data
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r scanner/requirements.txt
+
+      - name: Generate chart data
+        run: python scanner/chart_data.py
+
+      - name: Commit generated chart data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add charts/data/
+          if git diff --cached --quiet; then
+            echo "No chart data changes"
+          else
+            git commit -m "Update NSE chart data"
+            git push
+          fi
+          
