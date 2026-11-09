@@ -4,7 +4,7 @@ from pathlib import Path
 from datetime import datetime, timezone
 
 BASE = Path(__file__).resolve().parent
-INPUT = BASE / "financial_data.json"
+INPUT = BASE / "financial_results.json"
 OUTPUT = BASE / "financial_analysis.json"
 
 METRICS = {
