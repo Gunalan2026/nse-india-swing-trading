@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NSE India | Candlestick Charts</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #0b1220;
+      color: #e5edf7;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      padding: 20px 16px;
+      background: #111d30;
+      border-bottom: 1px solid #26364d;
+    }
+    h1 { font-size: 22px; margin: 0 0 8px; }
+    p { color: #a8b8cb; line-height: 1.5; }
+    main { padding: 16px; max-width: 1200px; margin: auto; }
+    .panel {
+      background: #111d30;
+      border: 1px solid #26364d;
+      border-radius: 12px;
+      padding: 14px;
+      margin-bottom: 16px;
+    }
+    label { display: block; margin-bottom: 8px; }
+    input, button {
+      font-size: 16px;
+      padding: 12px;
+      border-radius: 8px;
+    }
+    input {
+      background: #0b1220;
+      color: white;
+      border: 1px solid #40536e;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    button {
+      background: #21b6a8;
+      color: #07141e;
+      border: 0;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .chart {
+      height: 620px;
+      width: 100%;
+    }
+    a { color: #50d8ca; }
+    .note { font-size: 13px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NSE India - Candlestick Charts</h1>
+    <p>Nifty 500 Swing Trading Research Dashboard</p>
+    <a href="index.html">Back to Dashboard</a>
+  </header>
+
+  <main>
+    <section class="panel">
+      <label for="symbol">NSE Stock Symbol</label>
+      <input id="symbol" value="RELIANCE"
+             placeholder="Example: TCS, INFY, HDFCBANK">
+      <button onclick="loadChart()">Load Chart</button>
+      <p class="note">
+        Search for an NSE-listed symbol.
+        Chart availability depends on TradingView.
+      </p>
+    </section>
+
+    <section class="panel">
+      <div id="chart" class="chart"></div>
+    </section>
+
+    <section class="panel">
+      <h3>Chart Features</h3>
+      <p>
+        Candlesticks, volume, timeframe selection,
+        drawing tools and available technical indicators.
+      </p>
+      <p class="note">
+        Third-party chart data may be delayed.
+        Research and paper trading only.
+        Not financial advice.
+      </p>
+    </section>
+  </main>
+
+  <script>
+    function loadChart() {
+      const raw = document.getElementById("symbol")
+        .value.trim().toUpperCase();
+
+      if (!/^[A-Z0-9&-]{1,30}$/.test(raw)) {
+        alert("Enter a valid NSE stock symbol.");
+        return;
+      }
+
+      const container = document.getElementById("chart");
+      container.innerHTML = "";
+
+      const widget = document.createElement("div");
+      widget.className = "tradingview-widget-container";
+      widget.style.height = "100%";
+      widget.style.width = "100%";
+
+      const inner = document.createElement("div");
+      inner.className = "tradingview-widget-container__widget";
+      inner.style.height = "100%";
+      inner.style.width = "100%";
+      widget.appendChild(inner);
+
+      const script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src =
+        "https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js";
+      script.async = true;
+      script.textContent = JSON.stringify({
+        autosize: true,
+        symbol: "NSE:" + raw,
+        interval: "D",
+        timezone: "Asia/Kolkata",
+        theme: "dark",
+        style: "1",
+        locale: "en",
+        allow_symbol_change: true,
+        hide_side_toolbar: false,
+        calendar: false,
+        studies: [
+          "Volume@tv-basicstudies",
+          "RSI@tv-basicstudies",
+          "MACD@tv-basicstudies"
+        ],
+        support_host: "https://www.tradingview.com"
+      });
+
+      widget.appendChild(script);
+      container.appendChild(widget);
+    }
+
+    loadChart();
+  </script>
+</body>
+</html>
