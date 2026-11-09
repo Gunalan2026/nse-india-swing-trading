@@ -1,0 +1,169 @@
+{
+  "generated_utc": "2026-11-09T10:15:38.881730+00:00",
+  "source_generated_utc": "2026-11-09T09:07:57.225534+00:00",
+  "company_count": 5,
+  "methodology": "Annual financial statement comparison",
+  "disclaimer": "Experimental financial analysis. Verify against official NSE/BSE filings and audited statements. No profit guarantee or investment recommendation.",
+  "companies": [
+    {
+      "symbol": "RELIANCE",
+      "financial_periods": {
+        "income": "2026-03-31",
+        "balance_sheet": "2026-03-31",
+        "cash_flow": "2026-03-31"
+      },
+      "metrics": {
+        "revenue": 10572190000000.0,
+        "net_profit": 807750000000.0,
+        "total_debt": 3980000000000.0,
+        "equity": 9040300000000.0,
+        "total_assets": 21781400000000.0,
+        "operating_cash_flow": 1921130000000.0,
+        "free_cash_flow": 691970000000.0,
+        "revenue_growth_pct": 9.59,
+        "profit_growth_pct": 15.98,
+        "debt_to_equity": 0.44,
+        "return_on_equity_pct": 8.93
+      },
+      "positive_indicators": [
+        "Annual revenue increased",
+        "Annual net profit increased",
+        "Latest annual net profit is positive",
+        "Operating cash flow is positive",
+        "Free cash flow is positive"
+      ],
+      "negative_indicators": [],
+      "cautions": [],
+      "assessment": "Research required",
+      "note": "Descriptive financial indicators only. Not a buy/sell signal. Ratios may require sector-specific interpretation."
+    },
+    {
+      "symbol": "TCS",
+      "financial_periods": {
+        "income": "2026-03-31",
+        "balance_sheet": "2026-03-31",
+        "cash_flow": "2026-03-31"
+      },
+      "metrics": {
+        "revenue": 2670210000000.0,
+        "net_profit": 492100000000.0,
+        "total_debt": 112830000000.0,
+        "equity": 1072400000000.0,
+        "total_assets": 1823720000000.0,
+        "operating_cash_flow": 520940000000.0,
+        "free_cash_flow": 479480000000.0,
+        "revenue_growth_pct": 4.58,
+        "profit_growth_pct": 1.35,
+        "debt_to_equity": 0.11,
+        "return_on_equity_pct": 45.89
+      },
+      "positive_indicators": [
+        "Annual revenue increased",
+        "Annual net profit increased",
+        "Latest annual net profit is positive",
+        "Operating cash flow is positive",
+        "Free cash flow is positive"
+      ],
+      "negative_indicators": [],
+      "cautions": [],
+      "assessment": "Research required",
+      "note": "Descriptive financial indicators only. Not a buy/sell signal. Ratios may require sector-specific interpretation."
+    },
+    {
+      "symbol": "INFY",
+      "financial_periods": {
+        "income": "2026-03-31",
+        "balance_sheet": "2026-03-31",
+        "cash_flow": "2026-03-31"
+      },
+      "metrics": {
+        "revenue": 20158000000.0,
+        "net_profit": 3313000000.0,
+        "total_debt": 967000000.0,
+        "equity": 9786000000.0,
+        "total_assets": 16446000000.0,
+        "operating_cash_flow": 4039000000.0,
+        "free_cash_flow": 3733000000.0,
+        "revenue_growth_pct": 4.57,
+        "profit_growth_pct": 4.91,
+        "debt_to_equity": 0.1,
+        "return_on_equity_pct": 33.85
+      },
+      "positive_indicators": [
+        "Annual revenue increased",
+        "Annual net profit increased",
+        "Latest annual net profit is positive",
+        "Operating cash flow is positive",
+        "Free cash flow is positive"
+      ],
+      "negative_indicators": [],
+      "cautions": [],
+      "assessment": "Research required",
+      "note": "Descriptive financial indicators only. Not a buy/sell signal. Ratios may require sector-specific interpretation."
+    },
+    {
+      "symbol": "HDFCBANK",
+      "financial_periods": {
+        "income": "2026-03-31",
+        "balance_sheet": "2026-03-31",
+        "cash_flow": "2026-03-31"
+      },
+      "metrics": {
+        "revenue": 2495617500000.0,
+        "net_profit": 704793400000.0,
+        "total_debt": 6643640400000.0,
+        "equity": 8167395600000.0,
+        "total_assets": 52621193200000.0,
+        "operating_cash_flow": 1118559900000.0,
+        "free_cash_flow": 1065776300000.0,
+        "revenue_growth_pct": 5.23,
+        "profit_growth_pct": 4.65,
+        "debt_to_equity": 0.81,
+        "return_on_equity_pct": 8.63
+      },
+      "positive_indicators": [
+        "Annual revenue increased",
+        "Annual net profit increased",
+        "Latest annual net profit is positive",
+        "Operating cash flow is positive",
+        "Free cash flow is positive"
+      ],
+      "negative_indicators": [],
+      "cautions": [],
+      "assessment": "Research required",
+      "note": "Descriptive financial indicators only. Not a buy/sell signal. Ratios may require sector-specific interpretation."
+    },
+    {
+      "symbol": "ICICIBANK",
+      "financial_periods": {
+        "income": "2026-03-31",
+        "balance_sheet": "2026-03-31",
+        "cash_flow": "2026-03-31"
+      },
+      "metrics": {
+        "revenue": 2234071181000.0,
+        "net_profit": 542077028000.0,
+        "total_debt": 2076173410000.0,
+        "equity": 3630604157000.0,
+        "total_assets": 29144979720000.0,
+        "operating_cash_flow": 673254189000.0,
+        "free_cash_flow": 635954240000.0,
+        "revenue_growth_pct": 9.13,
+        "profit_growth_pct": 6.23,
+        "debt_to_equity": 0.57,
+        "return_on_equity_pct": 14.93
+      },
+      "positive_indicators": [
+        "Annual revenue increased",
+        "Annual net profit increased",
+        "Latest annual net profit is positive",
+        "Operating cash flow is positive",
+        "Free cash flow is positive"
+      ],
+      "negative_indicators": [],
+      "cautions": [],
+      "assessment": "Research required",
+      "note": "Descriptive financial indicators only. Not a buy/sell signal. Ratios may require sector-specific interpretation."
+    }
+  ]
+}
