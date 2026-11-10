@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-09T13:44:04.513832+00:00",
+  "generated_utc": "2026-11-10T13:36:15.726714+00:00",
   "source": "Yahoo Finance via yfinance",
   "purpose": "Financial data collection prototype",
   "disclaimer": "Unofficial data. Not independently verified. Missing values are not zero. Do not use for investment decisions without checking official financial statements.",
@@ -3666,7 +3666,6 @@
               "Current Liabilities": 5516000000.0,
               "Other Current Liabilities": 223000000.0,
               "Current Deferred Liabilities": 1248000000.0,
-              "Current Deferred Revenue": 1248000000.0,
               "Current Debt And Capital Lease Obligation": 333000000.0,
               "Current Capital Lease Obligation": 333000000.0,
               "Pensionand Other Post Retirement Benefit Plans Current": 999000000.0,
@@ -3758,7 +3757,6 @@
               "Current Liabilities": 5555000000.0,
               "Other Current Liabilities": 174000000.0,
               "Current Deferred Liabilities": 1235000000.0,
-              "Current Deferred Revenue": 1235000000.0,
               "Current Debt And Capital Lease Obligation": 332000000.0,
               "Current Capital Lease Obligation": 332000000.0,
               "Pensionand Other Post Retirement Benefit Plans Current": 935000000.0,
