@@ -2,16 +2,16 @@
   "symbol": "RELIANCE",
   "exchange": "NSE",
   "interval": "1d",
-  "generated_utc": "2026-11-09T12:21:42.255592+00:00",
+  "generated_utc": "2026-11-10T12:12:06.945661+00:00",
   "provider": "Yahoo Finance via yfinance",
   "adjusted": true,
   "data_quality": {
     "downloaded_rows": 494,
     "duplicate_dates_removed": 0,
-    "current_or_future_rows_removed": 1,
+    "current_or_future_rows_removed": 0,
     "invalid_price_rows_removed": 0,
-    "valid_completed_candles": 493,
-    "latest_completed_candle": "2026-11-06",
+    "valid_completed_candles": 494,
+    "latest_completed_candle": "2026-11-09",
     "policy": "Exclude current IST calendar day; validate daily OHLC and volume"
   },
   "disclaimer": "Historical adjusted data, not live prices. For research and paper trading only.",
@@ -10367,6 +10367,27 @@
       "minus_di": 16.9173,
       "supertrend": 1211.0234,
       "obv": -144714050.0,
+      "supertrend_direction": 1
+    },
+    {
+      "time": "2026-11-09",
+      "open": 1317.0,
+      "high": 1330.2,
+      "low": 1305.5,
+      "close": 1324.4,
+      "volume": 19734153.0,
+      "ema20": 1247.0746,
+      "ema50": 1243.7295,
+      "ema200": 1307.6486,
+      "rsi14": 68.7764,
+      "macd": 25.2189,
+      "macd_signal": 7.4673,
+      "macd_hist": 17.7516,
+      "adx14": 30.1098,
+      "plus_di": 34.0813,
+      "minus_di": 15.9643,
+      "supertrend": 1219.9955,
+      "obv": -124979897.0,
       "supertrend_direction": 1
     }
   ]
