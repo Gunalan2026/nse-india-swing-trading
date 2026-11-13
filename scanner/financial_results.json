@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-12T13:45:41.671739+00:00",
+  "generated_utc": "2026-11-13T13:40:59.226039+00:00",
   "source": "Yahoo Finance via yfinance",
   "purpose": "Financial data collection prototype",
   "disclaimer": "Unofficial data. Not independently verified. Missing values are not zero. Do not use for investment decisions without checking official financial statements.",
@@ -2694,8 +2694,8 @@
               "Net Income From Continuing And Discontinued Operation": 3158000000.0,
               "Total Expenses": 15200000000.0,
               "Total Operating Income As Reported": 4071000000.0,
-              "Diluted Average Shares": 4152051184.0,
-              "Basic Average Shares": 4141611738.0,
+              "Diluted Average Shares": 4155263158.0,
+              "Basic Average Shares": 4155263158.0,
               "Diluted EPS": 0.76,
               "Basic EPS": 0.76,
               "Diluted NI Availto Com Stockholders": 3158000000.0,
