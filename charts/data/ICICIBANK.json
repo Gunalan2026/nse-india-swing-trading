@@ -2,16 +2,16 @@
   "symbol": "ICICIBANK",
   "exchange": "NSE",
   "interval": "1d",
-  "generated_utc": "2026-11-16T13:06:43.069678+00:00",
+  "generated_utc": "2026-11-17T12:16:00.557591+00:00",
   "provider": "Yahoo Finance via yfinance",
   "adjusted": true,
   "data_quality": {
-    "downloaded_rows": 494,
+    "downloaded_rows": 495,
     "duplicate_dates_removed": 0,
     "current_or_future_rows_removed": 1,
     "invalid_price_rows_removed": 0,
-    "valid_completed_candles": 493,
-    "latest_completed_candle": "2026-11-13",
+    "valid_completed_candles": 494,
+    "latest_completed_candle": "2026-11-16",
     "policy": "Exclude current IST calendar day; validate daily OHLC and volume"
   },
   "disclaimer": "Historical adjusted data, not live prices. For research and paper trading only.",
@@ -10367,6 +10367,27 @@
       "minus_di": 7.2703,
       "supertrend": 1480.3867,
       "obv": 184180545.0,
+      "supertrend_direction": 1
+    },
+    {
+      "time": "2026-11-16",
+      "open": 1585.7,
+      "high": 1596.6,
+      "low": 1577.0,
+      "close": 1585.0,
+      "volume": 10069159.0,
+      "ema20": 1480.6044,
+      "ema50": 1426.2166,
+      "ema200": 1375.4781,
+      "rsi14": 75.96,
+      "macd": 57.8944,
+      "macd_signal": 40.1686,
+      "macd_hist": 17.7258,
+      "adx14": 43.9371,
+      "plus_di": 43.5115,
+      "minus_di": 6.9439,
+      "supertrend": 1489.8083,
+      "obv": 194249704.0,
       "supertrend_direction": 1
     }
   ]
