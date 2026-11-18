@@ -2,16 +2,16 @@
   "symbol": "HDFCBANK",
   "exchange": "NSE",
   "interval": "1d",
-  "generated_utc": "2026-11-17T12:16:00.326174+00:00",
+  "generated_utc": "2026-11-18T12:19:05.393436+00:00",
   "provider": "Yahoo Finance via yfinance",
   "adjusted": true,
   "data_quality": {
-    "downloaded_rows": 495,
+    "downloaded_rows": 496,
     "duplicate_dates_removed": 0,
     "current_or_future_rows_removed": 1,
     "invalid_price_rows_removed": 0,
-    "valid_completed_candles": 494,
-    "latest_completed_candle": "2026-11-16",
+    "valid_completed_candles": 495,
+    "latest_completed_candle": "2026-11-17",
     "policy": "Exclude current IST calendar day; validate daily OHLC and volume"
   },
   "disclaimer": "Historical adjusted data, not live prices. For research and paper trading only.",
@@ -10388,6 +10388,27 @@
       "minus_di": 11.2081,
       "supertrend": 757.2304,
       "obv": -355087080.0,
+      "supertrend_direction": 1
+    },
+    {
+      "time": "2026-11-17",
+      "open": 811.0,
+      "high": 821.0,
+      "low": 810.85,
+      "close": 814.95,
+      "volume": 34909357.0,
+      "ema20": 759.8861,
+      "ema50": 738.928,
+      "ema200": 778.3102,
+      "rsi14": 74.7884,
+      "macd": 27.8638,
+      "macd_signal": 17.2487,
+      "macd_hist": 10.6152,
+      "adx14": 34.5069,
+      "plus_di": 43.7447,
+      "minus_di": 10.7192,
+      "supertrend": 765.2974,
+      "obv": -389996437.0,
       "supertrend_direction": 1
     }
   ]
