@@ -24,13 +24,25 @@ select{width:100%;font-size:16px;padding:12px;border-radius:8px;background:#0b12
 #report blockquote{margin:10px 0;padding:8px 12px;border-left:4px solid #f5c542;background:#1a2537}
 #report hr{border:0;border-top:1px solid #26364d;margin:18px 0}
 #report a{word-break:break-all}
+
+/* Site navigation (all pages) */
+.topnav{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px}
+.topnav a{padding:8px 14px;border-radius:999px;background:#1b2a42;color:#cfe0f2;text-decoration:none;font-size:.9rem;border:1px solid #2b3c55}
+.topnav a.active{background:#29b998;color:#061c18;border-color:#29b998;font-weight:700}
+.topnav a:hover{border-color:#5fe5d1}
+
+@media (min-width:1000px){
+  main{max-width:1000px;padding:20px 28px}
+  header{padding:22px 28px}
+  #report{padding:24px 32px;font-size:16px}
+}
 </style>
 </head>
 <body>
 <header>
 <h1>முன்சந்தை அறிக்கைகள்</h1>
 <p>Tamil premarket reports | Paper trading only | Weekdays, ready by about 9:00 AM IST</p>
-<a href="index.html">Back to Dashboard</a>
+<nav class="topnav"><a href="index.html">Dashboard</a><a href="charts.html">Charts</a><a href="reports.html" class="active">Tamil reports</a></nav>
 </header>
 <main>
 <section class="panel">

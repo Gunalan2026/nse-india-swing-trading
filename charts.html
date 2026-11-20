@@ -24,16 +24,37 @@ button{background:#21b6a8;color:#07141e;border:0;font-weight:bold;cursor:pointer
 #status{font-size:14px}
 .note{font-size:13px}
 .legend{font-size:12px;color:#a8b8cb;line-height:1.8}
+
+/* Site navigation (all pages) */
+.topnav{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px}
+.topnav a{padding:8px 14px;border-radius:999px;background:#1b2a42;color:#cfe0f2;text-decoration:none;font-size:.9rem;border:1px solid #2b3c55}
+.topnav a.active{background:#29b998;color:#061c18;border-color:#29b998;font-weight:700}
+.topnav a:hover{border-color:#5fe5d1}
+
+/* Desktop layout */
+@media (min-width:1000px){
+  main{max-width:1500px;padding:20px 28px}
+  header{padding:22px 28px}
+  .picker{display:grid;grid-template-columns:auto minmax(220px,360px) auto 1fr;gap:12px;align-items:center}
+  .picker label{white-space:nowrap}
+  .picker select{margin:0}
+  .picker p{margin:0}
+  .picker #status{grid-column:1/-1}
+  .chart{height:520px}
+  .indicators{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+  .indicators .panel{margin-bottom:0}
+  .small{height:220px}
+}
 </style>
 </head>
 <body>
 <header>
 <h1>NSE India – Advanced Technical Charts</h1>
 <p>Nifty 500 Swing Trading | Paper Trading</p>
-<a href="index.html">Back to Dashboard</a>
+<nav class="topnav"><a href="index.html">Dashboard</a><a href="charts.html" class="active">Charts</a><a href="reports.html">Tamil reports</a></nav>
 </header>
 <main>
-<section class="panel">
+<section class="panel picker">
 <label for="symbol">Select NSE Stock</label>
 <select id="symbol">
 <option>RELIANCE</option>
@@ -42,8 +63,8 @@ button{background:#21b6a8;color:#07141e;border:0;font-weight:bold;cursor:pointer
 <option>HDFCBANK</option>
 <option>ICICIBANK</option>
 </select>
-<p class="note" id="coverage">Core stocks plus the latest scanner candidates and top watchlist stocks.</p>
 <button id="load">Load Chart</button>
+<p class="note" id="coverage">Core stocks plus the latest scanner candidates and top watchlist stocks.</p>
 <p id="status">Loading...</p>
 </section>
 
@@ -53,6 +74,7 @@ button{background:#21b6a8;color:#07141e;border:0;font-weight:bold;cursor:pointer
 <div id="price" class="chart"></div>
 </section>
 
+<div class="indicators">
 <section class="panel">
 <h3>Trading Volume</h3>
 <div id="volume" class="small"></div>
@@ -80,6 +102,7 @@ button{background:#21b6a8;color:#07141e;border:0;font-weight:bold;cursor:pointer
 <h3>On-Balance Volume (OBV)</h3>
 <div id="obv" class="small"></div>
 </section>
+</div>
 
 <section class="panel">
 <p class="note">
