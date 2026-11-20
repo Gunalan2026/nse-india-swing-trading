@@ -23,6 +23,12 @@ OUTPUT = Path("scanner/results.json")
 HEADERS = {"User-Agent": "Mozilla/5.0"}
 IST = ZoneInfo("Asia/Kolkata")
 
+# Paper trading rules (agreed 20 Nov 2026).
+CAPITAL = 100000
+ALLOCATION_PER_TRADE = 30000
+MAX_RISK_PER_TRADE = 500
+DAILY_LOSS_LIMIT = 2000
+
 
 def num(value, digits=2):
     return round(float(value), digits) if pd.notna(value) and np.isfinite(float(value)) else None
@@ -33,6 +39,18 @@ def prepare(raw):
     and the charts always see the same sessions and prices."""
     df, quality = validate_prices(raw)
     return df
+
+
+def position_size(entry, stop):
+    """Quantity limited by both the allocation and the max risk per trade."""
+    risk_per_share = entry - stop
+    if stop <= 0 or risk_per_share <= 0:
+        return {"paper_qty": None, "paper_cost": None, "paper_risk": None}
+    qty = min(int(ALLOCATION_PER_TRADE // entry), int(MAX_RISK_PER_TRADE // risk_per_share))
+    if qty < 1:
+        return {"paper_qty": 0, "paper_cost": 0, "paper_risk": 0}
+    return {"paper_qty": qty, "paper_cost": round(qty * entry, 2),
+            "paper_risk": round(qty * risk_per_share, 2)}
 
 
 def indicators(df):
@@ -89,6 +107,7 @@ def indicators(df):
         "illustrative_stop": stop if stop > 0 else None,
         "illustrative_target": target if stop > 0 else None,
         "risk_reward": 2.0 if stop > 0 else None,
+        **position_size(entry, stop),
         "reasons": [label for test, label in [
             (trend, "EMA20 > EMA50 > EMA200 and price above EMA20"),
             (50 <= rsi[last] <= 70, "RSI in 50-70 range"),
@@ -160,7 +179,7 @@ def main():
     report = {
         "generated_utc": datetime.now(timezone.utc).isoformat(),
         "universe_count": len(symbols), "universe_source": universe_source, "analyzed_count": len(results),
-        "failed_count": len(errors), "main_session": main_session, "stale_symbols": stale, "latest_sessions": dict(sorted(Counter(x["as_of"] for x in results).items())), "provider": "Yahoo Finance via yfinance (unofficial; delayed)",
+        "failed_count": len(errors), "main_session": main_session, "stale_symbols": stale, "latest_sessions": dict(sorted(Counter(x["as_of"] for x in results).items())), "provider": "Yahoo Finance via yfinance (unofficial; delayed)", "paper_rules": {"capital": CAPITAL, "allocation_per_trade": ALLOCATION_PER_TRADE, "max_risk_per_trade": MAX_RISK_PER_TRADE, "daily_loss_limit": DAILY_LOSS_LIMIT},
         "methodology": "Heuristic technical ranking on completed sessions (same validation as charts: day included after 16:00 IST, holiday placeholder candles removed); no news or backtest validation yet",
         "disclaimer": "Research/paper trading only. Scores are not probabilities; entry/stop/target are illustrative, not orders.",
         "candidates": [x for x in ranked if x["status"] == "SETUP"][:20],

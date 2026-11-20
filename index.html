@@ -191,6 +191,14 @@ Bank and diversified-company scoring requires separate validation.
 <div class="muted">Reserved cash</div>
 <div class="metric">₹10,000</div>
 </div>
+<div class="card">
+<div class="muted">Max risk / trade</div>
+<div class="metric">₹500</div>
+</div>
+<div class="card">
+<div class="muted">Daily loss limit</div>
+<div class="metric">₹2,000</div>
+</div>
 </div>
 
 <div class="two">
@@ -215,6 +223,9 @@ No orders are placed.
 
 <label for="budget">Trade allocation (₹)</label>
 <input id="budget" type="number" min="1" value="30000">
+
+<label for="maxrisk">Max loss if stop-loss hits (₹)</label>
+<input id="maxrisk" type="number" min="1" value="500">
 
 <button class="wide" id="calculate">
 Calculate trade plan
@@ -336,13 +347,14 @@ function compute() {
   const stop = +$('stop').value;
   const target = +$('target').value;
   const budget = +$('budget').value;
+  const maxRisk = +$('maxrisk').value;
   const r = $('result');
 
   last = null;
 
   if (
     !/^[A-Z0-9&._-]{1,24}$/.test(symbol) ||
-    ![entry, stop, target, budget].every(
+    ![entry, stop, target, budget, maxRisk].every(
       v => Number.isFinite(v) && v > 0
     )
   ) {
@@ -357,12 +369,23 @@ function compute() {
     return;
   }
 
-  const qty = Math.floor(budget / entry);
+  // Quantity is limited by BOTH the allocation and the risk limit:
+  // the loss between entry and stop-loss must not exceed maxRisk.
+  const qtyByAllocation = Math.floor(budget / entry);
+  const qtyByRisk = Math.floor(maxRisk / (entry - stop));
+  const qty = Math.min(qtyByAllocation, qtyByRisk);
 
   if (qty < 1) {
-    r.textContent = 'Allocation is too small for one share.';
+    r.textContent = qtyByAllocation < 1
+      ? 'Allocation is too small for one share.'
+      : 'Stop-loss is too far: one share would lose more than ₹' +
+        fmt(maxRisk) + '. Use a closer stop or skip this trade.';
     return;
   }
+
+  const limitedBy = qtyByRisk < qtyByAllocation
+    ? 'risk limit (₹' + fmt(maxRisk) + ')'
+    : 'allocation (₹' + fmt(budget) + ')';
 
   const risk = qty * (entry - stop);
   const profit = qty * (target - entry);
@@ -374,10 +397,13 @@ function compute() {
 
   r.innerHTML =
     'Quantity: <strong>' + qty + '</strong><br>' +
+    'Quantity limited by: ' + limitedBy + '<br>' +
     'Estimated cost: ₹' + fmt(qty * entry) + '<br>' +
     'Risk at stop: ₹' + fmt(risk) + '<br>' +
     'Potential profit: ₹' + fmt(profit) + '<br>' +
     'Reward/Risk: ' + fmt(ratio) + ':1<br>' +
+    'Daily loss limit: ₹2,000 (stop paper trading for the day ' +
+    'once realised losses reach it)<br>' +
     '<small>Excludes fees, taxes and slippage.</small>';
 }
 
@@ -871,6 +897,7 @@ async function loadScan() {
   'stop',
   'target',
   'budget',
+  'maxrisk',
   'symbol'
 ].forEach(id => {
   $(id).addEventListener('input', () => {
