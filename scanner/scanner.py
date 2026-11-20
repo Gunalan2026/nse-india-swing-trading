@@ -146,17 +146,27 @@ def main():
             print(f"Processed {i}/{len(symbols)}; valid={len(results)}; failed={len(errors)}", flush=True)
     if len(results) < 400:
         raise RuntimeError(f"Insufficient valid stocks ({len(results)}); refusing to replace prior report")
+    # Every stock should end on the same session. Stocks behind the main
+    # session have late data: list them and keep them out of candidates.
+    sessions = Counter(x["as_of"] for x in results)
+    main_session = sessions.most_common(1)[0][0]
+    stale = []
+    for x in results:
+        if x["as_of"] != main_session:
+            x["status"], x["candidate"] = "STALE DATA", False
+            x["reasons"] = [f"Latest candle {x['as_of']} is behind {main_session}"] + x["reasons"]
+            stale.append({"symbol": x["symbol"], "as_of": x["as_of"]})
     ranked = sorted(results, key=lambda x: (x["score"], x["volume_ratio"]), reverse=True)
     report = {
         "generated_utc": datetime.now(timezone.utc).isoformat(),
         "universe_count": len(symbols), "universe_source": universe_source, "analyzed_count": len(results),
-        "failed_count": len(errors), "latest_sessions": dict(sorted(Counter(x["as_of"] for x in results).items())), "provider": "Yahoo Finance via yfinance (unofficial; delayed)",
+        "failed_count": len(errors), "main_session": main_session, "stale_symbols": stale, "latest_sessions": dict(sorted(Counter(x["as_of"] for x in results).items())), "provider": "Yahoo Finance via yfinance (unofficial; delayed)",
         "methodology": "Heuristic technical ranking on completed sessions (same validation as charts: day included after 16:00 IST, holiday placeholder candles removed); no news or backtest validation yet",
         "disclaimer": "Research/paper trading only. Scores are not probabilities; entry/stop/target are illustrative, not orders.",
         "candidates": [x for x in ranked if x["status"] == "SETUP"][:20],
         "watchlist": [x for x in ranked if x["status"] == "WATCH"][:20],
         "top_ranked": ranked[:20], "status_counts": {
-            s: sum(x["status"] == s for x in results) for s in ("SETUP", "WATCH", "NO TRADE")
+            s: sum(x["status"] == s for x in results) for s in ("SETUP", "WATCH", "NO TRADE", "STALE DATA")
         },
         "errors_sample": errors[:25], "errors": errors
     }
