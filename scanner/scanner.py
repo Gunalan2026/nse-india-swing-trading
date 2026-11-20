@@ -2,6 +2,7 @@
 """Nifty 500 daily swing-setup research scanner (paper trading only)."""
 import io
 import json
+from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -10,6 +11,8 @@ import numpy as np
 import pandas as pd
 import requests
 import yfinance as yf
+
+from chart_data import validate_prices
 
 CONSTITUENTS = "https://niftyindices.com/IndexConstituent/ind_nifty500list.csv"
 OUTPUT = Path("scanner/results.json")
@@ -22,29 +25,9 @@ def num(value, digits=2):
 
 
 def prepare(raw):
-    if raw.empty:
-        raise ValueError("Empty price history")
-    df = raw.copy()
-    if isinstance(df.columns, pd.MultiIndex):
-        df.columns = df.columns.get_level_values(0)
-    required = ["Open", "High", "Low", "Close", "Volume"]
-    if any(c not in df for c in required):
-        raise ValueError("Missing OHLCV columns")
-    df = df[required].apply(pd.to_numeric, errors="coerce")
-    dates = pd.DatetimeIndex(df.index)
-    dates = dates.tz_convert(IST) if dates.tz is not None else dates.tz_localize(IST)
-    df.index = pd.DatetimeIndex(dates.date)
-    df = df.sort_index()
-    df = df[~df.index.duplicated(keep="last")]
-    df = df[df.index.date < datetime.now(IST).date()]
-    valid = np.isfinite(df.to_numpy()).all(axis=1)
-    valid &= (df[["Open", "High", "Low", "Close"]] > 0).all(axis=1).to_numpy()
-    valid &= (df["Volume"] >= 0).to_numpy()
-    valid &= (df["High"] >= df[["Open", "Close", "Low"]].max(axis=1)).to_numpy()
-    valid &= (df["Low"] <= df[["Open", "Close", "High"]].min(axis=1)).to_numpy()
-    df = df.loc[valid]
-    if len(df) < 210:
-        raise ValueError(f"Insufficient completed valid candles: {len(df)}")
+    """Use exactly the same validation as the chart data, so the scanner
+    and the charts always see the same sessions and prices."""
+    df, quality = validate_prices(raw)
     return df
 
 
@@ -137,15 +120,15 @@ def main():
     report = {
         "generated_utc": datetime.now(timezone.utc).isoformat(),
         "universe_count": len(symbols), "analyzed_count": len(results),
-        "failed_count": len(errors), "provider": "Yahoo Finance via yfinance (unofficial; delayed)",
-        "methodology": "Heuristic technical ranking, using completed prior IST trading days; no news or backtest validation yet",
+        "failed_count": len(errors), "latest_sessions": dict(sorted(Counter(x["as_of"] for x in results).items())), "provider": "Yahoo Finance via yfinance (unofficial; delayed)",
+        "methodology": "Heuristic technical ranking on completed sessions (same validation as charts: day included after 16:00 IST, holiday placeholder candles removed); no news or backtest validation yet",
         "disclaimer": "Research/paper trading only. Scores are not probabilities; entry/stop/target are illustrative, not orders.",
         "candidates": [x for x in ranked if x["status"] == "SETUP"][:20],
         "watchlist": [x for x in ranked if x["status"] == "WATCH"][:20],
         "top_ranked": ranked[:20], "status_counts": {
             s: sum(x["status"] == s for x in results) for s in ("SETUP", "WATCH", "NO TRADE")
         },
-        "errors_sample": errors[:25]
+        "errors_sample": errors[:25], "errors": errors
     }
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")

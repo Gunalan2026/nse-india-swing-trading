@@ -3,7 +3,7 @@ name: NSE India Stock Scanner
 on:
   workflow_dispatch:
   schedule:
-    - cron: '30 4 * * 1-5'
+    - cron: '45 11 * * 1-5'  # 17:15 IST, after NSE close (15:30)
 
 permissions:
   contents: write
