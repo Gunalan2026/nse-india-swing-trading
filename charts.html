@@ -42,6 +42,7 @@ button{background:#21b6a8;color:#07141e;border:0;font-weight:bold;cursor:pointer
 <option>HDFCBANK</option>
 <option>ICICIBANK</option>
 </select>
+<p class="note" id="coverage">Core stocks plus the latest scanner candidates and top watchlist stocks.</p>
 <button id="load">Load Chart</button>
 <p id="status">Loading...</p>
 </section>
@@ -246,7 +247,46 @@ window.addEventListener("resize",()=>{
     width:x.el.clientWidth
   }));
 });
-loadStock();
+// Build the stock list from charts/data/index.json (core five plus
+// scanner candidates), then open ?symbol=XYZ if given.
+async function buildList(){
+  const sel=document.getElementById("symbol");
+  const wanted=(new URLSearchParams(location.search).get("symbol")||"")
+    .trim().toUpperCase();
+  try{
+    const res=await fetch("charts/data/index.json?v="+Date.now());
+    if(!res.ok)throw Error("index unavailable");
+    const idx=await res.json();
+    const groups={core:"Core stocks",candidate:"Scanner SETUP candidates",
+      watch:"Scanner watchlist"};
+    sel.replaceChildren();
+    Object.keys(groups).forEach(g=>{
+      const items=(idx.symbols||[]).filter(x=>x.group===g);
+      if(!items.length)return;
+      const og=document.createElement("optgroup");
+      og.label=groups[g];
+      items.forEach(x=>{
+        const o=document.createElement("option");
+        o.value=o.textContent=x.symbol;
+        og.appendChild(o);
+      });
+      sel.appendChild(og);
+    });
+    document.getElementById("coverage").textContent=
+      (idx.symbols||[]).length+" stocks charted | latest session "+
+      idx.latest_session;
+  }catch(e){
+    // Keep the built-in five if the index is missing.
+  }
+  if(wanted&&[...sel.options].some(o=>o.value===wanted)){
+    sel.value=wanted;
+  }else if(wanted){
+    document.getElementById("coverage").textContent=
+      wanted+" is not charted today (only core stocks and current "+
+      "scanner candidates/watchlist are charted).";
+  }
+}
+buildList().then(loadStock);
 </script>
 </body>
 </html>

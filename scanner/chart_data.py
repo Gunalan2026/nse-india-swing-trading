@@ -12,15 +12,24 @@ import numpy as np
 import pandas as pd
 import yfinance as yf
 
-SYMBOLS = [
+# Always charted. A failure here fails the run.
+CORE_SYMBOLS = [
     "RELIANCE",
     "TCS",
     "INFY",
     "HDFCBANK",
     "ICICIBANK",
 ]
+SYMBOLS = CORE_SYMBOLS  # kept for compatibility
+
+# Scanner candidates and the top of the watchlist are charted too, so any
+# stock in the morning report can be opened on the charts page. A failure
+# here only skips that stock.
+RESULTS = Path("scanner/results.json")
+MAX_WATCH_CHARTS = 10
 
 OUTPUT = Path("charts/data")
+INDEX = OUTPUT / "index.json"
 IST = ZoneInfo("Asia/Kolkata")
 MIN_CANDLES = 220
 
@@ -463,7 +472,7 @@ def generate(symbol):
     path = OUTPUT / f"{symbol}.json"
 
     path.write_text(
-        json.dumps(result, indent=2, allow_nan=False),
+        json.dumps(result, separators=(",", ":"), allow_nan=False),
         encoding="utf-8"
     )
 
@@ -479,11 +488,29 @@ def generate(symbol):
     return latest["time"]
 
 
+def scanner_symbols():
+    """(symbol, group) for scanner candidates and top watchlist stocks."""
+    try:
+        report = json.loads(RESULTS.read_text(encoding="utf-8"))
+    except Exception as exc:
+        print(f"Scanner results unavailable, charting core only: {exc}")
+        return []
+    picks = [(x["symbol"], "candidate") for x in report.get("candidates", [])]
+    picks += [(x["symbol"], "watch")
+              for x in report.get("watchlist", [])[:MAX_WATCH_CHARTS]]
+    seen, out = set(CORE_SYMBOLS), []
+    for sym, group in picks:
+        if sym not in seen:
+            seen.add(sym)
+            out.append((sym, group))
+    return out
+
+
 def main():
     failures = []
     latest_dates = {}
 
-    for symbol in SYMBOLS:
+    for symbol in CORE_SYMBOLS:
         try:
             latest_dates[symbol] = generate(symbol)
         except Exception as exc:
@@ -495,17 +522,47 @@ def main():
             "Failed symbols: " + ", ".join(failures)
         )
 
-    # Every symbol should end on the same session. A mismatch means
+    # Every core symbol should end on the same session. A mismatch means
     # one download is behind; fail so nothing is committed.
     if len(set(latest_dates.values())) > 1:
         raise RuntimeError(
             "Latest candle differs between symbols: "
             + ", ".join(f"{s}={d}" for s, d in latest_dates.items())
         )
+    session = next(iter(latest_dates.values()))
+
+    index = [{"symbol": s, "group": "core", "latest": session}
+             for s in CORE_SYMBOLS]
+    skipped = []
+    for symbol, group in scanner_symbols():
+        try:
+            latest = generate(symbol)
+            if latest != session:
+                raise ValueError(f"latest candle {latest}, expected {session}")
+            index.append({"symbol": symbol, "group": group, "latest": latest})
+        except Exception as exc:
+            print(f"SKIP {symbol}: {exc}")
+            skipped.append({"symbol": symbol, "reason": str(exc)[:120]})
+            (OUTPUT / f"{symbol}.json").unlink(missing_ok=True)
+
+    # Remove charts for stocks that have left the candidate/watch lists.
+    keep = {x["symbol"] for x in index}
+    for path in OUTPUT.glob("*.json"):
+        if path.name != INDEX.name and path.stem not in keep:
+            path.unlink()
+            print(f"Removed old chart {path.name}")
+
+    INDEX.write_text(json.dumps({
+        "generated_utc": datetime.now(timezone.utc).isoformat(),
+        "latest_session": session,
+        "symbols": index,
+        "skipped": skipped,
+    }, indent=1), encoding="utf-8")
 
     print(
-        f"All {len(SYMBOLS)} NSE charts generated successfully. "
-        f"Latest session: {next(iter(latest_dates.values()))}"
+        f"Charts generated: {len(index)} "
+        f"(core {len(CORE_SYMBOLS)}, scanner {len(index) - len(CORE_SYMBOLS)}, "
+        f"skipped {len(skipped)}). Latest session: {session}"
     )
 
 

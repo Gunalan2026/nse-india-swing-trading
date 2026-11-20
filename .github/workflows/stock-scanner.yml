@@ -39,13 +39,25 @@ jobs:
         continue-on-error: true
         run: python scanner/nse_verify.py
 
+      - name: Generate charts (core five + scanner candidates)
+        id: charts
+        continue-on-error: true
+        run: python scanner/chart_data.py
+
+      - name: Keep previous charts if chart generation failed
+        if: steps.charts.outcome == 'failure'
+        run: |
+          git checkout -- charts/data/
+          git clean -fd charts/data/
+
       - name: Commit scanner results
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add scanner/results.json scanner/nifty500_constituents.csv
+          git add -A charts/data/
           if ! git diff --cached --quiet; then
-            git commit -m 'Update Nifty 500 scanner results'
+            git commit -m 'Update Nifty 500 scanner results and charts'
             git push
           else
             echo 'No changes to scanner results'

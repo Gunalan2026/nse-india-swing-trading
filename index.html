@@ -276,7 +276,7 @@ are not yet connected.
 </p>
 
 <a href="charts.html">
-Open Advanced Charts (5 stocks)
+Open Advanced Charts (core + scanner candidates)
 </a>
 <br><br>
 <a href="reports.html">
@@ -581,7 +581,7 @@ function drawOpportunities() {
     a.rel = 'noopener noreferrer';
 
     a.href = chartStocks.has(symbol)
-      ? 'charts.html'
+      ? 'charts.html?symbol=' + encodeURIComponent(symbol)
       : 'https://finance.yahoo.com/quote/' +
         encodeURIComponent(symbol + '.NS') +
         '/chart/';
@@ -948,9 +948,23 @@ $('refresh').onclick = () => {
 
 $('view').onchange = drawOpportunities;
 
+// Stocks with chart data (core five + scanner candidates/watchlist).
+async function loadChartIndex() {
+  try {
+    const r = await fetch('charts/data/index.json?v=' + Date.now());
+    if (!r.ok) return;
+    const j = await r.json();
+    (j.symbols || []).forEach(x => chartStocks.add(x.symbol));
+    if (scan) drawOpportunities();
+  } catch {
+    // Keep the built-in five.
+  }
+}
+
 renderPlans();
 loadScan();
 loadFinancial();
+loadChartIndex();
 
 </script>
 </body>
