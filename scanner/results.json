@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-20T17:01:52.304202+00:00",
+  "generated_utc": "2026-11-20T17:15:01.585137+00:00",
   "universe_count": 501,
   "universe_source": "https://niftyindices.com/IndexConstituent/ind_nifty500list.csv",
   "analyzed_count": 491,
@@ -2524,7 +2524,9 @@
       "symbol": "WELSPUNLIV",
       "nse_close": 268.78,
       "nse_volume": 21258542,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 269.2,
+      "bse_diff_pct": 0.156
     },
     {
       "as_of": "2026-11-20",
@@ -2563,7 +2565,9 @@
       "symbol": "NUVOCO",
       "nse_close": 358.5,
       "nse_volume": 9835142,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 358.2,
+      "bse_diff_pct": 0.084
     },
     {
       "as_of": "2026-11-20",
@@ -2602,7 +2606,9 @@
       "symbol": "CUB",
       "nse_close": 248.8,
       "nse_volume": 20140568,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 250.0,
+      "bse_diff_pct": 0.48
     },
     {
       "as_of": "2026-11-20",
@@ -2641,7 +2647,9 @@
       "symbol": "PRESTIGE",
       "nse_close": 1680.0,
       "nse_volume": 1638224,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 1675.3,
+      "bse_diff_pct": 0.281
     },
     {
       "as_of": "2026-11-20",
@@ -2680,7 +2688,9 @@
       "symbol": "AXISBANK",
       "nse_close": 1446.0,
       "nse_volume": 21477017,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 1447.0,
+      "bse_diff_pct": 0.069
     },
     {
       "as_of": "2026-11-20",
@@ -2719,7 +2729,9 @@
       "symbol": "VIJAYA",
       "nse_close": 1572.3,
       "nse_volume": 538498,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 1571.5,
+      "bse_diff_pct": 0.051
     },
     {
       "as_of": "2026-11-20",
@@ -2758,7 +2770,9 @@
       "symbol": "APOLLOHOSP",
       "nse_close": 9200.0,
       "nse_volume": 1412562,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 9190.05,
+      "bse_diff_pct": 0.108
     },
     {
       "as_of": "2026-11-20",
@@ -2797,7 +2811,9 @@
       "symbol": "KIMS",
       "nse_close": 795.6,
       "nse_volume": 1043606,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 797.2,
+      "bse_diff_pct": 0.201
     },
     {
       "as_of": "2026-11-20",
@@ -2836,7 +2852,9 @@
       "symbol": "POONAWALLA",
       "nse_close": 518.4,
       "nse_volume": 6665182,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 518.25,
+      "bse_diff_pct": 0.029
     },
     {
       "as_of": "2026-11-20",
@@ -2875,7 +2893,9 @@
       "symbol": "ULTRACEMCO",
       "nse_close": 12939.0,
       "nse_volume": 495174,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 12926.4,
+      "bse_diff_pct": 0.097
     },
     {
       "as_of": "2026-11-20",
@@ -2914,7 +2934,9 @@
       "symbol": "KPRMILL",
       "nse_close": 1191.3,
       "nse_volume": 715528,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 1191.3,
+      "bse_diff_pct": 0.0
     },
     {
       "as_of": "2026-11-20",
@@ -2953,7 +2975,9 @@
       "symbol": "ADANIPOWER",
       "nse_close": 211.95,
       "nse_volume": 30818238,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 211.8,
+      "bse_diff_pct": 0.071
     },
     {
       "as_of": "2026-11-20",
@@ -2992,7 +3016,9 @@
       "symbol": "DLF",
       "nse_close": 785.0,
       "nse_volume": 4590590,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 783.5,
+      "bse_diff_pct": 0.191
     },
     {
       "as_of": "2026-11-20",
@@ -3031,7 +3057,9 @@
       "symbol": "IDFCFIRSTB",
       "nse_close": 87.26,
       "nse_volume": 33097278,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 87.0,
+      "bse_diff_pct": 0.299
     },
     {
       "as_of": "2026-11-20",
@@ -3070,7 +3098,9 @@
       "symbol": "UNIONBANK",
       "nse_close": 218.85,
       "nse_volume": 23623729,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 218.75,
+      "bse_diff_pct": 0.046
     },
     {
       "as_of": "2026-11-20",
@@ -3109,7 +3139,9 @@
       "symbol": "BAJAJHLDNG",
       "nse_close": 11669.0,
       "nse_volume": 58715,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 11670.1,
+      "bse_diff_pct": 0.009
     },
     {
       "as_of": "2026-11-20",
@@ -3148,7 +3180,9 @@
       "symbol": "HYUNDAI",
       "nse_close": 2215.0,
       "nse_volume": 1224479,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 2212.0,
+      "bse_diff_pct": 0.136
     },
     {
       "as_of": "2026-11-20",
@@ -3187,7 +3221,9 @@
       "symbol": "KALYANKJIL",
       "nse_close": 638.7,
       "nse_volume": 20145198,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 638.5,
+      "bse_diff_pct": 0.031
     },
     {
       "as_of": "2026-11-20",
@@ -3226,7 +3262,9 @@
       "symbol": "MAHABANK",
       "nse_close": 99.45,
       "nse_volume": 27843458,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 99.3,
+      "bse_diff_pct": 0.151
     },
     {
       "as_of": "2026-11-20",
@@ -3265,7 +3303,9 @@
       "symbol": "ABDL",
       "nse_close": 794.3,
       "nse_volume": 834519,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 793.55,
+      "bse_diff_pct": 0.095
     }
   ],
   "watchlist": [
@@ -3306,7 +3346,9 @@
       "symbol": "INDUSINDBK",
       "nse_close": 1003.0,
       "nse_volume": 19129803,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 1005.0,
+      "bse_diff_pct": 0.199
     },
     {
       "as_of": "2026-11-20",
@@ -3345,7 +3387,9 @@
       "symbol": "SHREECEM",
       "nse_close": 25475.0,
       "nse_volume": 87715,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 25446.35,
+      "bse_diff_pct": 0.113
     },
     {
       "as_of": "2026-11-20",
@@ -3384,7 +3428,9 @@
       "symbol": "DOMS",
       "nse_close": 2151.9,
       "nse_volume": 157827,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 2149.65,
+      "bse_diff_pct": 0.105
     },
     {
       "as_of": "2026-11-20",
@@ -3423,7 +3469,9 @@
       "symbol": "ASTERDM",
       "nse_close": 779.3,
       "nse_volume": 2665994,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 779.65,
+      "bse_diff_pct": 0.045
     },
     {
       "as_of": "2026-11-20",
@@ -3462,7 +3510,9 @@
       "symbol": "ACC",
       "nse_close": 1277.0,
       "nse_volume": 408232,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 1276.45,
+      "bse_diff_pct": 0.043
     },
     {
       "as_of": "2026-11-20",
@@ -3501,7 +3551,9 @@
       "symbol": "ICICIGI",
       "nse_close": 1736.0,
       "nse_volume": 786673,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 1726.0,
+      "bse_diff_pct": 0.579
     },
     {
       "as_of": "2026-11-20",
@@ -3540,7 +3592,9 @@
       "symbol": "EXIDEIND",
       "nse_close": 408.55,
       "nse_volume": 4204196,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 408.3,
+      "bse_diff_pct": 0.061
     },
     {
       "as_of": "2026-11-20",
@@ -3578,7 +3632,9 @@
       "symbol": "LGEINDIA",
       "nse_close": 1740.7,
       "nse_volume": 1650981,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 1740.6,
+      "bse_diff_pct": 0.006
     },
     {
       "as_of": "2026-11-20",
@@ -3616,7 +3672,9 @@
       "symbol": "MEESHO",
       "nse_close": 259.92,
       "nse_volume": 30394148,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 259.95,
+      "bse_diff_pct": 0.012
     },
     {
       "as_of": "2026-11-20",
@@ -3654,7 +3712,9 @@
       "symbol": "LICHSGFIN",
       "nse_close": 614.9,
       "nse_volume": 5979133,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 616.75,
+      "bse_diff_pct": 0.3
     },
     {
       "as_of": "2026-11-20",
@@ -3692,7 +3752,9 @@
       "symbol": "PHOENIXLTD",
       "nse_close": 2285.3,
       "nse_volume": 867686,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 2288.0,
+      "bse_diff_pct": 0.118
     },
     {
       "as_of": "2026-11-20",
@@ -3730,7 +3792,9 @@
       "symbol": "PWL",
       "nse_close": 136.6,
       "nse_volume": 17469643,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 136.6,
+      "bse_diff_pct": 0.0
     },
     {
       "as_of": "2026-11-20",
@@ -3768,7 +3832,9 @@
       "symbol": "INDIANB",
       "nse_close": 950.0,
       "nse_volume": 2816344,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 953.0,
+      "bse_diff_pct": 0.315
     },
     {
       "as_of": "2026-11-20",
@@ -3806,7 +3872,9 @@
       "symbol": "JSWINFRA",
       "nse_close": 341.25,
       "nse_volume": 2384012,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 341.5,
+      "bse_diff_pct": 0.073
     },
     {
       "as_of": "2026-11-20",
@@ -3844,7 +3912,9 @@
       "symbol": "RUBICON",
       "nse_close": 1718.7,
       "nse_volume": 241875,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 1719.35,
+      "bse_diff_pct": 0.038
     },
     {
       "as_of": "2026-11-20",
@@ -3882,7 +3952,9 @@
       "symbol": "WOCKPHARMA",
       "nse_close": 2184.4,
       "nse_volume": 925190,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 2183.1,
+      "bse_diff_pct": 0.06
     },
     {
       "as_of": "2026-11-20",
@@ -3920,7 +3992,9 @@
       "symbol": "NAVINFLUOR",
       "nse_close": 10077.0,
       "nse_volume": 299889,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 10150.0,
+      "bse_diff_pct": 0.719
     },
     {
       "as_of": "2026-11-20",
@@ -3958,7 +4032,9 @@
       "symbol": "360ONE",
       "nse_close": 1208.1,
       "nse_volume": 1133648,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 1208.25,
+      "bse_diff_pct": 0.012
     },
     {
       "as_of": "2026-11-20",
@@ -3996,7 +4072,9 @@
       "symbol": "ADANIGREEN",
       "nse_close": 1435.0,
       "nse_volume": 2221774,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 1434.0,
+      "bse_diff_pct": 0.07
     },
     {
       "as_of": "2026-11-20",
@@ -4034,7 +4112,9 @@
       "symbol": "ICICIBANK",
       "nse_close": 1640.0,
       "nse_volume": 17973342,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 1641.0,
+      "bse_diff_pct": 0.061
     }
   ],
   "top_ranked": [
@@ -4076,7 +4156,9 @@
       "symbol": "WELSPUNLIV",
       "nse_close": 268.78,
       "nse_volume": 21258542,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 269.2,
+      "bse_diff_pct": 0.156
     },
     {
       "as_of": "2026-11-20",
@@ -4115,7 +4197,9 @@
       "symbol": "NUVOCO",
       "nse_close": 358.5,
       "nse_volume": 9835142,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 358.2,
+      "bse_diff_pct": 0.084
     },
     {
       "as_of": "2026-11-20",
@@ -4154,7 +4238,9 @@
       "symbol": "CUB",
       "nse_close": 248.8,
       "nse_volume": 20140568,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 250.0,
+      "bse_diff_pct": 0.48
     },
     {
       "as_of": "2026-11-20",
@@ -4193,7 +4279,9 @@
       "symbol": "PRESTIGE",
       "nse_close": 1680.0,
       "nse_volume": 1638224,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 1675.3,
+      "bse_diff_pct": 0.281
     },
     {
       "as_of": "2026-11-20",
@@ -4232,7 +4320,9 @@
       "symbol": "AXISBANK",
       "nse_close": 1446.0,
       "nse_volume": 21477017,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 1447.0,
+      "bse_diff_pct": 0.069
     },
     {
       "as_of": "2026-11-20",
@@ -4271,7 +4361,9 @@
       "symbol": "VIJAYA",
       "nse_close": 1572.3,
       "nse_volume": 538498,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 1571.5,
+      "bse_diff_pct": 0.051
     },
     {
       "as_of": "2026-11-20",
@@ -4310,7 +4402,9 @@
       "symbol": "APOLLOHOSP",
       "nse_close": 9200.0,
       "nse_volume": 1412562,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 9190.05,
+      "bse_diff_pct": 0.108
     },
     {
       "as_of": "2026-11-20",
@@ -4349,7 +4443,9 @@
       "symbol": "KIMS",
       "nse_close": 795.6,
       "nse_volume": 1043606,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 797.2,
+      "bse_diff_pct": 0.201
     },
     {
       "as_of": "2026-11-20",
@@ -4388,7 +4484,9 @@
       "symbol": "POONAWALLA",
       "nse_close": 518.4,
       "nse_volume": 6665182,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 518.25,
+      "bse_diff_pct": 0.029
     },
     {
       "as_of": "2026-11-20",
@@ -4427,7 +4525,9 @@
       "symbol": "ULTRACEMCO",
       "nse_close": 12939.0,
       "nse_volume": 495174,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 12926.4,
+      "bse_diff_pct": 0.097
     },
     {
       "as_of": "2026-11-20",
@@ -4466,7 +4566,9 @@
       "symbol": "KPRMILL",
       "nse_close": 1191.3,
       "nse_volume": 715528,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 1191.3,
+      "bse_diff_pct": 0.0
     },
     {
       "as_of": "2026-11-20",
@@ -4505,7 +4607,9 @@
       "symbol": "ADANIPOWER",
       "nse_close": 211.95,
       "nse_volume": 30818238,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 211.8,
+      "bse_diff_pct": 0.071
     },
     {
       "as_of": "2026-11-20",
@@ -4544,7 +4648,9 @@
       "symbol": "DLF",
       "nse_close": 785.0,
       "nse_volume": 4590590,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 783.5,
+      "bse_diff_pct": 0.191
     },
     {
       "as_of": "2026-11-20",
@@ -4583,7 +4689,9 @@
       "symbol": "IDFCFIRSTB",
       "nse_close": 87.26,
       "nse_volume": 33097278,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 87.0,
+      "bse_diff_pct": 0.299
     },
     {
       "as_of": "2026-11-20",
@@ -4622,7 +4730,9 @@
       "symbol": "UNIONBANK",
       "nse_close": 218.85,
       "nse_volume": 23623729,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 218.75,
+      "bse_diff_pct": 0.046
     },
     {
       "as_of": "2026-11-20",
@@ -4661,7 +4771,9 @@
       "symbol": "BAJAJHLDNG",
       "nse_close": 11669.0,
       "nse_volume": 58715,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 11670.1,
+      "bse_diff_pct": 0.009
     },
     {
       "as_of": "2026-11-20",
@@ -4700,7 +4812,9 @@
       "symbol": "HYUNDAI",
       "nse_close": 2215.0,
       "nse_volume": 1224479,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 2212.0,
+      "bse_diff_pct": 0.136
     },
     {
       "as_of": "2026-11-20",
@@ -4739,7 +4853,9 @@
       "symbol": "KALYANKJIL",
       "nse_close": 638.7,
       "nse_volume": 20145198,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 638.5,
+      "bse_diff_pct": 0.031
     },
     {
       "as_of": "2026-11-20",
@@ -4778,7 +4894,9 @@
       "symbol": "MAHABANK",
       "nse_close": 99.45,
       "nse_volume": 27843458,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 99.3,
+      "bse_diff_pct": 0.151
     },
     {
       "as_of": "2026-11-20",
@@ -4817,7 +4935,9 @@
       "symbol": "ABDL",
       "nse_close": 794.3,
       "nse_volume": 834519,
-      "close_diff_pct": 0.0
+      "close_diff_pct": 0.0,
+      "bse_close": 793.55,
+      "bse_diff_pct": 0.095
     }
   ],
   "status_counts": {
@@ -4911,14 +5031,29 @@
     }
   ],
   "nse_check": {
-    "checked_utc": "2026-11-20T17:01:52.652363+00:00",
+    "checked_utc": "2026-11-20T17:15:02.095721+00:00",
     "session": "2026-11-20",
-    "tolerance_pct": 0.5,
     "status": "ok",
     "source": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261120_F_0000.csv.zip",
+    "tolerance_pct": 0.5,
     "compared": 489,
     "matched": 489,
     "mismatched": [],
-    "not_in_nse": []
+    "not_found": []
+  },
+  "bse_check": {
+    "checked_utc": "2026-11-20T17:15:02.095721+00:00",
+    "session": "2026-11-20",
+    "status": "ok",
+    "source": "https://www.bseindia.com/download/BhavCopy/Equity/BhavCopy_BSE_CM_0_0_0_20261120_F_0000.CSV",
+    "tolerance_pct": 1.0,
+    "matched_by": "ISIN",
+    "compared": 487,
+    "matched": 487,
+    "mismatched": [],
+    "not_found": [
+      "BSE",
+      "CDSL"
+    ]
   }
 }
