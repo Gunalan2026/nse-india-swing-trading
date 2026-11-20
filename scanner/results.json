@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-11-20T16:38:20.626546+00:00",
+  "generated_utc": "2026-11-20T16:46:56.942577+00:00",
   "universe_count": 501,
-  "universe_source": "https://niftyindices.com/IndexConstituent/ind_nifty500list.csv",
+  "universe_source": "https://nsearchives.nseindia.com/content/indices/ind_nifty500list.csv",
   "analyzed_count": 491,
   "failed_count": 10,
   "main_session": "2026-11-20",
@@ -20,6 +20,12 @@
     "2026-11-20": 489
   },
   "provider": "Yahoo Finance via yfinance (unofficial; delayed)",
+  "paper_rules": {
+    "capital": 100000,
+    "allocation_per_trade": 30000,
+    "max_risk_per_trade": 500,
+    "daily_loss_limit": 2000
+  },
   "methodology": "Heuristic technical ranking on completed sessions (same validation as charts: day included after 16:00 IST, holiday placeholder candles removed); no news or backtest validation yet",
   "disclaimer": "Research/paper trading only. Scores are not probabilities; entry/stop/target are illustrative, not orders.",
   "candidates": [
@@ -46,6 +52,9 @@
       "illustrative_stop": 241.93,
       "illustrative_target": 322.48,
       "risk_reward": 2.0,
+      "paper_qty": 18,
+      "paper_cost": 4838.04,
+      "paper_risk": 483.3,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "RSI in 50-70 range",
@@ -79,6 +88,9 @@
       "illustrative_stop": 335.85,
       "illustrative_target": 403.8,
       "risk_reward": 2.0,
+      "paper_qty": 22,
+      "paper_cost": 7887.0,
+      "paper_risk": 498.3,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "RSI in 50-70 range",
@@ -111,6 +123,9 @@
       "illustrative_stop": 230.62,
       "illustrative_target": 285.16,
       "risk_reward": 2.0,
+      "paper_qty": 27,
+      "paper_cost": 6717.6,
+      "paper_risk": 490.86,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "RSI in 50-70 range",
@@ -143,6 +158,9 @@
       "illustrative_stop": 1574.41,
       "illustrative_target": 1891.18,
       "risk_reward": 2.0,
+      "paper_qty": 4,
+      "paper_cost": 6720.0,
+      "paper_risk": 422.36,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "RSI in 50-70 range",
@@ -175,6 +193,9 @@
       "illustrative_stop": 1383.44,
       "illustrative_target": 1571.12,
       "risk_reward": 2.0,
+      "paper_qty": 7,
+      "paper_cost": 10122.0,
+      "paper_risk": 437.92,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "MACD above signal",
@@ -207,6 +228,9 @@
       "illustrative_stop": 1454.88,
       "illustrative_target": 1807.14,
       "risk_reward": 2.0,
+      "paper_qty": 4,
+      "paper_cost": 6289.2,
+      "paper_risk": 469.68,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "RSI in 50-70 range",
@@ -239,6 +263,9 @@
       "illustrative_stop": 8759.67,
       "illustrative_target": 10080.66,
       "risk_reward": 2.0,
+      "paper_qty": 1,
+      "paper_cost": 9200.0,
+      "paper_risk": 440.33,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "MACD above signal",
@@ -271,6 +298,9 @@
       "illustrative_stop": 749.94,
       "illustrative_target": 886.92,
       "risk_reward": 2.0,
+      "paper_qty": 10,
+      "paper_cost": 7956.0,
+      "paper_risk": 456.6,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "MACD above signal",
@@ -303,6 +333,9 @@
       "illustrative_stop": 481.41,
       "illustrative_target": 592.38,
       "risk_reward": 2.0,
+      "paper_qty": 13,
+      "paper_cost": 6739.2,
+      "paper_risk": 480.87,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "MACD above signal",
@@ -335,6 +368,9 @@
       "illustrative_stop": 12408.5,
       "illustrative_target": 14000.0,
       "risk_reward": 2.0,
+      "paper_qty": 0,
+      "paper_cost": 0,
+      "paper_risk": 0,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "MACD above signal",
@@ -367,6 +403,9 @@
       "illustrative_stop": 1108.52,
       "illustrative_target": 1356.86,
       "risk_reward": 2.0,
+      "paper_qty": 6,
+      "paper_cost": 7147.8,
+      "paper_risk": 496.68,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "RSI in 50-70 range",
@@ -399,6 +438,9 @@
       "illustrative_stop": 201.15,
       "illustrative_target": 233.55,
       "risk_reward": 2.0,
+      "paper_qty": 46,
+      "paper_cost": 9749.7,
+      "paper_risk": 496.8,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "RSI in 50-70 range",
@@ -431,6 +473,9 @@
       "illustrative_stop": 747.47,
       "illustrative_target": 860.06,
       "risk_reward": 2.0,
+      "paper_qty": 13,
+      "paper_cost": 10205.0,
+      "paper_risk": 487.89,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "MACD above signal",
@@ -463,6 +508,9 @@
       "illustrative_stop": 82.73,
       "illustrative_target": 96.32,
       "risk_reward": 2.0,
+      "paper_qty": 110,
+      "paper_cost": 9598.6,
+      "paper_risk": 498.3,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "MACD above signal",
@@ -495,6 +543,9 @@
       "illustrative_stop": 208.28,
       "illustrative_target": 239.99,
       "risk_reward": 2.0,
+      "paper_qty": 47,
+      "paper_cost": 10285.95,
+      "paper_risk": 496.79,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "MACD above signal",
@@ -527,6 +578,9 @@
       "illustrative_stop": 11040.33,
       "illustrative_target": 12926.34,
       "risk_reward": 2.0,
+      "paper_qty": 0,
+      "paper_cost": 0,
+      "paper_risk": 0,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "RSI in 50-70 range",
@@ -559,6 +613,9 @@
       "illustrative_stop": 2089.72,
       "illustrative_target": 2465.56,
       "risk_reward": 2.0,
+      "paper_qty": 3,
+      "paper_cost": 6645.0,
+      "paper_risk": 375.84,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "RSI in 50-70 range",
@@ -591,6 +648,9 @@
       "illustrative_stop": 576.39,
       "illustrative_target": 763.32,
       "risk_reward": 2.0,
+      "paper_qty": 8,
+      "paper_cost": 5109.6,
+      "paper_risk": 498.48,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "RSI in 50-70 range",
@@ -623,6 +683,9 @@
       "illustrative_stop": 93.93,
       "illustrative_target": 110.49,
       "risk_reward": 2.0,
+      "paper_qty": 90,
+      "paper_cost": 8950.5,
+      "paper_risk": 496.8,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "MACD above signal",
@@ -655,6 +718,9 @@
       "illustrative_stop": 731.36,
       "illustrative_target": 920.18,
       "risk_reward": 2.0,
+      "paper_qty": 7,
+      "paper_cost": 5560.1,
+      "paper_risk": 440.58,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "RSI in 50-70 range",
@@ -689,6 +755,9 @@
       "illustrative_stop": 943.02,
       "illustrative_target": 1122.96,
       "risk_reward": 2.0,
+      "paper_qty": 8,
+      "paper_cost": 8024.0,
+      "paper_risk": 479.84,
       "reasons": [
         "RSI in 50-70 range",
         "MACD above signal",
@@ -721,6 +790,9 @@
       "illustrative_stop": 24375.11,
       "illustrative_target": 27674.78,
       "risk_reward": 2.0,
+      "paper_qty": 0,
+      "paper_cost": 0,
+      "paper_risk": 0,
       "reasons": [
         "RSI in 50-70 range",
         "MACD above signal",
@@ -753,6 +825,9 @@
       "illustrative_stop": 2017.59,
       "illustrative_target": 2420.52,
       "risk_reward": 2.0,
+      "paper_qty": 3,
+      "paper_cost": 6455.7,
+      "paper_risk": 402.93,
       "reasons": [
         "RSI in 50-70 range",
         "MACD above signal",
@@ -785,6 +860,9 @@
       "illustrative_stop": 727.41,
       "illustrative_target": 883.08,
       "risk_reward": 2.0,
+      "paper_qty": 9,
+      "paper_cost": 7013.7,
+      "paper_risk": 467.01,
       "reasons": [
         "RSI in 50-70 range",
         "MACD above signal",
@@ -817,6 +895,9 @@
       "illustrative_stop": 1213.31,
       "illustrative_target": 1404.38,
       "risk_reward": 2.0,
+      "paper_qty": 7,
+      "paper_cost": 8939.0,
+      "paper_risk": 445.83,
       "reasons": [
         "RSI in 50-70 range",
         "MACD above signal",
@@ -849,6 +930,9 @@
       "illustrative_stop": 1651.58,
       "illustrative_target": 1904.84,
       "risk_reward": 2.0,
+      "paper_qty": 5,
+      "paper_cost": 8680.0,
+      "paper_risk": 422.1,
       "reasons": [
         "RSI in 50-70 range",
         "MACD above signal",
@@ -881,6 +965,9 @@
       "illustrative_stop": 379.34,
       "illustrative_target": 466.97,
       "risk_reward": 2.0,
+      "paper_qty": 17,
+      "paper_cost": 6945.35,
+      "paper_risk": 496.57,
       "reasons": [
         "RSI in 50-70 range",
         "MACD above signal",
@@ -913,6 +1000,9 @@
       "illustrative_stop": 1632.52,
       "illustrative_target": 1957.06,
       "risk_reward": 2.0,
+      "paper_qty": 4,
+      "paper_cost": 6962.8,
+      "paper_risk": 432.72,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "RSI in 50-70 range",
@@ -944,6 +1034,9 @@
       "illustrative_stop": 242.55,
       "illustrative_target": 294.66,
       "risk_reward": 2.0,
+      "paper_qty": 28,
+      "paper_cost": 7277.76,
+      "paper_risk": 486.36,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "MACD above signal",
@@ -975,6 +1068,9 @@
       "illustrative_stop": 578.19,
       "illustrative_target": 688.32,
       "risk_reward": 2.0,
+      "paper_qty": 13,
+      "paper_cost": 7993.7,
+      "paper_risk": 477.23,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "MACD above signal",
@@ -1006,6 +1102,9 @@
       "illustrative_stop": 2147.16,
       "illustrative_target": 2561.58,
       "risk_reward": 2.0,
+      "paper_qty": 3,
+      "paper_cost": 6855.9,
+      "paper_risk": 414.42,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "MACD above signal",
@@ -1037,6 +1136,9 @@
       "illustrative_stop": 124.34,
       "illustrative_target": 161.12,
       "risk_reward": 2.0,
+      "paper_qty": 40,
+      "paper_cost": 5464.0,
+      "paper_risk": 490.4,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "RSI in 50-70 range",
@@ -1068,6 +1170,9 @@
       "illustrative_stop": 904.78,
       "illustrative_target": 1040.44,
       "risk_reward": 2.0,
+      "paper_qty": 11,
+      "paper_cost": 10450.0,
+      "paper_risk": 497.42,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "MACD above signal",
@@ -1099,6 +1204,9 @@
       "illustrative_stop": 320.17,
       "illustrative_target": 383.41,
       "risk_reward": 2.0,
+      "paper_qty": 23,
+      "paper_cost": 7848.75,
+      "paper_risk": 484.84,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "RSI in 50-70 range",
@@ -1130,6 +1238,9 @@
       "illustrative_stop": 1580.93,
       "illustrative_target": 1994.24,
       "risk_reward": 2.0,
+      "paper_qty": 3,
+      "paper_cost": 5156.1,
+      "paper_risk": 413.31,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "RSI in 50-70 range",
@@ -1161,6 +1272,9 @@
       "illustrative_stop": 2016.18,
       "illustrative_target": 2520.84,
       "risk_reward": 2.0,
+      "paper_qty": 2,
+      "paper_cost": 4368.8,
+      "paper_risk": 336.44,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "RSI in 50-70 range",
@@ -1192,6 +1306,9 @@
       "illustrative_stop": 9447.1,
       "illustrative_target": 11336.8,
       "risk_reward": 2.0,
+      "paper_qty": 0,
+      "paper_cost": 0,
+      "paper_risk": 0,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "RSI in 50-70 range",
@@ -1223,6 +1340,9 @@
       "illustrative_stop": 1140.34,
       "illustrative_target": 1343.62,
       "risk_reward": 2.0,
+      "paper_qty": 7,
+      "paper_cost": 8456.7,
+      "paper_risk": 474.32,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "RSI in 50-70 range",
@@ -1254,6 +1374,9 @@
       "illustrative_stop": 1351.85,
       "illustrative_target": 1601.3,
       "risk_reward": 2.0,
+      "paper_qty": 6,
+      "paper_cost": 8610.0,
+      "paper_risk": 498.9,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "RSI in 50-70 range",
@@ -1285,6 +1408,9 @@
       "illustrative_stop": 1577.88,
       "illustrative_target": 1764.24,
       "risk_reward": 2.0,
+      "paper_qty": 8,
+      "paper_cost": 13120.0,
+      "paper_risk": 496.96,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "MACD above signal",
@@ -1318,6 +1444,9 @@
       "illustrative_stop": 241.93,
       "illustrative_target": 322.48,
       "risk_reward": 2.0,
+      "paper_qty": 18,
+      "paper_cost": 4838.04,
+      "paper_risk": 483.3,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "RSI in 50-70 range",
@@ -1351,6 +1480,9 @@
       "illustrative_stop": 335.85,
       "illustrative_target": 403.8,
       "risk_reward": 2.0,
+      "paper_qty": 22,
+      "paper_cost": 7887.0,
+      "paper_risk": 498.3,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "RSI in 50-70 range",
@@ -1383,6 +1515,9 @@
       "illustrative_stop": 230.62,
       "illustrative_target": 285.16,
       "risk_reward": 2.0,
+      "paper_qty": 27,
+      "paper_cost": 6717.6,
+      "paper_risk": 490.86,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "RSI in 50-70 range",
@@ -1415,6 +1550,9 @@
       "illustrative_stop": 1574.41,
       "illustrative_target": 1891.18,
       "risk_reward": 2.0,
+      "paper_qty": 4,
+      "paper_cost": 6720.0,
+      "paper_risk": 422.36,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "RSI in 50-70 range",
@@ -1447,6 +1585,9 @@
       "illustrative_stop": 1383.44,
       "illustrative_target": 1571.12,
       "risk_reward": 2.0,
+      "paper_qty": 7,
+      "paper_cost": 10122.0,
+      "paper_risk": 437.92,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "MACD above signal",
@@ -1479,6 +1620,9 @@
       "illustrative_stop": 1454.88,
       "illustrative_target": 1807.14,
       "risk_reward": 2.0,
+      "paper_qty": 4,
+      "paper_cost": 6289.2,
+      "paper_risk": 469.68,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "RSI in 50-70 range",
@@ -1511,6 +1655,9 @@
       "illustrative_stop": 8759.67,
       "illustrative_target": 10080.66,
       "risk_reward": 2.0,
+      "paper_qty": 1,
+      "paper_cost": 9200.0,
+      "paper_risk": 440.33,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "MACD above signal",
@@ -1543,6 +1690,9 @@
       "illustrative_stop": 749.94,
       "illustrative_target": 886.92,
       "risk_reward": 2.0,
+      "paper_qty": 10,
+      "paper_cost": 7956.0,
+      "paper_risk": 456.6,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "MACD above signal",
@@ -1575,6 +1725,9 @@
       "illustrative_stop": 481.41,
       "illustrative_target": 592.38,
       "risk_reward": 2.0,
+      "paper_qty": 13,
+      "paper_cost": 6739.2,
+      "paper_risk": 480.87,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "MACD above signal",
@@ -1607,6 +1760,9 @@
       "illustrative_stop": 12408.5,
       "illustrative_target": 14000.0,
       "risk_reward": 2.0,
+      "paper_qty": 0,
+      "paper_cost": 0,
+      "paper_risk": 0,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "MACD above signal",
@@ -1639,6 +1795,9 @@
       "illustrative_stop": 1108.52,
       "illustrative_target": 1356.86,
       "risk_reward": 2.0,
+      "paper_qty": 6,
+      "paper_cost": 7147.8,
+      "paper_risk": 496.68,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "RSI in 50-70 range",
@@ -1671,6 +1830,9 @@
       "illustrative_stop": 201.15,
       "illustrative_target": 233.55,
       "risk_reward": 2.0,
+      "paper_qty": 46,
+      "paper_cost": 9749.7,
+      "paper_risk": 496.8,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "RSI in 50-70 range",
@@ -1703,6 +1865,9 @@
       "illustrative_stop": 747.47,
       "illustrative_target": 860.06,
       "risk_reward": 2.0,
+      "paper_qty": 13,
+      "paper_cost": 10205.0,
+      "paper_risk": 487.89,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "MACD above signal",
@@ -1735,6 +1900,9 @@
       "illustrative_stop": 82.73,
       "illustrative_target": 96.32,
       "risk_reward": 2.0,
+      "paper_qty": 110,
+      "paper_cost": 9598.6,
+      "paper_risk": 498.3,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "MACD above signal",
@@ -1767,6 +1935,9 @@
       "illustrative_stop": 208.28,
       "illustrative_target": 239.99,
       "risk_reward": 2.0,
+      "paper_qty": 47,
+      "paper_cost": 10285.95,
+      "paper_risk": 496.79,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "MACD above signal",
@@ -1799,6 +1970,9 @@
       "illustrative_stop": 11040.33,
       "illustrative_target": 12926.34,
       "risk_reward": 2.0,
+      "paper_qty": 0,
+      "paper_cost": 0,
+      "paper_risk": 0,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "RSI in 50-70 range",
@@ -1831,6 +2005,9 @@
       "illustrative_stop": 2089.72,
       "illustrative_target": 2465.56,
       "risk_reward": 2.0,
+      "paper_qty": 3,
+      "paper_cost": 6645.0,
+      "paper_risk": 375.84,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "RSI in 50-70 range",
@@ -1863,6 +2040,9 @@
       "illustrative_stop": 576.39,
       "illustrative_target": 763.32,
       "risk_reward": 2.0,
+      "paper_qty": 8,
+      "paper_cost": 5109.6,
+      "paper_risk": 498.48,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "RSI in 50-70 range",
@@ -1895,6 +2075,9 @@
       "illustrative_stop": 93.93,
       "illustrative_target": 110.49,
       "risk_reward": 2.0,
+      "paper_qty": 90,
+      "paper_cost": 8950.5,
+      "paper_risk": 496.8,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "MACD above signal",
@@ -1927,6 +2110,9 @@
       "illustrative_stop": 731.36,
       "illustrative_target": 920.18,
       "risk_reward": 2.0,
+      "paper_qty": 7,
+      "paper_cost": 5560.1,
+      "paper_risk": 440.58,
       "reasons": [
         "EMA20 > EMA50 > EMA200 and price above EMA20",
         "RSI in 50-70 range",
