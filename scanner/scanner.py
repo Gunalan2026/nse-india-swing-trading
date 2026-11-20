@@ -150,7 +150,33 @@ def load_universe():
     raise RuntimeError("Could not load Nifty 500 list: " + " | ".join(problems))
 
 
+def market_trend():
+    """Nifty 50 vs its 200-day EMA. The backtest showed SETUP trades did
+    better, with much smaller drawdowns, when the index was above it."""
+    try:
+        idx = yf.download("^NSEI", period="2y", interval="1d", auto_adjust=True,
+                          progress=False, threads=False, timeout=20)
+        if isinstance(idx.columns, pd.MultiIndex):
+            idx.columns = idx.columns.get_level_values(0)
+        close = idx["Close"].dropna()
+        dates = pd.DatetimeIndex(close.index)
+        dates = dates.tz_convert(IST) if dates.tz is not None else dates.tz_localize(IST)
+        close.index = pd.DatetimeIndex(dates.date)
+        ema = close.ewm(span=200, adjust=False).mean()
+        last = close.index[-1]
+        up = bool(close.iloc[-1] > ema.iloc[-1])
+        return {"index": "NIFTY 50", "as_of": last.strftime("%Y-%m-%d"),
+                "close": num(close.iloc[-1]), "ema200": num(ema.iloc[-1]),
+                "above_ema200": up,
+                "rule": "New paper trades only when NIFTY 50 is above its 200-day EMA"}
+    except Exception as exc:
+        return {"index": "NIFTY 50", "above_ema200": None,
+                "error": str(exc)[:120]}
+
+
 def main():
+    market = market_trend()
+    print("Market trend:", market)
     symbols, universe_source = load_universe()
     results, errors = [], []
     for i, symbol in enumerate(symbols, 1):
@@ -179,7 +205,7 @@ def main():
     report = {
         "generated_utc": datetime.now(timezone.utc).isoformat(),
         "universe_count": len(symbols), "universe_source": universe_source, "analyzed_count": len(results),
-        "failed_count": len(errors), "main_session": main_session, "latest_closes": {x["symbol"]: [x["as_of"], x["close"], x["volume"]] for x in results}, "stale_symbols": stale, "latest_sessions": dict(sorted(Counter(x["as_of"] for x in results).items())), "provider": "Yahoo Finance via yfinance (unofficial; delayed)", "paper_rules": {"capital": CAPITAL, "allocation_per_trade": ALLOCATION_PER_TRADE, "max_risk_per_trade": MAX_RISK_PER_TRADE, "daily_loss_limit": DAILY_LOSS_LIMIT},
+        "failed_count": len(errors), "main_session": main_session, "market_trend": market, "latest_closes": {x["symbol"]: [x["as_of"], x["close"], x["volume"]] for x in results}, "stale_symbols": stale, "latest_sessions": dict(sorted(Counter(x["as_of"] for x in results).items())), "provider": "Yahoo Finance via yfinance (unofficial; delayed)", "paper_rules": {"capital": CAPITAL, "allocation_per_trade": ALLOCATION_PER_TRADE, "max_risk_per_trade": MAX_RISK_PER_TRADE, "daily_loss_limit": DAILY_LOSS_LIMIT},
         "methodology": "Heuristic technical ranking on completed sessions (same validation as charts: day included after 16:00 IST, holiday placeholder candles removed); no news or backtest validation yet",
         "disclaimer": "Research/paper trading only. Scores are not probabilities; entry/stop/target are illustrative, not orders.",
         "candidates": [x for x in ranked if x["status"] == "SETUP"][:20],

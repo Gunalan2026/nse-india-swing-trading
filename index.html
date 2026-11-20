@@ -103,7 +103,7 @@ summary{cursor:pointer;color:#aabbd0}
 <span class="pill">PAPER TRADING • DELAYED DATA</span>
 <h1>NSE India <span class="green">Swing Trading</span></h1>
 <div class="muted">Nifty 500 • Technical and Fundamental Research</div>
-<nav class="topnav"><a href="index.html" class="active">Dashboard</a><a href="charts.html">Charts</a><a href="reports.html">Tamil reports</a></nav>
+<nav class="topnav"><a href="index.html" class="active">Dashboard</a><a href="charts.html">Charts</a><a href="reports.html">Tamil reports</a><a href="backtest.html">Backtest</a></nav>
 </div>
 </header>
 
@@ -112,6 +112,7 @@ summary{cursor:pointer;color:#aabbd0}
 <section class="card">
 <h2>Latest Nifty 500 Scanner</h2>
 <div id="scan-status">Loading scanner results...</div>
+<div id="market-trend" class="result" style="display:none"></div>
 <p id="scan-time" class="muted">Scan time: —</p>
 <div class="grid">
 <div><div class="muted">Universe</div><div class="metric" id="universe">—</div></div>
@@ -931,6 +932,21 @@ async function loadScan() {
     }
 
     scan = data;
+
+    const m = data.market_trend;
+    const mt = $('market-trend');
+    if (m && m.above_ema200 != null) {
+      mt.style.display = '';
+      mt.innerHTML = m.above_ema200
+        ? '<strong class="green">Market trend: UP</strong> — NIFTY 50 ' +
+          fmt(m.close) + ' is above its 200-day EMA (' + fmt(m.ema200) +
+          ') on ' + m.as_of + '. New paper trades allowed.'
+        : '<strong class="red">Market trend: DOWN</strong> — NIFTY 50 ' +
+          fmt(m.close) + ' is below its 200-day EMA (' + fmt(m.ema200) +
+          ') on ' + m.as_of + '. No new paper trades; watch only.';
+    } else {
+      mt.style.display = 'none';
+    }
 
     $('universe').textContent =
       fmt(data.universe_count ?? 0);

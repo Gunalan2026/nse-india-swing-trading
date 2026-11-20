@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NSE India | Scanner Backtest</title>
+<script src="https://unpkg.com/lightweight-charts@4.2.3/dist/lightweight-charts.standalone.production.js"></script>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#0b1220;color:#e5edf7;font-family:system-ui,Arial,sans-serif}
+header{padding:18px;background:#111d30;border-bottom:1px solid #26364d}
+h1{font-size:22px;margin:0 0 8px}
+h2{font-size:18px;margin:0 0 12px}
+p,li{color:#b6c6d8;line-height:1.55}
+a{color:#50d8ca}
+main{max-width:1200px;margin:auto;padding:12px}
+.panel{background:#111d30;border:1px solid #26364d;border-radius:12px;padding:14px;margin-bottom:14px;min-width:0}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.card{background:#0c1728;border-radius:10px;padding:12px}
+.muted{color:#a8b8cb;font-size:13px}
+.metric{font-size:22px;font-weight:700;margin-top:6px}
+.green{color:#4ce0b3}.red{color:#ff8992}
+.scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{padding:9px 8px;border-bottom:1px solid #33445a;text-align:left;white-space:nowrap}
+th{color:#a8b8cb;font-weight:600}
+td.num,th.num{text-align:right}
+tr.best td{background:#13302b}
+.chart{height:300px;width:100%}
+.verdict{background:#1a2537;border-left:4px solid #f5c542;padding:12px 14px;border-radius:8px}
+.topnav{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px}
+.topnav a{padding:8px 14px;border-radius:999px;background:#1b2a42;color:#cfe0f2;text-decoration:none;font-size:.9rem;border:1px solid #2b3c55}
+.topnav a.active{background:#29b998;color:#061c18;border-color:#29b998;font-weight:700}
+.topnav a:hover{border-color:#5fe5d1}
+@media(min-width:800px){.cards{grid-template-columns:repeat(4,1fr)}}
+@media(min-width:1000px){
+  main{padding:20px 28px}header{padding:22px 28px}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .two .panel{margin-bottom:14px}
+  .chart{height:360px}
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Scanner Backtest</h1>
+<p>How the scanner's SETUP signals would have performed on past data. Paper trading research only.</p>
+<nav class="topnav"><a href="index.html">Dashboard</a><a href="charts.html">Charts</a><a href="reports.html">Tamil reports</a><a href="backtest.html" class="active">Backtest</a></nav>
+</header>
+<main>
+<p id="status">Loading backtest results...</p>
+
+<section class="panel">
+<h2>What this means</h2>
+<div class="verdict" id="verdict">—</div>
+</section>
+
+<section class="panel">
+<h2>All signals (the rule itself)</h2>
+<p class="muted" id="all-note"></p>
+<div class="cards" id="all-cards"></div>
+</section>
+
+<section class="panel">
+<h2>Paper account simulation</h2>
+<p class="muted">₹1,00,000 capital, max 3 open trades, ₹500 risk and ₹30,000 allocation per trade, ₹90,000 deployable, best scores first. Market-trend filter applied (current rules).</p>
+<div class="cards" id="port-cards"></div>
+<div id="equity" class="chart" style="margin-top:14px"></div>
+<p class="muted">Cumulative realised P&amp;L (₹) at month end.</p>
+</section>
+
+<section class="panel">
+<h2>Options compared</h2>
+<p class="muted">R = profit or loss as a multiple of the amount risked (1R = ₹500 here). "Per signal" averages thousands of trades and is the more reliable measure; paper-account totals depend on which few trades got picked. Highlighted row = current rules.</p>
+<div class="scroll"><table id="variants"></table></div>
+</section>
+
+<div class="two">
+<section class="panel">
+<h2>By year (all signals)</h2>
+<div class="scroll"><table id="years"></table></div>
+</section>
+<section class="panel">
+<h2>By scanner score (all signals)</h2>
+<div class="scroll"><table id="scores"></table></div>
+<p class="muted">A higher score did not mean better results.</p>
+</section>
+</div>
+
+<div class="two">
+<section class="panel">
+<h2>Rules tested</h2>
+<ul id="rules"></ul>
+</section>
+<section class="panel">
+<h2>Limitations</h2>
+<ul id="limits"></ul>
+</section>
+</div>
+</main>
+<script>
+'use strict';
+const $ = id => document.getElementById(id);
+const fmt = (n, d = 2) => n == null ? '—' :
+  new Intl.NumberFormat('en-IN', { maximumFractionDigits: d }).format(n);
+const rs = n => n == null ? '—' : (n < 0 ? '−₹' : '₹') + fmt(Math.abs(n), 0);
+const r = n => n == null ? '—' : (n > 0 ? '+' : '') + fmt(n, 3) + 'R';
+const cls = n => n == null ? '' : n > 0 ? 'green' : n < 0 ? 'red' : '';
+
+function cards(el, items) {
+  el.replaceChildren();
+  items.forEach(([label, value, c]) => {
+    const d = document.createElement('div');
+    d.className = 'card';
+    d.innerHTML = '<div class="muted"></div><div class="metric"></div>';
+    d.children[0].textContent = label;
+    d.children[1].textContent = value;
+    if (c) d.children[1].classList.add(c);
+    el.appendChild(d);
+  });
+}
+
+function table(el, head, rows, bestIndex = -1) {
+  el.replaceChildren();
+  const tr = document.createElement('tr');
+  head.forEach(([h, num]) => {
+    const th = document.createElement('th');
+    th.textContent = h;
+    if (num) th.className = 'num';
+    tr.appendChild(th);
+  });
+  el.appendChild(tr);
+  rows.forEach((row, i) => {
+    const tr = document.createElement('tr');
+    if (i === bestIndex) tr.className = 'best';
+    row.forEach(([v, num, c]) => {
+      const td = document.createElement('td');
+      td.textContent = v;
+      if (num) td.classList.add('num');
+      if (c) td.classList.add(c);
+      tr.appendChild(td);
+    });
+    el.appendChild(tr);
+  });
+}
+
+function statRow(label, s) {
+  return [
+    [label],
+    [fmt(s.trades, 0), true],
+    [s.win_rate_pct == null ? '—' : s.win_rate_pct + '%', true],
+    [r(s.avg_r), true, cls(s.avg_r)],
+    [s.profit_factor == null ? '—' : fmt(s.profit_factor), true],
+  ];
+}
+
+(async () => {
+  try {
+    const res = await fetch('scanner/backtest_results.json?v=' + Date.now());
+    if (!res.ok) throw Error('Backtest results not found');
+    const d = await res.json();
+    const a = d.all_signals;
+    const vs = d.variants || [];
+    const current = vs.find(v => v.universe === 'Nifty 500' &&
+      v.filter.startsWith('only when')) || null;
+    const port = current ? current.portfolio : d.portfolio;
+
+    $('status').textContent = 'Generated ' +
+      new Date(d.generated_utc).toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' }) +
+      ' IST | ' + d.stocks_tested + ' stocks | period ' +
+      (d.portfolio.period || []).join(' to ');
+
+    $('all-note').textContent = 'Every SETUP signal traded (one open trade per stock), ' +
+      fmt(a.trades, 0) + ' trades. Costs of ' + d.rules.round_trip_cost_pct +
+      '% per round trip included.';
+    cards($('all-cards'), [
+      ['Trades', fmt(a.trades, 0)],
+      ['Win rate', a.win_rate_pct + '%'],
+      ['Average per trade', r(a.avg_r), cls(a.avg_r)],
+      ['Profit factor', fmt(a.profit_factor)],
+      ['Target hit', a.target_hit_pct + '%'],
+      ['Stop hit', a.stop_hit_pct + '%'],
+      ['20-day time exit', a.time_exit_pct + '%'],
+      ['Average per trade at ₹500 risk', rs(a.expectancy_rs_at_500_risk), cls(a.expectancy_rs_at_500_risk)],
+    ]);
+
+    cards($('port-cards'), [
+      ['Trades taken', fmt(port.trades, 0)],
+      ['Net P&L', rs(port.net_pnl_rs), cls(port.net_pnl_rs)],
+      ['Worst drawdown', rs(port.max_drawdown_rs), 'red'],
+      ['Win rate', (port.win_rate_pct ?? '—') + '%'],
+    ]);
+
+    // Verdict from the numbers, in plain words.
+    const ins = current ? current.signals['2022_2024'] : null;
+    const out = current ? current.signals['2025_2026'] : null;
+    let v = 'Across all signals the rule averaged ' + r(a.avg_r) +
+      ' per trade after costs (about ' + rs(a.expectancy_rs_at_500_risk) +
+      ' per trade at ₹500 risk). ';
+    if (ins && out) {
+      v += 'With the current rules it was positive in 2022–2024 (' + r(ins.avg_r) +
+        ') but negative in 2025–2026 (' + r(out.avg_r) + '). ';
+    }
+    v += 'The edge is small and depends on market conditions, so treat ' +
+      'signals as a starting point for research, not as reliable trades. ' +
+      'Paper trading is the right next step to see how the full process ' +
+      '(scanner + news check) performs live.';
+    $('verdict').textContent = v;
+
+    // Equity curve of the current-rules paper account (fallback: baseline).
+    const eq = (current && current.portfolio_equity) || d.portfolio.equity_by_month_rs || {};
+    if (window.LightweightCharts && Object.keys(eq).length) {
+      const el = $('equity');
+      const chart = LightweightCharts.createChart(el, {
+        width: el.clientWidth, height: el.clientHeight,
+        layout: { background: { color: '#111d30' }, textColor: '#a8b8cb' },
+        grid: { vertLines: { color: '#26364d' }, horzLines: { color: '#26364d' } },
+        rightPriceScale: { borderVisible: false }, timeScale: { borderVisible: false },
+      });
+      chart.addLineSeries({ color: '#50d8ca', lineWidth: 2 })
+        .setData(Object.entries(eq).map(([m, v]) => ({ time: m + '-01', value: v })));
+      chart.timeScale().fitContent();
+      window.addEventListener('resize', () => chart.applyOptions({ width: el.clientWidth }));
+    } else {
+      $('equity').textContent = 'Equity chart unavailable.';
+      $('equity').style.height = 'auto';
+    }
+
+    const vrows = vs.map(x => [
+      [x.universe], [x.filter],
+      [fmt(x.signals.all.trades, 0), true],
+      [r(x.signals.all.avg_r), true, cls(x.signals.all.avg_r)],
+      [r(x.signals['2022_2024'].avg_r), true, cls(x.signals['2022_2024'].avg_r)],
+      [r(x.signals['2025_2026'].avg_r), true, cls(x.signals['2025_2026'].avg_r)],
+      [rs(x.portfolio.net_pnl_rs), true, cls(x.portfolio.net_pnl_rs)],
+      [rs(x.portfolio.max_drawdown_rs), true],
+    ]);
+    table($('variants'), [['Universe'], ['Market filter'], ['Signals', 1],
+      ['Per signal', 1], ['2022–24', 1], ['2025–26', 1], ['Paper P&L', 1],
+      ['Worst drawdown', 1]], vrows, vs.indexOf(current));
+
+    const head = [['', 0], ['Trades', 1], ['Win rate', 1], ['Avg R', 1], ['Profit factor', 1]];
+    table($('years'), head, Object.entries(d.by_year).map(([y, s]) => statRow(y, s)));
+    table($('scores'), head, Object.entries(d.by_score)
+      .filter(([, s]) => s.trades).map(([k, s]) => statRow('Score ' + k, s)));
+
+    const rules = d.rules;
+    $('rules').replaceChildren(...[
+      'Signal: ' + rules.signal,
+      'Entry: ' + rules.entry,
+      'Stop-loss: ' + rules.stop + '; target: ' + rules.target,
+      'Exit after ' + rules.max_hold_days + ' trading days if neither is hit',
+      'Stop and target on the same day: ' + rules.same_day_stop_and_target,
+      'Costs: ' + rules.round_trip_cost_pct + '% of trade value per round trip',
+      'History: ' + rules.history + ' of daily candles (first ' + rules.warmup_candles +
+        ' used to warm up indicators)',
+    ].map(t => { const li = document.createElement('li'); li.textContent = t; return li; }));
+    $('limits').replaceChildren(...(d.limitations || []).map(t => {
+      const li = document.createElement('li'); li.textContent = t; return li;
+    }));
+  } catch (e) {
+    $('status').textContent = 'Error: ' + e.message;
+  }
+})();
+</script>
+</body>
+</html>

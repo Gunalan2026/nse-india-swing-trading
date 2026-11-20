@@ -297,6 +297,7 @@ def variants(trades, have_n200, have_market):
                 "universe": uname, "filter": fname,
                 "signals": split_summary(sel),
                 "portfolio": pick(port),
+                "portfolio_equity": port.get("equity_by_month_rs", {}),
                 "portfolio_2022_2024": pick(port_ins),
                 "portfolio_2025_2026": pick(port_out),
             })
