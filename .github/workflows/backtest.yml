@@ -1,0 +1,45 @@
+name: NSE India Scanner Backtest
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 4 * * 6'   # Saturdays 09:47 IST - weekly refresh
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nse-backtest
+  cancel-in-progress: false
+
+jobs:
+  backtest:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r scanner/requirements.txt
+
+      - name: Run backtest
+        run: python scanner/backtest.py
+
+      - name: Commit backtest results
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add scanner/backtest_results.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update scanner backtest results'
+            git pull --rebase
+            git push
+          else
+            echo 'No changes'
+          fi
