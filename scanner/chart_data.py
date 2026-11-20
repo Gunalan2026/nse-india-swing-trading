@@ -4,7 +4,7 @@ Research and paper trading only.
 """
 
 import json
-from datetime import datetime, timezone
+from datetime import datetime, time, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -24,6 +24,29 @@ OUTPUT = Path("charts/data")
 IST = ZoneInfo("Asia/Kolkata")
 MIN_CANDLES = 220
 
+# NSE closes at 15:30 IST. After this time the day's candle is
+# treated as complete.
+SESSION_COMPLETE_IST = time(16, 0)
+
+# If the latest candle is older than the expected session by more
+# than this many calendar days, the data is treated as stale.
+# (Allows for a holiday next to a weekend.)
+MAX_STALE_DAYS = 4
+
+
+def last_completed_session(now_ist):
+    """Latest weekday whose session should be complete by now_ist.
+
+    NSE holidays are not known here, so on a holiday this date is
+    later than the real last session. That is reported, not failed.
+    """
+    day = now_ist.date()
+    if now_ist.time() < SESSION_COMPLETE_IST:
+        day -= timedelta(days=1)
+    while day.weekday() >= 5:
+        day -= timedelta(days=1)
+    return day
+
 
 def clean(value):
     try:
@@ -35,8 +58,11 @@ def clean(value):
         return None
 
 
-def validate_prices(raw):
-    """Reject invalid rows and the current IST trading date."""
+def validate_prices(raw, now_ist=None):
+    """Reject invalid rows, placeholder rows and incomplete sessions."""
+    if now_ist is None:
+        now_ist = datetime.now(IST)
+
     if raw.empty:
         raise ValueError("No market data returned")
 
@@ -73,15 +99,30 @@ def validate_prices(raw):
     for col in required:
         df[col] = pd.to_numeric(df[col], errors="coerce")
 
-    today_ist = datetime.now(IST).date()
-
-    # Conservative policy: never use today's daily candle.
-    current_day_count = int(
-        (df.index.date >= today_ist).sum()
-    )
-    df = df[df.index.date < today_ist].copy()
+    # Use a session only once it is complete: today's candle is
+    # kept after SESSION_COMPLETE_IST, never earlier.
+    expected_session = last_completed_session(now_ist)
+    incomplete = df.index.date > expected_session
+    incomplete_dates = [
+        d.strftime("%Y-%m-%d") for d in df.index[incomplete]
+    ]
+    df = df[~incomplete].copy()
 
     finite = np.isfinite(df[required].to_numpy()).all(axis=1)
+
+    # Yahoo fills holidays and missing sessions with a flat candle
+    # (open = high = low = close) and zero volume. Not a real session.
+    placeholder = (
+        (df["Volume"] == 0)
+        & (df["Open"] == df["High"])
+        & (df["High"] == df["Low"])
+        & (df["Low"] == df["Close"])
+    )
+    placeholder_dates = [
+        d.strftime("%Y-%m-%d") for d in df.index[placeholder]
+    ]
+    df = df[~placeholder].copy()
+    finite = finite[~placeholder.to_numpy()]
 
     valid = (
         finite
@@ -95,7 +136,9 @@ def validate_prices(raw):
         & (df["Low"] <= df[["Open", "Close"]].min(axis=1))
     )
 
-    invalid_count = int((~valid).sum())
+    invalid_dates = [
+        d.strftime("%Y-%m-%d") for d in df.index[~valid]
+    ]
     df = df.loc[valid].copy()
 
     if len(df) < MIN_CANDLES:
@@ -110,18 +153,33 @@ def validate_prices(raw):
     if df.index.has_duplicates:
         raise ValueError("Duplicate dates remain")
 
+    latest = df.index[-1].date()
+    lag_days = (expected_session - latest).days
+
+    if lag_days > MAX_STALE_DAYS:
+        raise ValueError(
+            f"Stale data: latest candle {latest}, "
+            f"expected session {expected_session}"
+        )
+
     quality = {
         "downloaded_rows": original_count,
         "duplicate_dates_removed": duplicate_count,
-        "current_or_future_rows_removed": current_day_count,
-        "invalid_price_rows_removed": invalid_count,
+        "incomplete_session_rows_removed": len(incomplete_dates),
+        "incomplete_session_dates": incomplete_dates,
+        "placeholder_rows_removed": len(placeholder_dates),
+        "placeholder_dates": placeholder_dates,
+        "invalid_price_rows_removed": len(invalid_dates),
+        "invalid_price_dates": invalid_dates,
         "valid_completed_candles": len(df),
-        "latest_completed_candle": df.index[-1].strftime(
-            "%Y-%m-%d"
-        ),
+        "latest_completed_candle": latest.strftime("%Y-%m-%d"),
+        "expected_session": expected_session.strftime("%Y-%m-%d"),
+        "latest_matches_expected": lag_days == 0,
         "policy": (
-            "Exclude current IST calendar day; "
-            "validate daily OHLC and volume"
+            "Include a day's candle only after 16:00 IST; "
+            "remove zero-volume flat placeholder candles; "
+            "validate daily OHLC and volume; "
+            f"fail if more than {MAX_STALE_DAYS} days behind"
         ),
     }
 
@@ -412,17 +470,22 @@ def generate(symbol):
     print(
         f"SUCCESS {symbol}: {len(candles)} candles | "
         f"latest={latest['time']} | "
-        f"invalid_removed="
-        f"{quality['invalid_price_rows_removed']}"
+        f"expected={quality['expected_session']} | "
+        f"placeholders_removed="
+        f"{quality['placeholder_dates']} | "
+        f"invalid_removed={quality['invalid_price_dates']}"
     )
+
+    return latest["time"]
 
 
 def main():
     failures = []
+    latest_dates = {}
 
     for symbol in SYMBOLS:
         try:
-            generate(symbol)
+            latest_dates[symbol] = generate(symbol)
         except Exception as exc:
             print(f"ERROR {symbol}: {exc}")
             failures.append(symbol)
@@ -432,7 +495,18 @@ def main():
             "Failed symbols: " + ", ".join(failures)
         )
 
-    print("All five NSE charts generated successfully.")
+    # Every symbol should end on the same session. A mismatch means
+    # one download is behind; fail so nothing is committed.
+    if len(set(latest_dates.values())) > 1:
+        raise RuntimeError(
+            "Latest candle differs between symbols: "
+            + ", ".join(f"{s}={d}" for s, d in latest_dates.items())
+        )
+
+    print(
+        f"All {len(SYMBOLS)} NSE charts generated successfully. "
+        f"Latest session: {next(iter(latest_dates.values()))}"
+    )
 
 
 if __name__ == "__main__":
