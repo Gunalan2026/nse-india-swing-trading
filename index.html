@@ -284,6 +284,14 @@ Saved in this browser only. Not executed trades.
 </div>
 <div id="pnl-summary" class="result">No paper trades yet.</div>
 
+<div class="actions" style="margin-top:14px;flex-wrap:wrap">
+<button class="secondary small" id="export">Export trades</button>
+<button class="secondary small" id="import">Import trades</button>
+<input type="file" id="import-file" accept="application/json,.json" hidden>
+</div>
+<p class="note">Trades are saved in this browser. To use them on another
+device: Export here, send the file to yourself, then Import it there.</p>
+
 <button class="secondary wide" id="clear">
 Clear saved plans
 </button>
@@ -457,6 +465,10 @@ function todayIST() {
   }).format(new Date());
 }
 
+function money(v) {
+  return (v < 0 ? '−' : v > 0 ? '+' : '') + '₹' + fmt(Math.abs(v));
+}
+
 function savePlans(a) {
   localStorage.setItem(key, JSON.stringify(a));
 }
@@ -527,7 +539,7 @@ function renderPlans() {
       tr,
       isClosed
         ? 'Closed ' + p.closed + ' @ ₹' + fmt(p.exit) +
-          ' | ' + (p.pnl >= 0 ? '+' : '') + '₹' + fmt(p.pnl)
+          ' | ' + money(p.pnl)
         : 'Open' + (p.opened ? ' since ' + p.opened : '')
     );
     if (isClosed) st.className = p.pnl >= 0 ? 'green' : 'red';
@@ -564,11 +576,10 @@ function renderPlans() {
     '</strong><br>' +
     'Capital in use: ₹' + fmt(s.inUse) + ' of ₹' + fmt(RULES.deployable) +
     '<br>' +
-    "Today's realised P&amp;L: <strong>" + (s.todayPnl >= 0 ? '+' : '') +
-    '₹' + fmt(s.todayPnl) + '</strong> (limit −₹' +
+    "Today's realised P&amp;L: <strong>" + money(s.todayPnl) +
+    '</strong> (limit −₹' +
     fmt(RULES.dailyLossLimit) + ')<br>' +
-    'Total realised P&amp;L: ' + (s.totalPnl >= 0 ? '+' : '') + '₹' +
-    fmt(s.totalPnl) + ' from ' + s.closed.length + ' closed trades' +
+    'Total realised P&amp;L: ' + money(s.totalPnl) + ' from ' + s.closed.length + ' closed trades' +
     (limit
       ? '<br><strong class="red">Daily loss limit reached. ' +
         'No new paper trades today.</strong>'
@@ -1055,6 +1066,50 @@ $('save').onclick = () => {
   a.push({ ...last, status: 'open', opened: todayIST() });
   savePlans(a);
   renderPlans();
+};
+
+$('export').onclick = () => {
+  const data = {
+    app: 'nse-india-paper-trades',
+    version: 1,
+    exported: new Date().toISOString(),
+    trades: getPlans()
+  };
+  const blob = new Blob([JSON.stringify(data, null, 1)], {
+    type: 'application/json'
+  });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'nse-india-paper-trades-' + todayIST() + '.json';
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+};
+
+$('import').onclick = () => $('import-file').click();
+
+$('import-file').onchange = async e => {
+  const file = e.target.files[0];
+  e.target.value = '';
+  if (!file) return;
+  try {
+    const data = JSON.parse(await file.text());
+    const trades = Array.isArray(data) ? data : data.trades;
+    const ok = Array.isArray(trades) && trades.every(t =>
+      t && typeof t.symbol === 'string' &&
+      [t.qty, t.entry, t.stop, t.target].every(Number.isFinite)
+    );
+    if (!ok) throw Error('This file does not contain paper trades.');
+    if (!confirm('Replace the ' + getPlans().length +
+      ' trades in this browser with the ' + trades.length +
+      ' trades from the file?')) return;
+    savePlans(trades);
+    renderPlans();
+    alert('Imported ' + trades.length + ' paper trades.');
+  } catch (err) {
+    alert('Import failed: ' + err.message);
+  }
 };
 
 $('clear').onclick = () => {
