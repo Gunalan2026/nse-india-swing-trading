@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-11-20T17:33:43.348540+00:00",
+ "generated_utc": "2026-11-20T17:37:24.856491+00:00",
  "rules": {
   "signal": "Scanner SETUP: score >= 75, EMA20>EMA50>EMA200 with price above EMA20, +DI > -DI",
   "entry": "Next day only, above signal close; skip if it opens > 2.0% higher",
@@ -61,8 +61,8 @@
   "no_trigger": 512
  },
  "all_signals": {
-  "trades": 6931,
-  "win_rate_pct": 46.0,
+  "trades": 6928,
+  "win_rate_pct": 46.1,
   "target_hit_pct": 27.1,
   "stop_hit_pct": 43.8,
   "time_exit_pct": 29.1,
@@ -80,60 +80,60 @@
    "trades": 6099,
    "win_rate_pct": 46.3,
    "target_hit_pct": 27.6,
-   "stop_hit_pct": 43.5,
-   "time_exit_pct": 28.9,
-   "avg_r": 0.11,
+   "stop_hit_pct": 43.6,
+   "time_exit_pct": 28.8,
+   "avg_r": 0.109,
    "median_r": -0.226,
    "profit_factor": 1.22,
    "avg_days_held": 12.2,
    "expectancy_rs_at_500_risk": 55.0
   },
   "100": {
-   "trades": 832,
-   "win_rate_pct": 44.1,
-   "target_hit_pct": 23.3,
-   "stop_hit_pct": 46.0,
-   "time_exit_pct": 30.6,
-   "avg_r": 0.01,
-   "median_r": -0.393,
-   "profit_factor": 1.02,
+   "trades": 829,
+   "win_rate_pct": 44.4,
+   "target_hit_pct": 23.4,
+   "stop_hit_pct": 45.7,
+   "time_exit_pct": 30.9,
+   "avg_r": 0.015,
+   "median_r": -0.361,
+   "profit_factor": 1.03,
    "avg_days_held": 12.6,
-   "expectancy_rs_at_500_risk": 5.0
+   "expectancy_rs_at_500_risk": 8.0
   }
  },
  "by_rsi": {
   "below 60": {
-   "trades": 664,
-   "win_rate_pct": 47.3,
+   "trades": 667,
+   "win_rate_pct": 47.5,
    "target_hit_pct": 24.7,
-   "stop_hit_pct": 39.9,
-   "time_exit_pct": 35.4,
-   "avg_r": 0.103,
-   "median_r": -0.143,
-   "profit_factor": 1.22,
+   "stop_hit_pct": 39.7,
+   "time_exit_pct": 35.5,
+   "avg_r": 0.107,
+   "median_r": -0.112,
+   "profit_factor": 1.23,
    "avg_days_held": 13.5,
-   "expectancy_rs_at_500_risk": 52.0
+   "expectancy_rs_at_500_risk": 54.0
   },
   "60-70": {
-   "trades": 4463,
+   "trades": 4456,
    "win_rate_pct": 45.8,
    "target_hit_pct": 26.6,
    "stop_hit_pct": 44.2,
    "time_exit_pct": 29.2,
    "avg_r": 0.088,
-   "median_r": -0.267,
-   "profit_factor": 1.17,
+   "median_r": -0.268,
+   "profit_factor": 1.18,
    "avg_days_held": 12.4,
    "expectancy_rs_at_500_risk": 44.0
   },
   "above 70": {
-   "trades": 1804,
+   "trades": 1805,
    "win_rate_pct": 46.3,
-   "target_hit_pct": 29.1,
+   "target_hit_pct": 29.0,
    "stop_hit_pct": 44.5,
    "time_exit_pct": 26.4,
-   "avg_r": 0.121,
-   "median_r": -0.236,
+   "avg_r": 0.119,
+   "median_r": -0.237,
    "profit_factor": 1.24,
    "avg_days_held": 11.5,
    "expectancy_rs_at_500_risk": 60.0
@@ -153,35 +153,35 @@
    "expectancy_rs_at_500_risk": 27.0
   },
   "2023": {
-   "trades": 2219,
-   "win_rate_pct": 56.1,
-   "target_hit_pct": 34.3,
-   "stop_hit_pct": 34.8,
+   "trades": 2216,
+   "win_rate_pct": 56.2,
+   "target_hit_pct": 34.4,
+   "stop_hit_pct": 34.7,
    "time_exit_pct": 30.9,
-   "avg_r": 0.334,
-   "median_r": 0.313,
+   "avg_r": 0.337,
+   "median_r": 0.326,
    "profit_factor": 1.84,
    "avg_days_held": 12.5,
-   "expectancy_rs_at_500_risk": 167.0
+   "expectancy_rs_at_500_risk": 168.0
   },
   "2024": {
    "trades": 2062,
-   "win_rate_pct": 43.5,
-   "target_hit_pct": 26.4,
-   "stop_hit_pct": 46.9,
+   "win_rate_pct": 43.4,
+   "target_hit_pct": 26.3,
+   "stop_hit_pct": 47.0,
    "time_exit_pct": 26.7,
-   "avg_r": 0.052,
-   "median_r": -0.423,
+   "avg_r": 0.05,
+   "median_r": -0.425,
    "profit_factor": 1.1,
-   "avg_days_held": 11.9,
-   "expectancy_rs_at_500_risk": 26.0
+   "avg_days_held": 12.0,
+   "expectancy_rs_at_500_risk": 25.0
   },
   "2025": {
    "trades": 1204,
    "win_rate_pct": 38.7,
    "target_hit_pct": 20.8,
    "stop_hit_pct": 49.4,
-   "time_exit_pct": 29.8,
+   "time_exit_pct": 29.7,
    "avg_r": -0.087,
    "median_r": -0.8,
    "profit_factor": 0.85,
@@ -203,21 +203,21 @@
  },
  "portfolio": {
   "trades": 244,
-  "win_rate_pct": 44.7,
+  "win_rate_pct": 45.1,
   "target_hit_pct": 20.9,
-  "stop_hit_pct": 45.5,
-  "time_exit_pct": 33.6,
-  "avg_r": -0.039,
-  "median_r": -0.423,
-  "profit_factor": 0.92,
+  "stop_hit_pct": 45.1,
+  "time_exit_pct": 34.0,
+  "avg_r": -0.034,
+  "median_r": -0.418,
+  "profit_factor": 0.93,
   "avg_days_held": 12.4,
-  "expectancy_rs_at_500_risk": -20.0,
-  "net_pnl_rs": -2169.0,
-  "return_on_capital_pct": -2.2,
+  "expectancy_rs_at_500_risk": -17.0,
+  "net_pnl_rs": -1515.0,
+  "return_on_capital_pct": -1.5,
   "max_drawdown_rs": -12385.0,
   "pnl_by_year_rs": {
    "2022": 737.0,
-   "2023": 1484.0,
+   "2023": 2139.0,
    "2024": 4749.0,
    "2025": -5837.0,
    "2026": -3303.0
@@ -225,61 +225,563 @@
   "equity_by_month_rs": {
    "2022-09": -501.96,
    "2022-10": 845.97,
-   "2022-11": 749.79,
-   "2022-12": 737.27,
-   "2023-01": 104.48,
-   "2023-02": -317.84,
-   "2023-03": -591.12,
-   "2023-04": -445.63,
-   "2023-05": 556.47,
-   "2023-06": 2524.1,
-   "2023-07": 2829.38,
-   "2023-08": 1158.49,
-   "2023-09": 2895.48,
-   "2023-10": 826.71,
-   "2023-11": 567.58,
-   "2023-12": 2221.66,
-   "2024-01": 3803.55,
-   "2024-02": 4971.16,
-   "2024-03": 4692.33,
-   "2024-04": 5785.49,
-   "2024-05": 5353.61,
-   "2024-06": 6426.87,
-   "2024-07": 6996.11,
-   "2024-08": 7657.03,
-   "2024-09": 9379.09,
-   "2024-10": 8106.4,
-   "2024-11": 7629.48,
-   "2024-12": 6970.73,
-   "2025-01": 2674.89,
-   "2025-02": 2155.06,
-   "2025-03": 2155.06,
-   "2025-04": 791.31,
-   "2025-05": 1927.29,
-   "2025-06": 1319.77,
-   "2025-07": 829.71,
-   "2025-08": -2455.41,
-   "2025-09": 19.63,
-   "2025-10": 57.38,
-   "2025-11": -225.87,
-   "2025-12": 1133.77,
-   "2026-01": -648.51,
-   "2026-02": -612.13,
-   "2026-03": -2641.84,
-   "2026-04": -1287.69,
-   "2026-05": 216.31,
-   "2026-06": -840.21,
-   "2026-07": 635.79,
-   "2026-08": 1112.11,
-   "2026-09": -5.14,
-   "2026-10": -2222.49,
-   "2026-11": -2169.47
+   "2022-11": 749.89,
+   "2022-12": 737.37,
+   "2023-01": 104.58,
+   "2023-02": -317.74,
+   "2023-03": -1115.44,
+   "2023-04": 209.16,
+   "2023-05": 1211.26,
+   "2023-06": 3178.89,
+   "2023-07": 3484.17,
+   "2023-08": 1813.28,
+   "2023-09": 3550.27,
+   "2023-10": 1481.5,
+   "2023-11": 1222.37,
+   "2023-12": 2876.45,
+   "2024-01": 4458.34,
+   "2024-02": 5625.95,
+   "2024-03": 5347.12,
+   "2024-04": 6440.28,
+   "2024-05": 6008.4,
+   "2024-06": 7081.63,
+   "2024-07": 7650.87,
+   "2024-08": 8311.79,
+   "2024-09": 10033.86,
+   "2024-10": 8761.17,
+   "2024-11": 8284.25,
+   "2024-12": 7625.48,
+   "2025-01": 3329.64,
+   "2025-02": 2809.81,
+   "2025-03": 2809.81,
+   "2025-04": 1446.06,
+   "2025-05": 2582.04,
+   "2025-06": 1974.52,
+   "2025-07": 1484.46,
+   "2025-08": -1800.66,
+   "2025-09": 674.38,
+   "2025-10": 712.13,
+   "2025-11": 428.88,
+   "2025-12": 1788.52,
+   "2026-01": 6.24,
+   "2026-02": 42.62,
+   "2026-03": -1987.09,
+   "2026-04": -632.94,
+   "2026-05": 871.06,
+   "2026-06": -185.46,
+   "2026-07": 1290.54,
+   "2026-08": 1766.86,
+   "2026-09": 649.61,
+   "2026-10": -1567.74,
+   "2026-11": -1514.72
   },
   "period": [
    "2022-09-26",
    "2026-11-18"
   ]
  },
+ "nifty200_count": 200,
+ "variants": [
+  {
+   "universe": "Nifty 500",
+   "filter": "no market filter",
+   "signals": {
+    "all": {
+     "trades": 6928,
+     "win_rate_pct": 46.1,
+     "target_hit_pct": 27.1,
+     "stop_hit_pct": 43.8,
+     "time_exit_pct": 29.1,
+     "avg_r": 0.098,
+     "median_r": -0.244,
+     "profit_factor": 1.2,
+     "avg_days_held": 12.3,
+     "expectancy_rs_at_500_risk": 49.0
+    },
+    "2022_2024": {
+     "trades": 4710,
+     "win_rate_pct": 49.5,
+     "target_hit_pct": 29.9,
+     "stop_hit_pct": 41.0,
+     "time_exit_pct": 29.0,
+     "avg_r": 0.185,
+     "median_r": -0.029,
+     "profit_factor": 1.4,
+     "avg_days_held": 12.3,
+     "expectancy_rs_at_500_risk": 93.0
+    },
+    "2025_2026": {
+     "trades": 2218,
+     "win_rate_pct": 38.8,
+     "target_hit_pct": 21.0,
+     "stop_hit_pct": 49.8,
+     "time_exit_pct": 29.2,
+     "avg_r": -0.087,
+     "median_r": -0.844,
+     "profit_factor": 0.85,
+     "avg_days_held": 12.3,
+     "expectancy_rs_at_500_risk": -44.0
+    }
+   },
+   "portfolio": {
+    "trades": 244,
+    "win_rate_pct": 45.1,
+    "avg_r": -0.034,
+    "profit_factor": 0.93,
+    "net_pnl_rs": -1515.0,
+    "max_drawdown_rs": -12385.0,
+    "pnl_by_year_rs": {
+     "2022": 737.0,
+     "2023": 2139.0,
+     "2024": 4749.0,
+     "2025": -5837.0,
+     "2026": -3303.0
+    }
+   },
+   "portfolio_2022_2024": {
+    "trades": 128,
+    "win_rate_pct": 49.2,
+    "avg_r": 0.09,
+    "profit_factor": 1.2,
+    "net_pnl_rs": 6613.0,
+    "max_drawdown_rs": -4809.0,
+    "pnl_by_year_rs": {
+     "2022": 737.0,
+     "2023": 2139.0,
+     "2024": 4749.0,
+     "2025": -1013.0
+    }
+   },
+   "portfolio_2025_2026": {
+    "trades": 119,
+    "win_rate_pct": 39.5,
+    "avg_r": -0.192,
+    "profit_factor": 0.68,
+    "net_pnl_rs": -9552.0,
+    "max_drawdown_rs": -10025.0,
+    "pnl_by_year_rs": {
+     "2025": -6249.0,
+     "2026": -3303.0
+    }
+   }
+  },
+  {
+   "universe": "Nifty 500",
+   "filter": "only when Nifty 50 above its 200-day EMA",
+   "signals": {
+    "all": {
+     "trades": 5972,
+     "win_rate_pct": 46.8,
+     "target_hit_pct": 28.1,
+     "stop_hit_pct": 43.3,
+     "time_exit_pct": 28.6,
+     "avg_r": 0.12,
+     "median_r": -0.204,
+     "profit_factor": 1.24,
+     "avg_days_held": 12.2,
+     "expectancy_rs_at_500_risk": 60.0
+    },
+    "2022_2024": {
+     "trades": 4597,
+     "win_rate_pct": 49.4,
+     "target_hit_pct": 30.1,
+     "stop_hit_pct": 41.2,
+     "time_exit_pct": 28.7,
+     "avg_r": 0.184,
+     "median_r": -0.039,
+     "profit_factor": 1.4,
+     "avg_days_held": 12.2,
+     "expectancy_rs_at_500_risk": 92.0
+    },
+    "2025_2026": {
+     "trades": 1375,
+     "win_rate_pct": 38.3,
+     "target_hit_pct": 21.2,
+     "stop_hit_pct": 50.4,
+     "time_exit_pct": 28.4,
+     "avg_r": -0.093,
+     "median_r": -1.021,
+     "profit_factor": 0.84,
+     "avg_days_held": 12.2,
+     "expectancy_rs_at_500_risk": -47.0
+    }
+   },
+   "portfolio": {
+    "trades": 192,
+    "win_rate_pct": 45.8,
+    "avg_r": 0.057,
+    "profit_factor": 1.12,
+    "net_pnl_rs": 6795.0,
+    "max_drawdown_rs": -5290.0,
+    "pnl_by_year_rs": {
+     "2022": 401.0,
+     "2023": 3239.0,
+     "2024": 5355.0,
+     "2025": -1047.0,
+     "2026": -1154.0
+    }
+   },
+   "portfolio_2022_2024": {
+    "trades": 122,
+    "win_rate_pct": 50.8,
+    "avg_r": 0.121,
+    "profit_factor": 1.28,
+    "net_pnl_rs": 8360.0,
+    "max_drawdown_rs": -4107.0,
+    "pnl_by_year_rs": {
+     "2022": 401.0,
+     "2023": 3239.0,
+     "2024": 5355.0,
+     "2025": -635.0
+    }
+   },
+   "portfolio_2025_2026": {
+    "trades": 73,
+    "win_rate_pct": 37.0,
+    "avg_r": -0.059,
+    "profit_factor": 0.89,
+    "net_pnl_rs": -1865.0,
+    "max_drawdown_rs": -3519.0,
+    "pnl_by_year_rs": {
+     "2025": -711.0,
+     "2026": -1154.0
+    }
+   }
+  },
+  {
+   "universe": "Nifty 200",
+   "filter": "no market filter",
+   "signals": {
+    "all": {
+     "trades": 3115,
+     "win_rate_pct": 46.3,
+     "target_hit_pct": 26.9,
+     "stop_hit_pct": 44.1,
+     "time_exit_pct": 29.0,
+     "avg_r": 0.088,
+     "median_r": -0.251,
+     "profit_factor": 1.17,
+     "avg_days_held": 12.3,
+     "expectancy_rs_at_500_risk": 44.0
+    },
+    "2022_2024": {
+     "trades": 2131,
+     "win_rate_pct": 49.7,
+     "target_hit_pct": 30.0,
+     "stop_hit_pct": 41.3,
+     "time_exit_pct": 28.7,
+     "avg_r": 0.182,
+     "median_r": -0.011,
+     "profit_factor": 1.39,
+     "avg_days_held": 12.2,
+     "expectancy_rs_at_500_risk": 91.0
+    },
+    "2025_2026": {
+     "trades": 984,
+     "win_rate_pct": 38.7,
+     "target_hit_pct": 20.0,
+     "stop_hit_pct": 50.3,
+     "time_exit_pct": 29.7,
+     "avg_r": -0.116,
+     "median_r": -1.022,
+     "profit_factor": 0.8,
+     "avg_days_held": 12.4,
+     "expectancy_rs_at_500_risk": -58.0
+    }
+   },
+   "portfolio": {
+    "trades": 228,
+    "win_rate_pct": 44.7,
+    "avg_r": 0.072,
+    "profit_factor": 1.14,
+    "net_pnl_rs": 8847.0,
+    "max_drawdown_rs": -7530.0,
+    "pnl_by_year_rs": {
+     "2022": 1039.0,
+     "2023": 6399.0,
+     "2024": 7125.0,
+     "2025": -1731.0,
+     "2026": -3986.0
+    }
+   },
+   "portfolio_2022_2024": {
+    "trades": 125,
+    "win_rate_pct": 50.4,
+    "avg_r": 0.212,
+    "profit_factor": 1.49,
+    "net_pnl_rs": 13509.0,
+    "max_drawdown_rs": -4261.0,
+    "pnl_by_year_rs": {
+     "2022": 1039.0,
+     "2023": 6399.0,
+     "2024": 7125.0,
+     "2025": -1055.0
+    }
+   },
+   "portfolio_2025_2026": {
+    "trades": 106,
+    "win_rate_pct": 36.8,
+    "avg_r": -0.124,
+    "profit_factor": 0.79,
+    "net_pnl_rs": -6262.0,
+    "max_drawdown_rs": -6626.0,
+    "pnl_by_year_rs": {
+     "2025": -2275.0,
+     "2026": -3986.0
+    }
+   }
+  },
+  {
+   "universe": "Nifty 200",
+   "filter": "only when Nifty 50 above its 200-day EMA",
+   "signals": {
+    "all": {
+     "trades": 2764,
+     "win_rate_pct": 46.9,
+     "target_hit_pct": 27.7,
+     "stop_hit_pct": 43.6,
+     "time_exit_pct": 28.7,
+     "avg_r": 0.107,
+     "median_r": -0.214,
+     "profit_factor": 1.22,
+     "avg_days_held": 12.2,
+     "expectancy_rs_at_500_risk": 54.0
+    },
+    "2022_2024": {
+     "trades": 2083,
+     "win_rate_pct": 49.6,
+     "target_hit_pct": 30.1,
+     "stop_hit_pct": 41.4,
+     "time_exit_pct": 28.5,
+     "avg_r": 0.181,
+     "median_r": -0.014,
+     "profit_factor": 1.39,
+     "avg_days_held": 12.2,
+     "expectancy_rs_at_500_risk": 90.0
+    },
+    "2025_2026": {
+     "trades": 681,
+     "win_rate_pct": 38.6,
+     "target_hit_pct": 20.4,
+     "stop_hit_pct": 50.2,
+     "time_exit_pct": 29.4,
+     "avg_r": -0.117,
+     "median_r": -1.023,
+     "profit_factor": 0.8,
+     "avg_days_held": 12.3,
+     "expectancy_rs_at_500_risk": -58.0
+    }
+   },
+   "portfolio": {
+    "trades": 181,
+    "win_rate_pct": 44.2,
+    "avg_r": 0.1,
+    "profit_factor": 1.21,
+    "net_pnl_rs": 9708.0,
+    "max_drawdown_rs": -7764.0,
+    "pnl_by_year_rs": {
+     "2022": 1545.0,
+     "2023": 7355.0,
+     "2024": 8262.0,
+     "2025": -1998.0,
+     "2026": -5455.0
+    }
+   },
+   "portfolio_2022_2024": {
+    "trades": 118,
+    "win_rate_pct": 50.8,
+    "avg_r": 0.273,
+    "profit_factor": 1.66,
+    "net_pnl_rs": 16106.0,
+    "max_drawdown_rs": -3596.0,
+    "pnl_by_year_rs": {
+     "2022": 1545.0,
+     "2023": 7355.0,
+     "2024": 8262.0,
+     "2025": -1055.0
+    }
+   },
+   "portfolio_2025_2026": {
+    "trades": 65,
+    "win_rate_pct": 30.8,
+    "avg_r": -0.249,
+    "profit_factor": 0.57,
+    "net_pnl_rs": -7385.0,
+    "max_drawdown_rs": -7385.0,
+    "pnl_by_year_rs": {
+     "2025": -1930.0,
+     "2026": -5455.0
+    }
+   }
+  },
+  {
+   "universe": "Rest of Nifty 500 (not in 200)",
+   "filter": "no market filter",
+   "signals": {
+    "all": {
+     "trades": 3813,
+     "win_rate_pct": 45.9,
+     "target_hit_pct": 27.2,
+     "stop_hit_pct": 43.6,
+     "time_exit_pct": 29.2,
+     "avg_r": 0.106,
+     "median_r": -0.241,
+     "profit_factor": 1.21,
+     "avg_days_held": 12.3,
+     "expectancy_rs_at_500_risk": 53.0
+    },
+    "2022_2024": {
+     "trades": 2579,
+     "win_rate_pct": 49.3,
+     "target_hit_pct": 29.9,
+     "stop_hit_pct": 40.8,
+     "time_exit_pct": 29.3,
+     "avg_r": 0.188,
+     "median_r": -0.041,
+     "profit_factor": 1.41,
+     "avg_days_held": 12.3,
+     "expectancy_rs_at_500_risk": 94.0
+    },
+    "2025_2026": {
+     "trades": 1234,
+     "win_rate_pct": 38.8,
+     "target_hit_pct": 21.8,
+     "stop_hit_pct": 49.4,
+     "time_exit_pct": 28.8,
+     "avg_r": -0.064,
+     "median_r": -0.738,
+     "profit_factor": 0.89,
+     "avg_days_held": 12.2,
+     "expectancy_rs_at_500_risk": -32.0
+    }
+   },
+   "portfolio": {
+    "trades": 246,
+    "win_rate_pct": 46.3,
+    "avg_r": 0.084,
+    "profit_factor": 1.17,
+    "net_pnl_rs": 10015.0,
+    "max_drawdown_rs": -6032.0,
+    "pnl_by_year_rs": {
+     "2022": -1701.0,
+     "2023": 7050.0,
+     "2024": 2097.0,
+     "2025": -1479.0,
+     "2026": 4047.0
+    }
+   },
+   "portfolio_2022_2024": {
+    "trades": 135,
+    "win_rate_pct": 46.7,
+    "avg_r": 0.114,
+    "profit_factor": 1.25,
+    "net_pnl_rs": 6866.0,
+    "max_drawdown_rs": -5957.0,
+    "pnl_by_year_rs": {
+     "2022": -1701.0,
+     "2023": 7050.0,
+     "2024": 2097.0,
+     "2025": -581.0
+    }
+   },
+   "portfolio_2025_2026": {
+    "trades": 115,
+    "win_rate_pct": 45.2,
+    "avg_r": 0.034,
+    "profit_factor": 1.06,
+    "net_pnl_rs": 2396.0,
+    "max_drawdown_rs": -4965.0,
+    "pnl_by_year_rs": {
+     "2025": -1652.0,
+     "2026": 4047.0
+    }
+   }
+  },
+  {
+   "universe": "Rest of Nifty 500 (not in 200)",
+   "filter": "only when Nifty 50 above its 200-day EMA",
+   "signals": {
+    "all": {
+     "trades": 3208,
+     "win_rate_pct": 46.8,
+     "target_hit_pct": 28.3,
+     "stop_hit_pct": 43.1,
+     "time_exit_pct": 28.6,
+     "avg_r": 0.131,
+     "median_r": -0.197,
+     "profit_factor": 1.27,
+     "avg_days_held": 12.2,
+     "expectancy_rs_at_500_risk": 66.0
+    },
+    "2022_2024": {
+     "trades": 2514,
+     "win_rate_pct": 49.2,
+     "target_hit_pct": 30.1,
+     "stop_hit_pct": 41.0,
+     "time_exit_pct": 28.9,
+     "avg_r": 0.187,
+     "median_r": -0.052,
+     "profit_factor": 1.4,
+     "avg_days_held": 12.2,
+     "expectancy_rs_at_500_risk": 93.0
+    },
+    "2025_2026": {
+     "trades": 694,
+     "win_rate_pct": 38.0,
+     "target_hit_pct": 21.9,
+     "stop_hit_pct": 50.6,
+     "time_exit_pct": 27.5,
+     "avg_r": -0.071,
+     "median_r": -1.02,
+     "profit_factor": 0.88,
+     "avg_days_held": 12.2,
+     "expectancy_rs_at_500_risk": -35.0
+    }
+   },
+   "portfolio": {
+    "trades": 198,
+    "win_rate_pct": 46.5,
+    "avg_r": 0.091,
+    "profit_factor": 1.19,
+    "net_pnl_rs": 8672.0,
+    "max_drawdown_rs": -5667.0,
+    "pnl_by_year_rs": {
+     "2022": -1238.0,
+     "2023": 4948.0,
+     "2024": 3855.0,
+     "2025": -3530.0,
+     "2026": 4636.0
+    }
+   },
+   "portfolio_2022_2024": {
+    "trades": 130,
+    "win_rate_pct": 47.7,
+    "avg_r": 0.119,
+    "profit_factor": 1.26,
+    "net_pnl_rs": 7462.0,
+    "max_drawdown_rs": -3365.0,
+    "pnl_by_year_rs": {
+     "2022": -1238.0,
+     "2023": 4948.0,
+     "2024": 3855.0,
+     "2025": -103.0
+    }
+   },
+   "portfolio_2025_2026": {
+    "trades": 68,
+    "win_rate_pct": 44.1,
+    "avg_r": 0.04,
+    "profit_factor": 1.07,
+    "net_pnl_rs": 1209.0,
+    "max_drawdown_rs": -5667.0,
+    "pnl_by_year_rs": {
+     "2025": -3427.0,
+     "2026": 4636.0
+    }
+   }
+  }
+ ],
+ "in_sample_end": "2024-12-31",
  "limitations": [
   "Universe is today's Nifty 500 list: stocks that left the index are missing (survivorship bias), so results are likely somewhat optimistic.",
   "Daily candles only: if stop and target are both inside one day's range, the stop is assumed (conservative).",
@@ -302,9 +804,11 @@
    "score": 85,
    "rsi": 58.7,
    "volume_ratio": 1.76,
-   "cost_per_share": 3.6093963768615054,
-   "risk_per_share": 167.12036134867003,
-   "symbol": "CHENNPETRO"
+   "cost_per_share": 3.6093963769943853,
+   "risk_per_share": 167.12036124236602,
+   "symbol": "CHENNPETRO",
+   "nifty200": false,
+   "market_up": false
   },
   {
    "signal_date": "2026-10-14",
@@ -322,7 +826,9 @@
    "volume_ratio": 2.07,
    "cost_per_share": 0.7176312329407492,
    "risk_per_share": 23.89501364740073,
-   "symbol": "JINDALSAW"
+   "symbol": "JINDALSAW",
+   "nifty200": false,
+   "market_up": false
   },
   {
    "signal_date": "2026-10-15",
@@ -340,7 +846,9 @@
    "volume_ratio": 1.21,
    "cost_per_share": 26.41706636855796,
    "risk_per_share": 748.3469051536304,
-   "symbol": "CRAFTSMAN"
+   "symbol": "CRAFTSMAN",
+   "nifty200": false,
+   "market_up": false
   },
   {
    "signal_date": "2026-10-16",
@@ -358,7 +866,9 @@
    "volume_ratio": 1.4,
    "cost_per_share": 12.195395437400903,
    "risk_per_share": 221.68365007927787,
-   "symbol": "HAL"
+   "symbol": "HAL",
+   "nifty200": true,
+   "market_up": false
   },
   {
    "signal_date": "2026-10-16",
@@ -376,7 +886,9 @@
    "volume_ratio": 2.55,
    "cost_per_share": 2.0209256577765022,
    "risk_per_share": 36.795311938725945,
-   "symbol": "INDHOTEL"
+   "symbol": "INDHOTEL",
+   "nifty200": true,
+   "market_up": false
   },
   {
    "signal_date": "2026-10-16",
@@ -394,7 +906,9 @@
    "volume_ratio": 1.59,
    "cost_per_share": 2.8736248779296876,
    "risk_per_share": 75.6845550581138,
-   "symbol": "SHYAMMETL"
+   "symbol": "SHYAMMETL",
+   "nifty200": false,
+   "market_up": false
   },
   {
    "signal_date": "2026-10-19",
@@ -412,7 +926,9 @@
    "volume_ratio": 5.6,
    "cost_per_share": 0.3221153882096236,
    "risk_per_share": 7.246152995031096,
-   "symbol": "PNB"
+   "symbol": "PNB",
+   "nifty200": true,
+   "market_up": false
   },
   {
    "signal_date": "2026-10-21",
@@ -430,7 +946,9 @@
    "volume_ratio": 1.54,
    "cost_per_share": 4.418722013396211,
    "risk_per_share": 104.33049475178086,
-   "symbol": "TECHM"
+   "symbol": "TECHM",
+   "nifty200": true,
+   "market_up": false
   },
   {
    "signal_date": "2026-10-22",
@@ -447,8 +965,10 @@
    "rsi": 62.5,
    "volume_ratio": 0.83,
    "cost_per_share": 5.751000061035156,
-   "risk_per_share": 105.26032897025061,
-   "symbol": "ANANDRATHI"
+   "risk_per_share": 105.26032897006826,
+   "symbol": "ANANDRATHI",
+   "nifty200": false,
+   "market_up": false
   },
   {
    "signal_date": "2026-10-22",
@@ -464,9 +984,11 @@
    "score": 85,
    "rsi": 64.4,
    "volume_ratio": 5.22,
-   "cost_per_share": 11.559975755399615,
-   "risk_per_share": 277.22897450626533,
-   "symbol": "CRISIL"
+   "cost_per_share": 11.55997575540865,
+   "risk_per_share": 277.2289744990376,
+   "symbol": "CRISIL",
+   "nifty200": false,
+   "market_up": false
   },
   {
    "signal_date": "2026-10-27",
@@ -484,7 +1006,9 @@
    "volume_ratio": 4.01,
    "cost_per_share": 4.586736761711676,
    "risk_per_share": 163.6447168917016,
-   "symbol": "ATHERENERG"
+   "symbol": "ATHERENERG",
+   "nifty200": false,
+   "market_up": false
   },
   {
    "signal_date": "2026-10-27",
@@ -502,7 +1026,9 @@
    "volume_ratio": 1.65,
    "cost_per_share": 0.4504213422872672,
    "risk_per_share": 18.542931052998682,
-   "symbol": "MRPL"
+   "symbol": "MRPL",
+   "nifty200": false,
+   "market_up": false
   },
   {
    "signal_date": "2026-10-28",
@@ -520,7 +1046,9 @@
    "volume_ratio": 1.27,
    "cost_per_share": 25.825,
    "risk_per_share": 512.496852189859,
-   "symbol": "DIVISLAB"
+   "symbol": "DIVISLAB",
+   "nifty200": true,
+   "market_up": false
   },
   {
    "signal_date": "2026-10-28",
@@ -536,9 +1064,11 @@
    "score": 85,
    "rsi": 67.6,
    "volume_ratio": 1.41,
-   "cost_per_share": 5.765696078718006,
-   "risk_per_share": 129.35671315498348,
-   "symbol": "LAURUSLABS"
+   "cost_per_share": 5.7656960787256795,
+   "risk_per_share": 129.35671315805257,
+   "symbol": "LAURUSLABS",
+   "nifty200": true,
+   "market_up": false
   },
   {
    "signal_date": "2026-10-29",
@@ -556,7 +1086,9 @@
    "volume_ratio": 1.85,
    "cost_per_share": 5.332944305257931,
    "risk_per_share": 143.64455579365494,
-   "symbol": "APLAPOLLO"
+   "symbol": "APLAPOLLO",
+   "nifty200": true,
+   "market_up": false
   },
   {
    "signal_date": "2026-10-29",
@@ -574,7 +1106,9 @@
    "volume_ratio": 1.29,
    "cost_per_share": 124.58768154209895,
    "risk_per_share": 2270.0726168395777,
-   "symbol": "BOSCHLTD"
+   "symbol": "BOSCHLTD",
+   "nifty200": true,
+   "market_up": false
   },
   {
    "signal_date": "2026-10-29",
@@ -590,9 +1124,11 @@
    "score": 100,
    "rsi": 67.8,
    "volume_ratio": 1.72,
-   "cost_per_share": 3.8945178644764904,
-   "risk_per_share": 102.09873839076204,
-   "symbol": "GESHIP"
+   "cost_per_share": 3.894517864476586,
+   "risk_per_share": 102.09873839068541,
+   "symbol": "GESHIP",
+   "nifty200": false,
+   "market_up": false
   },
   {
    "signal_date": "2026-10-29",
@@ -610,7 +1146,9 @@
    "volume_ratio": 1.31,
    "cost_per_share": 0.4921726284890901,
    "risk_per_share": 10.369051395636035,
-   "symbol": "UNIONBANK"
+   "symbol": "UNIONBANK",
+   "nifty200": true,
+   "market_up": false
   },
   {
    "signal_date": "2026-10-30",
@@ -628,7 +1166,9 @@
    "volume_ratio": 2.86,
    "cost_per_share": 4.157771243475928,
    "risk_per_share": 109.45847297630849,
-   "symbol": "SAILIFE"
+   "symbol": "SAILIFE",
+   "nifty200": false,
+   "market_up": false
   },
   {
    "signal_date": "2026-11-02",
@@ -646,7 +1186,9 @@
    "volume_ratio": 1.93,
    "cost_per_share": 0.7769240867108854,
    "risk_per_share": 17.095301464804095,
-   "symbol": "PETRONET"
+   "symbol": "PETRONET",
+   "nifty200": false,
+   "market_up": false
   },
   {
    "signal_date": "2026-11-02",
@@ -664,7 +1206,9 @@
    "volume_ratio": 1.34,
    "cost_per_share": 5.356670668571335,
    "risk_per_share": 131.26830404962743,
-   "symbol": "PHOENIXLTD"
+   "symbol": "PHOENIXLTD",
+   "nifty200": true,
+   "market_up": false
   },
   {
    "signal_date": "2026-11-02",
@@ -682,7 +1226,9 @@
    "volume_ratio": 2.94,
    "cost_per_share": 3.2116122095178885,
    "risk_per_share": 99.64488380715534,
-   "symbol": "SHYAMMETL"
+   "symbol": "SHYAMMETL",
+   "nifty200": false,
+   "market_up": false
   },
   {
    "signal_date": "2026-11-03",
@@ -700,7 +1246,9 @@
    "volume_ratio": 1.23,
    "cost_per_share": 4.1309501623675775,
    "risk_per_share": 109.23987010593828,
-   "symbol": "BHARTIHEXA"
+   "symbol": "BHARTIHEXA",
+   "nifty200": false,
+   "market_up": false
   },
   {
    "signal_date": "2026-11-03",
@@ -718,7 +1266,9 @@
    "volume_ratio": 1.62,
    "cost_per_share": 1.8551499077544176,
    "risk_per_share": 33.05996310176704,
-   "symbol": "DLF"
+   "symbol": "DLF",
+   "nifty200": true,
+   "market_up": false
   },
   {
    "signal_date": "2026-11-03",
@@ -736,7 +1286,9 @@
    "volume_ratio": 1.42,
    "cost_per_share": 3.6935282045650832,
    "risk_per_share": 52.911281826033246,
-   "symbol": "ICICIBANK"
+   "symbol": "ICICIBANK",
+   "nifty200": true,
+   "market_up": false
   },
   {
    "signal_date": "2026-11-04",
@@ -754,7 +1306,9 @@
    "volume_ratio": 1.78,
    "cost_per_share": 5.143635419092752,
    "risk_per_share": 164.69176238204795,
-   "symbol": "BEML"
+   "symbol": "BEML",
+   "nifty200": false,
+   "market_up": true
   },
   {
    "signal_date": "2026-11-04",
@@ -772,7 +1326,9 @@
    "volume_ratio": 1.78,
    "cost_per_share": 12.421599718939992,
    "risk_per_share": 262.7202248480062,
-   "symbol": "HAL"
+   "symbol": "HAL",
+   "nifty200": true,
+   "market_up": true
   },
   {
    "signal_date": "2026-11-04",
@@ -790,7 +1346,9 @@
    "volume_ratio": 1.29,
    "cost_per_share": 23.55678539900657,
    "risk_per_share": 702.2141596026286,
-   "symbol": "NAVINFLUOR"
+   "symbol": "NAVINFLUOR",
+   "nifty200": false,
+   "market_up": true
   },
   {
    "signal_date": "2026-11-05",
@@ -806,9 +1364,11 @@
    "score": 85,
    "rsi": 65.6,
    "volume_ratio": 1.49,
-   "cost_per_share": 0.872607371850275,
-   "risk_per_share": 22.89295484362566,
-   "symbol": "ANGELONE"
+   "cost_per_share": 0.8726073718502745,
+   "risk_per_share": 22.892954843625432,
+   "symbol": "ANGELONE",
+   "nifty200": false,
+   "market_up": true
   },
   {
    "signal_date": "2026-11-05",
@@ -826,7 +1386,9 @@
    "volume_ratio": 5.69,
    "cost_per_share": 2.7204820041610613,
    "risk_per_share": 67.3928138714557,
-   "symbol": "ASAHIINDIA"
+   "symbol": "ASAHIINDIA",
+   "nifty200": false,
+   "market_up": true
   },
   {
    "signal_date": "2026-11-05",
@@ -844,7 +1406,9 @@
    "volume_ratio": 1.99,
    "cost_per_share": 3.3072838970920646,
    "risk_per_share": 65.37283349822314,
-   "symbol": "JSWSTEEL"
+   "symbol": "JSWSTEEL",
+   "nifty200": true,
+   "market_up": true
   },
   {
    "signal_date": "2026-11-05",
@@ -862,7 +1426,9 @@
    "volume_ratio": 1.01,
    "cost_per_share": 1.2182977813607978,
    "risk_per_share": 20.319112544319125,
-   "symbol": "KOTAKBANK"
+   "symbol": "KOTAKBANK",
+   "nifty200": true,
+   "market_up": true
   },
   {
    "signal_date": "2026-11-05",
@@ -880,7 +1446,9 @@
    "volume_ratio": 9.55,
    "cost_per_share": 4.3196244169838245,
    "risk_per_share": 101.30046641294075,
-   "symbol": "LGEINDIA"
+   "symbol": "LGEINDIA",
+   "nifty200": true,
+   "market_up": true
   },
   {
    "signal_date": "2026-11-05",
@@ -898,7 +1466,9 @@
    "volume_ratio": 3.03,
    "cost_per_share": 2.961974934561744,
    "risk_per_share": 89.78997382469765,
-   "symbol": "MOTILALOFS"
+   "symbol": "MOTILALOFS",
+   "nifty200": true,
+   "market_up": true
   },
   {
    "signal_date": "2026-11-05",
@@ -916,7 +1486,9 @@
    "volume_ratio": 1.33,
    "cost_per_share": 4.23003643360381,
    "risk_per_share": 153.97085311695218,
-   "symbol": "RUBICON"
+   "symbol": "RUBICON",
+   "nifty200": false,
+   "market_up": true
   },
   {
    "signal_date": "2026-11-09",
@@ -932,9 +1504,11 @@
    "score": 85,
    "rsi": 75.2,
    "volume_ratio": 1.8,
-   "cost_per_share": 5.979137285683944,
-   "risk_per_share": 176.69017145284442,
-   "symbol": "LAURUSLABS"
+   "cost_per_share": 5.979137285681825,
+   "risk_per_share": 176.69017145454063,
+   "symbol": "LAURUSLABS",
+   "nifty200": true,
+   "market_up": true
   },
   {
    "signal_date": "2026-11-09",
@@ -950,9 +1524,11 @@
    "score": 85,
    "rsi": 64.1,
    "volume_ratio": 1.62,
-   "cost_per_share": 0.23448406389664647,
-   "risk_per_share": 6.773625100894918,
-   "symbol": "MAHABANK"
+   "cost_per_share": 0.2344840638966456,
+   "risk_per_share": 6.773625100894577,
+   "symbol": "MAHABANK",
+   "nifty200": true,
+   "market_up": true
   },
   {
    "signal_date": "2026-11-11",
@@ -970,7 +1546,9 @@
    "volume_ratio": 2.18,
    "cost_per_share": 4.607948680443999,
    "risk_per_share": 150.84100681667542,
-   "symbol": "SAILIFE"
+   "symbol": "SAILIFE",
+   "nifty200": false,
+   "market_up": true
   },
   {
    "signal_date": "2026-11-12",
@@ -988,7 +1566,9 @@
    "volume_ratio": 5.73,
    "cost_per_share": 1.7160663497236714,
    "risk_per_share": 63.14692022106283,
-   "symbol": "KALYANKJIL"
+   "symbol": "KALYANKJIL",
+   "nifty200": true,
+   "market_up": true
   },
   {
    "signal_date": "2026-11-12",
@@ -1006,7 +1586,9 @@
    "volume_ratio": 2.99,
    "cost_per_share": 4.64685749601583,
    "risk_per_share": 132.51400318733613,
-   "symbol": "PAYTM"
+   "symbol": "PAYTM",
+   "nifty200": true,
+   "market_up": true
   }
  ]
 }
