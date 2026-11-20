@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NSE India | முன்சந்தை அறிக்கைகள்</title>
+<script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"></script>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#0b1220;color:#e5edf7;font-family:Arial,"Noto Sans Tamil",sans-serif}
+header{padding:18px;background:#111d30;border-bottom:1px solid #26364d}
+h1{font-size:22px;margin:0 0 8px}
+p,li{color:#c4d1e0;line-height:1.6}
+a{color:#50d8ca}
+main{max-width:900px;margin:auto;padding:12px}
+.panel{background:#111d30;border:1px solid #26364d;border-radius:12px;padding:14px;margin-bottom:14px}
+select{width:100%;font-size:16px;padding:12px;border-radius:8px;background:#0b1220;color:white;border:1px solid #40536e}
+#status{font-size:14px;color:#a8b8cb}
+#report h1{font-size:21px}
+#report h2{font-size:18px;border-top:1px solid #26364d;padding-top:14px}
+#report table{border-collapse:collapse;width:100%;margin:10px 0;font-size:15px}
+#report td,#report th{border:1px solid #33445a;padding:7px;text-align:left;vertical-align:top}
+#report blockquote{margin:10px 0;padding:8px 12px;border-left:4px solid #f5c542;background:#1a2537}
+#report hr{border:0;border-top:1px solid #26364d;margin:18px 0}
+#report a{word-break:break-all}
+</style>
+</head>
+<body>
+<header>
+<h1>முன்சந்தை அறிக்கைகள்</h1>
+<p>Tamil premarket reports | Paper trading only | Weekdays, ready by about 9:00 AM IST</p>
+<a href="index.html">Back to Dashboard</a>
+</header>
+<main>
+<section class="panel">
+<label for="pick">அறிக்கையைத் தேர்ந்தெடுக்கவும் (Select report)</label>
+<select id="pick"></select>
+<p id="status">Loading report list...</p>
+</section>
+<section class="panel" id="report"></section>
+</main>
+<script>
+'use strict';
+const REPO = 'Gunalan2026/nse-india-swing-trading';
+const pick = document.getElementById('pick');
+const status = document.getElementById('status');
+const out = document.getElementById('report');
+
+function dateOf(name) {
+  const m = name.match(/^premarket-(\d{4}-\d{2}-\d{2})\.md$/);
+  return m ? m[1] : null;
+}
+
+async function listReports() {
+  // The GitHub API lists the reports folder; newest first.
+  const res = await fetch(
+    'https://api.github.com/repos/' + REPO + '/contents/reports?ref=main'
+  );
+  if (!res.ok) throw Error('Report list unavailable (' + res.status + ')');
+  const files = await res.json();
+  return files
+    .map(f => f.name)
+    .filter(dateOf)
+    .sort()
+    .reverse();
+}
+
+async function show(name) {
+  status.textContent = 'Loading ' + name + '...';
+  out.textContent = '';
+  try {
+    const res = await fetch('reports/' + name + '?v=' + Date.now());
+    if (!res.ok) throw Error('Report not found');
+    const text = await res.text();
+    out.innerHTML = DOMPurify.sanitize(marked.parse(text));
+    out.querySelectorAll('a').forEach(a => {
+      a.target = '_blank';
+      a.rel = 'noopener';
+    });
+    status.textContent = 'Report date: ' + dateOf(name);
+  } catch (e) {
+    status.textContent = 'Error: ' + e.message;
+  }
+}
+
+(async () => {
+  try {
+    if (!window.marked || !window.DOMPurify) {
+      throw Error('Page libraries did not load; check your connection');
+    }
+    const names = await listReports();
+    if (!names.length) {
+      status.textContent = 'No reports yet.';
+      return;
+    }
+    names.forEach(n => {
+      const o = document.createElement('option');
+      o.value = n;
+      o.textContent = dateOf(n);
+      pick.appendChild(o);
+    });
+    pick.addEventListener('change', () => show(pick.value));
+    show(names[0]);
+  } catch (e) {
+    status.textContent = 'Error: ' + e.message;
+  }
+})();
+</script>
+</body>
+</html>
