@@ -1,9 +1,20 @@
 {
-  "generated_utc": "2026-11-20T16:35:45.913451+00:00",
+  "generated_utc": "2026-11-20T16:38:20.626546+00:00",
   "universe_count": 501,
   "universe_source": "https://niftyindices.com/IndexConstituent/ind_nifty500list.csv",
   "analyzed_count": 491,
   "failed_count": 10,
+  "main_session": "2026-11-20",
+  "stale_symbols": [
+    {
+      "symbol": "BIRET",
+      "as_of": "2026-11-19"
+    },
+    {
+      "symbol": "EMBASSY",
+      "as_of": "2026-11-19"
+    }
+  ],
   "latest_sessions": {
     "2026-11-19": 2,
     "2026-11-20": 489
@@ -1929,7 +1940,8 @@
   "status_counts": {
     "SETUP": 28,
     "WATCH": 140,
-    "NO TRADE": 323
+    "NO TRADE": 321,
+    "STALE DATA": 2
   },
   "errors_sample": [
     {
