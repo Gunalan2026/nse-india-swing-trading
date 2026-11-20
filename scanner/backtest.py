@@ -253,7 +253,57 @@ def bucket_stats(trades, key, edges):
     return out
 
 
-def run(price_frames, universe_count, failures):
+NIFTY200_SOURCES = [
+    "https://niftyindices.com/IndexConstituent/ind_nifty200list.csv",
+    "https://nsearchives.nseindia.com/content/indices/ind_nifty200list.csv",
+]
+INDEX_TICKER = "^NSEI"   # Nifty 50, for the market-trend filter
+IN_SAMPLE_END = "2024-12-31"
+
+
+def tag_trades(trades, nifty200, market_up):
+    """Add universe and market-trend flags to each trade (signal date)."""
+    for t in trades:
+        t["nifty200"] = t["symbol"] in nifty200
+        t["market_up"] = bool(market_up.get(t["signal_date"], False)) if market_up else None
+
+
+def split_summary(trades):
+    ins = [t for t in trades if t["entry_date"] <= IN_SAMPLE_END]
+    out = [t for t in trades if t["entry_date"] > IN_SAMPLE_END]
+    return {"all": summarise(trades), "2022_2024": summarise(ins),
+            "2025_2026": summarise(out)}
+
+
+def variants(trades, have_n200, have_market):
+    universes = {"Nifty 500": lambda t: True}
+    if have_n200:
+        universes["Nifty 200"] = lambda t: t["nifty200"]
+        universes["Rest of Nifty 500 (not in 200)"] = lambda t: not t["nifty200"]
+    filters = {"no market filter": lambda t: True}
+    if have_market:
+        filters["only when Nifty 50 above its 200-day EMA"] = lambda t: t["market_up"]
+    out = []
+    for uname, uf in universes.items():
+        for fname, ff in filters.items():
+            sel = [t for t in trades if uf(t) and ff(t)]
+            port = portfolio(sel)
+            port_ins = portfolio([t for t in sel if t["entry_date"] <= IN_SAMPLE_END])
+            port_out = portfolio([t for t in sel if t["entry_date"] > IN_SAMPLE_END])
+            pick = lambda d: {k: d.get(k) for k in (
+                "trades", "win_rate_pct", "avg_r", "profit_factor", "net_pnl_rs",
+                "max_drawdown_rs", "pnl_by_year_rs")}
+            out.append({
+                "universe": uname, "filter": fname,
+                "signals": split_summary(sel),
+                "portfolio": pick(port),
+                "portfolio_2022_2024": pick(port_ins),
+                "portfolio_2025_2026": pick(port_out),
+            })
+    return out
+
+
+def run(price_frames, universe_count, failures, nifty200=None, market_up=None):
     all_trades, skipped = [], defaultdict(int)
     for sym, f in price_frames.items():
         trades, sk = backtest_symbol(sym, f)
@@ -261,6 +311,7 @@ def run(price_frames, universe_count, failures):
         for k, v in sk.items():
             skipped[k] += v
     all_trades.sort(key=lambda t: (t["entry_date"], t["symbol"]))
+    tag_trades(all_trades, nifty200 or set(), market_up)
     years = defaultdict(list)
     for t in all_trades:
         years[t["entry_date"][:4]].append(t)
@@ -284,6 +335,9 @@ def run(price_frames, universe_count, failures):
                                [(0, 60, "below 60"), (60, 70, "60-70"), (70, 101, "above 70")]),
         "by_year": {y: summarise(v) for y, v in sorted(years.items())},
         "portfolio": portfolio(all_trades),
+        "nifty200_count": len(nifty200 or []),
+        "variants": variants(all_trades, bool(nifty200), bool(market_up)),
+        "in_sample_end": IN_SAMPLE_END,
         "limitations": [
             "Universe is today's Nifty 500 list: stocks that left the index are missing (survivorship bias), so results are likely somewhat optimistic.",
             "Daily candles only: if stop and target are both inside one day's range, the stop is assumed (conservative).",
@@ -296,7 +350,7 @@ def run(price_frames, universe_count, failures):
 
 
 def main():
-    import requests  # noqa: F401  (yfinance dependency check)
+    import requests
     import yfinance as yf
     from chart_data import validate_prices
 
@@ -315,12 +369,49 @@ def main():
             print(f"Loaded {n}/{len(symbols)}; ok={len(frames)} failed={len(failures)}", flush=True)
     if len(frames) < 400:
         raise RuntimeError(f"Only {len(frames)} stocks loaded; not writing results")
-    result = run(frames, len(symbols), failures)
+
+    nifty200 = set()
+    for url in NIFTY200_SOURCES:
+        try:
+            r = requests.get(url, headers={"User-Agent": "Mozilla/5.0"}, timeout=30)
+            r.raise_for_status()
+            lst = pd.read_csv(io.BytesIO(r.content))
+            if "Symbol" in lst.columns and len(lst) >= 190:
+                nifty200 = set(lst["Symbol"].dropna().astype(str).str.strip())
+                print(f"Nifty 200 list: {len(nifty200)} symbols from {url}")
+                break
+        except Exception as exc:
+            print(f"Nifty 200 source failed: {url}: {str(exc)[:100]}")
+
+    market_up = {}
+    try:
+        idx = yf.download(INDEX_TICKER, period=HISTORY, interval="1d", auto_adjust=True,
+                          progress=False, threads=False, timeout=20)
+        if isinstance(idx.columns, pd.MultiIndex):
+            idx.columns = idx.columns.get_level_values(0)
+        close = idx["Close"].dropna()
+        ema = close.ewm(span=200, adjust=False).mean()
+        up = (close > ema)
+        up.iloc[:200] = False
+        market_up = {d.strftime("%Y-%m-%d"): bool(v) for d, v in up.items()}
+        print(f"Nifty 50 index: {len(close)} days, latest {close.index[-1].date()}, "
+              f"above 200-EMA now: {bool(up.iloc[-1])}")
+    except Exception as exc:
+        print(f"Nifty 50 index unavailable: {str(exc)[:100]}")
+
+    result = run(frames, len(symbols), failures, nifty200, market_up)
     OUTPUT.write_text(json.dumps(result, indent=1, allow_nan=False), encoding="utf-8")
     a, p = result["all_signals"], result["portfolio"]
     print("ALL SIGNALS:", json.dumps(a))
     print("BY SCORE:", json.dumps(result["by_score"]))
     print("PORTFOLIO:", json.dumps({k: v for k, v in p.items() if k != "equity_by_month_rs"}))
+    for v in result["variants"]:
+        s = v["signals"]
+        print(f"VARIANT {v['universe']} | {v['filter']} | "
+              f"signals avgR all={s['all'].get('avg_r')} 22-24={s['2022_2024'].get('avg_r')} "
+              f"25-26={s['2025_2026'].get('avg_r')} n={s['all'].get('trades')} | "
+              f"portfolio pnl={v['portfolio'].get('net_pnl_rs')} dd={v['portfolio'].get('max_drawdown_rs')} "
+              f"22-24={v['portfolio_2022_2024'].get('net_pnl_rs')} 25-26={v['portfolio_2025_2026'].get('net_pnl_rs')}")
 
 
 if __name__ == "__main__":
