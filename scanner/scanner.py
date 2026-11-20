@@ -14,7 +14,11 @@ import yfinance as yf
 
 from chart_data import validate_prices
 
-CONSTITUENTS = "https://niftyindices.com/IndexConstituent/ind_nifty500list.csv"
+CONSTITUENT_SOURCES = [
+    "https://niftyindices.com/IndexConstituent/ind_nifty500list.csv",
+    "https://nsearchives.nseindia.com/content/indices/ind_nifty500list.csv",
+]
+CONSTITUENT_CACHE = Path("scanner/nifty500_constituents.csv")
 OUTPUT = Path("scanner/results.json")
 HEADERS = {"User-Agent": "Mozilla/5.0"}
 IST = ZoneInfo("Asia/Kolkata")
@@ -96,13 +100,39 @@ def indicators(df):
     }
 
 
-def main():
-    response = requests.get(CONSTITUENTS, headers=HEADERS, timeout=30)
-    response.raise_for_status()
-    universe = pd.read_csv(io.BytesIO(response.content))
+def parse_universe(content):
+    universe = pd.read_csv(io.BytesIO(content))
     if "Symbol" not in universe.columns or len(universe) < 400:
-        raise RuntimeError("Invalid Nifty 500 constituent list")
-    symbols = list(dict.fromkeys(universe["Symbol"].dropna().astype(str).str.strip()))
+        raise ValueError("not a valid Nifty 500 constituent list")
+    return list(dict.fromkeys(universe["Symbol"].dropna().astype(str).str.strip()))
+
+
+def load_universe():
+    """Download the Nifty 500 list, trying each source in turn.
+    A successful download is saved; if every source fails, the last
+    saved copy is used and the report says so."""
+    problems = []
+    for url in CONSTITUENT_SOURCES:
+        try:
+            response = requests.get(url, headers=HEADERS, timeout=30)
+            response.raise_for_status()
+            symbols = parse_universe(response.content)
+            CONSTITUENT_CACHE.write_bytes(response.content)
+            print(f"Universe: {len(symbols)} symbols from {url}")
+            return symbols, url
+        except Exception as exc:
+            problems.append(f"{url}: {str(exc)[:100]}")
+            print(f"Universe source failed: {problems[-1]}")
+    if CONSTITUENT_CACHE.exists():
+        symbols = parse_universe(CONSTITUENT_CACHE.read_bytes())
+        source = f"saved copy ({CONSTITUENT_CACHE}); all downloads failed"
+        print(f"Universe: {len(symbols)} symbols from {source}")
+        return symbols, source
+    raise RuntimeError("Could not load Nifty 500 list: " + " | ".join(problems))
+
+
+def main():
+    symbols, universe_source = load_universe()
     results, errors = [], []
     for i, symbol in enumerate(symbols, 1):
         try:
@@ -119,7 +149,7 @@ def main():
     ranked = sorted(results, key=lambda x: (x["score"], x["volume_ratio"]), reverse=True)
     report = {
         "generated_utc": datetime.now(timezone.utc).isoformat(),
-        "universe_count": len(symbols), "analyzed_count": len(results),
+        "universe_count": len(symbols), "universe_source": universe_source, "analyzed_count": len(results),
         "failed_count": len(errors), "latest_sessions": dict(sorted(Counter(x["as_of"] for x in results).items())), "provider": "Yahoo Finance via yfinance (unofficial; delayed)",
         "methodology": "Heuristic technical ranking on completed sessions (same validation as charts: day included after 16:00 IST, holiday placeholder candles removed); no news or backtest validation yet",
         "disclaimer": "Research/paper trading only. Scores are not probabilities; entry/stop/target are illustrative, not orders.",

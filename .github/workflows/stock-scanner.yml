@@ -39,7 +39,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add scanner/results.json
+          git add scanner/results.json scanner/nifty500_constituents.csv
           if ! git diff --cached --quiet; then
             git commit -m 'Update Nifty 500 scanner results'
             git push
