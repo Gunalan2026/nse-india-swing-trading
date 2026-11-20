@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-20T17:15:01.585137+00:00",
+  "generated_utc": "2026-11-20T17:23:31.870424+00:00",
   "universe_count": 501,
   "universe_source": "https://niftyindices.com/IndexConstituent/ind_nifty500list.csv",
   "analyzed_count": 491,
@@ -5031,7 +5031,7 @@
     }
   ],
   "nse_check": {
-    "checked_utc": "2026-11-20T17:15:02.095721+00:00",
+    "checked_utc": "2026-11-20T17:23:32.285238+00:00",
     "session": "2026-11-20",
     "status": "ok",
     "source": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261120_F_0000.csv.zip",
@@ -5042,7 +5042,7 @@
     "not_found": []
   },
   "bse_check": {
-    "checked_utc": "2026-11-20T17:15:02.095721+00:00",
+    "checked_utc": "2026-11-20T17:23:32.285238+00:00",
     "session": "2026-11-20",
     "status": "ok",
     "source": "https://www.bseindia.com/download/BhavCopy/Equity/BhavCopy_BSE_CM_0_0_0_20261120_F_0000.CSV",
