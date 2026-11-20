@@ -95,7 +95,7 @@ def indicators(df):
     target = round(entry + 2*risk, 2) if risk > 0 else None
     status = "SETUP" if score >= 75 and trend and directional and risk > 0 else "WATCH" if score >= 55 else "NO TRADE"
     return {
-        "as_of": last.strftime("%Y-%m-%d"), "close": entry,
+        "as_of": last.strftime("%Y-%m-%d"), "close": entry, "volume": int(volume[last]),
         "rsi14": num(rsi[last], 1), "ema20": num(ema20[last]),
         "ema50": num(ema50[last]), "ema200": num(ema200[last]),
         "adx14": num(adx[last], 1), "plus_di": num(plus_di[last], 1),
@@ -179,7 +179,7 @@ def main():
     report = {
         "generated_utc": datetime.now(timezone.utc).isoformat(),
         "universe_count": len(symbols), "universe_source": universe_source, "analyzed_count": len(results),
-        "failed_count": len(errors), "main_session": main_session, "stale_symbols": stale, "latest_sessions": dict(sorted(Counter(x["as_of"] for x in results).items())), "provider": "Yahoo Finance via yfinance (unofficial; delayed)", "paper_rules": {"capital": CAPITAL, "allocation_per_trade": ALLOCATION_PER_TRADE, "max_risk_per_trade": MAX_RISK_PER_TRADE, "daily_loss_limit": DAILY_LOSS_LIMIT},
+        "failed_count": len(errors), "main_session": main_session, "latest_closes": {x["symbol"]: [x["as_of"], x["close"], x["volume"]] for x in results}, "stale_symbols": stale, "latest_sessions": dict(sorted(Counter(x["as_of"] for x in results).items())), "provider": "Yahoo Finance via yfinance (unofficial; delayed)", "paper_rules": {"capital": CAPITAL, "allocation_per_trade": ALLOCATION_PER_TRADE, "max_risk_per_trade": MAX_RISK_PER_TRADE, "daily_loss_limit": DAILY_LOSS_LIMIT},
         "methodology": "Heuristic technical ranking on completed sessions (same validation as charts: day included after 16:00 IST, holiday placeholder candles removed); no news or backtest validation yet",
         "disclaimer": "Research/paper trading only. Scores are not probabilities; entry/stop/target are illustrative, not orders.",
         "candidates": [x for x in ranked if x["status"] == "SETUP"][:20],

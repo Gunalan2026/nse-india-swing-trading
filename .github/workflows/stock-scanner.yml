@@ -3,7 +3,7 @@ name: NSE India Stock Scanner
 on:
   workflow_dispatch:
   schedule:
-    - cron: '45 11 * * 1-5'  # 17:15 IST, after NSE close (15:30)
+    - cron: '0 14 * * 1-5'  # 19:30 IST, after NSE publishes the daily bhavcopy
 
 permissions:
   contents: write
@@ -34,6 +34,10 @@ jobs:
 
       - name: Verify results
         run: test -s scanner/results.json
+
+      - name: Check prices against NSE bhavcopy
+        continue-on-error: true
+        run: python scanner/nse_verify.py
 
       - name: Commit scanner results
         run: |
