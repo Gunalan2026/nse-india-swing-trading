@@ -1,181 +1,181 @@
 {
- "generated_utc": "2026-11-20T17:23:42.483004+00:00",
- "latest_session": "2026-11-20",
+ "generated_utc": "2026-11-24T14:56:33.848959+00:00",
+ "latest_session": "2026-11-23",
  "symbols": [
   {
    "symbol": "RELIANCE",
    "group": "core",
-   "latest": "2026-11-20"
+   "latest": "2026-11-23"
   },
   {
    "symbol": "TCS",
    "group": "core",
-   "latest": "2026-11-20"
+   "latest": "2026-11-23"
   },
   {
    "symbol": "INFY",
    "group": "core",
-   "latest": "2026-11-20"
+   "latest": "2026-11-23"
   },
   {
    "symbol": "HDFCBANK",
    "group": "core",
-   "latest": "2026-11-20"
+   "latest": "2026-11-23"
   },
   {
    "symbol": "ICICIBANK",
    "group": "core",
-   "latest": "2026-11-20"
+   "latest": "2026-11-23"
   },
   {
-   "symbol": "WELSPUNLIV",
+   "symbol": "ASTERDM",
    "group": "candidate",
-   "latest": "2026-11-20"
+   "latest": "2026-11-23"
   },
   {
-   "symbol": "NUVOCO",
+   "symbol": "OBEROIRLTY",
    "group": "candidate",
-   "latest": "2026-11-20"
-  },
-  {
-   "symbol": "CUB",
-   "group": "candidate",
-   "latest": "2026-11-20"
+   "latest": "2026-11-23"
   },
   {
    "symbol": "PRESTIGE",
    "group": "candidate",
-   "latest": "2026-11-20"
+   "latest": "2026-11-23"
   },
   {
-   "symbol": "AXISBANK",
+   "symbol": "LGEINDIA",
    "group": "candidate",
-   "latest": "2026-11-20"
+   "latest": "2026-11-23"
+  },
+  {
+   "symbol": "JSWINFRA",
+   "group": "candidate",
+   "latest": "2026-11-23"
+  },
+  {
+   "symbol": "FEDERALBNK",
+   "group": "candidate",
+   "latest": "2026-11-23"
   },
   {
    "symbol": "VIJAYA",
    "group": "candidate",
-   "latest": "2026-11-20"
+   "latest": "2026-11-23"
   },
   {
-   "symbol": "APOLLOHOSP",
+   "symbol": "PERSISTENT",
    "group": "candidate",
-   "latest": "2026-11-20"
+   "latest": "2026-11-23"
   },
   {
-   "symbol": "KIMS",
+   "symbol": "ADANIENSOL",
    "group": "candidate",
-   "latest": "2026-11-20"
+   "latest": "2026-11-23"
   },
   {
-   "symbol": "POONAWALLA",
+   "symbol": "LALPATHLAB",
    "group": "candidate",
-   "latest": "2026-11-20"
+   "latest": "2026-11-23"
   },
   {
-   "symbol": "ULTRACEMCO",
+   "symbol": "PIDILITIND",
    "group": "candidate",
-   "latest": "2026-11-20"
+   "latest": "2026-11-23"
   },
   {
-   "symbol": "KPRMILL",
+   "symbol": "HONASA",
    "group": "candidate",
-   "latest": "2026-11-20"
-  },
-  {
-   "symbol": "ADANIPOWER",
-   "group": "candidate",
-   "latest": "2026-11-20"
-  },
-  {
-   "symbol": "DLF",
-   "group": "candidate",
-   "latest": "2026-11-20"
+   "latest": "2026-11-23"
   },
   {
    "symbol": "IDFCFIRSTB",
    "group": "candidate",
-   "latest": "2026-11-20"
+   "latest": "2026-11-23"
   },
   {
-   "symbol": "UNIONBANK",
+   "symbol": "GROWW",
    "group": "candidate",
-   "latest": "2026-11-20"
+   "latest": "2026-11-23"
   },
   {
-   "symbol": "BAJAJHLDNG",
+   "symbol": "PHOENIXLTD",
    "group": "candidate",
-   "latest": "2026-11-20"
+   "latest": "2026-11-23"
   },
   {
-   "symbol": "HYUNDAI",
+   "symbol": "KARURVYSYA",
    "group": "candidate",
-   "latest": "2026-11-20"
+   "latest": "2026-11-23"
   },
   {
-   "symbol": "KALYANKJIL",
+   "symbol": "AXISBANK",
    "group": "candidate",
-   "latest": "2026-11-20"
+   "latest": "2026-11-23"
   },
   {
-   "symbol": "MAHABANK",
+   "symbol": "DIVISLAB",
    "group": "candidate",
-   "latest": "2026-11-20"
+   "latest": "2026-11-23"
   },
   {
-   "symbol": "ABDL",
+   "symbol": "PRIVISCL",
    "group": "candidate",
-   "latest": "2026-11-20"
+   "latest": "2026-11-23"
   },
   {
-   "symbol": "INDUSINDBK",
-   "group": "watch",
-   "latest": "2026-11-20"
-  },
-  {
-   "symbol": "SHREECEM",
-   "group": "watch",
-   "latest": "2026-11-20"
-  },
-  {
-   "symbol": "DOMS",
-   "group": "watch",
-   "latest": "2026-11-20"
-  },
-  {
-   "symbol": "ASTERDM",
-   "group": "watch",
-   "latest": "2026-11-20"
-  },
-  {
-   "symbol": "ACC",
-   "group": "watch",
-   "latest": "2026-11-20"
+   "symbol": "ADANIGREEN",
+   "group": "candidate",
+   "latest": "2026-11-23"
   },
   {
    "symbol": "ICICIGI",
    "group": "watch",
-   "latest": "2026-11-20"
+   "latest": "2026-11-23"
   },
   {
-   "symbol": "EXIDEIND",
+   "symbol": "NH",
    "group": "watch",
-   "latest": "2026-11-20"
+   "latest": "2026-11-23"
   },
   {
-   "symbol": "LGEINDIA",
+   "symbol": "DIXON",
    "group": "watch",
-   "latest": "2026-11-20"
+   "latest": "2026-11-23"
   },
   {
-   "symbol": "MEESHO",
+   "symbol": "ACMESOLAR",
    "group": "watch",
-   "latest": "2026-11-20"
+   "latest": "2026-11-23"
   },
   {
-   "symbol": "LICHSGFIN",
+   "symbol": "ADANIPOWER",
    "group": "watch",
-   "latest": "2026-11-20"
+   "latest": "2026-11-23"
+  },
+  {
+   "symbol": "CUB",
+   "group": "watch",
+   "latest": "2026-11-23"
+  },
+  {
+   "symbol": "MAHABANK",
+   "group": "watch",
+   "latest": "2026-11-23"
+  },
+  {
+   "symbol": "COFORGE",
+   "group": "watch",
+   "latest": "2026-11-23"
+  },
+  {
+   "symbol": "PWL",
+   "group": "watch",
+   "latest": "2026-11-23"
+  },
+  {
+   "symbol": "APOLLOHOSP",
+   "group": "watch",
+   "latest": "2026-11-23"
   }
  ],
  "skipped": []
