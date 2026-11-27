@@ -1,161 +1,171 @@
 {
- "generated_utc": "2026-11-26T14:57:08.732518+00:00",
- "latest_session": "2026-11-26",
+ "generated_utc": "2026-11-27T14:51:48.840525+00:00",
+ "latest_session": "2026-11-27",
  "symbols": [
   {
    "symbol": "RELIANCE",
    "group": "core",
-   "latest": "2026-11-26"
+   "latest": "2026-11-27"
   },
   {
    "symbol": "TCS",
    "group": "core",
-   "latest": "2026-11-26"
+   "latest": "2026-11-27"
   },
   {
    "symbol": "INFY",
    "group": "core",
-   "latest": "2026-11-26"
+   "latest": "2026-11-27"
   },
   {
    "symbol": "HDFCBANK",
    "group": "core",
-   "latest": "2026-11-26"
+   "latest": "2026-11-27"
   },
   {
    "symbol": "ICICIBANK",
    "group": "core",
-   "latest": "2026-11-26"
+   "latest": "2026-11-27"
   },
   {
-   "symbol": "WOCKPHARMA",
+   "symbol": "AETHER",
    "group": "candidate",
-   "latest": "2026-11-26"
+   "latest": "2026-11-27"
   },
   {
-   "symbol": "LODHA",
+   "symbol": "BEML",
    "group": "candidate",
-   "latest": "2026-11-26"
-  },
-  {
-   "symbol": "MCX",
-   "group": "candidate",
-   "latest": "2026-11-26"
-  },
-  {
-   "symbol": "OBEROIRLTY",
-   "group": "candidate",
-   "latest": "2026-11-26"
-  },
-  {
-   "symbol": "LGEINDIA",
-   "group": "candidate",
-   "latest": "2026-11-26"
-  },
-  {
-   "symbol": "ACE",
-   "group": "candidate",
-   "latest": "2026-11-26"
-  },
-  {
-   "symbol": "PRESTIGE",
-   "group": "candidate",
-   "latest": "2026-11-26"
+   "latest": "2026-11-27"
   },
   {
    "symbol": "J&KBANK",
    "group": "candidate",
-   "latest": "2026-11-26"
+   "latest": "2026-11-27"
   },
   {
-   "symbol": "RUBICON",
+   "symbol": "LODHA",
    "group": "candidate",
-   "latest": "2026-11-26"
+   "latest": "2026-11-27"
   },
   {
-   "symbol": "BAJAJHLDNG",
+   "symbol": "BANKINDIA",
    "group": "candidate",
-   "latest": "2026-11-26"
+   "latest": "2026-11-27"
+  },
+  {
+   "symbol": "OBEROIRLTY",
+   "group": "candidate",
+   "latest": "2026-11-27"
+  },
+  {
+   "symbol": "ACE",
+   "group": "candidate",
+   "latest": "2026-11-27"
+  },
+  {
+   "symbol": "ABCAPITAL",
+   "group": "candidate",
+   "latest": "2026-11-27"
+  },
+  {
+   "symbol": "CDSL",
+   "group": "candidate",
+   "latest": "2026-11-27"
+  },
+  {
+   "symbol": "TORNTPHARM",
+   "group": "candidate",
+   "latest": "2026-11-27"
+  },
+  {
+   "symbol": "CUPID",
+   "group": "candidate",
+   "latest": "2026-11-27"
+  },
+  {
+   "symbol": "PRESTIGE",
+   "group": "candidate",
+   "latest": "2026-11-27"
+  },
+  {
+   "symbol": "PTCIL",
+   "group": "candidate",
+   "latest": "2026-11-27"
+  },
+  {
+   "symbol": "CUB",
+   "group": "candidate",
+   "latest": "2026-11-27"
+  },
+  {
+   "symbol": "HCLTECH",
+   "group": "candidate",
+   "latest": "2026-11-27"
+  },
+  {
+   "symbol": "MCX",
+   "group": "candidate",
+   "latest": "2026-11-27"
   },
   {
    "symbol": "360ONE",
    "group": "candidate",
-   "latest": "2026-11-26"
-  },
-  {
-   "symbol": "JSWINFRA",
-   "group": "candidate",
-   "latest": "2026-11-26"
-  },
-  {
-   "symbol": "DLF",
-   "group": "candidate",
-   "latest": "2026-11-26"
-  },
-  {
-   "symbol": "HEROMOTOCO",
-   "group": "candidate",
-   "latest": "2026-11-26"
-  },
-  {
-   "symbol": "LAURUSLABS",
-   "group": "candidate",
-   "latest": "2026-11-26"
+   "latest": "2026-11-27"
   },
   {
    "symbol": "WELSPUNLIV",
    "group": "candidate",
-   "latest": "2026-11-26"
+   "latest": "2026-11-27"
   },
   {
-   "symbol": "KFINTECH",
+   "symbol": "BEL",
    "group": "watch",
-   "latest": "2026-11-26"
+   "latest": "2026-11-27"
   },
   {
-   "symbol": "BRITANNIA",
+   "symbol": "POLICYBZR",
    "group": "watch",
-   "latest": "2026-11-26"
+   "latest": "2026-11-27"
   },
   {
-   "symbol": "ABSLAMC",
+   "symbol": "ANGELONE",
    "group": "watch",
-   "latest": "2026-11-26"
+   "latest": "2026-11-27"
   },
   {
-   "symbol": "ENDURANCE",
+   "symbol": "HAL",
    "group": "watch",
-   "latest": "2026-11-26"
-  },
-  {
-   "symbol": "BSE",
-   "group": "watch",
-   "latest": "2026-11-26"
-  },
-  {
-   "symbol": "HCLTECH",
-   "group": "watch",
-   "latest": "2026-11-26"
+   "latest": "2026-11-27"
   },
   {
    "symbol": "ACMESOLAR",
    "group": "watch",
-   "latest": "2026-11-26"
+   "latest": "2026-11-27"
   },
   {
-   "symbol": "PHOENIXLTD",
+   "symbol": "IGIL",
    "group": "watch",
-   "latest": "2026-11-26"
+   "latest": "2026-11-27"
   },
   {
-   "symbol": "CRAFTSMAN",
+   "symbol": "URBANCO",
    "group": "watch",
-   "latest": "2026-11-26"
+   "latest": "2026-11-27"
   },
   {
-   "symbol": "PTCIL",
+   "symbol": "RBLBANK",
    "group": "watch",
-   "latest": "2026-11-26"
+   "latest": "2026-11-27"
+  },
+  {
+   "symbol": "BSE",
+   "group": "watch",
+   "latest": "2026-11-27"
+  },
+  {
+   "symbol": "RUBICON",
+   "group": "watch",
+   "latest": "2026-11-27"
   }
  ],
  "skipped": []
